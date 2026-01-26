@@ -17,18 +17,46 @@ try {
 function Invoke-Checked {
   param(
     [Parameter(Mandatory = $true)][string]$Label,
-    [Parameter(Mandatory = $true)][scriptblock]$Command
+    [Parameter(Mandatory = $true)][scriptblock]$Command,
+    [Parameter(Mandatory = $false)][string]$OutputPath
   )
 
   Write-Host "\n==> $Label" -ForegroundColor Cyan
   & $Command
   if ($LASTEXITCODE -ne 0) {
+    # Em alguns ambientes (por exemplo, execução via ferramentas/CI), logs muito verbosos
+    # podem levar à interrupção do processo. Em caso de falha, imprimimos apenas o final
+    # do .log para diagnóstico rápido.
+    try {
+      $latexDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+      $logPath = Join-Path $latexDir 'sn-article_revised.log'
+      if (Test-Path -LiteralPath $logPath) {
+        Write-Host "\n==> Trecho final do log (sn-article_revised.log)" -ForegroundColor Yellow
+        Get-Content -LiteralPath $logPath -Tail 80
+      }
+
+      $blgPath = Join-Path $latexDir 'sn-article_revised.blg'
+      if (Test-Path -LiteralPath $blgPath) {
+        Write-Host "\n==> Trecho final do BibTeX log (sn-article_revised.blg)" -ForegroundColor Yellow
+        Get-Content -LiteralPath $blgPath -Tail 80
+      }
+
+      if ($OutputPath -and (Test-Path -LiteralPath $OutputPath)) {
+        Write-Host "\n==> Trecho final da saida capturada ($([IO.Path]::GetFileName($OutputPath)))" -ForegroundColor Yellow
+        Get-Content -LiteralPath $OutputPath -Tail 120
+      }
+    } catch {
+      # ignore
+    }
     throw "Falhou: $Label (exit code=$LASTEXITCODE)"
   }
 }
 
 $latexDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $rootDir = Split-Path -Parent $latexDir
+
+$buildLogDir = Join-Path $latexDir '_build_logs'
+New-Item -ItemType Directory -Force -Path $buildLogDir | Out-Null
 
 if (-not (Test-Path -LiteralPath (Join-Path $latexDir 'sn-article.tex'))) {
   throw "Nao encontrei sn-article.tex em: $latexDir"
@@ -80,29 +108,34 @@ Invoke-Checked -Label 'Preparando cache local de figuras (PNG)' -Command {
 # 2) Checar se todas as imagens do LaTeX existem (sem gerar/atualizar figuras)
 Invoke-Checked -Label 'Checando figuras referenciadas no LaTeX' -Command {
   Set-Location $latexDir
-  powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $latexDir 'check_figures.ps1')
-}
+  $outPath = Join-Path $buildLogDir 'check_figures.txt'
+  powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $latexDir 'check_figures.ps1') *> $outPath
+} -OutputPath (Join-Path $buildLogDir 'check_figures.txt')
 
 # 3) Compilar LaTeX (com jobname para evitar lock do PDF)
 Invoke-Checked -Label 'pdflatex (passo 1)' -Command {
   Set-Location $latexDir
-  pdflatex -interaction=nonstopmode -jobname=sn-article_revised sn-article.tex
-}
+  $outPath = Join-Path $buildLogDir 'pdflatex_pass1.txt'
+  pdflatex -interaction=batchmode -halt-on-error -file-line-error -jobname=sn-article_revised sn-article.tex *> $outPath
+} -OutputPath (Join-Path $buildLogDir 'pdflatex_pass1.txt')
 
 Invoke-Checked -Label 'bibtex' -Command {
   Set-Location $latexDir
-  bibtex sn-article_revised
-}
+  $outPath = Join-Path $buildLogDir 'bibtex.txt'
+  bibtex sn-article_revised *> $outPath
+} -OutputPath (Join-Path $buildLogDir 'bibtex.txt')
 
 Invoke-Checked -Label 'pdflatex (passo 2)' -Command {
   Set-Location $latexDir
-  pdflatex -interaction=nonstopmode -jobname=sn-article_revised sn-article.tex
-}
+  $outPath = Join-Path $buildLogDir 'pdflatex_pass2.txt'
+  pdflatex -interaction=batchmode -halt-on-error -file-line-error -jobname=sn-article_revised sn-article.tex *> $outPath
+} -OutputPath (Join-Path $buildLogDir 'pdflatex_pass2.txt')
 
 Invoke-Checked -Label 'pdflatex (passo 3)' -Command {
   Set-Location $latexDir
-  pdflatex -interaction=nonstopmode -jobname=sn-article_revised sn-article.tex
-}
+  $outPath = Join-Path $buildLogDir 'pdflatex_pass3.txt'
+  pdflatex -interaction=batchmode -halt-on-error -file-line-error -jobname=sn-article_revised sn-article.tex *> $outPath
+} -OutputPath (Join-Path $buildLogDir 'pdflatex_pass3.txt')
 
 Invoke-Checked -Label 'Sincronizando auxiliares para VS Code (LaTeX Workshop)' -Command {
   Set-Location $latexDir

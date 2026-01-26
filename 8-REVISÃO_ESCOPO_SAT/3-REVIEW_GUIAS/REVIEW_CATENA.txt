@@ -1,0 +1,237 @@
+Thank you for submitting your manuscript to Catena. 
+
+At Catena, we are committed to supporting your publication journey, which, at times, includes providing feedback that the conclusions drawn are too premature and require further refinement before we can recommend peer-review and publication. In its current form, critical improvements to your research methodology are required to ensure your results are appropriately substantiated and conclusions are fully supported, in alignment with current research standards. We encourage you to reflect upon ways to strengthen your methodologies and level of validation, such that future iterations of this work will be able to draw more robust conclusions that will more significantly advance our field of research.
+  
+We appreciate your support of Catena and welcome future submissions that adhere to these publication standards. 
+ 
+Kind regards,
+  
+Raquel de Castro Portes, PhD 
+Editor 
+Catena  
+
+Editor and Reviewer comments (if applicable): 
+
+Reviewer's Responses to Questions
+
+Note: In order to effectively convey your recommendations for improvement to the author(s), and help editors make well-informed and efficient decisions, we ask you to answer the following specific questions about the manuscript and provide additional suggestions where appropriate.
+
+1. Are the objectives and the rationale of the study clearly stated?
+
+Please provide suggestions to the author(s) on how to improve the clarity of the objectives and rationale of the study. Please number each suggestion so that author(s) can more easily respond.
+
+Reviewer #1: While the objectives are clearly stated, they currently frame the manuscript as a region-specific case study restricted to the Brazilian semiarid context. To enhance the scientific relevance and international applicability of the study, the objectives should be reformulated to emphasize a broader assessment of the recovery of soil chemical attributes in semiarid environments along a chronosequence, rather than focusing on the evaluation of a specific Brazilian regulation or legal framework. As currently written, it is unclear what is being tested, since the authors do not adequately explain the rationale behind the 15-year cutting cycles, nor do they provide appropriate references or contextualization for this norm or legislation. Addressing these issues is essential for clarifying the study’s conceptual framework and for strengthening its relevance beyond the regional scale.
+
+Reviewer #2: Not yet.
+
+Reviewer #3: The analysis of the state-of-the-art is totally absent and therefore the novelty of the study is unclear.
+
+Reviewer #4: Yes, see comments
+
+2. If applicable, is the method/study reported in sufficient detail to allow for its replicability and/or reproducibility?
+
+Please provide suggestions to the author(s) on how to improve the replicability/reproducibility of their study. Please number each suggestion so that the author(s) can more easily respond.
+
+Reviewer #1: Mark as appropriate with an X:
+Yes [] No [X] N/A []
+Provide further comments here:
+i) The link provided in the submitted draft does not allow access to the materials cited in the manuscript. Appendix A, which is expected to illustrate the experimental layout, cannot be found, nor are the soil profile datasets mentioned as supplementary material available. Considering the well-known pedological heterogeneity of the Brazilian semiarid region, encompassing a wide range of soil types with contrasting physical and chemical properties, the absence of these materials critically undermines the reproducibility and transparency of the experimental design.
+
+ii) In general, the description and referencing of the chemical analytical methods are adequate. However, regarding total organic carbon, the authors report the use of dry combustion with a Perkin Elmer PE-2400 elemental analyzer. This technique quantifies total carbon rather than organic carbon specifically. In the absence of detailed soil characterization (particularly full profile descriptions of the sampled sites), it cannot be reliably assumed that the carbon measured by the CHNS/O elemental analyzer corresponds exclusively to total organic carbon. This is especially critical in semiarid environments, where pedogenic or lithogenic carbonates are commonly present and may significantly bias total carbon measurements.
+
+iii) The supplementary material must be thoroughly revised to provide comprehensive information on the experimental design and the materials used, with particular emphasis on detailed soil characterization. Such information is essential to meet standards regarding methodological rigor, reproducibility, and interpretation of results.
+iv) Despite the issues raised above, the statistical methods are adequately described and presented with sufficient detail, allowing the reader to understand the analytical framework applied in the study.
+
+Reviewer #2: Mark as appropriate with an X:
+Yes
+Provide further comments here:
+
+Reviewer #3: Mark as appropriate with an X:
+Yes [] No [X] N/A []
+Provide further comments here:
+
+Reviewer #4: Mark as appropriate with an X:
+Yes [x] No [] N/A []
+Provide further comments here:
+
+3. If applicable, are statistical analyses, controls, sampling mechanism, and statistical reporting (e.g., P-values, CIs, effect sizes) appropriate and well described?
+
+Please clearly indicate if the manuscript requires additional peer review by a statistician. Kindly provide suggestions to the author(s) on how to improve the statistical analyses, controls, sampling mechanism, or statistical reporting. Please number each suggestion so that the author(s) can more easily respond.
+
+Reviewer #1: Mark as appropriate with an X:
+Yes [] No [] N/A []
+Provide further comments here:
+
+Overall, the statistical procedures are clearly described and appropriately applied. However, several aspects require revision on results topic.
+i) The overall presentation and quality of the figures must be substantially improved.
+ii) Although many statistical results are reported in the text, a considerable portion of this information would be more effectively presented in tabular form. Key results such as effect sizes, McFadden’s Pseudo-R², Nagelkerke’s R², and other relevant statistics are currently embedded in the running text. In its present form, the manuscript provides the reader only with a subset of statistical outcomes selected by the authors, which prevents independent or complementary assessments based on the complete set of results. These statistics should therefore be organized into additional tables, either within the main manuscript or as part of the supplementary material, to ensure transparency and facilitate reproducibility and interpretation.
+
+Reviewer #2: Mark as appropriate with an X:
+No
+
+Reviewer #3: Mark as appropriate with an X:
+Yes [] No [X] N/A []
+Provide further comments here:
+See the commented ms in attachment.
+
+Reviewer #4: Mark as appropriate with an X:
+Yes [x] No [] N/A []
+Provide further comments here:
+
+4. Could the manuscript benefit from additional tables or figures, or from improving or removing (some of the) existing ones?
+
+Please provide specific suggestions for improvements, removals, or additions of figures or tables. Please number each suggestion so that author(s) can more easily respond.
+
+Reviewer #1: All figures in the manuscript require substantial improvement. This applies to the study location map, the boxplots presenting descriptive results, and the scatter plots illustrating the regression analyses. In their current form, the figures do not meet the quality standards of this journal and should be redesigned to ensure consistency with CATENA’s graphical and editorial requirements.
+
+i) Based on the layout, it is likely that the authors used the ggplot2 package in R to generate the boxplots. The graphical quality can be considerably improved by employing the pre-configured themes available in this package, as well as by combining and organizing multiple panels into well-structured composite figures using packages such as patchwork.
+
+ii) In Figure 3, three panels are duplicated (d, e, and f). In addition, panel d does not display the Y-axis label in English.
+
+iii) It is questionable whether boxplots are an appropriate visualization for results based on only five repetitions/samples. With such a small sample size, quartiles become strongly dependent on one or two observations, the median loses stability, the identification of outliers may become artificial or misleading, and small individual variations can lead to disproportionately large visual differences. Alternative visualizations, such as dot plots (with or without jitter), mean ± error (SD or confidence interval) plots, or scatter plots with boxplots used only as a secondary background element, would be more appropriate.
+
+iv) All regression figures contain information displayed at a very small scale, making it difficult to clearly read axis values and the statistical results embedded in the figures. The overall layout must be redesigned. In addition, several of the results currently presented within the figures—particularly those related to statistical parameters—would be more effectively reported in tabular form, as noted in previous comments.
+
+Reviewer #2: Yes, need to do further analysis.
+
+Reviewer #3: Many figures are unreadable.
+
+Reviewer #4: No
+
+5. If applicable, are the interpretation of results and study conclusions supported by the data?
+
+Please provide suggestions (if needed) to the author(s) on how to improve, tone down, or expand the study interpretations/conclusions. Please number each suggestion so that the author(s) can more easily respond.
+
+Reviewer #1: Mark as appropriate with an X:
+Yes [X] No [] N/A []
+Provide further comments here:
+The interpretation of the results and the conclusions are clearly grounded in the data presented. However, the lack of information regarding the general characteristics of the soils used in the experiment, as well as their potential diversity among experimental plots, reduces confidence that the temporal effects observed are occurring under comparable pedological contexts. This limitation constrains the robustness of the interpretations and weakens the strength of the conclusions drawn from the data.
+
+Reviewer #2: Mark as appropriate with an X:
+No
+Provide further comments here:
+
+Reviewer #3: Mark as appropriate with an X:
+Yes [] No [X] N/A []
+Provide further comments here:
+Discussions lack mechanistic interpretation of data. Conclusions are absent.
+
+Reviewer #4: Mark as appropriate with an X:
+Yes [x] No [] N/A []
+Provide further comments here: See comments
+
+6. Have the authors clearly emphasized the strengths of their study/methods?
+
+Please provide suggestions to the author(s) on how to better emphasize the strengths of their study. Please number each suggestion so that the author(s) can more easily respond.
+
+Reviewer #1: The authors do not clearly emphasize the main strengths of the study. The experimental design and the chronosequence presented are of high scientific relevance and are inherently difficult to maintain over long time periods. The manuscript would benefit from explicitly highlighting the unique opportunity to observe the effects of forest restoration over time within a long-term experiment conducted in the Brazilian semiarid region.
+
+To strengthen this aspect, the authors are encouraged to include, in the Materials and Methods section, a more detailed description of the experimental design and its broader context. Specifically, it should be clarified whether the areas representing different restoration ages are part of an experimental station managed by a research institute or university, whether they are associated with a long-term research project, whether additional studies are being conducted within this chronosequence, and whether the areas are open-access or protected. Providing this information is essential to properly contextualize the study and to underscore its scientific value.
+
+Reviewer #2: Not yet.
+
+Reviewer #3: The authors failed in locating the study within a broad international environmental context, which limits the interest only to the studied region.
+
+Reviewer #4: Yes
+
+7. Have the authors clearly stated the limitations of their study/methods?
+
+Please list the limitations that the author(s) need to add or emphasize. Please number each limitation so that author(s) can more easily respond.
+
+Reviewer #1: The authors do not explicitly address the limitations of the study. It is necessary to clearly acknowledge and discuss limitations related both to the methodology and to the overall scope of the submitted work. For example, no data on the physical properties of the soils in the experimental plots are presented. Should the reader assume that these properties are constant across plots, or merely similar? Could the chemical effects observed be influenced or even driven by underlying physical differences among soils? Without a clear and explicit discussion of such limitations, important uncertainties remain unresolved, which weakens the interpretability of the results.
+
+Reviewer #2: No.
+
+Reviewer #3: Totally absent.
+
+Reviewer #4: No, see comments
+
+8. Does the manuscript structure, flow or writing need improving (e.g., the addition of subheadings, shortening of text, reorganization of sections, or moving details from one section to another)?
+
+Please provide suggestions to the author(s) on how to improve the manuscript structure and flow. Please number each suggestion so that author(s) can more easily respond.
+
+Reviewer #1: Overall, the manuscript reads as repetitive throughout its development, and several subsections could be consolidated to improve clarity and textual flow.
+i) The separation between Sections 3.1 and 3.2 does not appear to be necessary. These sections could be merged into a single subsection presenting the results for all chemical attributes along the chronosequence. Similarly, Sections 3.3 and 3.4 could be combined into one subsection. One possible approach would be to restructure the Results section into only two main subsections: (a) characterization of chemical attributes along the chronosequence, and (b) dynamics of recovery throughout the restoration succession.
+ii) Sections 3.4 and 4.4 share the same title. Moreover, Section 4.4 is almost entirely repetitive of the content presented in Section 4.2. This part of the manuscript requires revision, or alternatively, Section 4.4 should be removed to avoid redundancy.
+
+Reviewer #2: Yes,
+
+Reviewer #3: The presentation suffers from poor quality. There are several grammar mistakes and typos.
+
+Reviewer #4: No
+
+9. Could the manuscript benefit from language editing?
+
+Reviewer #1: Yes
+
+Reviewer #2: Yes
+
+Reviewer #3: Yes
+
+Reviewer #4: Yes
+
+ 
+
+
+Reviewer #1: This field is optional. If you have any additional suggestions beyond those relevant to the questions above, please number and list them here.
+
+
+Reviewer #2: The manuscript was performed to assess the suitability of cutting cycle by investigating the recovery trajectories of soil chemical properties over a regeneration chronosequence in an area of hyperxerophilic Caatinga in a semi-arid region. Overall, the data is simple and need to enrich, also, the analysis need to be deeper performed.
+Title: What was the meaning of 'trajectories' and 'asynchronous'? It seems like AI words, please use the common ones.
+Abstract：
+L16-17: Why did the authors mainly focus on 'exchangeable cations, base saturation, etc.'? What's the scientific question?
+L17-19: What's the logic between this and previous one? Unclear, please re-phrase.
+L19: What was the meaning of 'legacy effect'?
+L27: What was the meaning of 'B'?
+L31: What was the point of 'soil fertility'? Which indicators? Or did the authors calculate SQI? Also, how did the author obtain the conclusion that recovery of around 50% nutrient stock?
+Introduction:
+L62-64: Again, what's the logic between these irons and soil fertility? Why did the author aim to evaluate these parameters?
+L64: I disagree, since soil fertility is related to organic matter and nutrients.
+L73-74: Then, what's your scientific question?
+Overall, the logic of Introduction was in a mess and need to be totally re-structured, and the authors need to state their specific scientific question.
+Figures:
+Please re-make the figures, now this version is hard to follow. For example, the authors may group restoration year together rather soil depths together.
+Fig. 2: What's the unit of TOC? Why not ' g kg-1'? Please check.
+Graphical abstract: It's too simple, please re-structure a figure to show the detailed information and conclusion obtained from your case.
+
+
+
+Reviewer #3: The authors propose an analysis of long-term evolution of soil properties in semi-arid environments. Unfortunately, I did not find any novelty in the study, also due to the lack of a proper analysis of the state-of-the-art. Moreover, as it stands now, the paper does not beyond a mere case study without a proper generalisation of results for other similar environmental contexts. I have found also issues in the presentation (lack of details in methods, doubts about the statisticala approach, poor language and figures, lack of discussion about the main message of the study, absence on conclusions). Other considerations are reported in the commented ms in attachment, hoping to be useful to improve the paper (although a thorough revision/integration is needed). These problems suggest paper rejection.
+
+
+Reviewer #4: Under the hypothesis that the removal of Caatinga vegetation leads to a deterioration in soil properties, the authors present a paper that aims is to assess the suitability of this cutting cycle by investigating the recovery trajectories of soil chemical properties over a regeneration chronosequence in an area of hyperxerophilic Caatinga in a semi-arid región. The thinking behind the research in the manuscript is entirely clear. The statistical procedures are very well described. Here are some suggestions to back up my idea and help the author improve the quality of the paper:
+
+The graphical abstract is genuine because of its simplicity, but I suggest adding some more ideas.
+
+In point 3 of the HIGHLIGHTS it is mentioned: 3. pH, salinity, and acidity showed slow and delayed recovery under semi-arid limits. pH and acidity are not the same thing?.
+
+In the Introduction section appear global generalities, that contribute nothing, so it would be advisable to delete them or minimize.
+
+Line 21 and others (line 139). Soil samples (0-5, 5-10, 10-20 cm). Explain why these sampling depths are selected and not, for example, based on the pedogenetic horizons. Please note that there are very different types of soil.
+
+Figure 1 shows a representation of a soil profile with a simple A-Bi sequence. It seems too simplistic. If possible, improve this simple morphological description, which, moreover, does not coincide with what is expressed in line 116 that they may be less developed (Haplustepts) or more developed (Haplustalfs) (Soil Survey Staff, 2014). Be carefull because in line 126 mentions the formation of Planosols. This reference from the Soil Survey Staff corresponds to the analytical data, but not to the soil classification system.
+
+Line 131. The soil variability between sites is small and 80 years of control is sufficient to ensure comparisons between different times after cutting of the Caatinga vegetation under soil chemical attributes. This is difficult to accept, since we are talking about very divergent soils. It is therefore necessary to clarify the role of the different soil types.
+
+Line 145. The variability of replicas at each soil collection site was small, except for Na+ concentration and electrical conductivity (EC). This rather corresponds to the results section.
+
+The pH results are described between lines 259-264 with two decimal places. This is pointless; one decimal place is sufficient and more accurate.
+
+Figure 2 3 4 5 is practically illegible, please improve.
+
+Line 322 or 532. exchangeable sodium (Na+ 322 ). It is unnecessary to mention the word sodium.
+
+Line 482. Additionally, NaCl tends to form surface efflorescence under intense evaporation...It's a shame not to show a photo of these efflorescences. If possible, please add them.
+
+Line 525. This characteristic probably lies in the mineralogy of the clays and, more dynamically, in the crucial contribution of organic matter....It is a shame not to provide an analysis of the type of clay. If possible, add them.
+
+Line 542. This behavior indicates that Ca²⁺ is less susceptible to leaching losses when compared to other cations...Sure?, even than Mg?.
+
+Line 549. ..calcite and gypsum..Are there limestones or marls and gypsum in the study area in addition to those mentioned previously rocks?.
+
+No mention was made in the discussion of the scope or limitations of the study findings.
+
+As consequence of all the comments detailed above, the general assessment is that the current version of the manuscript needs review. At this point I would like to encourage the authors who, without a doubt, have made an extraordinary effort.
+
+I wish those changes will contribute to improve your paper.
+  

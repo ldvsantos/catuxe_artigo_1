@@ -28,6 +28,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
 import pandas as pd
+from matplotlib.patches import Patch
 
 
 # Elsevier-like pastel palette (consistent with prior figure work)
@@ -116,8 +117,9 @@ def build_cooccurrence_graph(
         if len(nodes) < 2:
             continue
 
-        for a, b in combinations(sorted(nodes), 2):
-            counts[(a, b)] = counts.get((a, b), 0) + 1
+        for a, b in combinations(nodes, 2):
+            u, v = sorted((a, b))
+            counts[(u, v)] = counts.get((u, v), 0) + 1
 
     g = nx.Graph()
     for (a, b), w in counts.items():
@@ -160,6 +162,7 @@ def largest_connected_subgraph(g: nx.Graph) -> nx.Graph:
         return g.copy()
     if nx.is_connected(g):
         return g.copy()
+
     comp = max(nx.connected_components(g), key=len)
     return g.subgraph(comp).copy()
 
@@ -259,7 +262,7 @@ def draw_network(
 
     fig = plt.figure(figsize=(12.5, 10.0), dpi=600)
     ax = fig.add_subplot(111)
-    ax.set_title(title, fontsize=16, fontweight="bold")
+    fig.suptitle(title, fontsize=16, fontweight="bold", y=0.98)
     ax.axis("off")
 
     # Edges
@@ -301,12 +304,59 @@ def draw_network(
         ax=ax,
     )
 
-    fig.tight_layout()
+    # Legend explaining colors
+    if color_mode == "dimension":
+        assert dim_colors is not None
+        present_dims = sorted({node_type(n) for n in g.nodes})
+        preferred = ["Algoritmo", "Aplicacao", "Contexto", "Evidencia", "Regiao"]
+        present_dims = sorted(present_dims, key=lambda d: preferred.index(d) if d in preferred else 999)
+        handles = [Patch(facecolor=dim_colors.get(d, PASTEL["gray"]), edgecolor="none", label=d) for d in present_dims]
+        leg = ax.legend(
+            handles=handles,
+            title="Cor do nó",
+            loc="lower left",
+            bbox_to_anchor=(0.01, 0.01),
+            frameon=True,
+            framealpha=0.92,
+            fontsize=10,
+            title_fontsize=11,
+        )
+        leg.get_frame().set_edgecolor("#DDDDDD")
+    elif color_mode == "community":
+        assert node_to_comm is not None
+        comm_ids = sorted(set(node_to_comm.values()))
+        comm_palette = [
+            PASTEL["blue"],
+            PASTEL["green"],
+            PASTEL["orange"],
+            PASTEL["purple"],
+            PASTEL["pink"],
+            PASTEL["teal"],
+            PASTEL["gray"],
+        ]
+        comm_color = {cid: comm_palette[i % len(comm_palette)] for i, cid in enumerate(comm_ids)}
+        handles = []
+        for cid in comm_ids:
+            label = "Isolado/outros" if cid == 0 else f"Comunidade {cid}"
+            handles.append(Patch(facecolor=comm_color.get(cid, PASTEL["gray"]), edgecolor="none", label=label))
+        leg = ax.legend(
+            handles=handles,
+            title="Cor do nó",
+            loc="lower left",
+            bbox_to_anchor=(0.01, 0.01),
+            frameon=True,
+            framealpha=0.92,
+            fontsize=10,
+            title_fontsize=11,
+        )
+        leg.get_frame().set_edgecolor("#DDDDDD")
+
+    fig.tight_layout(rect=[0, 0, 1, 0.96])
     fig.savefig(out_path, facecolor="white", bbox_inches="tight")
     plt.close(fig)
 
 
-def plot_centrality_metrics(g: nx.Graph, out_path: Path, title: str = "Centrality metrics (Top nodes)") -> None:
+def plot_centrality_metrics(g: nx.Graph, out_path: Path, title: str = "Métricas de centralidade (principais nós)") -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     if g.number_of_nodes() == 0:
@@ -392,7 +442,7 @@ def main() -> None:
     draw_network(
         g_full,
         paths.out_network_full,
-        title="SAT co-occurrence network (category-values)",
+        title="Rede de coocorrência SAT (valores categóricos)",
         color_mode="dimension",
         dim_colors=dim_colors,
     )
@@ -401,7 +451,7 @@ def main() -> None:
     draw_network(
         g_full,
         paths.out_network_communities,
-        title="SAT network communities (greedy modularity)",
+        title="Comunidades na rede SAT (modularidade)",
         color_mode="community",
         node_to_comm=node_to_comm,
     )
@@ -411,7 +461,7 @@ def main() -> None:
     draw_network(
         g_bi,
         paths.out_network_algo_prod,
-        title="Algorithm × Application network (SAT-only)",
+        title="Rede Algoritmo × Aplicação (SAT)",
         color_mode="dimension",
         dim_colors=dim_color_map(["Algoritmo", "Aplicacao"]),
         seed=11,

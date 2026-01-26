@@ -1,0 +1,16 @@
+path,type,description
+data/PRISMA.csv,data,PRISMA-ScR flow counts per stage
+data/model_dados_completos.csv,data,Consolidated deduplicated corpus metadata
+data/mca_dados_categorizados_sat.csv,data,Standardized categorical variables for MCA
+data/temporal_tendencias.csv,data,Aggregated time series for temporal plots
+searches/scopus_query.txt,text,Scopus search string
+searches/webofscience_query_R.txt,text,Web of Science search string
+bib/referencias.bib,bib,LaTeX bibliography
+bib/scopus_export.bib,bib,Raw Scopus export
+bib/wos_export.bib,bib,Raw Web of Science export
+scripts/report_sat_summary.py,script,Summary metrics and checks
+scripts/plot_temporal_sat_elsevier.py,script,Temporal adoption plots
+scripts/plot_network_sat_elsevier.py,script,Network visualization
+scripts/plot_mca_biplot_elsevier.py,script,MCA biplot
+scripts/plot_cluster_heatmap_sat_elsevier.py,script,Cluster heatmap
+scripts/plot_fair_combined_elsevier.py,script,FAIR radar and bars

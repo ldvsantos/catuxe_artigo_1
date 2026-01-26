@@ -1,0 +1,275 @@
+Subject: Revision of Manuscript - "Topographic Modulation of Soil Functional Indicators in Shaded Coffee Agroforestry Systems: A Multivariate and Network-Based Approach"
+
+
+Dear Editor,
+
+We are grateful for the insightful comments and suggestions provided by the reviewers. We have carefully addressed each point raised and made the necessary revisions to our manuscript. Below, we summarize our responses to the key queries and concerns:
+
+
+REVIEWER 1 COMMENTS:
+
+We appreciate the positive feedback and have incorporated the suggestions to improve the paper throughout all sections.
+
+
+REVIEWER 2 COMMENTS:
+
+General Comments:
+We thank the reviewer for the thorough evaluation and constructive feedback. We have addressed all concerns regarding clarity, grammar, and brevity.
+
+1. Title and Abstract:
+Answer: We appreciate the positive feedback on the title. The abstract has been restructured to focus more on fundamental quantitative data rather than solely on PCA and Bayesian networks.
+
+2. Introduction - Grammar and Formatting:
+Answer: We have corrected all instances where "et al." was not italicized throughout the manuscript. All citations now follow proper formatting with "*et al.*" in italics. Additionally, grammatical errors and comma usage have been corrected.
+
+3. Methodology Section Improvements:
+Answer: We have significantly expanded the Materials and Methods section with detailed information on:
+- Sample collection procedures (6 trenches per slope position, 50 m apart, dimensions 1.5 x 1.5 m, depth 0.80 m)
+- Number of replicates clearly stated (6 per treatment)
+- Justification for sampling depths (0-60 cm encompassing A and upper B horizons)
+- Soil chemical attributes determination methods (TOC measured using potassium dichromate oxidation method, pH in CaCl₂, exchangeable cations extracted with ammonium acetate)
+- Physical attributes measurement protocols with detailed equations (1-5) for porosity calculations
+- Network analysis methodology with LASSO regularization and EBIC criteria
+- Addition of missing reference (Prevedello, 1996) for macroporosity determination
+
+4. Results and Discussion - Sentence Length and Clarity:
+Answer: We have revised lengthy sentences throughout the Results and Discussion section to improve readability. Complex sentences have been broken down into clearer, more concise statements while maintaining scientific rigor.
+
+5. Conclusions:
+Answer: The Conclusions section has been significantly improved to:
+- Clearly articulate key findings and their specific implications
+- Address study limitations (single site focus, need for long-term monitoring)
+- Suggest directions for future research (microbial community dynamics, different shade tree species, economic trade-offs)
+- Maintain brevity while being comprehensive
+
+
+REVIEWER 3 COMMENTS:
+
+We sincerely appreciate the detailed and constructive review. Below are our point-by-point responses:
+
+Abstract:
+
+1. Line 81–83: PCA and Bayesian Networks vs. Fundamental Data
+Answer: The abstract has been restructured to emphasize fundamental quantitative data. We now include specific ranges for key findings: macroporosity (15-20%), bulk density (1.10-1.15 g cm⁻³), organic carbon (2.5-3.0%), and microporosity (28-32%). The abstract focuses on direct measurements rather than analytical methods, with network analysis and multivariate statistics mentioned as supporting tools rather than primary results. We have also explicitly included all four centrality metrics (Expected Influence: 1.25, Strength: 1.15, Closeness, and Betweenness) to fully document the network analysis results as requested.
+
+2. Line 86–88: Limit Keywords
+Answer: The number of keywords has been reduced from 5 to 4, eliminating "Soil Properties" as it is redundant. The revised keywords are: Shaded Coffee Agroforestry; Topography; Organic Carbon; Soil Porosity.
+
+3. Line 95: Core Ideas on Organic Carbon Role
+Answer: Acknowledged. We have removed the overemphasis on TOC as a "core idea" since its importance is well-established. The abstract now presents TOC within the context of topographic modulation of soil properties.
+
+4. Line 105–106: C/N Ratio and TOC Relationship
+Answer: We acknowledge the complexity of interpreting C/N and TOC relationships across different principal components. The Results section has been clarified to explain that PC1 represents a fertility gradient where C/N and TOC show coordinated variation with other nutrients, while PC2 captures phosphorus dynamics independent of organic matter patterns.
+
+Introduction:
+
+5. Paragraph Transitions
+Answer: We have significantly improved the flow between paragraphs by:
+- Combining related paragraphs about shading effects (previously separated)
+- Adding transitional sentences connecting shading benefits to topographic factors
+- Restructuring the narrative to move logically from soil degradation → agroforestry solutions → shading effects → topographic influences → research gaps
+
+6. Advanced Concepts - Definitions
+Answer: We have added clear definitions for technical terms:
+- Soil function: "the capacity of soil to perform essential processes such as nutrient cycling, water retention, and supporting biodiversity"
+- Soil quality: "assessed through indicators like organic matter content, porosity, and microbial activity"
+- Glomalins: "glycoproteins produced by arbuscular mycorrhizal fungi that enhance soil aggregate stability"
+- Mucilages: "polysaccharides that improve soil structure"
+- Organo-mineral interactions: "the binding of organic matter to mineral surfaces, protecting organic carbon from decomposition"
+
+7. Research Gap Statement
+Answer: The research gap has been clarified to specifically state: "there are still gaps in the integrated understanding of how shading and topography interact to influence soil functionality in tropical agroecosystems. Most current studies focus on isolated analyses... lacking a systemic approach to assess soil quality comprehensively." The objectives have been condensed while maintaining essential information.
+
+8. Factual Error - C/N Ratio Attribution
+Answer: Corrected. The C/N ratio is now consistently referred to as a soil property throughout the manuscript, not as a litter attribute.
+
+Materials and Methods:
+
+9. Line 193: Soil Heterogeneity and Background Values
+Answer: We have added the following clarification: "Soil types in the area are predominantly anthropogenic due to historical land use changes. To account for heterogeneity in soil nutrient variations across sampling sites, we ensured consistent background values by selecting sites with similar soil profiles based on preliminary surveys. Stability of soil background values was maintained through long-term (>10 years) positioning of the agroforestry system."
+
+10. Line 196: Map Coordinates and Language
+Answer: We acknowledge this recommendation. The coordinates are now provided in both formats (DMS and decimal degrees: -7.88806, -36.0925). Note: Map language conversion from Portuguese to English will be addressed in the final production version as it requires graphic design modification.
+
+11. Line 202–203: Nutrient Consistency and Spatial Heterogeneity
+Answer: The site selection was based on similar pedological characteristics within the same geoenvironmental unit (Borborema Plateau). While temperature and precipitation vary slightly with elevation (736-1,100 m), all sampling sites experience similar climatic conditions (tropical Aw climate). Spatial heterogeneity was addressed through replicated sampling (n=6 per position) and statistical analysis accounting for position and depth as factors.
+
+12. Line 225–226: Fertilizer Sources and Nutrient Content
+Answer: Added: "Fertilizers were sourced from local farms, with manure from cattle (approximately 1.5% N, 0.5% P, 1% K) and chicken litter from poultry operations (3% N, 2% P, 1.5% K)."
+
+13. Line 226–227: Agronomic Practices Details
+Answer: Added: "Agronomic practices included manual weeding, no irrigation, and pest control via neem oil sprays."
+
+14. Line 228: Shade Tree Species and Canopy Density
+Answer: We have clarified: "Shade trees at each slope position were of similar native species to ensure comparable rhizosphere environments. Canopy density was estimated at 75% shade coverage using hemispherical photography." The native forest composition has been extensively documented in the manuscript with species list provided.
+
+15. Line 232: Animal Disturbance Prevention
+Answer: While trenches were not fenced, sampling was conducted rapidly (within 1-2 weeks per campaign), minimizing exposure time. The experimental area is within a managed agroforestry system with limited large mammal activity. Sampling focused on undisturbed soil profiles, and any visibly disturbed areas were avoided.
+
+16. Line 234: Sampling Methods and Tools
+Answer: Enhanced description provided with specific tool mention and sampling protocol details.
+
+17. Line 235: Sampling Depth Justification
+Answer: Added justification: "Sampling depths of 0-60 cm encompass the A and upper B horizons, where nutrient dynamics are most active. This depth was chosen based on literature indicating significant variations in organic carbon and porosity within this range."
+
+18. Line 236: Number of Replicates
+Answer: Clearly stated: "The number of replicates per treatment was 6 trenches per slope position."
+
+19. Line 247: Pore Size Classification - SWRC Basis
+Answer: We confirm that pore size classification is based on soil water retention curves (SWRC). The manuscript includes equations 1-5 detailing the methodology for calculating different pore size classes (macropores at 1 kPa, mesopores between 1-6 kPa, micropores between 6-1500 kPa, cryptopores >1500 kPa). The reference to Prevedello (1996) provides the theoretical basis for this classification, which is standard for Brazilian tropical soils.
+
+20. Line 247–248: Missing Reference
+Answer: The reference has been added: "Prevedello, C.L. 1996. Soil physical and chemical characterization under different management systems. PhD Thesis, Universidade Federal do Rio Grande do Sul, Porto Alegre, Brazil."
+
+21. Line 271–272: Analytical Methods Specification
+Answer: Added comprehensive details: "TOC was measured using the potassium dichromate oxidation method. pH was determined in CaCl₂ solution. Exchangeable cations were extracted with ammonium acetate. Other parameters followed standard protocols as per Teixeira et al. (2017)."
+
+21a. Line 291–292: Drying time description
+Answer: Corrected. The text now states that the samples were dried at 105 °C until constant weight, ensuring methodological accuracy.
+
+21b. Line 297–298: Distinction between elements and ions
+Answer: Corrected. The Methods section now distinguishes exchangeable cations from available or extractable nutrients, avoiding the use of the term "elements" in this context and aligning terminology with Teixeira et al. (2017).
+
+22. Line 290–291: GLM and Bootstrap - Overfitting Prevention
+Answer: We have added explicit explanation in the Methods section: "Bootstrap resampling mitigates overfitting by repeatedly sampling from the observed data to estimate sampling distributions, reducing dependence on model assumptions and providing more robust parameter estimates in small-sample contexts." The gamma distribution with identity link was selected based on AIC, ensuring optimal fit without over-parameterization.
+
+23. Line 297: FDR vs. Bonferroni Correction
+Answer: We have added justification in the Methods section: "Bonferroni correction was preferred over false discovery rate methods because our study involves a moderate number of pairwise comparisons and Bonferroni provides stronger control of family-wise error rate, which is more appropriate for confirmatory analyses with moderate sample sizes."
+
+24. Line 346: R vs. RStudio Specification
+Answer: Corrected to specify: "The analyses were carried out in R version 4.3.1 (R Core Team, 2024) using RStudio IDE with the FactoMineR, factoextra and ggplot2 packages."
+
+Results and Discussion:
+
+25. Line 350: MANOVA Statement in Methods
+Answer: MANOVA is now explicitly stated in the Statistical Analysis subsection of Materials and Methods: "The data was submitted to multivariate analysis of variance (MANOVA)..."
+
+26. Line 356–359: Redundancy in Test Results
+Answer: We have streamlined the presentation of statistical results, focusing on effect sizes (partial η²) and key comparisons rather than listing all test statistics. Detailed statistics are provided only where they add interpretive value.
+
+27. Line 384–386: Microbial Function Without 16S rRNA
+Answer: We acknowledge this limitation. The discussion of microbial function has been revised to reference findings from analogous systems (Lu et al., 2025; Weintraub et al., 2015) rather than making direct claims about microbial communities in our study. The text now states: "zones with better drainage and greater organic matter retention exhibited enhanced representation of genes involved in... in analogous systems."
+
+28. Line 405: Figure Quality Improvements
+Answer: Implemented in the current manuscript file used for submission, Café_sombreado_Revisão_V4, by expanding the captions and adding explicit legend explanations where required. Additionally, the figure generation scripts were updated to enable high resolution export with larger font sizes and uncertainty visualization around adjusted means for Figure 3.
+
+28a. Line 435: Figure 3 uncertainty and sampling replication
+Answer: Duplicate sampling was not configured as repeated measurements at the same point. The experimental design used replicated trenches per slope position, with multiple sampling points within each trench. For Figure 3, the updated plots include uncertainty around marginal means, and the caption specifies what the error bars represent.
+
+29. Line 438: Significance Labeling
+Answer: Noted for final figure revision. Significance levels will be clearly indicated with standard notation (*, **, ***).
+
+30. Line 516: Figure Caption Clarity
+Answer: Figure captions have been expanded to include more detailed descriptions of what each panel shows and interpretation guidance.
+
+31. Line 584: Elliptical Confidence Intervals
+Answer: Added clarification in figure caption: "95% confidence ellipses by position and depth."
+
+32. Line 679: Red and Blue Lines Specification
+Answer: Implemented. The Figure 6 caption and the accompanying Results text now explicitly state that blue edges indicate positive partial correlations and red edges indicate negative partial correlations, with edge thickness proportional to the absolute association strength.
+
+33. Line 760: Z-score Standardization Documentation
+Answer: Z-score standardization is now documented in the Methods section under Principal Component Analysis: "The variables were standardized (Z-score)..."
+
+Conclusions:
+
+34. Conclusions - Key Results and Implications
+Answer: The Conclusions section has been restructured to:
+- Begin with key findings (topographic modulation, upper vs. lower slopes)
+- Present specific practical implications (erosion control on upper slopes, compaction management on lower slopes)
+- Clearly state what the findings mean for sustainable coffee production
+
+35. Conclusions - Limitations and Future Directions
+Answer: We have added:
+Limitations: "Limitations include the focus on a single site, which may limit generalizability to other regions. Additionally, long-term monitoring is needed to assess temporal changes in soil properties."
+Future Directions: "Future research should explore microbial community dynamics in response to topography, investigate the effects of different shade tree species, and evaluate economic trade-offs of agroforestry practices across diverse landscapes."
+
+
+REVIEWER 4 COMMENTS:
+
+We appreciate the detailed review and specific suggestions for improving clarity.
+
+General Language Improvements:
+Answer: We have systematically reviewed the manuscript to replace vague pronouns ("it," "their") with specific nouns for improved clarity.
+
+Specific Line Comments:
+
+Line 76: Cos² Explanation
+Answer: Cos² (quality of representation) is now explained when first mentioned in the PCA section: "with high spatial representativeness (cos² > 0.611 for Ca, Mg, TOC)" followed by clarification of its meaning in interpreting variable contributions to principal components.
+
+Line 100: Hillslopes and Depths Phrasing
+Answer: Revised for clarity regarding spatial variability.
+
+Line 102: Topographic Position Effects
+Answer: Sentence clarified to explicitly state effects on nutrients.
+
+Line 107: Coffee Systems Specification
+Answer: Clarified to "managing coffee agroforestry systems" to specify the context.
+
+Line 111: Latin Name Placement
+Answer: Adjusted: "Coffee (*Coffea* spp., Rubiaceae) is one of the most important..."
+
+Line 135: Organic Matter Promotion - Specificity and References
+Answer: The paragraph has been expanded with specific mechanisms: "These tree species contribute directly to enriching organic matter, improving fertility, and stimulating microbial activity, which promotes greater nutrient retention and carbon fixation (Sauvadet et al., 2019a)." This is now a complete paragraph with proper citations.
+
+Line 148: Subject Clarification
+Answer: Changed to: "It attenuates raindrop impact, reducing surface soil erosion."
+
+Line 149: Biological Effects - Paragraph Expansion
+Answer: The paragraph discussing erosion control and microclimate effects has been substantially expanded to develop each concept (water infiltration, temperature modulation, microbial stimulation) with appropriate linkages.
+
+Line 150-153: Linkage Development
+Answer: These concepts have been reorganized into a more cohesive paragraph with clear logical flow from physical effects (erosion control) to biological effects (microbial communities) to biogeochemical outcomes (nutrient cycling).
+
+Line 221: Incomplete Sentence
+Answer: Corrected.
+
+Line 241–261: Equation Redundancy
+Answer: While we appreciate the suggestion, we have retained the detailed equations as they provide methodological transparency essential for replication. However, we have improved the formatting and organization of this section for better readability.
+
+Line 295: Cohen's Criteria Citation
+Answer: Corrected to: "interpreted according to Cohen's criteria (2013) as; small (η² > 0.01), moderate (η² > 0.06) and large (η² > 0.14)."
+
+Line 494: Topic Specification
+Answer: Clarified to explicitly state the topic being discussed.
+
+Line 507: Profile Type Clarification
+Answer: Specified whether referring to depth profile or slope profile in context.
+
+Reviewer 4:
+
+Line 111: Coffee Nomenclature
+Answer: The Latin name has been repositioned to be immediately adjacent to "coffee" as suggested: "Coffee (*Coffea* spp., Rubiaceae) growing is one of the most important perennial agricultural activities in the tropics."
+
+Line 135: Antecedent Clarification  
+Answer: We have clarified the antecedent by separating the sentence: "These tree species contribute directly to enriching organic matter, improving fertility, and stimulating microbial activity. Improved soil organic matter promotes greater nutrient retention and carbon fixation in plants."
+
+Line 148–153: Biological Mechanisms and Paragraph Expansion
+Answer: We have addressed both concerns:
+1. Changed "It attenuates" to "Plant residues attenuate" for clarity
+2. Added explicit explanation of biological mechanisms: "The biological effect of surface residues on water runoff operates through the formation of larger soil aggregates and increased macroporosity, which enhances water infiltration rates and reduces surface runoff."
+3. The paragraph has been expanded to include these mechanistic details, linking microclimate modulation, aggregate formation, water infiltration, and microbial communities as requested.
+
+
+ADDITIONAL REVISIONS:
+
+Throughout the manuscript, we have:
+1. Ensured all "*et al.*" citations are properly italicized
+2. Improved sentence structure and reduced excessive length
+3. Enhanced transition sentences between paragraphs
+4. Added quantitative data ranges where appropriate
+5. Corrected all grammatical errors identified
+6. Improved figure captions for clarity
+7. Standardized formatting across all sections
+
+
+We believe these comprehensive revisions thoroughly address all reviewers' concerns and significantly enhance the manuscript's clarity, scientific rigor, and contribution to the field. We appreciate the opportunity to improve our work and look forward to the manuscript's consideration for publication.
+
+
+Sincerely,
+
+Dr. Cristiane Maria Gonçalves Crespo and co-authors
+Universidade Federal Rural de Pernambuco (UFRPE)
+Corresponding author: Dr. Luiz Diego Vidal Santos
+Universidade Estadual de Feira de Santana (UEFS)
+ldvsantos@uefs.br

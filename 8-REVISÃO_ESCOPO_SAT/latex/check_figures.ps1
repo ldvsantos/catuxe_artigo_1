@@ -1,40 +1,43 @@
+param(
+  [string]$TexFile = "sn-article.tex"
+)
+
 $ErrorActionPreference = 'Stop'
 
 $latexDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$texPath = Join-Path $latexDir 'sn-article.tex'
+Set-Location $latexDir
 
-if (-not (Test-Path -LiteralPath $texPath)) {
-  throw "sn-article.tex não encontrado em: $latexDir"
+if (-not (Test-Path -LiteralPath $TexFile)) {
+  throw "Nao encontrei arquivo LaTeX: $TexFile"
 }
 
-$tex = Get-Content -LiteralPath $texPath -Raw
+$tex = Get-Content -LiteralPath $TexFile -Raw
 
-# Captura caminhos em \includegraphics[...] {path}
-$pattern = '(?s)\\includegraphics\s*(\[[^\]]*\])?\s*\{([^}]+)\}'
-$matches = [regex]::Matches($tex, $pattern)
+# Remove comentarios (tudo apos % por linha)
+$lines = Get-Content -LiteralPath $TexFile
+$clean = ($lines | ForEach-Object { ($_ -replace '%.*$', '').TrimEnd() }) -join "`n"
 
-$paths = @()
+# Captura caminhos em \includegraphics[...]{...}
+$pattern = '\\includegraphics(?:\[[^\]]*\])?\{([^\}]+)\}'
+$matches = [regex]::Matches($clean, $pattern)
+
+$missing = @()
 foreach ($m in $matches) {
-  $p = $m.Groups[2].Value.Trim()
-  if ($p) { $paths += $p }
-}
+  $rel = $m.Groups[1].Value.Trim()
+  if (-not $rel) { continue }
 
-$paths = $paths | Select-Object -Unique
+  # Normaliza separadores
+  $rel = $rel -replace '/', '\\'
 
-$missing = New-Object System.Collections.Generic.List[string]
-foreach ($p in $paths) {
-  # Resolve relativo ao diretório do LaTeX
-  $candidate = Join-Path $latexDir $p
-  if (-not (Test-Path -LiteralPath $candidate)) {
-    $missing.Add($p)
+  $full = Join-Path $latexDir $rel
+  if (-not (Test-Path -LiteralPath $full)) {
+    $missing += $rel
   }
 }
 
 if ($missing.Count -gt 0) {
-  Write-Host "Figuras ausentes referenciadas em sn-article.tex" -ForegroundColor Red
-  foreach ($p in $missing) {
-    Write-Host "- $p" -ForegroundColor Red
-  }
+  Write-Host "FALHA: figuras referenciadas e ausentes:" -ForegroundColor Red
+  $missing | Sort-Object -Unique | ForEach-Object { Write-Host "- $_" }
   exit 1
 }
 

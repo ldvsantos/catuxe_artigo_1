@@ -21,10 +21,15 @@ script_path <- sub("^--file=", "", args[grep("^--file=", args)])
 if (length(script_path) > 0) {
   script_dir <- dirname(normalizePath(script_path))
   setwd(script_dir)
+} else {
+  script_dir <- getwd()
 }
 
-bib_file <- "../referencias_filtradas/referencias_scopus_wos_filtradas.bib"
-out_file <- "../../2-FIGURAS/2-EN/temporal_algoritmos.png"
+# Estrutura esperada do repositório
+# .../8-REVISÃO_ESCOPO_SAT/2-DADOS/scripts/OLD/<este_script>.R
+base_2dados <- normalizePath(file.path(script_dir, "..", ".."), mustWork = TRUE)
+bib_file <- file.path(base_2dados, "referencias_filtradas", "referencias_scopus_wos_filtradas.bib")
+out_file <- file.path(base_2dados, "..", "2-FIGURAS", "2-EN", "temporal_algoritmos.png")
 
 if (!file.exists(bib_file)) {
   stop("Arquivo .bib não encontrado em: ", bib_file)

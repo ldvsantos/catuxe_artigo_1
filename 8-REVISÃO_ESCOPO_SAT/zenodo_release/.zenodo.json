@@ -1,0 +1,15 @@
+{
+  "title": "Scoping review of Machine Learning in Traditional Agricultural Systems (SAT)",
+  "upload_type": "dataset",
+  "description": "Consolidated corpus, standardized variables, queries, and scripts to reproduce the bibliometric triage, co-occurrence networks, MCA, clustering, meta-analysis/meta-regression, and FAIR scoring.",
+  "creators": [
+    {"name": "Oliveira, Catuxe Varjão de Santana", "affiliation": "Universidade Federal de Sergipe"},
+    {"name": "Santos, Luiz Diego Vidal", "affiliation": "Universidade Estadual de Feira de Santana", "orcid": "0000-0001-8659-8557"}
+  ],
+  "keywords": ["Traditional Agricultural Systems", "Machine Learning", "Scoping Review", "Remote Sensing", "FAIR"],
+  "access_right": "open",
+  "notes": "License to be confirmed by authors; recommended CC-BY-4.0. After publication, add the DOI to the manuscript data availability section.",
+  "related_identifiers": [],
+  "contributors": [],
+  "communities": []
+}
