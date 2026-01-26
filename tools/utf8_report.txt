@@ -1,0 +1,8 @@
+Repo: C:\Users\vidal\OneDrive\Documentos\13 - CLONEGIT\artigo_1_catuxe
+Checked text files (tracked): 102
+Already UTF-8: 101
+Non-UTF8 but decodable as text: 1
+Undecodable/binary-like (skipped): 0
+
+Files needing UTF-8 conversion:
+- 8-REVISÃO_ESCOPO_SAT\latex\bst\sn-mathphys-num.bst  (detected: cp1252)

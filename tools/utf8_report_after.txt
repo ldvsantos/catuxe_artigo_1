@@ -1,0 +1,5 @@
+Repo: C:\Users\vidal\OneDrive\Documentos\13 - CLONEGIT\artigo_1_catuxe
+Checked text files (tracked): 102
+Already UTF-8: 102
+Non-UTF8 but decodable as text: 0
+Undecodable/binary-like (skipped): 0

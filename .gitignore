@@ -23,6 +23,9 @@ __pycache__/
 *.lof
 *.lot
 
+# Encoding conversion backups
+*.bak-utf8-*
+
 # Generated PDFs (keep sources, rebuild as needed)
 *.pdf
 
