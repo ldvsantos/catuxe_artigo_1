@@ -1,0 +1,57 @@
+================================================================================
+RELATÓRIO DE ANÁLISE MCA - MACHINE LEARNING PARA INDICAÇÕES GEOGRÁFICAS
+================================================================================
+
+Data de execução: 2026-01-24 19:45:26.762075
+Total de observações: 244
+
+--------------------------------------------------------------------------------
+INÉRCIA EXPLICADA POR DIMENSÃO
+--------------------------------------------------------------------------------
+      eigenvalue percentage of variance cumulative percentage of variance
+dim 1  0.3040429               7.931553                          7.931553
+dim 2  0.2723446               7.104642                         15.036195
+dim 3  0.2487140               6.488192                         21.524387
+dim 4  0.2239318               5.841700                         27.366087
+dim 5  0.2219427               5.789810                         33.155897
+
+--------------------------------------------------------------------------------
+COORDENADAS DAS CATEGORIAS - Dim1 e Dim2
+--------------------------------------------------------------------------------
+                                  Dim 1       Dim 2
+Algoritmo_DecisionTree     -0.483761256  6.04323021
+Algoritmo_GradientBoosting  0.639185811  1.34431057
+Algoritmo_NeuralNetwork     1.665481882  0.13474387
+Algoritmo_Outros           -0.305852582 -0.21798844
+Algoritmo_RandomForest      0.219598624  0.50722289
+Algoritmo_SVM               0.387705846  0.06778104
+Instrumento_NIR            -0.231235765 -0.49459108
+Instrumento_Outros         -0.027031839  0.03916417
+Instrumento_Sensor          0.281825842 -0.27004569
+Produto_Coffee             -0.882277106 -0.75729395
+Produto_Honey               0.491598011  0.06558505
+Produto_Meat                0.030062969 -0.88298157
+Produto_Olive              -0.572135209  0.03513206
+Produto_Outros              0.009299096 -0.01231403
+Produto_Tea                -0.558092907 -0.48161114
+Produto_Wine               -0.700657801 11.52648576
+Aplicacao_Authentication    7.004350739 -0.46406976
+Aplicacao_Classification    0.154984954  0.94238123
+Aplicacao_OriginDetection  -0.031937255 -0.26419831
+Aplicacao_Outros           -0.204461884 -0.31254711
+
+--------------------------------------------------------------------------------
+CONTRIBUIÇÃO DAS CATEGORIAS - TOP 15 para Dim1
+--------------------------------------------------------------------------------
+Aplicacao_Authentication               Periodo.NA  Algoritmo_NeuralNetwork 
+              33.0659595               25.2010408               19.3181540 
+               2010-2014         Algoritmo_Outros                2020-2025 
+               4.3312747                3.8669293                2.7954537 
+                Americas                     Asia         Aplicacao_Outros 
+               1.9148734                1.3283271                1.3242438 
+           Produto_Honey                2015-2019              Produto_Tea 
+               1.2487404                1.1287189                0.9796369 
+                  Europe           Produto_Coffee       Instrumento_Sensor 
+               0.8800351                0.6995103                0.4282496 
+
+================================================================================

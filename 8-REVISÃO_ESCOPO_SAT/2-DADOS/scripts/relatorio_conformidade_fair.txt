@@ -1,0 +1,91 @@
+=============================================================================
+RELATÓRIO: CONFORMIDADE COM PRINCÍPIOS FAIR
+Framework: Digital Terroir - Open Data Governance Assessment
+Data: 25/01/2026 
+=============================================================================
+
+1. VISÃO GERAL
+-------------
+Total de estudos analisados: 148 
+Score FAIR médio: 34.2/100 (±13.1)
+Range: 10 - 73
+Taxa de compliance (score ≥50): 12.8%
+
+2. DISTRIBUIÇÃO POR CLASSIFICAÇÃO
+---------------------------------
+Bom: 19 estudos (12.8%)
+Moderado: 92 estudos (62.2%)
+Insuficiente: 37 estudos (25.0%)
+
+3. SCORES POR DIMENSÃO FAIR
+---------------------------
+Findable: 15.5/25 (62.0%)
+Accessible: 3.6/25 (14.5%)
+Interoperable: 8.0/25 (32.0%)
+Reusable: 7.1/25 (28.3%)
+
+4. INDICADORES COM MENOR COMPLIANCE (Top 5)
+-------------------------------------------
+1. API disponível: 2.0% (gap de 98.0%)
+2. Dados em repositório: 10.1% (gap de 89.9%)
+3. Vocabulário controlado: 12.2% (gap de 87.8%)
+4. Metadados ricos: 14.2% (gap de 85.8%)
+5. Código disponível: 14.9% (gap de 85.1%)
+
+5. TENDÊNCIA TEMPORAL
+---------------------
+Correlação Ano vs Score FAIR: ρ = 0.235, p = 0.3790
+Interpretação: SEM TENDÊNCIA TEMPORAL clara 
+
+6. COMPARAÇÕES REGIONAIS (Top 3)
+--------------------------------
+1. África: 36.3 pontos (compliance: 26.7%)
+2. Europa: 34.3 pontos (compliance: 11.8%)
+3. América do Sul: 34.1 pontos (compliance: 14.8%)
+
+7. IMPACTO DA BLOCKCHAIN
+------------------------
+Score médio (COM blockchain): 38.7
+Score médio (SEM blockchain): 33.2
+Diferença: 5.5 pontos (p = 0.0757)
+
+8. IMPLICAÇÕES PARA O TERROIR DIGITAL
+--------------------------------------
+• Compliance geral: BAIXA 
+• Dimensão mais crítica: Accessible (14.5%)
+• Gap prioritário: Acessibilidade de dados (apenas 10% em repositórios)
+• Necessidade urgente:
+  1. Implementar repositórios obrigatórios (Zenodo, Figshare)
+  2. Adotar licenças Creative Commons por padrão
+  3. Publicar código-fonte (GitHub + DOI via Zenodo)
+  4. Documentar metadados com ontologias (AgriVoc, GACS)
+  5. Integrar blockchain para rastreabilidade (21% já implementam)
+
+9. RECOMENDAÇÕES OPERACIONAIS
+-----------------------------
+Para operacionalização do Terroir Digital, exigir:
+  - Score FAIR mínimo: 60/100
+  - Dados em repositório certificado (Findable + Accessible)
+  - Código com licença open-source (Reusable)
+  - Metadados em formato JSON-LD ou RDF (Interoperable)
+  - API REST para integração (Accessible + Interoperable)
+
+10. BENCHMARKING INTERNACIONAL
+------------------------------
+Score médio do corpus: 34.2/100
+Meta FAIR European Commission: 75/100 (não atingida)
+Gap para benchmark: 40.8 pontos
+Tempo estimado para convergência: Indeterminado (sem tendência clara)
+
+=============================================================================
+Arquivos gerados:
+  - dados_conformidade_fair.csv
+  - distribuicao_classificacao_fair.csv
+  - scores_por_dimensao.csv
+  - indicadores_fair_detalhados.csv
+  - fair_por_[algoritmo|regiao|produto].csv
+  - evolucao_temporal_fair.csv
+  - testes_estatisticos_fair.csv
+  - 8 visualizações (PNG)
+  - relatorio_conformidade_fair.txt
+=============================================================================

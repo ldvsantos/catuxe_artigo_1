@@ -1,0 +1,245 @@
+"ID","Titulo","Ano","RandomForest","SVM","NeuralNetwork","KNN","DecisionTree","GradientBoosting","NIR","FTIR","GCMS","LCMS","ICPMS","NMR","Sensor","Wine","Coffee","Olive","Honey","Cheese","Authentication","Classification","OriginDetection","Europe","Asia","Americas","Cluster_KMeans","Cluster_Hierarquico"
+1,"Pervasive Indigenous and local knowledge of tropical wild species",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1
+2,"Development of land-use-specific pedotransfer functions for predicting bulk density of acidic topsoil in eastern Himalayas (India)",2023,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1
+3,"Impact of anthropogenic disturbance and climate on bamboo distribution in shifting cultivation landscapes of Northeast India",2025,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,2,1
+4,"Preserving traditional systems: Identification of agricultural heritage areas based on agro-biodiversity",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,1
+5,"Revolutionizing Agriculture: Machine and Deep Learning Solutions for Enhanced Crop Quality and Weed Control",2024,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,1
+6,"Assessing land-use and carbon stock in slash-and-burn ecosystems in tropical mountain of Laos based on time-series satellite images",2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+7,"Land use/land cover classification using hyperspectral soil reflectance features in the Eastern Himalayas, India",2023,1,1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,2,2
+8,"Geo-Based Assessment of Vegetation Health Related to Agroecological Practices in the Southeast of Togo",2023,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+9,"Vegetation disturbance and regrowth dynamics in shifting cultivation landscapes",2024,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1
+10,"Understanding the transition of community land use from shifting cultivation to cash cropping in southern Tanintharyi, Myanmar",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+11,"Evaluating and supporting conservation action in agricultural landscapes of the Usumacinta River Basin",2019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+12,"Assessment of spatio-temporal changes of smallholder cultivation patterns in the Angolan Miombo belt using segmentation of Landsat time series",2017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+13,"Traditional shifting agriculture: Tracking forest carbon stock and biodiversity through time in western Panama",2012,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+14,"Smart irrigation system based on IoT and machine learning",2022,0,1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,2
+15,"Improving the Faster R-CNN Method for Recognizing Typical Objects of Modern Agriculture based on Remote Sensing Imagery; 设施农业典型地物改进Faster R-CNN识别方法",2019,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+16,"Transformation of shifting cultivation: Extent, driving forces and impacts on livelihoods in Tanzania",2018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+17,"Multi-temporal analysis of an agricultural landscape transformation and abandonment (Lubietová, Central Slovakia)",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1
+18,"A Geospatial Approach to Understand the Dynamics of Shifting Cultivation in Champhai District of Mizoram, North-East India",2018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+19,"Tropical Dry Forest Dynamics Explained by Topographic and Anthropogenic Factors: A Case Study in Mexico",2023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+20,"Traditional agroecosystem transition in mountainous area of Three Gorges Reservoir Area; 三峡库区山区传统农业生态系统转型",2019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1
+21,"Conservation of traditional smallholder cultivation systems in indigenous territories: Mapping land availability for milpa cultivation in the Huasteca Poblana, Mexico",2014,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1
+22,"Dynamic land use and land cover changes and their effect on forest resources in a coastal village of Matemwe, Zanzibar, Tanzania",2011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+23,"YOLOv8-TEA: Recognition Method of Tender Shoots of Tea Based on Instance Segmentation Algorithm",2025,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1
+24,"Drought tolerance of Tének traditional agroecosystems: Towards mitigate the climate change effects",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+25,"Tropical land use land cover mapping in Pará (Brazil) using discriminative Markov random fields and multi-temporal TerraSAR-X data",2017,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1
+26,"A texture-based land cover classification for the delineation of a shifting cultivation landscape in the lao PDR using landscape metrics",2013,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+27,"Effects of Landscape Segregation on Livelihood Vulnerability: Moving From Extensive Shifting Cultivation to Rotational Agriculture and Natural Forests in Northern Laos",2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+28,"Chemical fertilizers promote dissemination of ARGs in maize rhizosphere: An overlooked risk revealed after 37-year traditional agriculture practice",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+29,"Spatial assessment of wildfires susceptibility in santa cruz (Bolivia) using random forest",2021,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+30,"Automated pig counting using deep learning",2019,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+31,"Land use and land cover dynamics with special emphasis on shifting cultivation in Eastern Ghats Highlands of India using remote sensing data and GIS",2019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,1
+32,"Predictive modelling of the spatial pattern of past and future forest cover changes in India",2017,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1
+33,"CNN-MLP-Based Configurable Robotic Arm for Smart Agriculture",2024,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+34,"Smart farming revolution: Leveraging machine learning for sustainable agriculture",2025,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,1,1
+35,"A Synergistic Approach Using Machine Learning and Deep Learning for Forest Fire Susceptibility in Himalayan Forests",2025,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+36,"Applications of Computer Vision and Drone Technology in Agriculture 4.0",2024,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,1
+37,"Framework for eForest fire management in the shifting cultivation-dominated landscape of Meghalaya, North East India, using remote sensing and GIS",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+38,"Mountain arable land abandonment (1968-2018) in the Romanian Carpathians: Environmental conflicts and sustainability issues",2019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1
+39,"Analyzing post-socialist grassland conversion in a traditional agricultural landscape – Case study Croatia",2017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1
+40,"Forest cover dynamics of shifting cultivation in the Democratic Republic of Congo: A remote sensing-based assessment for 2000-2010",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1
+41,"Imperata grassland mapping in northern uplands of lao PDR: Area, distribution, characteristics, and implications for slash-and-burn cultivation",2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1
+42,"Global drivers of forest loss at 1 km resolution",2025,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1
+43,"A Connectivity Approach to Agricultural Diffuse Pollution in Tropical Montane Catchments Dominated by Swidden Landscapes",2023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1
+44,"Rice-yield prediction with multi-temporal sentinel-2 data and 3D CNN: A case study in Nepal",2021,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1
+45,"Agroforestry form and ecological adaptation in ancient Hawai'i: Extent of the pākukui swidden system of Hāmākua, Hawai'i Island",2020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+46,"Traditional agroecosystem transition in mountainous area of Three Gorges Reservoir Area",2020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+47,"Farms or Forests? Understanding and mapping shifting cultivation using the case study of West Garo hills, India",2019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+48,"Dynamics of shifting cultivation in relation to slope and elevation in parts of Nagaland, India",2018,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+49,"The demise of swidden-fallow agriculture in an Atlantic Rainforest region: Implications for farmers’ livelihood and conservation",2017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+50,"Agroforestry form and ecological adaptation in ancient Hawai'i: Extent of the pakukui swidden system of Hamakua, Hawai'i Island",2020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+51,"DEVELOPMENT OF SUSTAINABLE CULTURAL LANDSCAPES IN WEST KALIMANTAN",2012,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1
+52,"Detecting tropical freshly-opened swidden fields using a combined algorithm of continuous change detection and support vector machine",2025,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,2,1
+53,"Change of crop structure intensified water supply-demand imbalance in China's Black Soil Granary",2024,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,3,3
+54,"Yolo-Pest: An Insect Pest Object Detection Algorithm via CAC3 Module",2023,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1
+55,"IoT for Agricultural Information Generation and Recommendation: A Deep Learning-Based Approach",2022,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+56,"What drives clearing of old-growth forest over secondary forests in tropical shifting cultivation systems? Evidence from the Peruvian Amazon",2021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+57,"Monitoring land use land cover changes in the Eastern Himalayan landscape of Nagaland, Northeast India",2020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1
+58,"Operationalizing a land systems classification for Laos",2018,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,3,3
+59,"RETRACTED: Deep Learning and Smart Contract-Assisted Secure Data Sharing for IoT-Based Intelligent Agriculture (Retracted article. See vol. 40, pg. 64, 2025)",2023,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1
+60,"A global view of shifting cultivation: Recent, current, and future extent",2017,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,1
+61,"Predictive mapping of Meadow Pipit density using integrated remote sensing data and an atlas of vascular plants dataset",2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1
+62,"Trajectories of deforestation, coffee expansion and displacement of shifting cultivation in the Central Highlands of Vietnam",2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1
+63,"Designing a protected area network for conservation planning in Jhum landscapes of Garo Hills, Meghalaya",2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+64,"A Multiple Instance Learning Approach to Study Leaf Wilt in Soybean Plants",2025,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+65,"Mapping cropland use changes in the Guanzhong Plain of China based on a two-level classification framework",2025,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,3,3
+66,"Agricultural commercialization in borderlands: Capturing the transformation of a tropical forest frontier through participatory mapping",2023,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+67,"Swidden Agriculture Landscape Mapping Using MODIS Vegetation Index Time Series and Its Spatio-Temporal Dynamics in Northern Laos",2022,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1
+68,"Large-area mapping of active cropland and short-term fallows in smallholder landscapes using PlanetScope data",2022,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+69,"Monthly mapping of forest harvesting using dense time series Sentinel-1 SAR imagery and deep learning",2022,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,1
+70,"Artificial Intelligence in Agricultural Picking Robot Displacement Trajectory Tracking Control Algorithm",2022,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+71,"Looking beyond forest cover: An analysis of landscape-scale predictors of forest degradation in the Brazilian Amazon",2021,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+72,"Automated mapping for long-term analysis of shifting cultivation in northeast India",2021,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,3,3
+73,"Assessment of shifting cultivation fallows in Northeastern India using Landsat imageries",2020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+74,"Spatio-temporal analysis dynamics of the forest landscape of the Beni region (North Kivu, DRC).; Analyse de la dynamique spatio-temporelle du paysage forestier de la région de Beni (Nord-Kivu, RDC).",2019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+75,"Wild food collection and nutrition under commercial agriculture expansion in agriculture-forest landscapes",2017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+76,"Quantification of land cover and land use within the rural complex of the Democratic Republic of Congo",2017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+77,"UAV-derived data for mapping change on a swidden agriculture plot: preliminary results from a pilot study",2017,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,1
+78,"Attribution of disturbance agents to forest change using a Landsat time series in tropical seasonal forests in the Bago Mountains, Myanmar",2017,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+79,"Vietnam’s Forest Transition in Retrospect: Demonstrating Weaknesses in Business-as-Usual Scenarios for REDD+",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+80,"Balancing shifting cultivation and forest conservation: Lessons from a ""sustainable landscape"" in southeastern Mexico",2011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+81,"An untidy cover: Invasion of bracken fern in the shifting cultivation systems of southern yucatán, Mexico",2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+82,"Unmanned Aerial Vehicles (UAVs) for vegetation index analysis in traditional agriculture",2025,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+83,"An Untidy Cover: Invasion of Bracken Fern in the Shifting Cultivation Systems of Southern Yucatan, Mexico",2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+84,"Assessment of resilience and key drivers of Tibetan villages in Western Sichuan",2025,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+85,"JuteNet: An Intelligent Approach for Jute Pest Recognition Using Residual Network with Hybrid Attention Module",2025,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+86,"SorghumWeedDataset_Classification and SorghumWeedDataset_Segmentation datasets for classification, detection, and segmentation in deep learning",2024,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+87,"Deep Learning and Smart Contract-Assisted Secure Data Sharing for IoT-Based Intelligent Agriculture",2023,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1
+88,"Precision agriculture for pest management on enhanced acoustic signal using improved mel-frequency cepstrum coefficient and deep learning",2020,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,1
+89,"Artificial vision and chemometrics analyses of olive stones for varietal identification of five French cultivars",2014,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1
+90,"Evaluating SAR polarization modes at L-band for forest classification purposes in eastern Amazon, Brazil",2012,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,2,1
+91,"Analysis of the Critical Role of a Smart Agricultural Internet of Things System in Industrial Benefit Evaluation",2022,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+92,"ML-Based Hybrid SAR and Optical Image LULC Mapping and Change Analysis With Variations in the Air Quality of the Imphal Valley, North-East India",2024,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+93,"Earth observation based multi-scale assessment of logging activities in the Democratic Republic of the Congo",2018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+94,"A global assessment of gross and net land change dynamics for current conditions and future scenarios",2018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+95,"Relationship of date palm tree density to dubas bug Ommatissus lybicus infestation in omani orchards",2018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+96,"Reconstructing land use history from Landsat time-series: Case study of a swidden agriculture system in Brazil",2016,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+97,"Decline of traditional rice farming constrains the recovery of the endangered Asian crested ibis (Nipponia nippon)",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+98,"Understanding forest fragmentation dynamics and identifying drivers for forest cover loss using random forest models to develop effective forest management strategies in North-East India",2025,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+99,"BIODIVERSITY CHANGE IN AGRICULTURAL AREA IN NORTHERN DALMATIA (CROATIA)",2022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+100,"Human Fire Use and Management: A Global Database of Anthropogenic Fire Impacts for Modelling",2022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+101,"Spaceborne LiDAR Reveals Anthropogenic and Biophysical Drivers Shaping the Spatial Distribution of Forest Aboveground Biomass in Eastern Himalayas",2025,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+102,"Traditional agroecosystems for urban temperature regulation: a remote sensing analysis of an historical palm grove",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1
+103,"Hierarchical 3D Scene Graph based Semantic-Metric SLAM for Plant Inspection and Fruit Counting in Intelligent Hydroponics System",2025,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+104,"Forest loss during 2000-2019 in pygmy hippopotamus (Choeropsis liberiensis) habitats was driven by shifting agriculture",2024,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1
+105,"Adaptive neuro fuzzy inference system to enhance the classification performance in smart irrigation system",2022,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,1
+106,"Use of satellite remote sensing as a monitoring tool for land and water resources development activities in an Indian tropical site",2018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+107,"Land use and land cover changes in Kullu valley of Himachal Pradesh",2018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+108,"Evaluating Moisture and Geometry Effects on L-Band SAR Classification Performance Over a Tropical Rain Forest Environment",2016,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1
+109,"Beyond deforestation monitoring in conservation hotspots: Analysing landscape mosaic dynamics in north-eastern Madagascar",2016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+110,"Monitoring the spatio-temporal dynamics of swidden agriculture and fallow vegetation recovery using Landsat imagery in northern Laos",2015,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,3,3
+111,"Measuring impacts of community forestry program through repeat photography and satellite remote sensing in the Dolakha district of Nepal",2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+112,"Environmental Cognitions, Land Change and Social-Ecological Feedbacks: Local Case Studies of Forest Transition in Vietnam",2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+113,"Resilience of the Hani Rice Terraces System to extreme drought",2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+114,"Agriculture and forest cover changes in post-war Mozambique",2012,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+115,"Applicability of the normalized difference vegetation index (NDVI) In index-based crop insurance design",2012,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+116,"Forest fire risk assessment in parts of Northeast India using geospatial tools",2011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+117,"Estimation of the stand ages of tropical secondary forests after shifting cultivation based on the combination of WorldView-2 and time-series Landsat images",2016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+118,"Farmland Shelterbelt Age Mapping Using Landsat Time Series Images",2022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1
+119,"Conceptual Links between Landscape Diversity and Diet Diversity: A Roadmap for Transdisciplinary Research",2020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+120,"Hierarchical 3-D Scene-Graph-Based Semantic-Metric SLAM for Plant Inspection and Fruit Counting in Intelligent Hydroponics System",2025,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+121,"Estimating forest degradation by capturing temporal change in biomass density: insights from a tropical dry forest",2025,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1
+122,"Bridging Sustainability and Inclusion: Financial Access in the Environmental, Social, and Governance Landscape",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+123,"Spatiotemporal pattern of land use and land cover changes of upper Sangu-Matamuhuri Watershed in the South-Eastern Bangladesh",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1
+124,"A FARM WORKERS RE-IDENTIFICATION METHOD VIA MULTI-FEATURE FUSION",2025,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+125,"Smart Agriculture: A Comprehensive Overview",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+126,"Food Safety Related Data Analytics, Digital, and Artificial Intelligence Needs and Opportunities in Controlled Environment Agriculture",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1
+127,"Harvest residue recycling rather than slash-burning results in the enhancement of soil fertility and bacterial community stability in Eucalyptus plantations",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+128,"An Artificial IoT-Enabled Smart Production Line for 360° Visual Defect Detection and Classification of Cherry Tomatoes",2024,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+129,"Characterization of Fish Spawning Grounds near the Likouala-Aux-Herbes River, Lac Tele Community Reserve (LTCR), Republic of Congo, for Sustainable Wetland Management",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+130,"EasyDAM_V4: Guided-GAN-based cross-species data labeling for fruit detection with significant shape difference",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1
+131,"A smart crop, irrigation system and fertiliser prediction using IoT and machine learning",2024,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+132,"Harnessing automation techniques for supporting sustainability in agriculture",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+133,"Crop diagnostic system: A robust disease detection and management system for leafy green crops grown in an aquaponics facility",2023,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+134,"Artificial intelligence SoS framework for sustainable agricultural production",2023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+135,"In-situ and airborne hyperspectral data for detecting agricultural activities in a dense forest landscape",2023,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,1
+136,"Monitoring Groundwater Storage Based on Satellite Gravimetry and Deep Learning",2023,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+137,"A Secure IoT-Based Irrigation System for Precision Agriculture Using the Expeditious Cipher",2023,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,1
+138,"Contribution of ‘human induced fires’ to forest and savanna land conversion dynamics in the Luki Biosphere Reserve landscape, western Democratic Republic of Congo",2022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+139,"Safety management of karst construction in railway tunnels and tunnel farming as compared to traditional farming",2022,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+140,"Variation of surface runoff due to change of land use in the river duero watershed; Variación de la escorrentía superficial por el cambio de uso de suelo en la cuenca del Río Duero",2022,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+141,"Fire risk assessment along the climate, vegetation type variability over the part of Asian region: a geospatial approach",2019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1
+142,"Landuse and land cover dynamics in the Volta River Basin surrounding APSD forest plantation, Ghana",2019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+143,"Zoning eco-environmental vulnerability for environmental management and protection",2016,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,1
+144,"A study on forest changes in Kodaikanal Hills, Tamil Nadu, using remote sensing and GIS",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+145,"Remote-sensing and GIS-based landslide-susceptibility zonation using the landslide index method in Igo River Basin, Eastern Himalaya, India",2012,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,1
+146,"Spatial prediction of soil erosion risk by remote sensing, GIS and RUSLE approach: A case study of Siruvani river watershed in Attapady valley, Kerala, India",2011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+147,"Remote sensing and GIS based forest cover change detection study in Kalrayan hills, Tamil Nadu",2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+148,"Variation of surface runoff due to change of land use in the river Duero watershed",2022,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+149,"Origin identification of millet by combining spectral detection and a group attention feature calculation and classification network",2026,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,1,1
+150,"VIRTUAL RICE LEAF COLOR MODEL DRIVEN BY PIGMENT CONTENT",2020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+151,"Analysing the trends in annual forest loss hotspots in the regional landscape of Eastern Ghats, India",2022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+152,"Harmonization of global land use change and management for the period 850-2100 (LUH2) for CMIP6",2020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+153,"Promotion of crop diversification in mountainous areas using geospatial technologies",2017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+154,"Simulating land-use degradation in West Africa with the ALADYN model",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+155,"Forest regeneration pathways in contrasting deforestation patterns of Amazonia",2023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+156,"Regional simulation of maize production in tropical savanna fallow systems as affected by fallow availability",2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+157,"Greenhouse environmental monitoring and control system based on improved fuzzy PID and neural network algorithms",2025,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1
+158,"Unveiling the drivers of riparian vegetation change in Mediterranean river systems via remote sensing",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1
+159,"HAINAN SPECIAL ECONOMIC ZONE: SUCCESS FACTORS",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+160,"Long-term annual estimation of forest above ground biomass, canopy cover, and height from airborne and spaceborne sensors synergies in the Iberian Peninsula",2024,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,1
+161,"A digital-twin and rapid optimization framework for optical design of indoor farming systems",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+162,"Rapeseed Seed Coat Color Classification Based on the Visibility Graph Algorithm and Hyperspectral Technique",2024,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+163,"How Can a Changing Climate Influence the Productivity of Traditional Olive Orchards? Regression Analysis Applied to a Local Case Study in Portugal",2023,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1
+164,"An analysis of the recent fire regimes in the Angolan catchment of the Okavango Delta, Central Africa",2022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+165,"The effectiveness of Tiger Conservation Landscapes in decreasing deforestation in South Asia: a remote sensing-based study",2022,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1
+166,"Exploring archetypes of tropical fire-related forest disturbances based on dense optical and radar satellite data and active fire alerts",2021,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1,1
+167,"The need for integrated systems biology approaches for biotechnological applications",2021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+168,"What makes better village economic development in traditional agricultural areas of China? Evidence from 338 villages",2020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+169,"Assessing topographic controls on vegetation characteristics in Chittagong Hill Tracts (CHT) from remotely sensed data",2018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+170,"Evaluation of the similarity in tree community composition in a tropical rainforest using airborne LiDAR data",2016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+171,"Remote sensing enables high discrimination between organic and non-organic cotton for organic cotton certification in West Africa",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1
+172,"Comparison of traditional and ET-based irrigation scheduling of surface-irrigated cotton in the arid southwestern USA",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+173,"Fitting the stocking rate with pastoral resources to manage and preserve mediterranean forestlands: A case study",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1
+174,"Evaluation of traditional and consolidated rice farms in Guilan Province, Iran, using life cycle assessment and fuzzy modeling",2014,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+175,"Tracking land-cover changes with sedimentary charcoal in the Afrotropics",2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+176,"Forest fragmentation in India",2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1
+177,"Vegetation Dynamics from Denoised NDVI Using Empirical Mode Decomposition",2013,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1
+178,"Multi-temporal airborne LiDAR-survey and field measurements of tropical peat swamp forest to monitor changes",2013,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+179,"Detecting powdery mildew of winter wheat using leaf level hyperspectral measurements",2012,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+180,"Practicalities of non-destructive methodologies in monitoring anthropogenic greenhouse gas emissions from tropical forests under the influence of human intervention",2011,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,1
+181,"Global patterns of cropland use intensity",2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1
+182,"Land system science and the social-environmental system: the case of Southern Yucatan Peninsular Region (SYPR) project",2016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+183,"Federated learning and blockchain approach for securing IoT data",2025,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+184,"Hybrid deep learning system for crop disease classification using modified SegNet segmentation",2025,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+185,"Unified Pest Prevention and Control System based on AIoT for Sustainable Agriculture",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+186,"Precision fermentation: a new ‘thing’ or just a new name? Current status locally and globally",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1
+187,"A possible role of NDVI time series from Landsat Mission to characterize lemurs habitats degradation in Madagascar",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+188,"Enhancing Education in Agriculture via XR-Based Digital Twins: A Novel Approach for the Next Generation",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1
+189,"Proposing an artificial intelligence maturity model to illustrate a road map for cleaner animal farming management",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1
+190,"Agricultural land suitability analysis in Manipur, India using GIS and AHP",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1
+191,"An environment safety monitoring system for agricultural production based on artificial intelligence, cloud computing and big data networks",2023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+192,"Technological Revolution, Disruptive Technology and Smart Agriculture; 科技 ? 命 ?颠覆性技术与智慧农业",2022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1
+193,"Design and implementation of smartfarm integrated platform",2021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+194,"A recognition of farming behavior method based on EPCI-LSTM model",2021,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,1
+195,"Nutrition, food markets and agriculture: Economic issues against the background of globalization",2021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1
+196,"Iot based smart farming using cloud computing and machine learning",2019,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+197,"Water footprint of growing vegetables in selected smallholder irrigation schemes in South Africa",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+198,"Combination of textural features for the improvement of terrain classification and change detection",2015,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+199,"Remote sensing and GIS techniques for assessment of the soil water content in order to improve agricultural practice and reduce the negative impact on groundwater: Case study, agricultural area Ştefan cel Mare, Cǎlǎraşi County",2012,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+200,"Assessment of spatial and temporal dynamics of tropical forest cover: A case study in Malkangiri district of Orissa, India",2011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+201,"An approach for precision farming under pivot irrigation system using remote sensing and GIS techniques",2011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+202,"Agricultural change in the Pastaza River Basin: A spatially explicit model of native Amazonian cultivation",2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+203,"Sustainable Smart Aquaponics Farming Using IoT and Data Analytics",2022,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+204,"Assessment of forest change in a rural district using satellite imagery: A case study in Loc Ninh, Binh Phuoc Province, Vietnam",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+205,"Root Seeking and Remote Sensing with the Bunun in the Mountains of Taiwan",2023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+206,"Modelling and Assessing the Spatiotemporal Changes to Future Land Use Change Scenarios Using Remote Sensing and CA-Markov Model in the Mellegue Catchment",2023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1
+207,"Degraded pasture distribution and woody enrichment strategies for pasture fertility preservation in the bragantina region, north-eastern amazon",2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,1
+208,"Drivers of forest cover transitions in the Selva Maya, Mexico: Integrating regional and community scales for landscape assessment",2021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1
+209,"Quantifying the causes of deforestation and degradation and creating transparent REDD plus baselines: A method and case study from central Mozambique",2014,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+210,"How do agrarian transitions affect rural incomes? Insights from a borderland region in northern Vietnam and Laos",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1
+211,"Electoral cycles in environmental outcomes in India",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+212,"A DIACHRONIC ANALYSIS OF THE VEGETATION COVER IN A SPATE IRRIGATION PERIMETER – CASE STUDY: THE EL FEIDH REGION, BISKRA, ALGERIA",2025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+213,"Resilience, remoteness and war shape the land cover dynamics in one of the world's largest miombo woodlands",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+214,"Understanding the impact of mobility on Plasmodium spp. carriage in an Amazon cross-border area with low transmission rate",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1
+215,"Investigating the impact of a long-term research and conservation project on the expansion of land use and land cover in a remote area of central DRC",2023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+216,"A Study on the Estimation Model of Hyperspectral Reflectivity and Leaf Nitrogen Content of Cotton Leaves",2023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1
+217,"Vegetation dynamics and their relationships with climatic factors in the “Golden Triangle” region",2022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+218,"A Continental Assessment of the Drivers of Tropical Deforestation With a Focus on Protected Areas",2022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1
+219,"Characteristics and Driving Factors of Land Use Evolution in Typical Traditional Village Gathering Place; 典型传统村落集聚地土地利用演变特征及驱动因素",2021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+220,"Fire occurrences and greenhouse gas emissions from deforestation in the Brazilian Amazon",2021,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1
+221,"Measuring and monitoring forest cover dynamics in the humid forests ecoregion of eastern Madagascar; Mesure et suivi de la dynamique du couvert forestier: Cas de l’écorégion des forêts humides de l’est de Madagascar; Medición y seguimiento de la dinámica del dosel forestal: el caso de la ecorregión de la selva oriental de Madagascar",2021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+222,"Analysis of the Current and Future Prediction of Land Use/Land Cover Change Using Remote Sensing and the CA-Markov Model in Majang Forest Biosphere Reserves of Gambella, Southwestern Ethiopia",2021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+223,"Land covers analyses during slash and burn agriculture by using multispectral imagery obtained with Unattended Aerial Vehicles (UAVs); Análisis de la cobertura vegetal durante la agricultura de tumba-quema utilizando imágenes multispectrales obtenidas con Vehículos Aéreos no Tripulados (VANTs)",2021,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1
+224,"A framework for assessing the ecological vulnerability of forests along tropical deforestation fronts based on an assessment of forest degradation following a landscape approach: Case studies in brazil and vietnam; Un cadre d’évaluation de la vulnérabilité écologique des forêts dans les fronts de déforestation tropicaux à partir de l’évaluation de la dégradation des forêts dans une approche paysagère: études de cas au brésil et vietnam; Un escenario de evaluación de la vulnerabilidad ecológica de los bosques en los frentes de deforestación tropicales a partir de la degradación forestal con un enfoque paisajístico: Estudios de caso en brasil y vietnam",2020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1
+225,"Clear, but don't invest: Protected areas discourage some land uses more than others",2019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1
+226,"Estimation of the spatiotemporal patterns of vegetation and associated ecosystem services in a bornean montane zone using three shifting-cultivation scenarios",2018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+227,"Forest cover changes in Bhutan: Revisiting the forest transition",2016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+228,"Spatio-temporal dynamics and ecological service function assessment of slope farmland in Karst areas of Guizhou province, China",2014,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1
+229,"Co-assessment of biomass and soil organic carbon stocks in a future reservoir area located in Southeast Asia",2011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1
+230,"IDENTIFYING THE DRIVERS OF DEFORESTATION IN THE ISANGI REGION, DEMOCRATIC REPUBLIC OF CONGO",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+231,"The expansion of the agricultural frontier and land-cover and land-use changes in central-south portion of the state of Goias from 1975 to 2010",2013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+232,"Understanding the impact of mobility on Plasmodium spp. carriage in an Amazon cross- border area with low transmission rate",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+233,"``Nothing Is Like It Was Before{''}: The Dynamics between Land-Use and Land-Cover, and Livelihood Strategies in the Northern Vietnam Borderlands",2015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+234,"Analysing challenges and strategies in land productivity in Sikkim Himalaya, India",2021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+235,"Rural Roads Are Paving the Way for Land-Use Intensification in the Uplands of Laos",2021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+236,"Ecological health effects of rural livelihood and poverty reduction strategies in the Lake Bosomtwe basin of Ghana",2017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+237,"Water management and land-use practices from the Iron-Age to the Roman period in Eastern Iberia",2014,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1
+238,"Ancient Agrolandscapes of the Darkhat Basin (Northern Mongolia)",2024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+239,"Normalized Difference Red-NIR-SWIR: A new Sentinel-2 three-band spectral index for mapping freshly-opened swiddens in the tropics",2024,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+240,"Fire regime of peatlands in the Angolan Highlands",2023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+241,"Ancient Agriculture on Lava Flows: Using LiDAR and Soil Science to Reassess Pre-Hispanic Farming on Malpaís Landforms in West Mexico",2022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+242,"Spatial and temporal CO concentration over Malaysia and Indonesia using 4 decade remote sensing dataset",2019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1
+243,"Markov random field-based method for super-resolution mapping of forest encroachment from remotely sensed ASTER image",2016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1
+244,"Deforestation drivers in southwest Amazonia: Comparing smallholder farmers in iñapari, Peru, and Assis Brasil, Brazil",2010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1

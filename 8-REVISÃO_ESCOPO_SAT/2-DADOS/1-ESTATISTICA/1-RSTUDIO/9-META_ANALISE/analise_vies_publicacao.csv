@@ -1,0 +1,4 @@
+teste,estatistica,p_valor,interpretacao
+Egger,40.0194813263127,7.312708924116755e-74,Viés detectado
+Rank Correlation,0.9910405734033022,1.711803763150857e-56,Viés detectado
+Trim-and-Fill,42,NA,42 estudos imputados

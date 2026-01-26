@@ -1,0 +1,6 @@
+"Feature","Tipo","Correlacao","PValue","Significativo","Tendencia"
+"NeuralNetwork","Algoritmo",0.887815458375647,4.43617827669486e-06,TRUE,"Increasing"
+"Honey","Produto",0.817389493183488,0.000110368467448887,TRUE,"Increasing"
+"RandomForest","Algoritmo",0.759756277708863,0.00063825355056814,TRUE,"Increasing"
+"SVM","Algoritmo",0.589676321543228,0.0162116778107622,TRUE,"Increasing"
+"DecisionTree","Algoritmo",0.453388902958821,0.0777681469882647,FALSE,"Increasing"

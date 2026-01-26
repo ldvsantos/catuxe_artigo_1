@@ -1,0 +1,347 @@
+%Version 3.1 December 2024
+% See section 11 of the User Manual for version history
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
+
+%%=======================================================%%
+%% to print line numbers in the margin use lineno option %%
+%%=======================================================%%
+
+%%\documentclass[lineno,pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%=========================================================================================%%
+%% the documentclass is set to pdflatex as default. You can delete it if not appropriate.  %%
+%%=========================================================================================%%
+
+%%\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%Note: the following reference styles support Namedate and Numbered referencing. By default the style follows the most common style. To switch between the options you can add or remove "Numbered" in the optional parenthesis.
+%%The option is available for: sn-basic.bst, sn-chicago.bst%  
+ 
+%%\documentclass[pdflatex,sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+\documentclass[pdflatex,sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
+%%\documentclass[pdflatex,sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[pdflatex,sn-vancouver-num]{sn-jnl}% Vancouver Numbered Reference Style
+%%\documentclass[pdflatex,sn-vancouver-ay]{sn-jnl}% Vancouver Author Year Reference Style
+%%\documentclass[pdflatex,sn-apa]{sn-jnl}% APA Reference Style
+%%\documentclass[pdflatex,sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage[brazilian]{babel}%
+\usepackage{booktabs}%
+\usepackage{url}%
+
+% Reduz "poluicao" no log (e evita texto garbado em avisos de hbox no terminal)
+\hbadness=10000
+\vbadness=10000
+
+
+\begin{document}
+
+\title{Auditoria Socioecológica Digital em Sistemas Agrícolas Tradicionais, revisão de escopo e estado da arte em aprendizado de máquina}
+
+
+\author*[1]{\fnm{Catuxe Varjão de Santana} \sur{Oliveira}}
+\author[1]{\fnm{XXXXXXXXX} \sur{XXXXXX}}
+\author[1]{\fnm{Luiz Diego Vidal} \sur{Santos}}
+\author[1]{\fnm{XXXXXXXX} \sur{XXXXXX}}
+\author[1]{\fnm{XXXXXXXXXXX} \sur{XXXXXX}}
+\author[1]{\fnm{XXXXXXXXXXX} \sur{DiXXXXXX}}
+
+\affil*[1]{\orgname{Universidade Federal de Sergipe - UFS}, \orgaddress{\country{Brasil}}}
+
+\abstract{Sistemas Agrícolas Tradicionais (SAT) podem ser interpretados como sistemas socioecológicos acoplados, nos quais práticas de manejo, diversidade biocultural e condições biofísicas coevoluem em escalas espaço-temporais heterogêneas, o que torna a governança da integridade socioecológica dependente de evidências auditáveis. Este estudo analisa a maturidade técnica do estado da arte em Aprendizado de Máquina para operacionalizar um gêmeo digital inferencial voltado à auditoria de serviços ecossistêmicos e de indicadores de integridade associados a SAT. Sob diretrizes PRISMA-ScR, processou-se um corpus de 244 estudos (2010–2025) via triagem automatizada de pontuação ponderada (precisão 94,2\%) e validação manual (CCI=0,87). A análise integrou meta-análise de efeitos aleatórios, estatística multivariada e avaliação de princípios FAIR. Observa-se um paradoxo de generalização, no qual classificadores alcançam alta acurácia in vitro (80–100\%), enquanto testes de robustez externa expõem degradação severa de desempenho (queda de 11,8\% versus 5,6\% em modelos espacialmente independentes, $d=0{.}950$). A fragmentação metodológica (Modularidade Q=0{.}620, heterogeneidade I\textsuperscript{2}=58\%) e a incipiente conformidade FAIR reforçam assimetrias epistêmicas, limitando a tradução regulatória e a escalabilidade dos modelos para contextos territoriais diversos. Os resultados sugerem que a auditabilidade computacional em SAT requer a transição de classificadores estáticos para modelos adaptativos, condicionados a benchmarks de integridade, com validação espacial e temporal capaz de sustentar degradação $\leq 8\%$, explicabilidade (XAI) para marcadores socioecológicos e conformidade FAIR robusta.}
+
+\keywords{Sistemas Agrícolas Tradicionais, Aprendizado de Máquina, Auditoria Socioecológica, Integridade Socioecológica, Rastreabilidade, Serviços Ecossistêmicos}
+
+\maketitle
+
+\section[Introducao]{Introdução}
+Sistemas Agrícolas Tradicionais (SAT) têm sido descritos como sistemas socioecológicos acoplados nos quais práticas de manejo, diversidade biocultural e condições biofísicas coevoluem em horizontes temporais longos, sustentando paisagens culturais e serviços ecossistêmicos sob pressões crescentes no Antropoceno \citep{Berkes2003}. Em um cenário marcado por instabilidade climática e erosão de biodiversidade, a persistência desses sistemas tende a depender da capacidade de demonstrar integridade socioecológica em escalas compatíveis com a governança territorial, articulando evidências sobre solo, clima, biota, conhecimento local e práticas de manejo segundo uma lógica de verificabilidade e transparência \citep{Levin1998ComplexAdaptiveSystems}. Embora esse enquadramento forneça um alicerce conceitual para interpretar SAT como sistemas complexos e acoplados, a literatura especializada sobre SAT depende de recortes territoriais e institucionais e permanece heterogênea, de modo que as referências aqui mobilizadas funcionam como suporte teórico geral do argumento, sem pretensão de esgotar o debate específico do campo.
+
+A legitimidade contemporânea de estratégias de salvaguarda e valorização associadas a SAT, quando vinculada a reconhecimento patrimonial, políticas de conservação e instrumentos de rastreabilidade, tende a emergir de arranjos institucionais e comunitários que reduzem assimetrias informacionais, sobretudo quando alegações de sustentabilidade são mobilizadas para acesso a mercados, recursos ou programas públicos \citep{Gale2023}. A credibilidade desses arranjos se sustenta na demonstração empírica de que a continuidade do sistema se ancora em interações socioecológicas específicas, com dependências territoriais nem sempre replicáveis fora do contexto local, e de que variações no manejo e no regime climático não degradam a integridade do conjunto de funções ecossistêmicas e culturais que estrutura o sistema.
+
+Ao serem compreendidos como territórios socioecológicos intrinsecamente acoplados, nos quais solo, clima, biota, cultura e instituições se articulam por interações não lineares e heterogeneidades espaço-temporais, os SAT produzem simultaneamente alimentos, serviços ecossistêmicos e valores bioculturais cuja mensuração depende de escolhas metodológicas, qualidade de dados e coerência operacional entre indicadores \citep{LeFloc2016S}.
+
+A complexidade sistêmica e o caráter difuso dos acoplamentos biofísicos e sociais limitam a detecção de serviços ecossistêmicos por métricas convencionais, o que pode fragilizar a governança de bens comuns e ampliar espaço para práticas de \textit{greenwashing} quando a retórica de sustentabilidade não é acompanhada por evidências verificáveis \citep{Levin1998ComplexAdaptiveSystems,Gale2023}. Dada a insuficiência do instrumental analítico clássico para monitoramento em escala de paisagem \citep{Liao2023}, este estudo propõe um gêmeo digital inferencial orientado a SAT, fundamentado na reconstrução computacional dinâmica de interações entre o genótipo territorial, entendido como condições biofísicas e ecológicas, e o fenótipo socioecológico, entendido como práticas, outputs e assinaturas observáveis do sistema, de modo a converter incerteza ecológica em evidências auditáveis de integridade e conformidade.
+
+A validação operacional desse sistema requer o atendimento a critérios de auditabilidade derivados das lacunas metodológicas identificadas na literatura, e a robustez inferencial torna-se um requisito central, assegurada mediante validação espacialmente independente e estabilidade longitudinal frente à variabilidade climática \citep{Kuhn2013}. A transparência causal, por sua vez, demanda métodos de Inteligência Artificial Explicável (XAI) que permitam discriminar marcadores físico-químicos de correlações espúrias \citep{Rudin2019}. Além disso, a soberania de dados depende da adesão aos princípios FAIR e de trilhas de auditoria imutáveis, que sustentem reprodutibilidade e rastreabilidade da inferência \citep{Wilkinson2021,Kshetri2014}. Nessa arquitetura, o Aprendizado de Máquina opera como mecanismo analítico para tratar a não-linearidade de dados multiescalares, com potencial para apoiar a soberania epistêmica das comunidades produtoras quando acoplado a governança de dados e critérios explícitos de validação \citep{Li2022KGML_ag,Santos2007Epistemologies}.
+
+Em escalas geográficas amplas, o ML pode sustentar a auditabilidade de serviços ecossistêmicos ao estabelecer uma ligação verificável entre conformidade ambiental e prêmio de mercado, mitigando assimetrias informacionais associadas a fraudes e apropriação indevida \citep{Kshetri2014DigitalDivide}.
+
+Ainda assim, a literatura carece de um framework conceitual unificado que integre capacidades inferenciais do ML com requisitos de auditabilidade aplicáveis à governança de SAT, e essa lacuna restringe a tradução de avanços metodológicos em protocolos operacionais, perpetuando fragmentação entre pesquisa acadêmica e implementação territorial.
+
+Nesse enquadramento, o presente estudo analisa criticamente se o aparato metodológico atual de Aprendizado de Máquina reúne condições de robustez inferencial, explicabilidade e governança de dados necessárias para sustentar um gêmeo digital inferencial aplicável a SAT como sistema de auditoria de serviços ecossistêmicos e de integridade socioecológica. Considera-se que a modelagem de acoplamentos não lineares entre variáveis ambientais e ecológicas, representando o genótipo territorial, e assinaturas socioecológicas observáveis do sistema, representando o fenótipo, quando sustentada por validação espaço-temporal rigorosa e mecanismos de segurança e governança de dados, tende a produzir evidências auditáveis compatíveis com decisões de salvaguarda e gestão territorial.
+
+\section[Materiais e Metodos]{Materiais e Métodos}
+
+\subsection[Fluxo de Selecao]{Fluxo de Seleção Bibliográfica (PRISMA)}
+O processo de seleção seguiu as diretrizes PRISMA-ScR. A busca inicial recuperou 449 registros combinados das bases Scopus e Web of Science. Após a aplicação de critérios de pontuação automatizada e verificação manual, 244 estudos foram considerados elegíveis para a síntese qualitativa e quantitativa (Figura \ref{fig:prisma}).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{../2-FIGURAS/2-EN/prisma_flowdiagram.png}
+\caption{Fluxograma PRISMA-ScR do processo de seleção de estudos.}
+\label{fig:prisma}
+\end{figure}
+
+A triagem inicial do corpus foi conduzida por meio da aplicação automatizada de uma função de pontuação ponderada sobre os registros recuperados, onde $P_{final}$ representa a pontuação final de seleção, $Q_{met}$ corresponde à qualidade metodológica normalizada (0 a 1), $Q_{tem}$ expressa a relevância temática normalizada (0 a 1) e $Q_{biblio}$ denota o impacto bibliométrico normalizado (0 a 1). Posteriormente, realizou-se verificação manual para consolidação da elegibilidade. A consistência entre avaliadores na etapa manual foi quantificada por coeficiente de correlação intraclasse (CCI=0,87), enquanto o desempenho da triagem automatizada apresentou precisão de 94,2\%.
+
+\subsection[Analises estatisticas]{Análises estatísticas}
+
+O corpus de 244 estudos foi submetido a análises estatísticas descritivas para caracterização bibliométrica. Para as análises inferenciais, selecionou-se um subconjunto de 148 estudos que reportaram métricas de desempenho quantitativas, permitindo a validação dos critérios operacionais da Auditoria Socioecológica Digital sem dissociar síntese narrativa e evidência numérica.
+
+As estratégias analíticas foram articuladas para responder a uma questão de coerência operacional, na qual a maturidade técnica do campo só se torna relevante para SAT quando pode ser conectada a requisitos mínimos de auditabilidade. Nesse sentido, a caracterização temporal e relacional delimita como o campo se organiza e se fragmenta, as sínteses multivariadas e de agrupamento descrevem a heterogeneidade de perfis metodológicos e contextuais, a meta-análise e a meta-regressão testam a estabilidade da evidência quantitativa reportada e sua sensibilidade a regimes de validação, e a avaliação FAIR fornece um diagnóstico de governança que condiciona reprodutibilidade e contraprova independente.
+
+\subsubsection[Analises descritivas e exploratorias do corpus]{Análises descritivas e exploratórias do corpus}
+
+Para a caracterização estrutural do campo científico e mapear as tendências temáticas e os centros de produção de conhecimento, procedeu-se à extração e sistematização de metadados bibliométricos, focando na frequência de palavras-chave e na distribuição geográfica das afiliações institucionais.
+
+
+A estrutura de interações do domínio foi investigada por meio de Análise de Redes Sociais (ARS) \citep{Csardi2006,Schoch2020}. A partir de uma matriz de coocorrências entre termos extraídos de metadados do corpus, construiu-se um grafo não direcionado e ponderado em \texttt{igraph}, no qual nós representam entidades categorizadas no estudo (por exemplo, famílias algorítmicas, instrumentos e objetos de estudo) e arestas representam frequência de coocorrência entre pares. Para reduzir ruído e tornar comparáveis as estatísticas estruturais reportadas, aplicou-se um limiar mínimo de coocorrência e removeram-se nós isolados.
+
+Para caracterizar a conectividade global, estimaram-se densidade e diâmetro da rede, além de coeficiente de transitividade como proxy de fechamento triádico. Para identificar a importância relativa dos elementos, calcularam-se métricas de centralidade de grau e de intermediação, e, quando pertinente à interpretação, métricas complementares de proximidade e centralidade por autovetor. A estrutura de comunidades foi estimada por detecção de comunidades via Louvain, com modularidade reportada como indicador de fragmentação relacional do vocabulário analítico do corpus.
+
+[ALERTA DE RESGATE] Recomenda-se explicitar aqui o critério de filtragem aplicado às coocorrências, o limiar mínimo de inclusão, o procedimento de remoção de nós isolados e a regra de construção dos recortes por cruzamento entre categorias (por exemplo, algoritmo\texttimes{}produto e instrumento\texttimes{}produto). Também é importante indicar como as categorias foram operacionalizadas a partir do texto e metadados, para evitar ambiguidade semântica entre rótulos e entidades empíricas do corpus.
+
+A evolução temporal (2010--2025) da produção científica e da adoção de famílias algorítmicas foi analisada mediante testes de tendência, utilizando a correlação de Spearman \citep{Spearman1904} para verificar a monotonicidade das séries temporais.
+
+Para sintetizar associações latentes entre categorias observadas no corpus, conduziu-se Análise de Correspondência Múltipla (MCA) sobre variáveis categóricas, interpretando proximidades no espaço fatorial como similaridade de perfis e não como relações causais. A interpretação do biplot foi conduzida em consonância com a finalidade do estudo, ao tratar a dimensão temporal como marcador de deslocamentos na composição metodológica do campo.
+
+A síntese de perfis metodológicos foi complementada por análise de agrupamento, na qual combinações de atributos do corpus foram resumidas por 
+\textit{k}-means e por clusterização hierárquica, com seleção de $k$ a partir de critério de Silhouette. Para visualizar padrões de coocorrência relativos à presença média de atributos por grupo, foi gerado um heatmap de perfil de características por cluster.
+
+\subsubsection[Analises inferenciais de validacao dos criterios operacionais]{Análises inferenciais de validação dos critérios operacionais}
+
+Para quantificar empiricamente as lacunas metodológicas e fundamentar os critérios operacionais da Auditoria Socioecológica Digital, conduziram-se três análises inferenciais complementares. Buscando analisar o impacto da validação espacial no desempenho preditivo, compararam-se modelos com particionamento geograficamente independente ($n=70$) versus aleatório convencional ($n=78$), calculando degradação percentual de desempenho entre validação interna e testes externos.
+
+Diferenças foram avaliadas por Mann-Whitney U \citep{Mann1947}, com tamanho de efeito quantificado pelo $d$ de Cohen \citep{Cohen1988}, interpretado como pequeno ($d=0{.}2$), médio ($d=0{.}5$) ou grande ($d=0{.}8$) conforme \citep{Sawilowsky2009}.
+
+Visando avaliar a acurácia reportada nos estudos e detectar potencial viés de publicação, conduziu-se meta-análise de efeitos aleatórios \citep{Borenstein2009} com o pacote \texttt{metafor} \citep{Viechtbauer2010}, transformando acurácias via logit para estabilizar variâncias \citep{Barendregt2013} usando $\text{logit}(p)=\ln[p/(1-p)]$. 
+
+Estimou-se acurácia pooled por modelo REML \citep{DerSimonian1986} com IC 95\%. Heterogeneidade foi quantificada pela estatística $I^2$ \citep{Higgins2003}. Teste Q de Cochran \citep{Cochran1954} avaliou significância da heterogeneidade com $\alpha=0{.}05$. Meta-regressão \citep{Thompson2002} investigou efeitos de ano de publicação e tamanho amostral. Viés de publicação foi detectado por teste de Egger \citep{Egger1997} e método trim and fill \citep{Duval2000}. Forest plots estratificados foram gerados seguindo \citep{Balduzzi2019}.
+
+Por fim, para avaliar a conformidade com princípios de governança de dados abertos, quantificou-se conformidade FAIR mediante score padronizado (0 a 100 pontos) baseado em 12 indicadores binários de \citep{Wilkinson2016}. Cada indicador contribuiu $100/12 \approx 8{.}33$ pontos. Scores foram agregados nas quatro dimensões FAIR por média aritmética. Análise temporal empregou correlação de Spearman \citep{Spearman1904}. Gráficos radar multidimensionais visualizaram perfis FAIR com benchmark da Comissão Europeia (75/100) \citep{EC2018}.
+
+Todas as análises foram implementadas em R \citep{RCoreTeam2024} utilizando os pacotes \texttt{ggplot2} \citep{Wickham2016}, \texttt{metafor} \citep{Viechtbauer2010}, \texttt{effsize} \citep{Torchiano2020} e rotinas customizadas para conformidade FAIR. Empregou-se $\alpha=0{.}05$ como nível de significância.
+
+\subsection[Auditoria Socioecologica Digital como sistema de auditoria inferencial]{Auditoria Socioecológica Digital como sistema de auditoria inferencial}
+
+A partir da análise sistemática do corpus bibliográfico, identificou-se que aplicações de aprendizado de máquina em Sistemas Agrícolas Tradicionais carecem de um framework conceitual que integre capacidades computacionais com requisitos de auditabilidade socioecológica, sobretudo quando o objetivo envolve salvaguarda territorial, integridade de serviços ecossistêmicos e transparência decisória. Para preencher essa lacuna, propõe-se o conceito de Auditoria Socioecológica Digital como sistema de auditoria inferencial derivado empiricamente da revisão.
+
+\section[Resultados e discussao]{Resultados e discussão}\label{sec:resultados}
+
+A análise sistemática do corpus de 244 estudos (2010--2025) sugere a emergência de um campo científico em franca expansão, cuja maturidade técnica evoluiu de abordagens exploratórias para arquiteturas de inteligência artificial de alta complexidade. A trajetória temporal das publicações indica um crescimento acelerado, partindo de uma produção incipiente em 2010 (10 estudos) para um volume robusto no biênio 2024--2025 (65 estudos acumulados), sinalizando a consolidação do monitoramento remoto como paradigma central na gestão de agroecossistemas (Fig. \ref{fig:temporal_combined}a). Essa leitura descritiva é interpretada aqui como um primeiro componente da auditabilidade, pois expõe a base empírica disponível e delimita o ritmo de incorporação de técnicas que, em tese, poderiam sustentar inferência reprodutível e verificável.
+
+Na sequência, a discussão integra evidência estrutural e inferencial em uma lógica de encadeamento, na qual conectividade temática, heterogeneidade metodológica, robustez externa e governança de dados são tratadas como dimensões interdependentes para sustentar um gêmeo digital inferencial voltado à auditoria em SAT.
+
+Ao examinar as tendências tecnológicas de forma decomposta (Fig. \ref{fig:temporal_combined}b), qualifica-se esse crescimento quantitativo e sugere-se um ponto de inflexão metodológica situado no triênio 2018--2020. Enquanto a fase inicial foi sustentada por classificadores de aprendizado de máquina convencionais (CML), notadamente \textit{Random Forest} e SVM, cuja recorrência em dados espectrais de média resolução foi compatível com a hegemonia inicial, o período recente (2020--2025) se caracteriza pelo aumento relativo de arquiteturas de \textit{Deep Learning}. 
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth]{../2-FIGURAS/2-EN/temporal_publicacoes.png}
+\textbf{(a)}
+\end{minipage}\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth]{../2-FIGURAS/2-EN/temporal_algoritmos.png}
+\textbf{(b)}
+\end{minipage}
+\caption{Dinâmica temporal da pesquisa (2010--2025) onde, (a) Evolução exponencial do volume de publicações e (b) Trajetória de substituição tecnológica}
+\label{fig:temporal_combined}
+\end{figure}
+
+
+Esta transição é compatível com a complexidade crescente dos dados de observação da Terra e com a pressão por modelos capazes de tratar não linearidades e padrões espaço-temporais em escalas mais finas, contexto em que arquiteturas de \textit{Deep Learning} passam a ser reportadas com maior frequência em tarefas antes dominadas por classificadores marginais. Ainda assim, o deslocamento tecnológico não deve ser interpretado como ganho automático de auditabilidade, pois o uso de modelos mais expressivos aumenta o custo de explicabilidade e tende a ampliar a dependência de desenhos de validação rigorosos e de governança de dados para sustentar generalização fora do cenário de treinamento \citep{Kuhn2013,Rudin2019}.
+
+O resumo dos principais estudos de alta relevância (Tabela \ref{tab:top7}) indica a diversidade de aplicações desde a Amazônia até o Sudeste Asiático. Identificou-se na triagem um núcleo de estudos de "Alta aderência" (Score $\geq$ 15), que representam o estado da arte na integração entre inteligência computacional e sistemas tradicionais. Destaca-se o trabalho de \cite{Li2025}, que propõe sistemas unificados de AIoT para controle de pragas, e a pesquisa de \cite{Tripathi2025}, que desenvolve arquiteturas híbridas de Deep Learning para diagnóstico fitopatológico.
+
+
+
+\begin{table}[h]
+\caption{Estudos de Alta aderência sobre em ML aplicado a SAT (2024-2025)}
+\label{tab:top7}
+\begin{tabular}{@{}llp{8cm}@{}}
+\toprule
+Ano & Ref & Título e Contribuição \\
+\midrule
+2025 & \cite{Li2025} & \textit{Unified Pest Prevention...}. Sistema AIoT integrado para controle autônomo e sustentável. \\
+2025 & \cite{Tripathi2025} & \textit{Hybrid deep learning system...}. Arquitetura híbrida para classificação de doenças com alta acurácia. \\
+2025 & \cite{Ghilardi2025} & \textit{NDVI time series...}. Uso de séries temporais Landsat para monitoramento de degradação em Madagascar. \\
+2025 & \cite{Spyrou2025} & \textit{XR-Based Digital Twins...}. Gêmeos digitais imersivos para educação e gestão em agricultura. \\
+2025 & \cite{Persson2025} & \textit{Agrarian transitions...}. Análise de sensoriamento remoto sobre transições agrárias no Vietnã/Laos. \\
+2024 & \cite{Trehard2024} & \textit{Impact of mobility...}. Correlação entre mobilidade humana e vetores ambientais na Amazônia. \\
+2024 & \cite{Li2024} & \textit{Normalized Difference Red-NIR-SWIR...}. Novo índice espectral para mapeamento de agricultura itinerante. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection[Panorama das aplicacoes de aprendizado de maquina]{Panorama das aplicações de aprendizado de máquina em Sistemas Agrícolas}
+
+Observa-se na topologia da rede de conhecimento (Figura \ref{fig:network_topology}), caracterizada por uma densidade de 0{.}346 e um diâmetro de 4, um campo científico densamente conectado, em que nós centrais estruturam o fluxo de informação entre domínios distintos. A visualização global destaca a interconectividade entre métodos computacionais e objetos de estudo agrícolas, enquanto a partição em comunidades é compatível com modularidade elevada no nível relacional, em consonância com Modularidade Q=0{.}620 reportada no corpus, o que sugere que a expansão do campo convive com especializações temáticas que nem sempre se comunicam. Essa estrutura é relevante para a tese de auditabilidade, porque indica que a evidência computacional tende a se organizar em blocos metodológicos que podem dificultar replicação cruzada e comparação externa quando protocolos e dados não são compartilhados.
+
+\begin{figure}[p]
+\centering
+{\footnotesize\textbf{(a)}}\\
+\makebox[\textwidth][c]{\includegraphics[width=1.05\textwidth]{_fig_cache/network_completa.png}}\\[0.8em]
+{\footnotesize\textbf{(b)}}\\
+\makebox[\textwidth][c]{\includegraphics[width=1.05\textwidth]{_fig_cache/network_communities.png}}
+\caption{Term co-occurrence network, in which (a) shows the complete topology and (b) highlights communities.}
+\par{\footnotesize\textit{Note.} Colors indicate communities, interpreted as groups of terms that co-occur more frequently with each other than with the rest of the network. Node size represents degree, that is the number of connections of each term. Edge thickness represents weight, that is the co-occurrence frequency between term pairs.}\par
+\label{fig:network_topology}
+\end{figure}
+
+Essa transição é corroborada pela frequ\^encia de palavras-chave, na qual "Remote Sensing" (98), "Shifting Cultivation" (49), "Deforestation" (31), "Land Use" (24), "Landsat" (22), "Deep Learning" (20), "Machine Learning" (18), "Land Use Change" (17), "GIS" (15) e "Artificial Intelligence" (13) se destacam, sugerindo concomitantemente a centralidade do sensoriamento remoto como ferramenta e a consolida\c{c}\~ao do aprendizado profundo como abordagem anal\'itica predominante.
+
+Quando a rede é decomposta em cruzamentos entre categorias, observa-se que as associações não se distribuem de forma uniforme, e a recorrência de determinados pares sugere afinidades pragmáticas entre famílias algorítmicas e objetos de estudo. Embora o cruzamento instrumento\texttimes{}produto tenha apresentado conectividade residual sob os critérios de filtragem aplicados, o recorte algoritmo\texttimes{}produto preserva vínculos suficientes para indicar quais combinações emergem com maior frequência no corpus, ao passo que a síntese por métricas de centralidade permite reconhecer os nós que concentram coocorrências e funcionam como pontos de intermediação entre domínios (Figura \ref{fig:network_crossings}).
+
+\begin{figure}[htbp]
+\centering
+{\footnotesize\textbf{(a)}}\\
+\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{_fig_cache/network_algoritmo_produto.png}}\\[0.8em]
+{\footnotesize\textbf{(b)}}\\
+\makebox[\textwidth][c]{\includegraphics[width=\textwidth]{_fig_cache/network_centrality_metrics.png}}
+\caption{Cross-category co-occurrence views of the SAT corpus, in which (a) shows the algorithm-by-product subnetwork and (b) summarizes centrality metrics for the top nodes.}
+\label{fig:network_crossings}
+\end{figure}
+
+No conjunto dos 18 estudos de "Alta aderência", que concentraram maior impacto e rigor metodológico, delineiam-se as fronteiras dessa transição, e trabalhos seminais recentes, como o de \cite{Li2024}, indicam o potencial de novos índices espectrais frente ao desafio de monitoramento.
+
+
+\subsection[Analise de Correspondencia Multipla]{Análise de Correspondência Múltiplas (MCA)}
+
+Para compreender as associações latentes entre as categorias metodológicas e geográficas, a Análise de Correspondência Múltipla (MCA) projetou as variáveis no espaço fatorial, com destaque para a dimensão temporal da análise (Figura \ref{fig:mca_temporal}), que elucida a trajetória evolutiva do campo. O biplot revela a estrutura de variância conjunta, onde a proximidade entre pontos indica uma forte associação estatística. Observa-se um deslocamento claro do centroide "2010-2015", associado a técnicas convencionais e monitoramento local, em direção ao centroide "2020-2025", fortemente correlacionado com Big Data, Deep Learning e escalas globais de análise.
+
+Nota-se um agrupamento distinto de técnicas de aprendizado profundo associadas a aplicações de sensoriamento remoto, contrastando com métodos estatísticos clássicos vinculados a dados de levantamento de campo. Ao detalhar as especificidades de cada domínio mediante projeção segregada das categorias, nota-se que certas culturas agrícolas tradicionais, como o cultivo itinerante e sistemas agroflorestais, ocupam nichos específicos no espaço multivariado, exigindo combinações particulares de sensores e algoritmos para sua caracterização adequada. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{../2-FIGURAS/2-EN/mca_biplot_temporal_completo.png}
+\caption{Biplot temporal, evolução das associações temáticas (2010--2025).}
+\label{fig:mca_temporal}
+\end{figure}
+
+\subsection[Analise de clusters e perfis]{Análise de clusters e perfis metodológicos}
+
+A estrutura de conectividade já observada na rede de coocorrência, na qual a distribuição de relações entre termos sugere especializações temáticas no nível relacional, é complementada pela análise de agrupamento, que resume perfis metodológicos por similaridade de atributos no corpus. No conjunto de 244 estudos, a clusterização por \textit{k}-means \citep{MacQueen1967} indicou $k=3$ como número ótimo segundo Silhouette \citep{Rousseeuw1987}, com Silhouette $=0{.}551$, e apresentou uma distribuição fortemente assimétrica entre os grupos, com $n=232$ no Cluster 1, $n=7$ no Cluster 2 e $n=5$ no Cluster 3. O ajuste do \textit{k}-means resultou em $\text{Between SS}/\text{Total SS}=16{.}63\%$ e $\text{Total Within SS}=3444{.}13$, valores compatíveis com um cenário em que a maior parte da variabilidade se organiza em um perfil dominante e pequenos subconjuntos especializados.
+ 
+O perfil do Cluster 1, majoritário, concentra coocorrências associadas a tarefas de classificação e a referências de alcance regional, com médias de ocorrência de Classification $=0{.}198$, NeuralNetwork $=0{.}168$, Americas $=0{.}164$, Asia $=0{.}134$ e OriginDetection $=0{.}121$. Embora essas frequências não descrevam desempenho, elas sugerem que o campo tende a operar por um núcleo metodológico amplo que combina objetivos classificatórios e terminologia associada a aprendizado profundo, em paralelo a um conjunto heterogêneo de contextos geográficos. 
+
+Essa leitura é consistente com estudos em que a detecção e a delimitação de SAT/uso da terra se apoiam em índices e séries temporais de sensoriamento remoto para discriminar padrões espaciais e mudanças recentes (por exemplo, em mapeamento de agricultura itinerante via Sentinel-2 \citep{Li2024} e caracterização por NDVI em séries Landsat \citep{Ghilardi2025}). Em paralelo, aplicações com arquiteturas profundas voltadas à segmentação/classificação reforçam o papel de pipelines generalistas para problemas recorrentes de diagnóstico e monitoramento agrícola \citep{Tripathi2025}.
+
+Em contraste, o Cluster 2 emerge como um subconjunto pequeno e altamente caracterizado por SVM $=1{.}000$, com NeuralNetwork $=0{.}714$, Classification $=0{.}714$ e RandomForest $=0{.}571$, configuração compatível com a literatura de sensoriamento remoto aplicada à classificação de cobertura/uso da terra e ao monitoramento agrícola, na qual classificadores marginais como SVM e Random Forest permanecem 
+competitivos como \textit{baselines} e em análises comparativas quando se trabalha com atributos espectrais/temporais \citep{Mountrakis2011,Belgiu2016,Weiss2020}. Além disso, o uso de módulos neurais em conjunto com classificadores marginais (por exemplo, redes como extratoras de características e SVM/RF como discriminantes) é coerente com a transição observada na área e com aplicações recentes de \textit{deep learning} para LULC em sensoriamento remoto \citep{Gomes2023}.
+
+O Cluster 3, também minoritário, apresenta assinatura marcada por DecisionTree $=1{.}000$, Classification $=0{.}800$ e Asia $=0{.}600$, indicando a presença de um agrupamento de baixa frequência com ênfase em árvores de decisão e recorte regional.
+
+Do ponto de vista substantivo, a coexistência de um cluster dominante com dois clusters residuais sugere um campo com \textit{template} metodológico recorrente e múltiplas variações de nicho. Isso é compatível com a natureza aplicada de SAT, em que tarefas de rastreabilidade/origem e autenticação tendem a privilegiar pipelines amplamente reutilizáveis (por exemplo, extração de atributos + classificação), enquanto abordagens menos frequentes podem surgir por restrições operacionais (tamanho amostral, custo computacional, exigências de interpretabilidade) ou por especificidades do dado (sensores, espectroscopia, imagens hiperespectrais). Nesse sentido, o Cluster 2 é coerente com estratégias híbridas em que redes neurais assumem o papel de extratoras de características e classificadores marginais (como SVM) entram como discriminantes em regimes de amostra limitada, padrão ilustrado por arquiteturas CNN--SVM e variantes reportadas no corpus.
+
+Já o Cluster 3 pode ser interpretado como um subconjunto orientado a modelos mais parcimoniosos e auditáveis, nos quais árvores de decisão são usadas para explicitar regras e fatores associados à classificação (por exemplo, em contextos de decisão e consumo de produtos com indicação geográfica) \citep{Cukur20221062}. Em tarefas de identificação de origem, esse tipo de abordagem também aparece combinado a espectroscopia e seleção de atributos, como em fluxos com NIR e múltiplos classificadores incluindo Decision Tree \citep{Meena2024}. Assim, a leitura relacional fornecida pela rede de coocorrência, que enfatiza acoplamentos temáticos entre termos, é complementada pelo \textit{k}-means, que sintetiza perfis médios em um espaço de atributos (capturando \textit{protótipos} metodológicos), de modo que ambos ajudam a distinguir \textit{conectividade temática} de \textit{composição metodológica}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{../2-FIGURAS/2-EN/cluster_heatmap_profiles_edit.png}
+\caption{Heatmap de perfil de características por cluster no corpus de 244 estudos.}
+\label{fig:cluster_heatmap_profiles}
+\end{figure}
+
+
+O padrão de assimetria entre clusters é coerente com a leitura de fragmentação metodológica em que a diversidade existe como exceção e não como regra, o que tende a elevar o custo de generalização e a dificultar a definição de protocolos de auditoria aplicáveis a SAT em contextos territoriais diversos. A clusterização hierárquica \citep{Ward1963} corrobora a assimetria, com tamanhos de grupos de 237, 2 e 5, reforçando que a estrutura latente do corpus é dominada por um bloco metodológico central e por segmentos periféricos de baixa representatividade.
+
+\subsection[Confronto com a Literatura e Implicações para a Governança]{Confronto com a Literatura e Implicações para a Governança}
+
+Ao contrastar estes resultados com revisões anteriores, nota-se uma mudança de paradigma. Enquanto estudos da década passada focavam na viabilidade técnica de sensores isolados \citep{Liakos2018}, a fronteira atual, representada pelos trabalhos de 2024 e 2025, deslocou-se para a integração de sistemas complexos. A emergência de soluções baseadas em AIoT, como proposto por \cite{Li2025}, sugere que a auditoria ambiental não se limitará mais à observação passiva via satélite, mas incorporará redes de sensores in situ para validação em tempo real.
+
+Contudo, a sofisticação tecnológica não elimina fraturas estruturais de governança e de generalização, e a leitura do corpus aponta que o ganho de complexidade algorítmica coexiste com uma assimetria persistente na abertura e na verificabilidade dos dados. A avaliação de conformidade com princípios FAIR no subconjunto de 148 estudos com métricas quantitativas, associada à Figura \ref{fig:fair_radar}, indica um Score FAIR médio de 34{.}2/100 ($\pm 13{.}1$), Range 10 - 73 e Taxa de compliance (score $\geq 50$) de 12{.}8\%, o que restringe a contraprova independente e amplia incerteza sobre reprodutibilidade. 
+
+A decomposição por dimensão reforça a natureza da lacuna, com Findable 15{.}5/25 (62{.}0\%), Accessible 3{.}6/25 (14{.}5\%), Interoperable 8{.}0/25 (32{.}0\%) e Reusable 7{.}1/25 (28{.}3\%), e a tendência temporal não sugere recuperação espontânea, dado que a Correlação Ano vs Score FAIR foi $\rho$ = 0{.}235 e p = 0{.}379. Nesse cenário, a Figura \ref{fig:fair_radar} funciona como proxy de governança e não apenas como diagnóstico descritivo, pois a fragilidade de Accessible reduz a auditabilidade operacional em SAT ao impedir que a evidência computacional seja reusada em ciclos independentes de validação.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{../2-FIGURAS/2-EN/fair_radar_2.png}
+\caption{Conformidade com princípios FAIR de governança de dados, (a) radar FAIR e (b) conformidade por indicador.}
+\label{fig:fair_radar}
+\end{figure}
+
+
+Sem a disponibilização aberta de códigos, dados de treinamento e metadados, a reprodutibilidade alegada em muitos estudos torna-se inverificável, criando o que \cite{Shakeripour20241257} identificam como um falso otimismo na maturidade da IA aplicada a sistemas agroecológicos. A dependência de caixas pretas algorítmicas se torna ainda mais sensível quando a síntese quantitativa evidencia simultaneamente alto desempenho médio e forte heterogeneidade. 
+
+No modelo de efeitos aleatórios (REML), a meta-análise geral reportou k\_estudos = 129 e acuracia\_pooled = 90{.}663, com ic\_inferior = 89{.}809 e ic\_superior = 91{.}453 , enquanto tau2 = 0{.}170  e I2 = 58{.}004 sugerem variabilidade metodológica substantiva. A estatística Q = 309{.}710, com Q\_p em 4{.}36e-17, corrobora que a dispersão não é residual e tende a refletir diferenças de desenho experimental, regime de validação e qualidade de dados.
+
+\begin{figure}[htbp]
+\centering
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{../2-FIGURAS/2-EN/meta_analise_algoritmos.png}
+\par\small (a)
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\includegraphics[width=\textwidth]{../2-FIGURAS/2-EN/meta_regressao_ano.png}
+\par\small (b)
+\end{minipage}
+\caption{(a) Síntese meta-analítica das acurácias por algoritmo; (b) meta-regressão que examina a tendência temporal do desempenho reportado ao longo do período de publicação.}
+\label{fig:meta_algoritmo}
+\end{figure}
+
+O detalhamento por família algorítmica reforça a coexistência de patamares de acurácia elevados com intervalos de confiança não triviais. No estrato por algoritmo, PLS-DA apresentou acuracia\_pooled = 92{.}948 com ic\_inferior = 89{.}281 e ic\_superior = 95{.}425 em n\_estudos = 8, enquanto Random Forest reportou acuracia\_pooled = 91{.}333 com ic\_inferior = 89{.}676 e ic\_superior = 92{.}746 em n\_estudos = 37, e SVM reportou acuracia\_pooled = 90{.}335 com ic\_inferior = 88{.}843 e ic\_superior = 91{.}645 em n\_estudos = 47. Em paralelo, o diagnóstico de viés de publicação é consistente com inflação de desempenho, dado que o teste de Egger reportou estatistica = 40{.}019 e p\_valor em 7{.}31e-74, e o Rank Correlation reportou estatistica = 0{.}991 e p\_valor em 1{.}71e-56, com Trim-and-Fill indicando 42 estudos imputados.
+
+A meta-regressão explicita uma tendência temporal compatível com incremento marginal, mas não conclusivo no nível convencional, pois o preditor Ano (centrado) apresentou coeficiente 0{.}021, com se = 0{.}012, z = 1{.}713 e p = 0{.}087, ao passo que Log(n amostral) apresentou coeficiente -0{.}088, com se = 0{.}044, z = -2{.}005 e p = 0{.}045. Em consonância com o paradoxo de generalização entre desempenho in vitro e robustez externa, regimes de validação mais rigorosos apresentam valores inferiores, como no caso de Spatial CV com acuracia\_pooled = 89{.}396 e Temporal CV com acuracia\_pooled = 87{.}493. 
+
+Quando a robustez externa foi examinada de forma direta no subconjunto com métricas quantitativas, a degradação média de desempenho em testes externos foi de 11{.}800\% em modelos sem particionamento espacialmente independente, enquanto modelos com validação espacial apresentaram degradação de 5{.}600\%, com tamanho de efeito $d=0{.}950$, o que reforça que acurácias elevadas em cenários in vitro podem coexistir com fragilidade de generalização sob deslocamento espacial.
+
+A validade ecológica dos modelos também enfrenta o desafio da falácia da escala. A eficácia demonstrada por \cite{Li2024} na detecção de clareiras de agricultura itinerante com novos índices espectrais (Red-NIR-SWIR) é promissora, mas sua aplicação em biomas distintos, a exemplo das florestas de Miombo analisadas por \cite{Andrews2024} ou das estepes da Mongólia estudadas por \cite{Prudnikova2024496}, carece de testes de robustez. A degradação de desempenho observada em testes externos sugere que modelos treinados em nichos ecológicos específicos podem apresentar queda sistemática de desempenho ao serem aplicados a paisagens biogeograficamente distintas, sobretudo quando o deslocamento espacial altera o regime espectral, a fenologia e o contexto de manejo.
+
+Isso é compatível com a tese de \cite{Ghilardi2025} de que a auditoria de habitats críticos tende a exigir calibração local intensiva, o que relativiza a ideia de "algoritmos universais" para monitoramento de biodiversidade.
+
+\section[Conclusoes]{Conclusões}
+
+Esta revisão de escopo sintetiza evidências de que a pesquisa em aprendizado de máquina aplicada a Sistemas Agrícolas Tradicionais tem se expandido e sofisticado, com deslocamento recente para arquiteturas de maior complexidade e para integração de múltiplas fontes de dados. A literatura também sugere que esse avanço técnico não se traduz automaticamente em maturidade operacional para auditoria socioecológica, porque persistem barreiras de transferibilidade entre contextos territoriais, assimetrias de governança e dependência de escolhas metodológicas que afetam a robustez do desempenho fora do cenário de treinamento.
+
+Do ponto de vista metodológico, o corpus analisado converge para um núcleo de abordagens quantitativas que combina caracterização bibliométrica, análise de redes de coocorrência para descrever relações entre termos, estatística multivariada para sintetizar associações latentes, agrupamento para resumir perfis metodológicos, meta-análise e meta-regressão para integrar métricas de desempenho, e avaliação de governança de dados sob princípios FAIR. Essa combinação de métodos aponta que a estrutura do campo, a heterogeneidade de desenhos e a disponibilidade de evidência computacional são dimensões interdependentes, sobretudo quando a finalidade é sustentar inferência auditável.
+
+Quanto aos principais materiais e evidências mobilizados nos estudos sobre SAT, predomina o uso de dados de observação da Terra, com imagens e séries temporais de sensoriamento remoto e índices espectrais, frequentemente articulados a atributos de campo e a sensores espectrais de proximidade em desenhos voltados à classificação, detecção e monitoramento. As aplicações se distribuem entre tarefas associadas a sistemas agroflorestais e agricultura itinerante, mapeamento de cobertura e uso do solo em cultivos anuais, e diagnóstico em culturas perenes, com recorrência de famílias algorítmicas como Random Forest, SVM e arquiteturas de aprendizado profundo.
+
+O conjunto de resultados sugere que métricas de desempenho elevadas podem coexistir com heterogeneidade substantiva entre estudos e com sinais compatíveis com viés de publicação, o que reduz a força inferencial de conclusões baseadas apenas em validações internas. Em paralelo, a conformidade com princípios de governança de dados permanece limitada em parte relevante do corpus, restringindo reprodutibilidade, contraprova independente e rastreabilidade, elementos centrais quando o uso pretendido envolve decisões regulatórias e salvaguarda territorial.
+
+A contribuição do estudo consiste em delimitar que a auditabilidade computacional em SAT tende a depender menos de incrementos marginais de acurácia e mais de protocolos de validação coerentes com o território, de transparência analítica e de infraestrutura de dados que permita reuso e verificação. A agenda de pesquisa e implementação se beneficia da consolidação de benchmarks de integridade socioecológica e de desenhos de avaliação que incorporem deslocamentos espaciais e temporais, de modo que o gêmeo digital inferencial seja interpretável e defensável em cenários socioecológicos diversos.
+
+\section*{Agradecimentos}
+
+Os autores agradecem à Universidade Federal de Sergipe (UFS), à Universidade Estadual de Feira de Santana (UEFS) e ao Instituto Federal de Sergipe (IFS) pelo apoio institucional e infraestrutural que possibilitou esta pesquisa.
+
+\section*{Conflitos de interesse}
+
+Os autores declaram não haver conflitos de interesse.
+
+\section*{Declaração de disponibilidade de dados}
+
+O conjunto de dados completo que apoia os resultados deste estudo, incluindo o corpus bibliográfico, os scripts de análise e os resultados intermediários, está disponível publicamente no repositório Open Science Framework (OSF) sob DOI \url{https://doi.org/10.17605/OSF.IO/2EKYQ}.
+
+\bibliography{referencias}
+
+\end{document}

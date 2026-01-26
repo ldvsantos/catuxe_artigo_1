@@ -1,0 +1,233 @@
+# 0. Carregar pacotes
+library(readxl)
+library(dplyr)
+library(mice)
+library(meta)
+library(tibble)
+library(future.apply)
+library(purrr)
+library(kableExtra)
+
+
+
+rm(list = ls()); gc()
+
+# 1. Ler base
+dados <- readxl::read_excel("C:/Users/vidal/OneDrive/Documentos/ARTIGO_MA/3 - DADOS/bd.xlsx", sheet = "VARIAVEIS_FISICAS") %>%
+  dplyr::mutate(across(c(m_e, sd_e, n_e, m_c, sd_c, n_c), ~ as.numeric(gsub(",", ".", gsub("[^0-9,.-]", "", as.character(.))))),
+                Variavel = factor(Variavel))
+
+# 2. Imputação múltipla via CART
+dados_imput <- mice::mice(dados, m = 5, method = "cart", seed = 10)
+
+# 3. Calcular lnRR e variância por imputação
+dados_completos <- mice::complete(dados_imput, action = "long", include = TRUE) %>%
+  dplyr::filter(m_e > 0, m_c > 0) %>%
+  dplyr::mutate(
+    lnRR = log(m_e / m_c),
+    vi = (sd_e^2 / (n_e * m_e^2)) + (sd_c^2 / (n_c * m_c^2))
+  ) %>%
+  dplyr::filter(!is.na(vi), !is.infinite(vi), vi > 0, vi < quantile(vi, 0.999, na.rm = TRUE))
+
+# 4. Meta-análises por imputação
+resultados_rubin <- future.apply::future_lapply(1:5, function(i) {
+  dados_i <- mice::complete(dados_imput, i)
+  if (!"Variavel" %in% names(dados_i)) return(NULL)
+  var_levels <- unique(dados_i$Variavel)
+  
+  purrr::map_dfr(var_levels, function(v) {
+    df <- dplyr::filter(dados_i, Variavel == v)
+    if (nrow(df) == 0) return(NULL)
+    
+    meta <- tryCatch(
+      meta::metacont(
+        n.e = n_e, mean.e = m_e, sd.e = sd_e,
+        n.c = n_c, mean.c = m_c, sd.c = sd_c,
+        studlab = Study, sm = "ROM", log = TRUE,
+        method.tau = "REML", common = FALSE, data = df
+      ),
+      error = function(e) NULL
+    )
+    
+    if (is.null(meta)) return(NULL)
+    
+    tibble::tibble(
+      .imp = i,
+      Variavel = v,
+      TE = meta$TE.random,
+      seTE = meta$seTE.random
+    )
+  })
+}) %>% dplyr::bind_rows()
+
+# 5. Contagem de estudos e observações
+n_estudos_obs <- dados_completos %>%
+  dplyr::group_by(Variavel) %>%
+  dplyr::summarise(N_estudos = dplyr::n_distinct(Study), N_obs = dplyr::n(), .groups = "drop")
+
+# 6. Aplicação das regras de Rubin
+resumo_vars <- resultados_rubin %>%
+  dplyr::group_by(Variavel) %>%
+  dplyr::summarise(
+    TE = mean(TE, na.rm = TRUE),
+    W = mean(seTE^2, na.rm = TRUE),
+    B = var(TE, na.rm = TRUE),
+    T_var = ifelse(is.na(B), W, W + (1 + 1/5) * B),
+    seTE = sqrt(T_var),
+    df = ifelse(is.na(B) || B == 0, Inf, (5 - 1) * (1 + W / ((1 + 1/5) * B))^2),
+    IC_inf = TE - qt(0.975, df) * seTE,
+    IC_sup = TE + qt(0.975, df) * seTE,
+    p_value = ifelse(is.infinite(df), 2 * pnorm(-abs(TE / seTE)), 2 * pt(-abs(TE / seTE), df)),
+    .groups = "drop"
+  ) %>%
+  dplyr::left_join(n_estudos_obs, by = "Variavel") %>%
+  dplyr::mutate(
+    studlab = paste0(Variavel, " (n = ", N_estudos, ", obs = ", N_obs, ")"),
+    p_value_fmt = ifelse(is.na(p_value), "NA", sprintf("%.3f", p_value))
+  )
+
+
+# 7. Meta-análise agregada
+meta_final <- metagen(
+  TE = resumo_vars$TE,
+  seTE = resumo_vars$seTE,
+  studlab = resumo_vars$studlab,
+  sm = "LogROM (lnRR)",
+  method.tau = "DL",
+  common = FALSE,
+  random = TRUE
+)
+
+# 8. Plotar forest
+forest(
+  meta_final,
+  comb.fixed = FALSE,
+  comb.random = TRUE,
+  overall = TRUE,
+  print.heterogeneity = FALSE,
+  print.Q = FALSE,
+  print.I2 = FALSE,
+  print.tau2 = FALSE,
+  col.square = "blue",
+  col.diamond = "darkgreen",
+  digits = 3,
+  digits.TE = 3,
+  atransf = exp,
+  at = seq(-0.6, 0.6, by = 0.2),
+  xlab = "Log Response Ratio (lnRR)",
+  rightcols = c("effect", "ci", "w.random", "pval"),
+  rightlabs = c("RR", "IC 95%", "Peso (%)", "p-valor"),
+  leftcols = c("studlab"),
+  leftlabs = c("Variáveis físicas (n, obs)")
+)
+
+
+
+
+# 7. Linha para o modelo global (dados físicos)
+resumo_global_fisico <- tibble(
+  `Indicadores funcionais (n, obs)` = "Modelo Global",
+  lnRR = round(meta_final$TE.random, 3) %>% as.character(),
+  `IC 95%` = paste0("[", round(meta_final$lower.random, 3), "; ", round(meta_final$upper.random, 3), "]"),
+  `Peso (%)` = "",
+  `p-valor` = sprintf("%.3f", meta_final$pval.random)
+)
+
+# 8. Tabela por variável
+tabela_variaveis_fisico <- tibble(
+  `Indicadores funcionais (n, obs)` = meta_final$studlab,
+  lnRR = round(meta_final$TE, 3) %>% as.character(),
+  `IC 95%` = paste0("[", round(meta_final$lower, 3), "; ", round(meta_final$upper, 3), "]"),
+  `Peso (%)` = round(100 * meta_final$w.random / sum(meta_final$w.random), 1) %>% as.character(),
+  `p-valor` = sprintf("%.3f", meta_final$pval)
+)
+
+# 9. Combinar tudo
+tabela_final_fisico <- bind_rows(resumo_global_fisico, tabela_variaveis_fisico)
+
+# 10. Legenda estatística
+caption_fisico <- paste0(
+  "Resumo da Meta-Análise com Modelo de Efeito Aleatório\n",
+  "Q(", meta_final$k - 1, ") = ", round(meta_final$Q, 2), ", ",
+  "p(Q) = ", sprintf("%.3f", meta_final$pval.Q), ", ",
+  "Tau² = ", round(meta_final$tau2, 3), ", ",
+  "I² = ", round(meta_final$I2, 1), "%"
+)
+
+nota_explicativa_fisico <- "Nota: (n) refere-se ao número de estudos independentes incluídos para cada indicador funcional do solo, enquanto (obs) representa o número total de observações, considerando combinações específicas entre estudos e variáveis."
+
+# 11. Tabela formatada com rodapé
+kable(
+  tabela_final_fisico,
+  align = c("l", "r", "c", "r", "r"),
+  caption = caption_fisico,
+  col.names = c("Indicadores funcionais (n, obs)", "lnRR", "IC 95%", "Peso (%)", "p-valor")
+) %>%
+  kable_styling(bootstrap_options = "striped", full_width = FALSE) %>%
+  footnote(general = nota_explicativa_fisico)
+
+
+# 12. Funnel plot (dados físicos)
+funnel(
+  meta_final,
+  main = "Funnel plot - Indicadores de Qualidade Física do Solo",
+  xlab = "LogROM (lnRR)",
+  ylab = "Erro padrão",
+  pch = 19,
+  col = "blue",
+  contour = TRUE,
+  contour.levels = c(0.90, 0.95, 0.99),
+  col.contour = c("gray90", "gray80", "gray70"),
+  legend = TRUE,
+  back = TRUE
+)
+
+
+
+
+
+
+
+
+
+
+
+
+# 13. Forestplot estilizado com ggplot2
+library(ggplot2)
+library(forcats)
+
+# Exemplo de grupo artificial – substitua por variável real como "Clima", "Categoria", etc.
+# Exemplo: se tiver coluna `Zona`, use: resumo_vars$Grupo <- resumo_vars$Zona
+set.seed(1)
+resumo_vars$Grupo <- rep(c("Temperate", "Tropical", "Mediterranean"), length.out = nrow(resumo_vars))
+
+# Ordenar pela média do efeito
+resumo_vars <- resumo_vars %>%
+  arrange(TE) %>%
+  mutate(
+    Variavel_ord = fct_inorder(Variavel)
+  )
+
+# Gráfico
+ggplot(resumo_vars, aes(x = TE, y = Variavel_ord, color = Grupo, shape = Grupo)) +
+  geom_point(size = 3) +
+  geom_errorbarh(aes(xmin = IC_inf, xmax = IC_sup), height = 0.2) +
+  scale_color_manual(values = c("Temperate" = "#228B22", "Tropical" = "#B22222", "Mediterranean" = "#800080")) +
+  scale_shape_manual(values = c("Temperate" = 16, "Tropical" = 15, "Mediterranean" = 17)) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "gray40") +
+  labs(
+    x = "Log Response Ratio (lnRR)",
+    y = "Indicadores físicos",
+    color = "Zona climática",
+    shape = "Zona climática",
+    title = "Efeito médio por indicador e zona climática"
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(
+    legend.position = "top",
+    panel.grid.major.y = element_blank(),
+    axis.text.y = element_text(size = 10)
+  )
+
+

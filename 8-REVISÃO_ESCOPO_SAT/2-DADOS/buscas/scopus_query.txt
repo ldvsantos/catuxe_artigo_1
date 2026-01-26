@@ -1,0 +1,20 @@
+TITLE-ABS-KEY(
+    (
+        "traditional agricultural system*" OR "traditional farming system*" OR
+        "traditional agriculture" OR "traditional agroecosystem*" OR
+        "sistemas agrícolas tradicionais" OR "sistema agrícola tradicional" OR
+        "agricultura tradicional" OR
+        "indigenous farming" OR "indigenous agriculture" OR
+        "shifting cultivation" OR "slash-and-burn" OR
+        "ancestral farming" OR "ancient agriculture"
+    )
+    AND
+    (
+        "machine learning" OR "artificial intelligence" OR "deep learning" OR
+        "random forest" OR "neural network*" OR "support vector machine*" OR
+        "SVM" OR "decision tree*" OR "gradient boosting" OR "CNN" OR
+        "long short-term memory" OR "LSTM" OR "yolo" OR
+        "remote sensing"
+    )
+)
+AND PUBYEAR > 2009 AND PUBYEAR < 2026

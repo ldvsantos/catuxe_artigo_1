@@ -1,0 +1,149 @@
+estudo_id,autor_ano,ano,algoritmo,produto,regiao,doi_disponivel,metadados_ricos,dados_repositorio,tipo_repositorio,dados_suplementares,formato_padrao,vocabulario_controlado,licenca_clara,codigo_disponivel,documentacao_metodo,blockchain,api_disponivel,score_f,score_a,score_i,score_r,score_fair,classificacao_fair,compliant
+1,Study1_2018,2022,Neural Network,Chá,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Parcial,Insuficiente,Não,Não,17,0,0,5,22,Insuficiente,Não
+2,Study2_2018,2021,XGBoost,Azeite,Europa,Sim,Sim,Não,NA,Não,Sim,Não,Não,Não,Parcial,Não,Não,25,0,15,3,43,Moderado,Não
+3,Study3_2023,2019,Neural Network,Café,América do Sul,Sim,Não,Não,NA,Não,Sim,Não,Não,Não,Insuficiente,Não,Não,10,0,15,0,25,Moderado,Não
+4,Study4_2024,2021,SVM,Vinho,Europa,Sim,Não,Não,NA,Não,Sim,Não,Não,Não,Parcial,Não,Não,10,0,15,3,28,Moderado,Não
+5,Study5_2016,2025,SVM,Vinho,Europa,Sim,Sim,Não,NA,Não,Sim,Não,Não,Parcial,Completa,Não,Não,25,0,15,12,52,Bom,Sim
+6,Study6_2010,2011,SVM,Vinho,América do Sul,Sim,Não,Não,NA,Não,Sim,Não,Não,Não,Parcial,Não,Não,10,0,15,3,28,Moderado,Não
+7,Study7_2019,2019,Random Forest,Chá,Europa,Sim,Parcial,Não,NA,Não,Sim,Não,Sim,Não,Completa,Sim,Não,17,0,15,15,47,Moderado,Não
+8,Study8_2024,2024,SVM,Vinho,Europa,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Não,Insuficiente,Não,Não,17,0,15,0,32,Moderado,Não
+9,Study9_2022,2020,SVM,Queijo,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Sim,Completa,Não,Não,17,0,0,17,34,Moderado,Não
+10,Study10_2021,2018,Random Forest,Mel,Ásia,Sim,Não,Não,NA,Não,Sim,Não,Não,Não,Insuficiente,Não,Não,10,0,15,0,25,Moderado,Não
+11,Study11_2020,2021,Random Forest,Mel,Europa,Sim,Não,Não,NA,Não,Não,Não,Não,Parcial,Insuficiente,Não,Não,10,0,0,5,15,Insuficiente,Não
+12,Study12_2015,2014,Random Forest,Chá,Europa,Sim,Parcial,Não,NA,Sim,Não,Não,Não,Não,Insuficiente,Sim,Não,17,10,0,0,27,Moderado,Não
+13,Study13_2012,2011,Neural Network,Café,América do Sul,Sim,Parcial,Sim,Zenodo,Sim,Sim,Não,Sim,Parcial,Parcial,Sim,Não,17,25,15,16,73,Bom,Sim
+14,Study14_2025,2025,SVM,Café,Europa,Sim,Parcial,Sim,Zenodo,Não,Não,Não,Não,Não,Parcial,Não,Não,17,15,0,3,35,Moderado,Não
+15,Study15_2012,2012,SVM,Vinho,Ásia,Sim,Parcial,Não,NA,Sim,Sim,Não,Não,Não,Insuficiente,Não,Não,17,10,15,0,42,Moderado,Não
+16,Study16_2025,2020,Deep Learning,Chá,Europa,Sim,Sim,Sim,Institucional,Não,Sim,Não,Não,Não,Completa,Não,Não,25,15,15,7,62,Bom,Sim
+17,Study17_2018,2023,Random Forest,Café,Ásia,Sim,Parcial,Não,NA,Não,Não,Não,Não,Sim,Parcial,Não,Não,17,0,0,13,30,Moderado,Não
+18,Study18_2025,2010,SVM,Chá,Europa,Sim,Não,Não,NA,Sim,Não,Não,Não,Parcial,Insuficiente,Não,Não,10,10,0,5,25,Moderado,Não
+19,Study19_2012,2024,PLS-DA,Café,Europa,Sim,Não,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,10,0,0,3,13,Insuficiente,Não
+20,Study20_2012,2017,Random Forest,Chá,Europa,Sim,Não,Não,NA,Sim,Não,Não,Não,Sim,Parcial,Não,Não,10,10,0,13,33,Moderado,Não
+21,Study21_2011,2022,Neural Network,Vinho,Ásia,Sim,Parcial,Sim,Mendeley Data,Não,Não,Não,Não,Não,Completa,Sim,Não,17,15,0,7,39,Moderado,Não
+22,Study22_2013,2020,SVM,Mel,Europa,Sim,Não,Não,NA,Não,Sim,Sim,Não,Não,Insuficiente,Não,Não,10,0,25,0,35,Moderado,Não
+23,Study23_2024,2025,Random Forest,Queijo,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,17,0,0,3,20,Insuficiente,Não
+24,Study24_2021,2010,Random Forest,Mel,Europa,Sim,Parcial,Não,NA,Sim,Sim,Não,Não,Não,Parcial,Não,Não,17,10,15,3,45,Moderado,Não
+25,Study25_2024,2020,Neural Network,Café,América do Sul,Sim,Não,Não,NA,Não,Não,Sim,Não,Não,Parcial,Não,Não,10,0,10,3,23,Insuficiente,Não
+26,Study26_2014,2018,Neural Network,Vinho,Ásia,Sim,Não,Não,NA,Não,Sim,Não,Não,Parcial,Insuficiente,Sim,Não,10,0,15,5,30,Moderado,Não
+27,Study27_2020,2017,Random Forest,Vinho,Europa,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Não,Completa,Não,Não,17,0,15,7,39,Moderado,Não
+28,Study28_2010,2010,Neural Network,Chá,Ásia,Sim,Não,Não,NA,Não,Sim,Não,Não,Não,Parcial,Não,Não,10,0,15,3,28,Moderado,Não
+29,Study29_2023,2018,SVM,Mel,Ásia,Não,Parcial,Não,NA,Não,Sim,Não,Não,Não,Insuficiente,Não,Não,7,0,15,0,22,Insuficiente,Não
+30,Study30_2021,2016,Deep Learning,Mel,Europa,Sim,Não,Não,NA,Não,Sim,Não,Não,Sim,Parcial,Não,Não,10,0,15,13,38,Moderado,Não
+31,Study31_2010,2013,SVM,Vinho,Europa,Sim,Não,Não,NA,Sim,Não,Não,Não,Sim,Completa,Sim,Não,10,10,0,17,37,Moderado,Não
+32,Study32_2022,2025,Random Forest,Mel,América do Sul,Sim,Sim,Não,NA,Não,Sim,Não,Não,Não,Parcial,Não,Não,25,0,15,3,43,Moderado,Não
+33,Study33_2024,2017,SVM,Queijo,Europa,Sim,Parcial,Não,NA,Não,Sim,Sim,Não,Sim,Parcial,Não,Não,17,0,25,13,55,Bom,Sim
+34,Study34_2015,2018,Random Forest,Mel,América do Sul,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Não,Insuficiente,Não,Não,17,0,15,0,32,Moderado,Não
+35,Study35_2017,2021,Deep Learning,Chá,Ásia,Sim,Parcial,Não,NA,Sim,Sim,Não,Não,Não,Insuficiente,Não,Não,17,10,15,0,42,Moderado,Não
+36,Study36_2019,2024,Random Forest,Vinho,Ásia,Sim,Parcial,Sim,Mendeley Data,Sim,Não,Sim,Sim,Não,Insuficiente,Não,Não,17,25,10,8,60,Bom,Sim
+37,Study37_2025,2023,SVM,Café,África,Sim,Não,Não,NA,Não,Sim,Não,Não,Não,Parcial,Não,Não,10,0,15,3,28,Moderado,Não
+38,Study38_2014,2022,SVM,Vinho,Ásia,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Sim,Insuficiente,Sim,Não,17,0,15,10,42,Moderado,Não
+39,Study39_2019,2024,SVM,Vinho,Europa,Sim,Não,Não,NA,Não,Não,Não,Não,Parcial,Parcial,Não,Não,10,0,0,8,18,Insuficiente,Não
+40,Study40_2025,2019,SVM,Vinho,Europa,Não,Parcial,Não,NA,Não,Sim,Não,Não,Não,Parcial,Não,Não,7,0,15,3,25,Moderado,Não
+41,Study41_2019,2025,Neural Network,Vinho,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,17,0,0,3,20,Insuficiente,Não
+42,Study42_2020,2024,Random Forest,Café,Europa,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Não,Insuficiente,Não,Não,17,0,15,0,32,Moderado,Não
+43,Study43_2022,2024,SVM,Mel,África,Sim,Parcial,Não,NA,Não,Não,Sim,Não,Não,Parcial,Não,Não,17,0,10,3,30,Moderado,Não
+44,Study44_2022,2022,SVM,Vinho,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Sim,Não,Completa,Não,Sim,17,0,0,15,32,Moderado,Não
+45,Study45_2014,2023,Random Forest,Chá,Europa,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Parcial,Parcial,Não,Não,17,0,15,8,40,Moderado,Não
+46,Study46_2019,2024,XGBoost,Mel,Europa,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Parcial,Parcial,Não,Não,17,0,15,8,40,Moderado,Não
+47,Study47_2014,2017,Neural Network,Vinho,América do Sul,Sim,Parcial,Não,NA,Sim,Sim,Não,Sim,Parcial,Completa,Não,Não,17,10,15,20,62,Bom,Sim
+48,Study48_2013,2021,SVM,Vinho,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Sim,Completa,Não,Não,17,0,0,17,34,Moderado,Não
+49,Study49_2023,2025,Random Forest,Vinho,Ásia,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Parcial,Sim,Não,17,0,0,3,20,Insuficiente,Não
+50,Study50_2017,2017,XGBoost,Mel,América do Sul,Sim,Parcial,Não,NA,Não,Não,Sim,Não,Não,Completa,Não,Não,17,0,10,7,34,Moderado,Não
+51,Study51_2017,2024,Deep Learning,Chá,Europa,Sim,Não,Não,NA,Não,Não,Não,Não,Sim,Parcial,Não,Não,10,0,0,13,23,Insuficiente,Não
+52,Study52_2013,2021,SVM,Queijo,África,Sim,Não,Não,NA,Não,Sim,Não,Não,Parcial,Completa,Não,Não,10,0,15,12,37,Moderado,Não
+53,Study53_2015,2025,Random Forest,Café,Europa,Sim,Não,Não,NA,Sim,Sim,Não,Não,Parcial,Parcial,Sim,Sim,10,10,15,8,43,Moderado,Não
+54,Study54_2024,2020,Random Forest,Vinho,Europa,Sim,Não,Não,NA,Não,Sim,Não,Sim,Parcial,Parcial,Não,Não,10,0,15,16,41,Moderado,Não
+55,Study55_2017,2024,XGBoost,Vinho,Ásia,Sim,Parcial,Sim,Zenodo,Não,Não,Não,Não,Não,Parcial,Sim,Não,17,15,0,3,35,Moderado,Não
+56,Study56_2016,2024,SVM,Chá,Europa,Sim,Parcial,Não,NA,Sim,Sim,Não,Não,Não,Parcial,Não,Não,17,10,15,3,45,Moderado,Não
+57,Study57_2019,2010,Neural Network,Chá,Europa,Sim,Sim,Não,NA,Não,Não,Não,Não,Não,Completa,Sim,Não,25,0,0,7,32,Moderado,Não
+58,Study58_2019,2022,SVM,Mel,América do Sul,Sim,Não,Não,NA,Sim,Não,Sim,Não,Não,Completa,Sim,Não,10,10,10,7,37,Moderado,Não
+59,Study59_2018,2014,Neural Network,Chá,Europa,Sim,Sim,Não,NA,Não,Não,Não,Não,Parcial,Insuficiente,Não,Não,25,0,0,5,30,Moderado,Não
+60,Study60_2019,2024,Random Forest,Vinho,América do Sul,Sim,Não,Não,NA,Não,Sim,Não,Não,Não,Completa,Não,Não,10,0,15,7,32,Moderado,Não
+61,Study61_2018,2018,XGBoost,Café,Ásia,Sim,Parcial,Não,NA,Sim,Não,Não,Não,Parcial,Insuficiente,Não,Não,17,10,0,5,32,Moderado,Não
+62,Study62_2025,2021,Random Forest,Café,Europa,Sim,Não,Não,NA,Sim,Sim,Sim,Não,Não,Completa,Não,Não,10,10,25,7,52,Bom,Sim
+63,Study63_2014,2021,SVM,Chá,Ásia,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,17,0,0,3,20,Insuficiente,Não
+64,Study64_2010,2016,SVM,Mel,Europa,Sim,Não,Sim,Figshare,Não,Sim,Não,Não,Não,Parcial,Não,Não,10,15,15,3,43,Moderado,Não
+65,Study65_2024,2020,Deep Learning,Vinho,Europa,Sim,Não,Não,NA,Não,Não,Não,Não,Não,Insuficiente,Não,Não,10,0,0,0,10,Insuficiente,Não
+66,Study66_2021,2021,SVM,Vinho,Europa,Sim,Não,Não,NA,Sim,Não,Não,Não,Não,Completa,Sim,Não,10,10,0,7,27,Moderado,Não
+67,Study67_2012,2022,SVM,Vinho,Ásia,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Não,Parcial,Sim,Não,17,0,15,3,35,Moderado,Não
+68,Study68_2019,2025,SVM,Café,América do Sul,Sim,Parcial,Não,NA,Não,Sim,Não,Sim,Não,Completa,Sim,Não,17,0,15,15,47,Moderado,Não
+69,Study69_2018,2023,Neural Network,Chá,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Completa,Não,Não,17,0,0,7,24,Insuficiente,Não
+70,Study70_2022,2020,Neural Network,Vinho,América do Sul,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,17,0,0,3,20,Insuficiente,Não
+71,Study71_2012,2011,Random Forest,Café,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,17,0,0,3,20,Insuficiente,Não
+72,Study72_2019,2022,Random Forest,Café,América do Sul,Não,Parcial,Sim,Zenodo,Não,Não,Sim,Sim,Parcial,Parcial,Sim,Não,7,15,10,16,48,Moderado,Não
+73,Study73_2013,2024,Random Forest,Vinho,África,Sim,Não,Não,NA,Não,Não,Não,Não,Parcial,Parcial,Não,Não,10,0,0,8,18,Insuficiente,Não
+74,Study74_2011,2021,Deep Learning,Vinho,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Insuficiente,Não,Não,17,0,0,0,17,Insuficiente,Não
+75,Study75_2010,2021,SVM,Chá,Europa,Sim,Não,Não,NA,Não,Não,Não,Não,Sim,Parcial,Não,Não,10,0,0,13,23,Insuficiente,Não
+76,Study76_2022,2021,Random Forest,Mel,África,Sim,Sim,Não,NA,Não,Não,Sim,Não,Não,Completa,Não,Não,25,0,10,7,42,Moderado,Não
+77,Study77_2021,2021,Neural Network,Chá,Europa,Sim,Sim,Sim,Zenodo,Não,Sim,Não,Não,Sim,Insuficiente,Não,Não,25,15,15,10,65,Bom,Sim
+78,Study78_2015,2019,Neural Network,Café,Ásia,Sim,Não,Não,NA,Não,Não,Não,Não,Não,Insuficiente,Não,Não,10,0,0,0,10,Insuficiente,Não
+79,Study79_2025,2013,Neural Network,Vinho,África,Sim,Sim,Não,NA,Não,Sim,Não,Não,Não,Parcial,Não,Não,25,0,15,3,43,Moderado,Não
+80,Study80_2022,2019,PLS-DA,Vinho,Ásia,Sim,Sim,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,25,0,0,3,28,Moderado,Não
+81,Study81_2023,2018,Neural Network,Azeite,Ásia,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Não,Parcial,Não,Não,17,0,15,3,35,Moderado,Não
+82,Study82_2021,2016,Random Forest,Mel,América do Sul,Sim,Sim,Sim,GitHub,Não,Sim,Não,Não,Não,Insuficiente,Sim,Não,25,15,15,0,55,Bom,Sim
+83,Study83_2023,2024,PLS-DA,Vinho,América do Sul,Sim,Não,Não,NA,Não,Sim,Não,Não,Não,Completa,Não,Não,10,0,15,7,32,Moderado,Não
+84,Study84_2018,2023,SVM,Chá,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Insuficiente,Não,Não,17,0,0,0,17,Insuficiente,Não
+85,Study85_2021,2024,Random Forest,Azeite,Ásia,Sim,Parcial,Não,NA,Não,Não,Não,Não,Parcial,Parcial,Não,Não,17,0,0,8,25,Moderado,Não
+86,Study86_2022,2020,Neural Network,Mel,Ásia,Sim,Parcial,Não,NA,Não,Não,Não,Sim,Não,Completa,Não,Não,17,0,0,15,32,Moderado,Não
+87,Study87_2021,2024,Random Forest,Café,Europa,Sim,Parcial,Não,NA,Sim,Sim,Não,Não,Sim,Parcial,Sim,Não,17,10,15,13,55,Bom,Sim
+88,Study88_2011,2025,SVM,Café,Europa,Sim,Sim,Não,NA,Sim,Sim,Sim,Não,Não,Completa,Sim,Não,25,10,25,7,67,Bom,Sim
+89,Study89_2024,2024,XGBoost,Mel,Ásia,Não,Parcial,Sim,Zenodo,Não,Não,Sim,Não,Não,Insuficiente,Não,Não,7,15,10,0,32,Moderado,Não
+90,Study90_2011,2021,Random Forest,Chá,Europa,Sim,Não,Não,NA,Sim,Não,Não,Sim,Não,Parcial,Não,Não,10,10,0,11,31,Moderado,Não
+91,Study91_2010,2015,Random Forest,Chá,Europa,Sim,Sim,Não,NA,Não,Sim,Não,Não,Não,Completa,Não,Não,25,0,15,7,47,Moderado,Não
+92,Study92_2021,2021,SVM,Vinho,Ásia,Sim,Não,Não,NA,Sim,Não,Não,Não,Não,Parcial,Não,Não,10,10,0,3,23,Insuficiente,Não
+93,Study93_2023,2024,SVM,Mel,Europa,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Não,Parcial,Não,Não,17,0,15,3,35,Moderado,Não
+94,Study94_2015,2012,XGBoost,Chá,África,Sim,Parcial,Não,NA,Não,Não,Não,Não,Sim,Parcial,Não,Não,17,0,0,13,30,Moderado,Não
+95,Study95_2015,2024,Neural Network,Vinho,Ásia,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Não,Parcial,Não,Não,17,0,15,3,35,Moderado,Não
+96,Study96_2011,2019,SVM,Vinho,América do Sul,Sim,Sim,Não,NA,Não,Não,Não,Sim,Não,Completa,Não,Não,25,0,0,15,40,Moderado,Não
+97,Study97_2018,2022,SVM,Café,América do Sul,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Parcial,Sim,Não,17,0,0,3,20,Insuficiente,Não
+98,Study98_2019,2021,XGBoost,Mel,Europa,Sim,Parcial,Não,NA,Não,Sim,Não,Sim,Não,Insuficiente,Não,Não,17,0,15,8,40,Moderado,Não
+99,Study99_2014,2024,PLS-DA,Chá,Europa,Sim,Parcial,Não,NA,Sim,Não,Não,Não,Sim,Completa,Não,Não,17,10,0,17,44,Moderado,Não
+100,Study100_2023,2019,Random Forest,Chá,América do Sul,Sim,Parcial,Não,NA,Não,Não,Não,Não,Parcial,Parcial,Não,Não,17,0,0,8,25,Moderado,Não
+101,Study101_2011,2025,SVM,Vinho,América do Sul,Sim,Parcial,Não,NA,Não,Não,Não,Sim,Não,Parcial,Sim,Não,17,0,0,11,28,Moderado,Não
+102,Study102_2018,2024,SVM,Queijo,Ásia,Sim,Sim,Não,NA,Não,Sim,Não,Não,Não,Insuficiente,Não,Não,25,0,15,0,40,Moderado,Não
+103,Study103_2011,2024,Neural Network,Mel,Europa,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Sim,Completa,Não,Não,17,0,15,17,49,Moderado,Não
+104,Study104_2024,2021,SVM,Queijo,África,Sim,Não,Sim,Zenodo,Não,Sim,Não,Não,Sim,Parcial,Não,Não,10,15,15,13,53,Bom,Sim
+105,Study105_2014,2024,Neural Network,Vinho,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Parcial,Sim,Não,17,0,0,3,20,Insuficiente,Não
+106,Study106_2012,2016,Deep Learning,Vinho,Europa,Sim,Parcial,Não,NA,Não,Sim,Não,Sim,Não,Parcial,Não,Não,17,0,15,11,43,Moderado,Não
+107,Study107_2020,2023,SVM,Mel,África,Sim,Parcial,Sim,Zenodo,Não,Sim,Não,Não,Não,Parcial,Não,Não,17,15,15,3,50,Bom,Sim
+108,Study108_2018,2025,Deep Learning,Queijo,Europa,Sim,Sim,Não,NA,Não,Não,Não,Não,Sim,Parcial,Não,Não,25,0,0,13,38,Moderado,Não
+109,Study109_2019,2011,Random Forest,Mel,Europa,Sim,Não,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,10,0,0,3,13,Insuficiente,Não
+110,Study110_2023,2018,PLS-DA,Vinho,Europa,Sim,Não,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,10,0,0,3,13,Insuficiente,Não
+111,Study111_2016,2019,SVM,Vinho,Ásia,Sim,Parcial,Não,NA,Não,Não,Não,Sim,Parcial,Completa,Não,Não,17,0,0,20,37,Moderado,Não
+112,Study112_2013,2024,Deep Learning,Café,Europa,Sim,Parcial,Não,NA,Não,Sim,Não,Não,Não,Completa,Não,Não,17,0,15,7,39,Moderado,Não
+113,Study113_2010,2024,XGBoost,Chá,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Parcial,Sim,Não,17,0,0,3,20,Insuficiente,Não
+114,Study114_2020,2025,SVM,Mel,Europa,Sim,Não,Sim,Figshare,Sim,Sim,Não,Não,Parcial,Parcial,Não,Não,10,25,15,8,58,Bom,Sim
+115,Study115_2017,2020,Deep Learning,Vinho,América do Sul,Sim,Parcial,Não,NA,Não,Não,Não,Não,Sim,Parcial,Sim,Não,17,0,0,13,30,Moderado,Não
+116,Study116_2013,2024,Random Forest,Queijo,América do Sul,Sim,Não,Não,NA,Sim,Não,Não,Não,Não,Insuficiente,Não,Não,10,10,0,0,20,Insuficiente,Não
+117,Study117_2017,2021,Neural Network,Vinho,Ásia,Sim,Parcial,Não,NA,Não,Sim,Não,Sim,Não,Parcial,Não,Não,17,0,15,11,43,Moderado,Não
+118,Study118_2019,2014,SVM,Queijo,África,Sim,Sim,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,25,0,0,3,28,Moderado,Não
+119,Study119_2019,2022,Random Forest,Vinho,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Insuficiente,Não,Sim,17,0,0,0,17,Insuficiente,Não
+120,Study120_2013,2025,PLS-DA,Azeite,África,Sim,Sim,Não,NA,Sim,Não,Sim,Sim,Não,Parcial,Não,Não,25,10,10,11,56,Bom,Sim
+121,Study121_2013,2015,Random Forest,Mel,América do Sul,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,17,0,0,3,20,Insuficiente,Não
+122,Study122_2012,2018,Neural Network,Vinho,África,Sim,Parcial,Não,NA,Sim,Não,Não,Não,Não,Completa,Não,Não,17,10,0,7,34,Moderado,Não
+123,Study123_2025,2022,Neural Network,Queijo,América do Sul,Sim,Não,Não,NA,Não,Não,Não,Não,Sim,Parcial,Não,Não,10,0,0,13,23,Insuficiente,Não
+124,Study124_2021,2025,SVM,Vinho,Europa,Sim,Parcial,Não,NA,Sim,Não,Não,Não,Não,Insuficiente,Não,Não,17,10,0,0,27,Moderado,Não
+125,Study125_2019,2011,XGBoost,Queijo,América do Sul,Sim,Não,Não,NA,Não,Não,Não,Não,Não,Insuficiente,Não,Não,10,0,0,0,10,Insuficiente,Não
+126,Study126_2023,2023,PLS-DA,Mel,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Parcial,Completa,Não,Não,17,0,0,12,29,Moderado,Não
+127,Study127_2016,2011,SVM,Vinho,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Parcial,Parcial,Não,Não,17,0,0,8,25,Moderado,Não
+128,Study128_2018,2021,Neural Network,Café,Europa,Sim,Não,Não,NA,Não,Sim,Não,Sim,Parcial,Completa,Não,Não,10,0,15,20,45,Moderado,Não
+129,Study129_2018,2013,Random Forest,Chá,Europa,Sim,Não,Não,NA,Não,Sim,Não,Não,Sim,Insuficiente,Não,Não,10,0,15,10,35,Moderado,Não
+130,Study130_2018,2025,Neural Network,Queijo,Europa,Sim,Não,Não,NA,Não,Não,Não,Não,Não,Completa,Não,Não,10,0,0,7,17,Insuficiente,Não
+131,Study131_2021,2023,Neural Network,Queijo,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,17,0,0,3,20,Insuficiente,Não
+132,Study132_2014,2022,Deep Learning,Mel,Europa,Sim,Não,Não,NA,Sim,Sim,Não,Sim,Não,Parcial,Não,Não,10,10,15,11,46,Moderado,Não
+133,Study133_2022,2019,XGBoost,Vinho,África,Sim,Sim,Não,NA,Não,Não,Não,Sim,Não,Insuficiente,Não,Não,25,0,0,8,33,Moderado,Não
+134,Study134_2011,2019,Random Forest,Chá,América do Sul,Sim,Sim,Sim,Mendeley Data,Não,Não,Sim,Sim,Parcial,Parcial,Não,Não,25,15,10,16,66,Bom,Sim
+135,Study135_2016,2023,Random Forest,Chá,Europa,Sim,Não,Não,NA,Não,Sim,Não,Não,Parcial,Parcial,Não,Não,10,0,15,8,33,Moderado,Não
+136,Study136_2018,2022,Deep Learning,Chá,Europa,Sim,Não,Não,NA,Sim,Não,Sim,Não,Não,Completa,Não,Não,10,10,10,7,37,Moderado,Não
+137,Study137_2023,2022,Random Forest,Chá,Europa,Sim,Parcial,Não,NA,Não,Sim,Sim,Não,Não,Parcial,Não,Não,17,0,25,3,45,Moderado,Não
+138,Study138_2025,2024,Neural Network,Chá,Europa,Sim,Sim,Não,NA,Não,Sim,Sim,Não,Não,Parcial,Não,Não,25,0,25,3,53,Bom,Sim
+139,Study139_2023,2020,Neural Network,Azeite,América do Sul,Sim,Não,Não,NA,Sim,Não,Não,Sim,Não,Completa,Não,Não,10,10,0,15,35,Moderado,Não
+140,Study140_2024,2018,Random Forest,Vinho,Ásia,Sim,Parcial,Não,NA,Não,Sim,Não,Sim,Sim,Insuficiente,Não,Não,17,0,15,18,50,Bom,Sim
+141,Study141_2019,2018,Random Forest,Chá,África,Sim,Não,Não,NA,Não,Sim,Não,Sim,Sim,Completa,Sim,Não,10,0,15,25,50,Bom,Sim
+142,Study142_2014,2023,Neural Network,Azeite,Ásia,Sim,Não,Não,NA,Não,Sim,Não,Não,Não,Completa,Não,Não,10,0,15,7,32,Moderado,Não
+143,Study143_2017,2023,XGBoost,Mel,África,Sim,Não,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,10,0,0,3,13,Insuficiente,Não
+144,Study144_2014,2010,Neural Network,Chá,América do Sul,Sim,Não,Não,NA,Não,Não,Não,Não,Não,Parcial,Não,Não,10,0,0,3,13,Insuficiente,Não
+145,Study145_2015,2025,XGBoost,Café,Europa,Sim,Parcial,Não,NA,Sim,Não,Sim,Não,Parcial,Completa,Não,Não,17,10,10,12,49,Moderado,Não
+146,Study146_2018,2014,PLS-DA,Café,Ásia,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Completa,Não,Não,17,0,0,7,24,Insuficiente,Não
+147,Study147_2015,2023,Random Forest,Café,Europa,Sim,Parcial,Não,NA,Não,Não,Não,Não,Não,Completa,Não,Não,17,0,0,7,24,Insuficiente,Não
+148,Study148_2018,2021,Random Forest,Chá,Ásia,Sim,Parcial,Não,NA,Sim,Sim,Não,Não,Não,Insuficiente,Sim,Não,17,10,15,0,42,Moderado,Não

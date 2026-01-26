@@ -1,0 +1,2635 @@
+==========================================================================================
+RELATÓRIO CONSOLIDADO - ARTIGOS RELEVANTES
+Tema: Machine Learning aplicado a Sistemas Agrícolas Tradicionais
+Fontes: Scopus + Web of Science (Combinados)
+==========================================================================================
+
+📊 RESUMO EXECUTIVO
+------------------------------------------------------------------------------------------
+Total analisado: 449
+✅ RELEVANTES SELECIONADOS: 244 (54.3%)
+❌ Não selecionados (baixa relevância + excluídos): 205 (45.7%)
+
+🏆 Excelência (≥12 pts): 18
+🥈 Alta relevância (≥6 pts): 132
+🥉 Adequada (≥2 pts): 94
+
+📚 DISTRIBUIÇÃO POR FONTE (Artigos Relevantes)
+------------------------------------------------------------------------------------------
+  • Scopus: 212 artigos
+    (17 excelência, 113 alta, 82 adequada)
+  • WoS: 32 artigos
+    (1 excelência, 19 alta, 12 adequada)
+
+📅 DISTRIBUIÇÃO TEMPORAL (Artigos Relevantes)
+------------------------------------------------------------------------------------------
+  2010: ██████████ (10)
+  2011: ████████ (8)
+  2012: ████████ (8)
+  2013: █████████████ (13)
+  2014: ██████ (6)
+  2015: ██████████████ (14)
+  2016: █████████ (9)
+  2017: ████████████ (12)
+  2018: ███████████ (11)
+  2019: █████████████ (13)
+  2020: ███████████ (11)
+  2021: ██████████████████ (18)
+  2022: ███████████████████████ (23)
+  2023: ██████████████████████ (22)
+  2024: ████████████████████████████████ (32)
+  2025: █████████████████████████████████ (33)
+  2026: █ (1)
+
+
+==========================================================================================
+📋 LISTA COMPLETA DOS 244 ARTIGOS RELEVANTES
+==========================================================================================
+
+
+------------------------------------------------------------------------------------------
+🏆 EXCELÊNCIA (18 artigos)
+------------------------------------------------------------------------------------------
+
+1. [Scopus] Takasaki2025680
+   📊 Score: 20.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Takasaki, Yoshito and Coomes, Oliver T. and Abizaid, Christian
+   📖 Título: Pervasive Indigenous and local knowledge of tropical wild species
+   🔍 Termos encontrados (6):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional knowledge
+      • 🔴 PRIORITÁRIO (conteúdo): indigenous knowledge
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): local knowledge
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+2. [WoS] WOS:001035145600001
+   📊 Score: 16.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Choudhury, Burhan U. and Santra, Priyabatra and Singh, Naseeb and Chakraborty, Poulamee
+   📖 Título: Development of land-use-specific pedotransfer functions for predicting bulk density of acidic topsoil in eastern Himalayas (India)
+   🔍 Termos encontrados (11):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: support vector machine
+      • 🟠 ALTA: svm
+      • 🟠 ALTA: gradient boosting
+      • 🟠 ALTA: artificial neural network
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+3. [Scopus] Tamang2025
+   📊 Score: 15.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Tamang, Muna and Nandy, Subrata and Srinet, Ritika and Bhat, Yamini and Padalia, Hitendra and NATH, ...
+   📖 Título: Impact of anthropogenic disturbance and climate on bamboo distribution in shifting cultivation landscapes of Northeast India
+   🔍 Termos encontrados (8):
+      • 🔴 PRIORITÁRIO (título, abstract): shifting cultivation
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: support vector machine
+      • 🟠 ALTA: artificial neural network
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+4. [Scopus] Bai2024670
+   📊 Score: 15.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Bai, Yunxiao and Li, Xiaoshuang and Feng, Yuqing and Liu, Moucheng and Chen, Cheng
+   📖 Título: Preserving traditional systems: Identification of agricultural heritage areas based on agro-biodiversity
+   🔍 Termos encontrados (6):
+      • 🔴 PRIORITÁRIO (abstract): traditional agricultural system
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): traditional agriculture
+      • 🔴 PRIORITÁRIO (abstract): indigenous knowledge
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: gis
+
+5. [Scopus] Rizvi202411865
+   📊 Score: 15.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Rizvi, Syed Mujtaba Hassan and Naseer, Asma and Rehman, Shafiq Ur and Akram, Sheeraz and Gruhn, Volk...
+   📖 Título: Revolutionizing Agriculture: Machine and Deep Learning Solutions for Enhanced Crop Quality and Weed Control
+   🔍 Termos encontrados (10):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: support vector machine
+      • 🟠 ALTA: svm
+      • 🟠 ALTA: artificial neural network
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modelling
+
+6. [Scopus] Inoue2010287
+   📊 Score: 15.5 pontos
+   📅 Ano: 2010
+   👤 Autor(es): Inoue, Yoshio and Kiyono, Yoshiyuki and Asai, Hidetoshi and Ochiai, Yukihito and Qi, Jiaguo Guo and ...
+   📖 Título: Assessing land-use and carbon stock in slash-and-burn ecosystems in tropical mountain of Laos based on time-series satellite images
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): shifting cultivation
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+7. [Scopus] Chaudhury2023
+   📊 Score: 15.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Chaudhury, Burhan U. and Divyanth, L. G. and Chakraborty, Somsubhra
+   📖 Título: Land use/land cover classification using hyperspectral soil reflectance features in the Eastern Himalayas, India
+   🔍 Termos encontrados (9):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: support vector machine
+      • 🟠 ALTA: svm
+      • 🟠 ALTA: k-nearest neighbor
+      • 🟠 ALTA: knn
+      • 🟠 ALTA: ann
+
+8. [Scopus] Folega2023
+   📊 Score: 14.5 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Folega, Fousseni and Atakpama, Wouyo and Pereki, Hodabalo and Diwediga, Badabate and Novotny, Ivan P...
+   📖 Título: Geo-Based Assessment of Vegetation Health Related to Agroecological Practices in the Southeast of Togo
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): agroecolog
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+9. [Scopus] Bhat2024
+   📊 Score: 14.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Bhat, Yamini and Nandy, Subrata and Das, Krishna and Tamang, Muna and Padalia, Hitendra and NATH, Ar...
+   📖 Título: Vegetation disturbance and regrowth dynamics in shifting cultivation landscapes
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (título, abstract): shifting cultivation
+      • 🔴 PRIORITÁRIO (keywords, abstract): slash-and-burn
+      • 🟠 ALTA: random forest
+      • 🟡 ADEQUADA: remote sensing
+
+10. [Scopus] Pyone20241130
+   📊 Score: 14.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Pyone, Khin Htet and Crego, Ramiro D. and Ngwe, Saw San and Win, Saw Di and Connette, Katherine La J...
+   📖 Título: Understanding the transition of community land use from shifting cultivation to cash cropping in southern Tanintharyi, Myanmar
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): shifting cultivation
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+11. [Scopus] Vaca2019392
+   📊 Score: 14.0 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Vaca, Raúl Abel and Rodiles-Hernández, Rocío and Ochoa-Gaona, Susana and Taylor-Aquino, Nathaline E....
+   📖 Título: Evaluating and supporting conservation action in agricultural landscapes of the Usumacinta River Basin
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional farming system
+      • 🔴 PRIORITÁRIO (título, keywords, conteúdo): cultural landscape
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+12. [Scopus] Schneibel2017118
+   📊 Score: 14.0 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Schneibel, Anne and Stellmes, Marion and Röder, Achim and Frantz, David and Kowalski, Benjamin and H...
+   📖 Título: Assessment of spatio-temporal changes of smallholder cultivation patterns in the Angolan Miombo belt using segmentation of Landsat time series
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): traditional farming system
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+13. [Scopus] Pelletier20123581
+   📊 Score: 14.0 pontos
+   📅 Ano: 2012
+   👤 Autor(es): Pelletier, Johanne and Codjia, Claude and Potvin, Catherine
+   📖 Título: Traditional shifting agriculture: Tracking forest carbon stock and biodiversity through time in western Panama
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🔴 PRIORITÁRIO (abstract): local knowledge
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+14. [Scopus] Tace20221025
+   📊 Score: 13.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Tace, Youness and Tabaa, Mohamed and EL FILALI, SANAA and Leghris, Cherkaoui and Bensag, Hassna and ...
+   📖 Título: Smart irrigation system based on IoT and machine learning
+   🔍 Termos encontrados (9):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: svm
+      • 🟠 ALTA: k-nearest neighbor
+      • 🟠 ALTA: knn
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: gis
+
+15. [Scopus] Wang20191444
+   📊 Score: 12.5 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Wang, Xing and Kang, Junfeng and Liu, Xuejun and Wang, Meizhen and Zhang, Chao
+   📖 Título: Improving the Faster R-CNN Method for Recognizing Typical Objects of Modern Agriculture based on Remote Sensing Imagery; 设施农业典型地物改进Faster R-CNN识别方法
+   🔍 Termos encontrados (8):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: convolutional neural network
+      • 🟠 ALTA: cnn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+16. [Scopus] Kilawe201884
+   📊 Score: 12.5 pontos
+   📅 Ano: 2018
+   👤 Autor(es): Kilawe, Charles Joseph and Mertz, Ole and Silayo, Dos Santos Aristaricky and Birch-Thomsen, T. and M...
+   📖 Título: Transformation of shifting cultivation: Extent, driving forces and impacts on livelihoods in Tanzania
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, abstract): shifting cultivation
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+17. [Scopus] Masný2015888
+   📊 Score: 12.5 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Masný, Matej and Zaušková, L'Ubica
+   📖 Título: Multi-temporal analysis of an agricultural landscape transformation and abandonment (Lubietová, Central Slovakia)
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): cultural landscape
+      • 🟡 ADEQUADA: remote sensing
+
+18. [Scopus] Thong20181713
+   📊 Score: 12.0 pontos
+   📅 Ano: 2018
+   👤 Autor(es): Thong, Pentile and Pebam, Rocky and Sahoo, Uttam Kumar
+   📖 Título: A Geospatial Approach to Understand the Dynamics of Shifting Cultivation in Champhai District of Mizoram, North-East India
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: spatial analysis
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+
+------------------------------------------------------------------------------------------
+🥈 ALTA RELEVÂNCIA (132 artigos)
+------------------------------------------------------------------------------------------
+
+19. [Scopus] Gao2023
+   📊 Score: 11.5 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Gao, Yan and Solórzano, Jonathan V. and Estoque, Ronald C. and Tsuyuzaki, Shiro
+   📖 Título: Tropical Dry Forest Dynamics Explained by Topographic and Anthropogenic Factors: A Case Study in Mexico
+   🔍 Termos encontrados (6):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+20. [Scopus] Liang20191605
+   📊 Score: 11.5 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Liang, Xinyuan and Li, Yangbing and Shao, Jing'An and Liu, Yanhui and Ran, Caihong
+   📖 Título: Traditional agroecosystem transition in mountainous area of Three Gorges Reservoir Area; 三峡库区山区传统农业生态系统转型
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): traditional agroecosystem
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: spatial analysis
+      • 🟡 ADEQUADA: remote sensing
+
+21. [Scopus] Bermeo2014299
+   📊 Score: 11.5 pontos
+   📅 Ano: 2014
+   👤 Autor(es): Bermeo, Adriana and Couturier, Stéphane André and Galeana-Pizaña, J. Mauricio
+   📖 Título: Conservation of traditional smallholder cultivation systems in indigenous territories: Mapping land availability for milpa cultivation in the Huasteca Poblana, Mexico
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): indigenous knowledge
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: spatial analysis
+      • 🟡 ADEQUADA: remote sensing
+
+22. [Scopus] Käyhkö201126
+   📊 Score: 11.5 pontos
+   📅 Ano: 2011
+   👤 Autor(es): Käyhkö, Niina and Fagerholm, Nora and Asseid, Bakari S. and Mzee, Abbas Juma
+   📖 Título: Dynamic land use and land cover changes and their effect on forest resources in a coastal village of Matemwe, Zanzibar, Tanzania
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+23. [Scopus] Wang2025
+   📊 Score: 11.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Wang, Wenbo and Xi, Yidan and Gu, Ji'nan and Yang, Qiuyue and Pan, Zhiyao and Zhang, Xinzhou and Xu,...
+   📖 Título: YOLOv8-TEA: Recognition Method of Tender Shoots of Tea Based on Instance Segmentation Algorithm
+   🔍 Termos encontrados (7):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: convolutional neural network
+      • 🟠 ALTA: cnn
+      • 🟡 ADEQUADA: modeling
+
+24. [Scopus] Rebolloso-Hernández2024817
+   📊 Score: 11.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Rebolloso-Hernández, Carlos Alberto and Vallejo-Pérez, Moisés Roberto and Galván Ortiz, Luis Manuel ...
+   📖 Título: Drought tolerance of Tének traditional agroecosystems: Towards mitigate the climate change effects
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (título, abstract): traditional agroecosystem
+      • 🔴 PRIORITÁRIO (abstract): agroecolog
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+25. [Scopus] Hagensieker2017244
+   📊 Score: 11.0 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Hagensieker, Ron and Roscher, Ribana and Rosentreter, Johannes and Jakimow, Benjamin and Waske, Björ...
+   📖 Título: Tropical land use land cover mapping in Pará (Brazil) using discriminative Markov random fields and multi-temporal TerraSAR-X data
+   🔍 Termos encontrados (6):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: support vector machine
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+26. [Scopus] Hurni20133377
+   📊 Score: 11.0 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Hurni, Kaspar and Hett, Cornelia and Epprecht, Michael and Messerli, Peter and Heinimann, Andreas
+   📖 Título: A texture-based land cover classification for the delineation of a shifting cultivation landscape in the lao PDR using landscape metrics
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+27. [Scopus] Castella201363
+   📊 Score: 11.0 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Castella, Jean Christophe and Lestrelin, Guillaume and Hett, Cornelia and Bourgoin, Jérémy and Fitri...
+   📖 Título: Effects of Landscape Segregation on Livelihood Vulnerability: Moving From Extensive Shifting Cultivation to Rotational Agriculture and Natural Forests in Northern Laos
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+28. [Scopus] Lin2024
+   📊 Score: 10.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Lin, Xiaolong and Xu, Guanghui and Li, Yanjun and Yu, Yong
+   📖 Título: Chemical fertilizers promote dissemination of ARGs in maize rhizosphere: An overlooked risk revealed after 37-year traditional agriculture practice
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, conteúdo): traditional agriculture
+      • 🔴 PRIORITÁRIO (conteúdo): agroecolog
+      • 🟠 ALTA: machine learning
+
+29. [Scopus] Bustillo Sánchez2021
+   📊 Score: 10.5 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Bustillo Sánchez, Marcela and Tonini, Marj and Mapelli, Anna and Fiorucci, Paolo
+   📖 Título: Spatial assessment of wildfires susceptibility in santa cruz (Bolivia) using random forest
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): slash-and-burn
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: ann
+
+30. [Scopus] Tian2019
+   📊 Score: 10.5 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Tian, Mengxiao and Guo, Hao and Chen, Hong and Wang, Qing and Long, Chengjiang and Ma, Yuhao
+   📖 Título: Automated pig counting using deep learning
+   🔍 Termos encontrados (6):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: convolutional neural network
+      • 🟠 ALTA: cnn
+      • 🟠 ALTA: artificial neural network
+
+31. [Scopus] Adhikary2019
+   📊 Score: 10.5 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Adhikary, Partha Pratim and Barman, Dhananjay and Madhu, Madegowda and Dash, Ch Jyotiprava and Jakha...
+   📖 Título: Land use and land cover dynamics with special emphasis on shifting cultivation in Eastern Ghats Highlands of India using remote sensing data and GIS
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+32. [Scopus] Chintala2017
+   📊 Score: 10.5 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Chintala, Sudhakar Reddy and Singh, Sonali and Dadhwal, Vinay Kumar and Jha, Chandrashekhar and Rao,...
+   📖 Título: Predictive modelling of the spatial pattern of past and future forest cover changes in India
+   🔍 Termos encontrados (8):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: predictive model
+      • 🟠 ALTA: artificial neural network
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+33. [WoS] WOS:001323178300001
+   📊 Score: 10.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Li, Mingxuan and Wu, Faying and Wang, Fengbo and Zou, Tianrui and Li, Mingzhen and Xiao, Xinqing
+   📖 Título: CNN-MLP-Based Configurable Robotic Arm for Smart Agriculture
+   🔍 Termos encontrados (6):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: convolutional neural network
+      • 🟠 ALTA: cnn
+
+34. [WoS] WOS:001587356000001
+   📊 Score: 10.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Wang, Weiye and Li, Qing
+   📖 Título: Smart farming revolution: Leveraging machine learning for sustainable agriculture
+   🔍 Termos encontrados (6):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: convolutional neural network
+      • 🟠 ALTA: cnn
+
+35. [Scopus] Shome2025
+   📊 Score: 10.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Shome, Parthiva and Prakash, Ambadipudi Jaya and Behera, Mukunda Dev and Mudi, Sujoy and Das, Pulake...
+   📖 Título: A Synergistic Approach Using Machine Learning and Deep Learning for Forest Fire Susceptibility in Himalayan Forests
+   🔍 Termos encontrados (7):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: gradient boosting
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+36. [Scopus] Singh20241
+   📊 Score: 10.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Singh, Siddharth and Singh, Uday Pratap and Jain, Sanjeev
+   📖 Título: Applications of Computer Vision and Drone Technology in Agriculture 4.0
+   🔍 Termos encontrados (7):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+37. [Scopus] Chakraborty2024572
+   📊 Score: 10.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Chakraborty, Kasturi and Bhavsar, Dhruval and Swain, Suraj Kumar and Bhuyan, Siddharth and Chaudhary...
+   📖 Título: Framework for eForest fire management in the shifting cultivation-dominated landscape of Meghalaya, North East India, using remote sensing and GIS
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+38. [Scopus] Savulescu2019
+   📊 Score: 10.0 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Savulescu, I. and Mihai, Bogdan Andrei and Vîrghileanu, Marina and Nistor, Constantin and Olariu, Bo...
+   📖 Título: Mountain arable land abandonment (1968-2018) in the Romanian Carpathians: Environmental conflicts and sustainability issues
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): traditional agriculture
+      • 🔴 PRIORITÁRIO (abstract): cultural landscape
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+39. [Scopus] Cvitanović201753
+   📊 Score: 10.0 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Cvitanović, Marin and Lučev, Ivana and Fuerst-Bjeliš, Borna and Slavuj Borčić, Lana and Horvat, Suza...
+   📖 Título: Analyzing post-socialist grassland conversion in a traditional agricultural landscape – Case study Croatia
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🔴 PRIORITÁRIO (título, conteúdo): cultural landscape
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+40. [Scopus] Molinario2015
+   📊 Score: 10.0 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Molinario, Giuseppe and Hansen, Matthew C. and Potapov, Peter V.
+   📖 Título: Forest cover dynamics of shifting cultivation in the Democratic Republic of Congo: A remote sensing-based assessment for 2000-2010
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+41. [Scopus] Keoboualapha2013383
+   📊 Score: 10.0 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Keoboualapha, Bounthanh and Onpraphai, Thaworn and Jintrawet, Attachai and Simaraks, Suchint and Pol...
+   📖 Título: Imperata grassland mapping in northern uplands of lao PDR: Area, distribution, characteristics, and implications for slash-and-burn cultivation
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+42. [Scopus] Sims2025
+   📊 Score: 9.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Sims, Michelle J. and Stanimirova, Radost and Raichuk, Anton and Neumann, Maxim and Richter, Jessica...
+   📖 Título: Global drivers of forest loss at 1 km resolution
+   🔍 Termos encontrados (6):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+43. [Scopus] Sandevoir2023
+   📊 Score: 9.5 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Sandevoir, Luc and Lespez, Laurent and Lissak, Candide
+   📖 Título: A Connectivity Approach to Agricultural Diffuse Pollution in Tropical Montane Catchments Dominated by Swidden Landscapes
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): cultural landscape
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+44. [Scopus] Fernandez-Beltran2021
+   📊 Score: 9.5 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Fernandez-Beltran, Ruben and Baidar, Tina and Kang, Jian and Pla, Filiberto
+   📖 Título: Rice-yield prediction with multi-temporal sentinel-2 data and 3D CNN: A case study in Nepal
+   🔍 Termos encontrados (6):
+      • 🔴 PRIORITÁRIO (abstract): traditional agricultural system
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: convolutional neural network
+      • 🟠 ALTA: cnn
+      • 🟡 ADEQUADA: remote sensing
+
+45. [Scopus] Lincoln2020
+   📊 Score: 9.5 pontos
+   📅 Ano: 2020
+   👤 Autor(es): Lincoln, Noa Kekuewa
+   📖 Título: Agroforestry form and ecological adaptation in ancient Hawai'i: Extent of the pākukui swidden system of Hāmākua, Hawai'i Island
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): agroecolog
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+46. [Scopus] Liang2020281
+   📊 Score: 9.5 pontos
+   📅 Ano: 2020
+   👤 Autor(es): Liang, Xinyuan and Li, Yangbing and Shao, Jing'An and Ran, Caihong
+   📖 Título: Traditional agroecosystem transition in mountainous area of Three Gorges Reservoir Area
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): traditional agroecosystem
+      • 🟡 ADEQUADA: remote sensing
+
+47. [Scopus] Kurien2019
+   📊 Score: 9.5 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Kurien, Amit John and Lele, Sharachchandra M. and Nagendra, Harini
+   📖 Título: Farms or Forests? Understanding and mapping shifting cultivation using the case study of West Garo hills, India
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+48. [Scopus] Nongkynrih20181094
+   📊 Score: 9.5 pontos
+   📅 Ano: 2018
+   👤 Autor(es): Nongkynrih, Jenita Mary and Pohshna, Chwadaka and Sarma, Kamini Kanta
+   📖 Título: Dynamics of shifting cultivation in relation to slope and elevation in parts of Nagaland, India
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (título, keywords, abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+49. [Scopus] Fantini2017417
+   📊 Score: 9.5 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Fantini, Alfredo Celso and Bauer, Eliane and de Valois, Cassio Marques and Siddique, Ilyas
+   📖 Título: The demise of swidden-fallow agriculture in an Atlantic Rainforest region: Implications for farmers’ livelihood and conservation
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🔴 PRIORITÁRIO (keywords, abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+50. [WoS] WOS:000525785000015
+   📊 Score: 9.5 pontos
+   📅 Ano: 2020
+   👤 Autor(es): Lincoln, Noa Kekuewa
+   📖 Título: Agroforestry form and ecological adaptation in ancient Hawai'i: Extent of the pakukui swidden system of Hamakua, Hawai'i Island
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): agroecolog
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+51. [WoS] WOS:000420919500006
+   📊 Score: 9.5 pontos
+   📅 Ano: 2012
+   👤 Autor(es): Wicaksono, Karuniawan Puji and Nakagoshi, Nobukazu
+   📖 Título: DEVELOPMENT OF SUSTAINABLE CULTURAL LANDSCAPES IN WEST KALIMANTAN
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, conteúdo): cultural landscape
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+52. [Scopus] Jiang2025
+   📊 Score: 9.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Jiang, Ningsang and Li, Peng and Feng, Zhiming
+   📖 Título: Detecting tropical freshly-opened swidden fields using a combined algorithm of continuous change detection and support vector machine
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: support vector machine
+      • 🟠 ALTA: svm
+      • 🟠 ALTA: ann
+
+53. [Scopus] Feng2024
+   📊 Score: 9.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Feng, Ying and Guo, Ying and Shen, Yanjun and Zhang, Guangxin and Wang, Yanfang and Chen, Xiaolu
+   📖 Título: Change of crop structure intensified water supply-demand imbalance in China's Black Soil Granary
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): agroecolog
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: decision tree
+      • 🟠 ALTA: ann
+
+54. [Scopus] Xiang2023
+   📊 Score: 9.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Xiang, Qiuchi and Huang, Xiaoning and Huang, Zhouxu and Chen, Xingming and Cheng, Jintao and Tang, X...
+   📖 Título: Yolo-Pest: An Insect Pest Object Detection Algorithm via CAC3 Module
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: convolutional neural network
+      • 🟠 ALTA: cnn
+      • 🟠 ALTA: ann
+
+55. [Scopus] Wang2022
+   📊 Score: 9.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Wang, Huibo and Zhao, Yu and Shao, Chengzhi
+   📖 Título: IoT for Agricultural Information Generation and Recommendation: A Deep Learning-Based Approach
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: convolutional neural network
+      • 🟠 ALTA: cnn
+
+56. [Scopus] Coomes2021
+   📊 Score: 9.0 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Coomes, Oliver T. and Cheng, Yuanyu and Takasaki, Yoshito and Abizaid, Christian
+   📖 Título: What drives clearing of old-growth forest over secondary forests in tropical shifting cultivation systems? Evidence from the Peruvian Amazon
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (título, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+57. [Scopus] Ritse2020
+   📊 Score: 9.0 pontos
+   📅 Ano: 2020
+   👤 Autor(es): Ritse, Vimha and Basumatary, Himolin and Kulnu, Amenuo Susan and Dutta, Gitamani and Phukan, Mayur M...
+   📖 Título: Monitoring land use land cover changes in the Eastern Himalayan landscape of Nagaland, Northeast India
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+58. [Scopus] Ornetsmüller2018229
+   📊 Score: 9.0 pontos
+   📅 Ano: 2018
+   👤 Autor(es): Ornetsmüller, Christine and Heinimann, Andreas and Verburg, Peter H.
+   📖 Título: Operationalizing a land systems classification for Laos
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟠 ALTA: decision tree
+      • 🟠 ALTA: ann
+
+59. [WoS] WOS:001051672500005
+   📊 Score: 9.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Kumar, Randhir and Kumar, Prabhat and Aljuhani, Ahamed and Islam, A. K. M. Najmul and Jolfaei, Alire...
+   📖 Título: RETRACTED: Deep Learning and Smart Contract-Assisted Secure Data Sharing for IoT-Based Intelligent Agriculture (Retracted article. See vol. 40, pg. 64, 2025)
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: ann
+
+60. [Scopus] Heinimann2017
+   📊 Score: 8.5 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Heinimann, Andreas and Mertz, Ole and Frolking, Steve E. and Christensen, Andreas Egelund and Hurni,...
+   📖 Título: A global view of shifting cultivation: Recent, current, and future extent
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (título, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+61. [Scopus] Kosicki2013500
+   📊 Score: 8.5 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Kosicki, Jakub Z. and Chylarecki, P.
+   📖 Título: Predictive mapping of Meadow Pipit density using integrated remote sensing data and an atlas of vascular plants dataset
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (keywords, abstract): traditional agriculture
+      • 🟠 ALTA: predictive model
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: remote sensing
+
+62. [Scopus] Meyfroidt20131187
+   📊 Score: 8.5 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Meyfroidt, Patrick and Phuong, Vu Tan and Hoang, Viet Anh
+   📖 Título: Trajectories of deforestation, coffee expansion and displacement of shifting cultivation in the Central Highlands of Vietnam
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (título, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+63. [Scopus] Kumar2010501
+   📊 Score: 8.5 pontos
+   📅 Ano: 2010
+   👤 Autor(es): Kumar, A. and Marcot, Bruce G. and Talukdar, Gautam Hirak
+   📖 Título: Designing a protected area network for conservation planning in Jhum landscapes of Garo Hills, Meghalaya
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+64. [Scopus] Banerjee2025
+   📊 Score: 8.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Banerjee, Sanjana and Ramos, Paula and Reberg-Horton, Samuel Chris and Mirsky, Steven Brian and Lock...
+   📖 Título: A Multiple Instance Learning Approach to Study Leaf Wilt in Soybean Plants
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+65. [Scopus] Zhang20254021
+   📊 Score: 8.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Zhang, Wei and Liu, Jianhong and Jia, Ruolan and Wang, Xi and Yan, Xiya and Wang, Ziqi and Wang, Jin...
+   📖 Título: Mapping cropland use changes in the Guanzhong Plain of China based on a two-level classification framework
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: decision tree
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+66. [Scopus] Latthachack2023
+   📊 Score: 8.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Latthachack, Phokham and Llopis, Jorge C. and Heinimann, Andreas and Thongmanivong, Sithong and Vong...
+   📖 Título: Agricultural commercialization in borderlands: Capturing the transformation of a tropical forest frontier through participatory mapping
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+67. [Scopus] Li2022
+   📊 Score: 8.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Li, Peng and Yang, Yin
+   📖 Título: Swidden Agriculture Landscape Mapping Using MODIS Vegetation Index Time Series and Its Spatio-Temporal Dynamics in Northern Laos
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+68. [Scopus] Rufin2022
+   📊 Score: 8.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Rufin, Philippe and Bey, Adia and Picoli, Michelle Cristina Araújo and Meyfroidt, Patrick
+   📖 Título: Large-area mapping of active cropland and short-term fallows in smallholder landscapes using PlanetScope data
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟠 ALTA: random forest
+      • 🟡 ADEQUADA: gis
+
+69. [Scopus] Zhao2022
+   📊 Score: 8.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Zhao, Feng R. and Sun, Rui and Zhong, Liheng and Meng, Ran and Huang, Chengquang Quan and Zeng, Xiao...
+   📖 Título: Monthly mapping of forest harvesting using dense time series Sentinel-1 SAR imagery and deep learning
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+70. [Scopus] Wu2022
+   📊 Score: 8.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Wu, Zhipan and Du, Huaying
+   📖 Título: Artificial Intelligence in Agricultural Picking Robot Displacement Trajectory Tracking Control Algorithm
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modeling
+
+71. [Scopus] Bourgoin2021
+   📊 Score: 8.0 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Bourgoin, Clément and Betbeder, Julie and Le Roux, Renan and Gond, Valéry Ry and Oszwald, Johan and ...
+   📖 Título: Looking beyond forest cover: An analysis of landscape-scale predictors of forest degradation in the Brazilian Amazon
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: decision tree
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+72. [Scopus] Das2021
+   📊 Score: 8.0 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Das, Pulakesh and Mudi, Sujoy and Behera, Mukunda Dev and Barik, Saroj Kanta and Mishra, Deepak R. a...
+   📖 Título: Automated mapping for long-term analysis of shifting cultivation in northeast India
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, abstract): shifting cultivation
+      • 🟠 ALTA: decision tree
+      • 🟡 ADEQUADA: remote sensing
+
+73. [Scopus] Pasha202065
+   📊 Score: 8.0 pontos
+   📅 Ano: 2020
+   👤 Autor(es): Pasha, S. Vazeed and Behera, Mukunda Dev and Mahawar, S. K. and Barik, Saroj Kanta and Joshi, Santar...
+   📖 Título: Assessment of shifting cultivation fallows in Northeastern India using Landsat imageries
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+74. [Scopus] Bweya2019171
+   📊 Score: 8.0 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Bweya, Muhindo Naasson and Musavandalo, Mumbere Charles and Sahani, Muhindo
+   📖 Título: Spatio-temporal analysis dynamics of the forest landscape of the Beni region (North Kivu, DRC).; Analyse de la dynamique spatio-temporelle du paysage forestier de la région de Beni (Nord-Kivu, RDC).
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+75. [Scopus] Broegaard201792
+   📊 Score: 8.0 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Broegaard, Rikke Brandt and Rasmussen, Laura Vang and Dawson, Neil M. and Mertz, Ole and Vongvisouk,...
+   📖 Título: Wild food collection and nutrition under commercial agriculture expansion in agriculture-forest landscapes
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+76. [Scopus] Molinario2017
+   📊 Score: 8.0 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Molinario, Giuseppe and Hansen, Matthew C. and Potapov, Peter V. and Tyukavina, Alexandra and Stehma...
+   📖 Título: Quantification of land cover and land use within the rural complex of the Democratic Republic of Congo
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+77. [Scopus] Cummings20172066
+   📊 Score: 8.0 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Cummings, Anthony R. and Karale, Yogita and Cummings, Garvin R. and Hamer, Esan and Moses, Persaud a...
+   📖 Título: UAV-derived data for mapping change on a swidden agriculture plot: preliminary results from a pilot study
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+78. [Scopus] Shimizu2017
+   📊 Score: 8.0 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Shimizu, Katsuto and Ahmed, Oumer S. and Ponce-Hernández, Raul and Ota, Tetsuji and Win, Zar Chi and...
+   📖 Título: Attribution of disturbance agents to forest change using a Landsat time series in tropical seasonal forests in the Bago Mountains, Myanmar
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: decision tree
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modeling
+
+79. [Scopus] Ankersen20151080
+   📊 Score: 8.0 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Ankersen, Jeppe and Grogan, Kenneth and Mertz, Ole and Fensholt, R. and Castella, Jean Christophe an...
+   📖 Título: Vietnam’s Forest Transition in Retrospect: Demonstrating Weaknesses in Business-as-Usual Scenarios for REDD+
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+80. [Scopus] Dalle20111557
+   📊 Score: 8.0 pontos
+   📅 Ano: 2011
+   👤 Autor(es): Dalle, Sarah Paule and Pulido-Silva, María Teresa and de Blois, Sylvie
+   📖 Título: Balancing shifting cultivation and forest conservation: Lessons from a "sustainable landscape" in southeastern Mexico
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+81. [Scopus] Schneider201041
+   📊 Score: 8.0 pontos
+   📅 Ano: 2010
+   👤 Autor(es): Schneider, Laura C. and Fernando, D. Nelun
+   📖 Título: An untidy cover: Invasion of bracken fern in the shifting cultivation systems of southern yucatán, Mexico
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, conteúdo): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+82. [WoS] WOS:001523457700007
+   📊 Score: 8.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Calvache-Munoz, David Andres and Benavides-Cardona, Carlos Andres and Alzate, Javier Garcia
+   📖 Título: Unmanned Aerial Vehicles (UAVs) for vegetation index analysis in traditional agriculture
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, conteúdo): traditional agriculture
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+83. [WoS] WOS:000273301100006
+   📊 Score: 8.0 pontos
+   📅 Ano: 2010
+   👤 Autor(es): Schneider, Laura C. and Fernando, D. Nelun
+   📖 Título: An Untidy Cover: Invasion of Bracken Fern in the Shifting Cultivation Systems of Southern Yucatan, Mexico
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (título, conteúdo): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+84. [Scopus] Fan2025
+   📊 Score: 7.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Fan, Ding and Maliki, Nor Zarifah and Yu, Siwei and Men, Tao
+   📖 Título: Assessment of resilience and key drivers of Tibetan villages in Western Sichuan
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🔴 PRIORITÁRIO (abstract): agroecolog
+      • 🟠 ALTA: neural network
+
+85. [Scopus] Ni2025471
+   📊 Score: 7.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Ni, Jiangong
+   📖 Título: JuteNet: An Intelligent Approach for Jute Pest Recognition Using Residual Network with Hybrid Attention Module
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: convolutional neural network
+      • 🟠 ALTA: cnn
+
+86. [Scopus] Justina Michael2024
+   📊 Score: 7.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Justina Michael, J. and Thenmozhi, M.
+   📖 Título: SorghumWeedDataset_Classification and SorghumWeedDataset_Segmentation datasets for classification, detection, and segmentation in deep learning
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: ann
+
+87. [Scopus] Kumar202342
+   📊 Score: 7.5 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Kumar, Randhir Prem and Kumar, Prabhat and Aljuhani, Ahamed and Islam, Najmul K.M. and Jolfaei, Alir...
+   📖 Título: Deep Learning and Smart Contract-Assisted Secure Data Sharing for IoT-Based Intelligent Agriculture
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: ann
+
+88. [Scopus] Poornima202050
+   📊 Score: 7.5 pontos
+   📅 Ano: 2020
+   👤 Autor(es): Poornima, D. and Arulselvi, G.
+   📖 Título: Precision agriculture for pest management on enhanced acoustic signal using improved mel-frequency cepstrum coefficient and deep learning
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: ann
+
+89. [Scopus] Vanloot201498
+   📊 Score: 7.5 pontos
+   📅 Ano: 2014
+   👤 Autor(es): Vanloot, Pierre and Bertrand, Dominique and Pinatel, Christian and Artaud, Jacques and Dupuy, N.
+   📖 Título: Artificial vision and chemometrics analyses of olive stones for varietal identification of five French cultivars
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: artificial neural network
+      • 🟠 ALTA: ann
+
+90. [Scopus] Liesenberg2012122
+   📊 Score: 7.5 pontos
+   📅 Ano: 2012
+   👤 Autor(es): Liesenberg, Veraldo and Gloaguen, Richard
+   📖 Título: Evaluating SAR polarization modes at L-band for forest classification purposes in eastern Amazon, Brazil
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: support vector machine
+      • 🟠 ALTA: svm
+      • 🟠 ALTA: ann
+
+91. [WoS] WOS:000948679800002
+   📊 Score: 7.5 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Wu, Jinshun
+   📖 Título: Analysis of the Critical Role of a Smart Agricultural Internet of Things System in Industrial Benefit Evaluation
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: artificial neural network
+
+92. [WoS] WOS:001187005700001
+   📊 Score: 7.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Gupta, Priyanka and Shukla, Arun Kumar and Shukla, Dericks Praise
+   📖 Título: ML-Based Hybrid SAR and Optical Image LULC Mapping and Change Analysis With Variations in the Air Quality of the Imphal Valley, North-East India
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: ann
+
+93. [Scopus] Kranz2018254
+   📊 Score: 7.0 pontos
+   📅 Ano: 2018
+   👤 Autor(es): Kranz, Olaf and Schoepfer, Elisabeth and Tegtmeyer, Reiner and Lang, Stefan Christian
+   📖 Título: Earth observation based multi-scale assessment of logging activities in the Democratic Republic of the Congo
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+94. [Scopus] Fuchs2018441
+   📊 Score: 7.0 pontos
+   📅 Ano: 2018
+   👤 Autor(es): Fuchs, Richard and Prestele, Reinhard and Verburg, Peter H.
+   📖 Título: A global assessment of gross and net land change dynamics for current conditions and future scenarios
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+95. [Scopus] Al-Shidi2018
+   📊 Score: 7.0 pontos
+   📅 Ano: 2018
+   👤 Autor(es): Al-Shidi, Rashid Hamdan Saif and Kumar, Lalit and Al-Khatri, Salim Ali Humaid and Albahri, Malik M. ...
+   📖 Título: Relationship of date palm tree density to dubas bug Ommatissus lybicus infestation in omani orchards
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional agricultural system
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: geographic information system
+
+96. [Scopus] Dutrieux2016112
+   📊 Score: 7.0 pontos
+   📅 Ano: 2016
+   👤 Autor(es): Dutrieux, Loïc Paul and Jakovac, Catarina Conte and Latifah, Siti H. and Kooistra, Lammert
+   📖 Título: Reconstructing land use history from Landsat time-series: Case study of a swidden agriculture system in Brazil
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+97. [Scopus] Sun2015803
+   📊 Score: 7.0 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Sun, Yiwen and Wang, Tiejun and Skidmore, A. K. and Wang, Qi and Ding, Changqing
+   📖 Título: Decline of traditional rice farming constrains the recovery of the endangered Asian crested ibis (Nipponia nippon)
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, abstract): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+98. [WoS] WOS:001453106200001
+   📊 Score: 7.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Mahapatra, Soumik and Majhi, Bishal Kumar and Sarkar, Mriganka Shekhar and Datta, Debajit and Mishra...
+   📖 Título: Understanding forest fragmentation dynamics and identifying drivers for forest cover loss using random forest models to develop effective forest management strategies in North-East India
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: remote sensing
+
+99. [WoS] WOS:000845078600027
+   📊 Score: 7.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Ljubicic, Ivica and Bilusic, Magdalena
+   📖 Título: BIODIVERSITY CHANGE IN AGRICULTURAL AREA IN NORTHERN DALMATIA (CROATIA)
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+100. [WoS] WOS:000845969900001
+   📊 Score: 7.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Millington, James D. A. and Perkins, Oliver and Smith, Cathy
+   📖 Título: Human Fire Use and Management: A Global Database of Anthropogenic Fire Impacts for Modelling
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional knowledge
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+101. [Scopus] Dutta Roy2025
+   📊 Score: 6.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Dutta Roy, Abhilash and Ranglong, Abraham and Timilsina, Sandeep and Das, Sumit Kumar and Watt, Mich...
+   📖 Título: Spaceborne LiDAR Reveals Anthropogenic and Biophysical Drivers Shaping the Spatial Distribution of Forest Aboveground Biomass in Eastern Himalayas
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: random forest
+      • 🟡 ADEQUADA: remote sensing
+
+102. [Scopus] Melendez-Pastor2025
+   📊 Score: 6.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Melendez-Pastor, Ignacio
+   📖 Título: Traditional agroecosystems for urban temperature regulation: a remote sensing analysis of an historical palm grove
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (título, abstract): traditional agroecosystem
+      • 🟡 ADEQUADA: remote sensing
+
+103. [Scopus] Yang2025
+   📊 Score: 6.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Yang, Wenyu and Liu, Kang and Tan, Zheng and Lo, Liyu and Wang, Yinglun and Wong, Ka Hing and Wen, C...
+   📖 Título: Hierarchical 3D Scene Graph based Semantic-Metric SLAM for Plant Inspection and Fruit Counting in Intelligent Hydroponics System
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: gis
+
+104. [Scopus] Erazo-Mera202455
+   📊 Score: 6.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Erazo-Mera, Estefania and Younes Cárdenas, Nicolás and Horwood, Paul Francis and Paris, Damien B.B.P...
+   📖 Título: Forest loss during 2000-2019 in pygmy hippopotamus (Choeropsis liberiensis) habitats was driven by shifting agriculture
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+105. [Scopus] Vivekanandhan2022308
+   📊 Score: 6.5 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Vivekanandhan, Vijaya Rangan and Sakthivel, S. and Manikandan, Muthaiyan A.
+   📖 Título: Adaptive neuro fuzzy inference system to enhance the classification performance in smart irrigation system
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional agricultural system
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: data mining
+      • 🟡 ADEQUADA: modelling
+
+106. [Scopus] Behera2018
+   📊 Score: 6.5 pontos
+   📅 Ano: 2018
+   👤 Autor(es): Behera, Mukunda Dev and Gupta, Anil Kumar and Barik, Saroj Kanta and Das, Pulakesh and Panda, Rajend...
+   📖 Título: Use of satellite remote sensing as a monitoring tool for land and water resources development activities in an Indian tropical site
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+107. [Scopus] Vaidya2018902
+   📊 Score: 6.5 pontos
+   📅 Ano: 2018
+   👤 Autor(es): Vaidya, Pratima and Bhardwaj, Satish Kumar and Sood, Sahil
+   📖 Título: Land use and land cover changes in Kullu valley of Himachal Pradesh
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+
+108. [Scopus] Liesenberg20165357
+   📊 Score: 6.5 pontos
+   📅 Ano: 2016
+   👤 Autor(es): Liesenberg, Veraldo and Souza Filho, Carlos Roberto de and Gloaguen, Richard
+   📖 Título: Evaluating Moisture and Geometry Effects on L-Band SAR Classification Performance Over a Tropical Rain Forest Environment
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: decision tree
+      • 🟡 ADEQUADA: remote sensing
+
+109. [Scopus] Zaehringer20169
+   📊 Score: 6.5 pontos
+   📅 Ano: 2016
+   👤 Autor(es): Zaehringer, Julie Gwendolin and Hett, Cornelia and Ramamonjisoa, Bruno Salomon and Messerli, Peter
+   📖 Título: Beyond deforestation monitoring in conservation hotspots: Analysing landscape mosaic dynamics in north-eastern Madagascar
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+110. [Scopus] Liao2015591
+   📊 Score: 6.5 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Liao, Chenhua and Feng, Zhiming and Li, Peng and Zhang, Jinghua
+   📖 Título: Monitoring the spatio-temporal dynamics of swidden agriculture and fallow vegetation recovery using Landsat imagery in northern Laos
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: decision tree
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: gis
+
+111. [Scopus] Niraula201320
+   📊 Score: 6.5 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Niraula, Rabin Raj and Gilani, Hammad and Pokharel, Bharat Kumar and Mueen Qamer, Faisal Mueen
+   📖 Título: Measuring impacts of community forestry program through repeat photography and satellite remote sensing in the Dolakha district of Nepal
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+112. [Scopus] Meyfroidt2013367
+   📊 Score: 6.5 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Meyfroidt, Patrick
+   📖 Título: Environmental Cognitions, Land Change and Social-Ecological Feedbacks: Local Case Studies of Forest Transition in Vietnam
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+113. [Scopus] Bai20132376
+   📊 Score: 6.5 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Bai, Yangying and Min, Qingwen and Liu, Moucheng and Yuan, Zheng and Xu, Yuantao and Cao, Zhi and Li...
+   📖 Título: Resilience of the Hani Rice Terraces System to extreme drought
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+
+114. [Scopus] Temudo2012425
+   📊 Score: 6.5 pontos
+   📅 Ano: 2012
+   👤 Autor(es): Temudo, Marina Padrão and Silva, João M.N.
+   📖 Título: Agriculture and forest cover changes in post-war Mozambique
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (keywords, abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+115. [Scopus] Turvey2012271
+   📊 Score: 6.5 pontos
+   📅 Ano: 2012
+   👤 Autor(es): Turvey, Calum Greig and McLaurin, Megan K.
+   📖 Título: Applicability of the normalized difference vegetation index (NDVI) In index-based crop insurance design
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (keywords, conteúdo): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+
+116. [Scopus] Puri2011641
+   📊 Score: 6.5 pontos
+   📅 Ano: 2011
+   👤 Autor(es): Puri, Kanchan and Areendran, Gopala and Raj, K. and Mazumdar, Sraboni and Joshi, Pawan Kumar
+   📖 Título: Forest fire risk assessment in parts of Northeast India using geospatial tools
+   🔍 Termos encontrados (6):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+117. [WoS] WOS:000384777300020
+   📊 Score: 6.5 pontos
+   📅 Ano: 2016
+   👤 Autor(es): Fujiki, Shogoro and Okada, Kei-ichi and Nishio, Shogo and Kitayama, Kanehiro
+   📖 Título: Estimation of the stand ages of tropical secondary forests after shifting cultivation based on the combination of WorldView-2 and time-series Landsat images
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (título, abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+118. [WoS] WOS:000774729000001
+   📊 Score: 6.5 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Deng, Rongxin and Xu, Zhengran and Li, Ying and Zhang, Xing and Li, Chunjing and Zhang, Lu
+   📖 Título: Farmland Shelterbelt Age Mapping Using Landsat Time Series Images
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): agroecolog
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+119. [WoS] WOS:000614724000007
+   📊 Score: 6.5 pontos
+   📅 Ano: 2020
+   👤 Autor(es): Gergel, Sarah E. and Powell, Bronwen and Baudron, Frederic and Wood, Sylvia L. R. and Rhemtulla, Jea...
+   📖 Título: Conceptual Links between Landscape Diversity and Diet Diversity: A Roadmap for Transdisciplinary Research
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): agroecolog
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+120. [WoS] WOS:001620727400043
+   📊 Score: 6.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Yang, Wenyu and Liu, Kang and Tan, Zheng and Lo, Li-Yu and Wang, Yinglun and Wong, Ka-Hing and Wen, ...
+   📖 Título: Hierarchical 3-D Scene-Graph-Based Semantic-Metric SLAM for Plant Inspection and Fruit Counting in Intelligent Hydroponics System
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: gis
+
+121. [Scopus] Gao2025
+   📊 Score: 6.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Gao, Yan and Solórzano, Jonathan V. and Skutsch, Margaret Mccall and Cao, Yuee and Estoque, Ronald C...
+   📖 Título: Estimating forest degradation by capturing temporal change in biomass density: insights from a tropical dry forest
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: random forest
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+122. [Scopus] Drago2025
+   📊 Score: 6.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Drago, Carlo and Costantiello, Alberto and Arnone, Massimo and Leogrande, Angelo
+   📖 Título: Bridging Sustainability and Inclusion: Financial Access in the Environmental, Social, and Governance Landscape
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: ann
+
+123. [Scopus] Rudra2025
+   📊 Score: 6.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Rudra, Ajit Kumar and Alam, A. K.M.Rashidul
+   📖 Título: Spatiotemporal pattern of land use and land cover changes of upper Sangu-Matamuhuri Watershed in the South-Eastern Bangladesh
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+124. [Scopus] Xiao2025573
+   📊 Score: 6.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Xiao, Yaxu and Chen, Xin and Li, Xiang
+   📖 Título: A FARM WORKERS RE-IDENTIFICATION METHOD VIA MULTI-FEATURE FUSION
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: convolutional neural network
+
+125. [Scopus] Mitra2024
+   📊 Score: 6.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Mitra, Alakananda and Vangipuram, Sukrutha L.T. and Bapatla, Anand Kumar and Bathalapalli, Venkata K...
+   📖 Título: Smart Agriculture: A Comprehensive Overview
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: artificial intelligence
+
+126. [Scopus] Motzer2024400
+   📊 Score: 6.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Motzer, Caroline and El-Moghazy, Ahmed Y. and Allende, Ana and Gil, M. I. and Weesepoel, Yannick J.A...
+   📖 Título: Food Safety Related Data Analytics, Digital, and Artificial Intelligence Needs and Opportunities in Controlled Environment Agriculture
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: ann
+
+127. [Scopus] Wang2024
+   📊 Score: 6.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Wang, Zhengye and Zhao, Ziqi and Wang, Huili and Wu, Qinzhan and Ke, Qin and Zhu, Lingyue and Wu, Li...
+   📖 Título: Harvest residue recycling rather than slash-burning results in the enhancement of soil fertility and bacterial community stability in Eucalyptus plantations
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: random forest
+      • 🟠 ALTA: ann
+
+128. [Scopus] Cheng202418082
+   📊 Score: 6.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Cheng, Yu Huei and Kuo, Chenan and Lin, Yuda
+   📖 Título: An Artificial IoT-Enabled Smart Production Line for 360° Visual Defect Detection and Classification of Cherry Tomatoes
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: deep learning
+
+129. [Scopus] Ndzana Biloa2024
+   📊 Score: 6.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Ndzana Biloa, Eric Bertin and Mamonékéné, Victor and Micha, Jean Claude
+   📖 Título: Characterization of Fish Spawning Grounds near the Likouala-Aux-Herbes River, Lac Tele Community Reserve (LTCR), Republic of Congo, for Sustainable Wetland Management
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+130. [Scopus] Zhang2024
+   📊 Score: 6.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Zhang, Wenli and Liu, Yuxin and Wang, Chenhuizi and Zheng, Chao and Cui, Guoqiang and Guo, Wei
+   📖 Título: EasyDAM_V4: Guided-GAN-based cross-species data labeling for fruit detection with significant shape difference
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: ann
+
+131. [Scopus] Rajpoot2024107
+   📊 Score: 6.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Rajpoot, Prince and Avtar, Ram and Pandey, Amit Kumar and Mishra, Shivendu Dutta and Patel, Vikas an...
+   📖 Título: A smart crop, irrigation system and fertiliser prediction using IoT and machine learning
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: artificial intelligence
+
+132. [Scopus] Al-Sammarraie2024
+   📊 Score: 6.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Al-Sammarraie, Mustafa A.J. and Ilbas, Ali Irfan
+   📖 Título: Harnessing automation techniques for supporting sustainability in agriculture
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: artificial intelligence
+
+133. [Scopus] Abbasi20231
+   📊 Score: 6.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Abbasi, Rabiya and Martinez, Pablo and Ahmad, Rafiq
+   📖 Título: Crop diagnostic system: A robust disease detection and management system for leafy green crops grown in an aquaponics facility
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: deep learning
+
+134. [Scopus] Albaaji2023
+   📊 Score: 6.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Albaaji, Ghassan Faisal and S.s, Vinod Chandra
+   📖 Título: Artificial intelligence SoS framework for sustainable agricultural production
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: ann
+
+135. [Scopus] Rajesh2023
+   📊 Score: 6.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Rajesh, C. B. and Kumar, C. V.S.S.Manohar and Jha, Sudhanshu Shekhar and Ramachandran, K. I. and Nid...
+   📖 Título: In-situ and airborne hyperspectral data for detecting agricultural activities in a dense forest landscape
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: supervised learning
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+136. [Scopus] Memarian Sorkhabi20231007
+   📊 Score: 6.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Memarian Sorkhabi, Omid and Asgari, Jamal and Randhir, Timothy O.
+   📖 Título: Monitoring Groundwater Storage Based on Satellite Gravimetry and Deep Learning
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: ann
+
+137. [Scopus] Fathy2023
+   📊 Score: 6.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Fathy, Cherine and Ali, Hassan M.
+   📖 Título: A Secure IoT-Based Irrigation System for Precision Agriculture Using the Expeditious Cipher
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟠 ALTA: ann
+
+138. [Scopus] Cirezi20226406
+   📊 Score: 6.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Cirezi, Nadège Cizungu and Bastin, Jean François and Tshibasu, Elvis and Lonpi, E. T. and Chuma, B. ...
+   📖 Título: Contribution of ‘human induced fires’ to forest and savanna land conversion dynamics in the Luki Biosphere Reserve landscape, western Democratic Republic of Congo
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (conteúdo): slash-and-burn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+139. [Scopus] Zhou2022216
+   📊 Score: 6.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Zhou, Junwei
+   📖 Título: Safety management of karst construction in railway tunnels and tunnel farming as compared to traditional farming
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: ann
+
+140. [Scopus] Bernal-Santana2022
+   📊 Score: 6.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Bernal-Santana, Nelly and Cruz-Cárdenas, Gustavo and Silva García, José Teodoro and Martínez-Trinida...
+   📖 Título: Variation of surface runoff due to change of land use in the river duero watershed; Variación de la escorrentía superficial por el cambio de uso de suelo en la cuenca del Río Duero
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: artificial neural network
+
+141. [Scopus] Ahmad201941
+   📊 Score: 6.0 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Ahmad, Firoz and Uddin, Md Meraj and Goparaju, Laxmi
+   📖 Título: Fire risk assessment along the climate, vegetation type variability over the part of Asian region: a geospatial approach
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+142. [Scopus] Koranteng201978
+   📊 Score: 6.0 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Koranteng, Addo and Adu-Poku, Isaac and Zawiła-Niedwiecki, Tomasz
+   📖 Título: Landuse and land cover dynamics in the Volta River Basin surrounding APSD forest plantation, Ghana
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+143. [Scopus] Nguyen2016100
+   📊 Score: 6.0 pontos
+   📅 Ano: 2016
+   👤 Autor(es): Nguyen, Anh Kim and Liou, Yueian and Li, Minghsu and Tran, Tuan Anh
+   📖 Título: Zoning eco-environmental vulnerability for environmental management and protection
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+144. [Scopus] Gurugnanam2015179
+   📊 Score: 6.0 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Gurugnanam, Balasubramaniyan and Bagyaraj, Murugesan and Ramkumar, Thirunavukkarasu and Gopalakrishn...
+   📖 Título: A study on forest changes in Kodaikanal Hills, Tamil Nadu, using remote sensing and GIS
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+145. [Scopus] Rawat20123751
+   📊 Score: 6.0 pontos
+   📅 Ano: 2012
+   👤 Autor(es): Rawat, Jawan Singh and Joshi, Ramesh Chandra
+   📖 Título: Remote-sensing and GIS-based landslide-susceptibility zonation using the landslide index method in Igo River Basin, Eastern Himalaya, India
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+146. [Scopus] Prasannakumar2011965
+   📊 Score: 6.0 pontos
+   📅 Ano: 2011
+   👤 Autor(es): Prasannakumar, V. and Shiny, Rajan and Geetha, N. and Vijith, H.
+   📖 Título: Spatial prediction of soil erosion risk by remote sensing, GIS and RUSLE approach: A case study of Siruvani river watershed in Attapady valley, Kerala, India
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: spatial analysis
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+147. [Scopus] Sakthivel2010737
+   📊 Score: 6.0 pontos
+   📅 Ano: 2010
+   👤 Autor(es): Sakthivel, R. and Manivel, M. and Jawahar Raj, N. and Pugalanthi, V. and Ravichandran, N. and Anand,...
+   📖 Título: Remote sensing and GIS based forest cover change detection study in Kalrayan hills, Tamil Nadu
+   🔍 Termos encontrados (5):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+148. [WoS] WOS:000739287200010
+   📊 Score: 6.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Bernal-Santana, Nelly and Cruz-Cardenas, Gustavo and Teodoro Silva, Jose and Martinez-Trinidad, Serg...
+   📖 Título: Variation of surface runoff due to change of land use in the river Duero watershed
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: neural network
+      • 🟠 ALTA: artificial neural network
+
+149. [WoS] WOS:001605612900009
+   📊 Score: 6.0 pontos
+   📅 Ano: 2026
+   👤 Autor(es): Gao, Yinghan
+   📖 Título: Origin identification of millet by combining spectral detection and a group attention feature calculation and classification network
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: deep learning
+      • 🟠 ALTA: neural network
+
+150. [WoS] WOS:000597393200017
+   📊 Score: 6.0 pontos
+   📅 Ano: 2020
+   👤 Autor(es): Yi, Wenlong and Jia, Jing and Chen, Tingzhuo and Zhao, Yingding and Yang, Hongyun
+   📖 Título: VIRTUAL RICE LEAF COLOR MODEL DRIVEN BY PIGMENT CONTENT
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟠 ALTA: artificial intelligence
+
+
+------------------------------------------------------------------------------------------
+🥉 ADEQUADA (94 artigos)
+------------------------------------------------------------------------------------------
+
+151. [Scopus] Saranya2022
+   📊 Score: 5.5 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Saranya, K. R.L. and Lakshmi, Thatiparthi Vijaya and Chintala, Sudhakar Reddy
+   📖 Título: Analysing the trends in annual forest loss hotspots in the regional landscape of Eastern Ghats, India
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+152. [Scopus] Hurtt20205425
+   📊 Score: 5.5 pontos
+   📅 Ano: 2020
+   👤 Autor(es): Hurtt, George C. and Chini, Louise Parsons and Sahajpal, Ritvik and Frolking, Steve E. and Bodirsky,...
+   📖 Título: Harmonization of global land use change and management for the period 850-2100 (LUH2) for CMIP6
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: remote sensing
+
+153. [Scopus] Sood2017832
+   📊 Score: 5.5 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Sood, Kunal and Singh, Sharda and Kaushal, Arun and Kalia, Vaibhav and Rana, Ranbir Singh and Kumari...
+   📖 Título: Promotion of crop diversification in mountainous areas using geospatial technologies
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+154. [Scopus] Grinblat201552
+   📊 Score: 5.5 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Grinblat, Yulia and Kidron, Giora J. and Karnieli, Arnon M. and Benenson, Itzhak
+   📖 Título: Simulating land-use degradation in West Africa with the ALADYN model
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: remote sensing
+
+155. [WoS] WOS:000933026800001
+   📊 Score: 5.5 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Alencar, Lucas and Escada, Maria Isabel Sobral and Camargo, Jose Luis Campana
+   📖 Título: Forest regeneration pathways in contrasting deforestation patterns of Amazonia
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): slash-and-burn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+156. [WoS] WOS:000284440600006
+   📊 Score: 5.5 pontos
+   📅 Ano: 2010
+   👤 Autor(es): Gaiser, Thomas and Judex, Michael and Hiepe, Claudia and Kuhn, Arnim
+   📖 Título: Regional simulation of maize production in tropical savanna fallow systems as affected by fallow availability
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+157. [Scopus] Guan2025
+   📊 Score: 5.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Guan, Hongqiang
+   📖 Título: Greenhouse environmental monitoring and control system based on improved fuzzy PID and neural network algorithms
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: neural network
+      • 🟡 ADEQUADA: modelling
+
+158. [Scopus] Castronuovo2025
+   📊 Score: 5.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Castronuovo, Rossella and Borghetti, Marco and Ferrara, Agostino Maria Silvio and Rita, Angelo and N...
+   📖 Título: Unveiling the drivers of riparian vegetation change in Mediterranean river systems via remote sensing
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+159. [Scopus] Podmolodina202520
+   📊 Score: 5.0 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Podmolodina, Irina M. and Shang, Kai and Luo, Weiwei
+   📖 Título: HAINAN SPECIAL ECONOMIC ZONE: SUCCESS FACTORS
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+      • 🟡 ADEQUADA: gis
+
+160. [Scopus] Tanase2024
+   📊 Score: 5.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Tanase, Mihai A. and Mihai, M. C. and Miguel, Sofia and Cantero, A. and Tijerín-Triviño, Julián and ...
+   📖 Título: Long-term annual estimation of forest above ground biomass, canopy cover, and height from airborne and spaceborne sensors synergies in the Iberian Peninsula
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+161. [Scopus] Mengi202431
+   📊 Score: 5.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Mengi, Emre and Becker, Carla J. and Sedky, Mostafa and Yu, Shaoyi and Zohdi, Tarek Ismail
+   📖 Título: A digital-twin and rapid optimization framework for optical design of indoor farming systems
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟡 ADEQUADA: modeling
+
+162. [Scopus] Zou2024
+   📊 Score: 5.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Zou, Chaojun and Zhu, Xinghui and Wang, Fang and Wu, Jinran and Wang, Yougan
+   📖 Título: Rapeseed Seed Coat Color Classification Based on the Visibility Graph Algorithm and Hyperspectral Technique
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟡 ADEQUADA: modeling
+
+163. [Scopus] Silveira2023
+   📊 Score: 5.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Silveira, Carlos M. and Almeida, Arlindo and Ribeiro, A. C.
+   📖 Título: How Can a Changing Climate Influence the Productivity of Traditional Olive Orchards? Regression Analysis Applied to a Local Case Study in Portugal
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🟠 ALTA: random forest
+      • 🟡 ADEQUADA: modeling
+
+164. [Scopus] Van Wilgen2022
+   📊 Score: 5.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Van Wilgen, Brian W. and de Klerk, Helen Margaret and Stellmes, Marion and Archibald, Sally A.
+   📖 Título: An analysis of the recent fire regimes in the Angolan catchment of the Okavango Delta, Central Africa
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+165. [Scopus] Sabu202263
+   📊 Score: 5.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Sabu, Minu Merin and Pasha, Shaik Vazeed and Chintala, Sudhakar Reddy and Singh, Randeep and Jaishan...
+   📖 Título: The effectiveness of Tiger Conservation Landscapes in decreasing deforestation in South Asia: a remote sensing-based study
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+166. [Scopus] Balling2021
+   📊 Score: 5.0 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Balling, Johannes and Verbesselt, Jan and De Sy, Veronique and Herold, M. and Reiche, Johannes
+   📖 Título: Exploring archetypes of tropical fire-related forest disturbances based on dense optical and radar satellite data and active fire alerts
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+167. [Scopus] Selvarajoo202139
+   📊 Score: 5.0 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Selvarajoo, Kumar
+   📖 Título: The need for integrated systems biology approaches for biotechnological applications
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟡 ADEQUADA: modelling
+
+168. [Scopus] Qin2020
+   📊 Score: 5.0 pontos
+   📅 Ano: 2020
+   👤 Autor(es): Qin, Xiaofei and Li, Yurui and Lu, Zhi and Pan, Wei
+   📖 Título: What makes better village economic development in traditional agricultural areas of China? Evidence from 338 villages
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🟠 ALTA: machine learning
+      • 🟡 ADEQUADA: modeling
+
+169. [Scopus] Emran2018198
+   📊 Score: 5.0 pontos
+   📅 Ano: 2018
+   👤 Autor(es): Emran, Al and Roy, Sanjoy and Bagmar, Md Shaddam Hossain and Mitra, Chandana
+   📖 Título: Assessing topographic controls on vegetation characteristics in Chittagong Hill Tracts (CHT) from remotely sensed data
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+170. [Scopus] Ioki2016304
+   📊 Score: 5.0 pontos
+   📅 Ano: 2016
+   👤 Autor(es): Ioki, Keiko and Tsuyuki, Satoshi and Hirata, Yasumasa and Phua, Mui-How How and Wong, Wilson Vun Chi...
+   📖 Título: Evaluation of the similarity in tree community composition in a tropical rainforest using airborne LiDAR data
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: predictive model
+      • 🟡 ADEQUADA: remote sensing
+
+171. [Scopus] Denis20151499
+   📊 Score: 5.0 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Denis, Antoine and Tychon, Bernard
+   📖 Título: Remote sensing enables high discrimination between organic and non-organic cotton for organic cotton certification in West Africa
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+172. [Scopus] Hunsaker2015209
+   📊 Score: 5.0 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Hunsaker, Douglas J. and French, Andrew N. and Waller, Peter M. and Bautista, Eduardo M. and Thorp, ...
+   📖 Título: Comparison of traditional and ET-based irrigation scheduling of surface-irrigated cotton in the arid southwestern USA
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+173. [Scopus] Bianchetto20157232
+   📊 Score: 5.0 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Bianchetto, Elisa and Buscemi, Ivan and Corona, P. and Giardina, Giovanni and la Mantia, Tommaso L. ...
+   📖 Título: Fitting the stocking rate with pastoral resources to manage and preserve mediterranean forestlands: A case study
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+174. [Scopus] Khoshnevisan2014242
+   📊 Score: 5.0 pontos
+   📅 Ano: 2014
+   👤 Autor(es): Khoshnevisan, Benyamin and Rajaeifar, Mohammad Ali and Clark, Sean and Shamahirband, Shahaboddin and...
+   📖 Título: Evaluation of traditional and consolidated rice farms in Guilan Province, Iran, using life cycle assessment and fuzzy modeling
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🟠 ALTA: neural network
+      • 🟡 ADEQUADA: modeling
+
+175. [Scopus] Aleman20131853
+   📊 Score: 5.0 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Aleman, Julie C. and Blarquez, Olivier and Bentaleb, I. and Bonté, Philippe and Brossier, Benoît and...
+   📖 Título: Tracking land-cover changes with sedimentary charcoal in the Afrotropics
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+176. [Scopus] Roy2013774
+   📊 Score: 5.0 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Roy, Partha Sarthi and Murthy, Manchiraju Sri Ramachandra and Roy, Arijit and Kushwaha, Satya Prakas...
+   📖 Título: Forest fragmentation in India
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+177. [Scopus] Verma2013555
+   📊 Score: 5.0 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Verma, Rahul and Dutta, Subashisa
+   📖 Título: Vegetation Dynamics from Denoised NDVI Using Empirical Mode Decomposition
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+178. [Scopus] Boehm20131524
+   📊 Score: 5.0 pontos
+   📅 Ano: 2013
+   👤 Autor(es): Boehm, Hans Dieter Viktor and Liesenberg, Veraldo and Limin, Suwido Hester
+   📖 Título: Multi-temporal airborne LiDAR-survey and field measurements of tropical peat swamp forest to monitor changes
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+179. [Scopus] Zhang201213
+   📊 Score: 5.0 pontos
+   📅 Ano: 2012
+   👤 Autor(es): Zhang, Jingcheng and Pu, Ruiliang and Wang, Jihua and Huang, Wenjiang and Yuan, Lin and Juhua, Luo
+   📖 Título: Detecting powdery mildew of winter wheat using leaf level hyperspectral measurements
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+180. [Scopus] Kiyono2011233
+   📊 Score: 5.0 pontos
+   📅 Ano: 2011
+   👤 Autor(es): Kiyono, Yoshiyuki and Saito, Satoshi and Takahashi, Tomoaki and Toriyama, Jumpei and Awaya, Yoshio a...
+   📖 Título: Practicalities of non-destructive methodologies in monitoring anthropogenic greenhouse gas emissions from tropical forests under the influence of human intervention
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+181. [Scopus] Siebert20101625
+   📊 Score: 5.0 pontos
+   📅 Ano: 2010
+   👤 Autor(es): Siebert, Stefan and Portmann, Felix Theodor and Döll, Petra
+   📖 Título: Global patterns of cropland use intensity
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+182. [WoS] WOS:000378029700004
+   📊 Score: 5.0 pontos
+   📅 Ano: 2016
+   👤 Autor(es): Turner, II, B. L. and Geoghegan, J. and Lawrence, D. and Radel, C. and Schmook, B. and Vance, C. and...
+   📖 Título: Land system science and the social-environmental system: the case of Southern Yucatan Peninsular Region (SYPR) project
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+183. [Scopus] Wankhede2025
+   📊 Score: 4.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Wankhede, Sonali B. and Patel, Dhiren R.
+   📖 Título: Federated learning and blockchain approach for securing IoT data
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+
+184. [Scopus] Tripathi2025
+   📊 Score: 4.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Tripathi, Mukesh Kumar and Vasundhara, D. N. and Moorthy, Chellapilla V.K.N.S.N. and Misal, Kapil K....
+   📖 Título: Hybrid deep learning system for crop disease classification using modified SegNet segmentation
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agricultural system
+      • 🟠 ALTA: deep learning
+
+185. [Scopus] Li2025
+   📊 Score: 4.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Li, Changdi and Li, Guangye and Wu, Yanfeng and Song, Yichen and He, Qunshan and Tian, Zijian and Xu...
+   📖 Título: Unified Pest Prevention and Control System based on AIoT for Sustainable Agriculture
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+
+186. [Scopus] Sawyer202583
+   📊 Score: 4.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Sawyer, Samantha M. and Ross, T.
+   📖 Título: Precision fermentation: a new ‘thing’ or just a new name? Current status locally and globally
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+
+187. [Scopus] Ghilardi2025
+   📊 Score: 4.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Ghilardi, Federica and De Petris, S. and Torti, Valeria and Giacoma, Cristina and Borgogno-Mondino, ...
+   📖 Título: A possible role of NDVI time series from Landsat Mission to characterize lemurs habitats degradation in Madagascar
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟠 ALTA: support vector machine
+
+188. [Scopus] Spyrou2025
+   📊 Score: 4.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Spyrou, Orestis and Ariza-Sentis, Mar and Vélez, Sergio
+   📖 Título: Enhancing Education in Agriculture via XR-Based Digital Twins: A Novel Approach for the Next Generation
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+
+189. [Scopus] Shakeripour20241257
+   📊 Score: 4.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Shakeripour, Erfan and Ronaghi, Mohammad Hossein
+   📖 Título: Proposing an artificial intelligence maturity model to illustrate a road map for cleaner animal farming management
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+
+190. [Scopus] Baite202493
+   📊 Score: 4.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Baite, Letminthang and Bhattacharjee, Niranjan and Debbarma, Jimmi and Saikia, Anup
+   📖 Título: Agricultural land suitability analysis in Manipur, India using GIS and AHP
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+191. [Scopus] Wei2023
+   📊 Score: 4.5 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Wei, Yunxiao and Han, Chao and Yu, Zuolong
+   📖 Título: An environment safety monitoring system for agricultural production based on artificial intelligence, cloud computing and big data networks
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+
+192. [Scopus] Hu2022138
+   📊 Score: 4.5 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Hu, Ruifa and Liu, Wanjiawen
+   📖 Título: Technological Revolution, Disruptive Technology and Smart Agriculture; 科技 ? 命 ?颠覆性技术与智慧农业
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+
+193. [Scopus] Kim20212403
+   📊 Score: 4.5 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Kim, Soo-woong
+   📖 Título: Design and implementation of smartfarm integrated platform
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+
+194. [Scopus] Zhao2021
+   📊 Score: 4.5 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Zhao, Wenxin and Chen, Xin and Li, Yiliang and Xu, Jinpo and Li, Xiang
+   📖 Título: A recognition of farming behavior method based on EPCI-LSTM model
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: deep learning
+
+195. [Scopus] Jäggi20211
+   📊 Score: 4.5 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Jäggi, Christian J.
+   📖 Título: Nutrition, food markets and agriculture: Economic issues against the background of globalization
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: artificial intelligence
+
+196. [Scopus] Ramakrishna20193455
+   📊 Score: 4.5 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Ramakrishna, C. and Venkateshwarlu, B. and Srinivas, J. and Srinivas, Sunke
+   📖 Título: Iot based smart farming using cloud computing and machine learning
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+
+197. [Scopus] Nyambo2015571
+   📊 Score: 4.5 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Nyambo, Patrick and Wakindiki, Isaiah I.C.
+   📖 Título: Water footprint of growing vegetables in selected smallholder irrigation schemes in South Africa
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟠 ALTA: artificial intelligence
+
+198. [Scopus] Le2015145
+   📊 Score: 4.5 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Le, Hoang Lam and Woo, Dongmin
+   📖 Título: Combination of textural features for the improvement of terrain classification and change detection
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟠 ALTA: neural network
+
+199. [Scopus] Tevi2012580
+   📊 Score: 4.5 pontos
+   📅 Ano: 2012
+   👤 Autor(es): Tevi, Giuliano and Tevi, Anca
+   📖 Título: Remote sensing and GIS techniques for assessment of the soil water content in order to improve agricultural practice and reduce the negative impact on groundwater: Case study, agricultural area Ştefan cel Mare, Cǎlǎraşi County
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+200. [Scopus] Pattanaik2011176
+   📊 Score: 4.5 pontos
+   📅 Ano: 2011
+   👤 Autor(es): Pattanaik, Chiranjibi and Chintala, Sudhakar Reddy and Reddy, P. Manikya
+   📖 Título: Assessment of spatial and temporal dynamics of tropical forest cover: A case study in Malkangiri district of Orissa, India
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+201. [Scopus] Nahry2011517
+   📊 Score: 4.5 pontos
+   📅 Ano: 2011
+   👤 Autor(es): Nahry, A. H.El and Ali, Rafat Ramadan and El Baroudy, A. A.
+   📖 Título: An approach for precision farming under pivot irrigation system using remote sensing and GIS techniques
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+202. [WoS] WOS:000278542200005
+   📊 Score: 4.5 pontos
+   📅 Ano: 2010
+   👤 Autor(es): Lopez, Santiago and Sierra, Rodrigo
+   📖 Título: Agricultural change in the Pastaza River Basin: A spatially explicit model of native Amazonian cultivation
+   🔍 Termos encontrados (4):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+203. [WoS] WOS:000836690500040
+   📊 Score: 4.5 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Paul, Bikram and Agnihotri, Shubham and Kavya, B. and Tripathi, Prachi and Babu, Narendra C.
+   📖 Título: Sustainable Smart Aquaponics Farming Using IoT and Data Analytics
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟠 ALTA: machine learning
+
+204. [Scopus] Duong2024769
+   📊 Score: 4.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Duong, Phungthai
+   📖 Título: Assessment of forest change in a rural district using satellite imagery: A case study in Loc Ninh, Binh Phuoc Province, Vietnam
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+205. [Scopus] Cheng2023289
+   📊 Score: 4.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Cheng, Chieh Fu Jeff
+   📖 Título: Root Seeking and Remote Sensing with the Bunun in the Mountains of Taiwan
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+206. [Scopus] Weslati20239
+   📊 Score: 4.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Weslati, Okba and Bouaziz, Samir and Serbaji, Mohamed Moncef
+   📖 Título: Modelling and Assessing the Spatiotemporal Changes to Future Land Use Change Scenarios Using Remote Sensing and CA-Markov Model in the Mellegue Catchment
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+207. [Scopus] Hohnwald201017
+   📊 Score: 4.0 pontos
+   📅 Ano: 2010
+   👤 Autor(es): Hohnwald, Stefan and de Abréu, Eliana Maria Acioli and Krummel, Timo and Trautwein, Julia and da Vei...
+   📖 Título: Degraded pasture distribution and woody enrichment strategies for pasture fertility preservation in the bragantina region, north-eastern amazon
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: modeling
+      • 🟡 ADEQUADA: remote sensing
+
+208. [WoS] WOS:000648310500001
+   📊 Score: 4.0 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Ellis, Edward A. and Navarro-Martinez, Angelica and Garcia-Ortega, Martha
+   📖 Título: Drivers of forest cover transitions in the Selva Maya, Mexico: Integrating regional and community scales for landscape assessment
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+209. [WoS] WOS:000342529700005
+   📊 Score: 4.0 pontos
+   📅 Ano: 2014
+   👤 Autor(es): Ryan, Casey M. and Berry, Nicholas J. and Joshi, Neha
+   📖 Título: Quantifying the causes of deforestation and degradation and creating transparent REDD plus baselines: A method and case study from central Mozambique
+   🔍 Termos encontrados (3):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟡 ADEQUADA: modelling
+      • 🟡 ADEQUADA: remote sensing
+
+210. [Scopus] Persson2025
+   📊 Score: 3.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Persson, Joel and Phomphakdy, Chanthavone and Smith-Hall, Carsten and Dũng, Phan Quốc
+   📖 Título: How do agrarian transitions affect rural incomes? Insights from a borderland region in northern Vietnam and Laos
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+211. [Scopus] Singh2025
+   📊 Score: 3.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Singh, Prachi
+   📖 Título: Electoral cycles in environmental outcomes in India
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+212. [Scopus] Mallem202577
+   📊 Score: 3.5 pontos
+   📅 Ano: 2025
+   👤 Autor(es): Mallem, Salah Eddine and Tatar, Hafiza and Boultif, Meriem
+   📖 Título: A DIACHRONIC ANALYSIS OF THE VEGETATION COVER IN A SPATE IRRIGATION PERIMETER – CASE STUDY: THE EL FEIDH REGION, BISKRA, ALGERIA
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+
+213. [Scopus] Andrews2024
+   📊 Score: 3.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Andrews, Christopher A. and Bowers, Samuel J. and Escobar-Alvarado, Luisa F. and Collins, Kai and De...
+   📖 Título: Resilience, remoteness and war shape the land cover dynamics in one of the world's largest miombo woodlands
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+214. [Scopus] Tréhard2024
+   📊 Score: 3.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Tréhard, Helene and Musset, Lise and Lazrek, Yassamine and Djossou, Félix and Epelboin, Loïc and Rou...
+   📖 Título: Understanding the impact of mobility on Plasmodium spp. carriage in an Amazon cross-border area with low transmission rate
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+215. [Scopus] Soliday2023
+   📊 Score: 3.5 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Soliday, Valeska and Louat, Alexis and Miezi, Espérence and Fruth, Barbara I.
+   📖 Título: Investigating the impact of a long-term research and conservation project on the expansion of land use and land cover in a remote area of central DRC
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+216. [Scopus] Li202374228
+   📊 Score: 3.5 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Li, Xu and Shi, Ziyan and Bai, Tiecheng and Chen, Bailin and Lv, Xin and Zhang, Ze and Zhou, Baoping
+   📖 Título: A Study on the Estimation Model of Hyperspectral Reflectivity and Leaf Nitrogen Content of Cotton Leaves
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+
+217. [Scopus] Zhu202273029
+   📊 Score: 3.5 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Zhu, Yaping and Zhao, Juchao and Lei, Pifeng and Yang, Kun and Zhang, Shaohua and Yin, Xiaoxue and J...
+   📖 Título: Vegetation dynamics and their relationships with climatic factors in the “Golden Triangle” region
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+218. [Scopus] Fritz2022
+   📊 Score: 3.5 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Fritz, Steffen and Laso Bayas, Juan Carlos and See, Linda M. and Schepaschenko, Dmitry G. and Hofhan...
+   📖 Título: A Continental Assessment of the Drivers of Tropical Deforestation With a Focus on Protected Areas
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+219. [Scopus] Tian20212682
+   📊 Score: 3.5 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Tian, Shuang and Luo, Guangjie and Li, Yangbing and Liao, Jingjing and Luo, Xuling and Wang, Quan
+   📖 Título: Characteristics and Driving Factors of Land Use Evolution in Typical Traditional Village Gathering Place; 典型传统村落集聚地土地利用演变特征及驱动因素
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+
+220. [Scopus] Silva20211
+   📊 Score: 3.5 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Silva, Claudia Arantes and Santilli, Giancarlo and Sano, Edson Eyji and Laneve, G.
+   📖 Título: Fire occurrences and greenhouse gas emissions from deforestation in the Brazilian Amazon
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+221. [Scopus] Rakotomalala2021107
+   📊 Score: 3.5 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Rakotomalala, Fety Abel
+   📖 Título: Measuring and monitoring forest cover dynamics in the humid forests ecoregion of eastern Madagascar; Mesure et suivi de la dynamique du couvert forestier: Cas de l’écorégion des forêts humides de l’est de Madagascar; Medición y seguimiento de la dinámica del dosel forestal: el caso de la ecorregión de la selva oriental de Madagascar
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+222. [Scopus] Tadese2021
+   📊 Score: 3.5 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Tadese, Semegnew and Soromessa, Teshome and Bekele, Tesfaye
+   📖 Título: Analysis of the Current and Future Prediction of Land Use/Land Cover Change Using Remote Sensing and the CA-Markov Model in Majang Forest Biosphere Reserves of Gambella, Southwestern Ethiopia
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+223. [Scopus] Ponvert-Delisles Batista2021
+   📊 Score: 3.5 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Ponvert-Delisles Batista, Dámaso R. and Estrada-Medina, Héctor and Gijón-Yescas, Gonzalo N. and Álva...
+   📖 Título: Land covers analyses during slash and burn agriculture by using multispectral imagery obtained with Unattended Aerial Vehicles (UAVs); Análisis de la cobertura vegetal durante la agricultura de tumba-quema utilizando imágenes multispectrales obtenidas con Vehículos Aéreos no Tripulados (VANTs)
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agricultural system
+      • 🟡 ADEQUADA: remote sensing
+
+224. [Scopus] Bourgoin202081
+   📊 Score: 3.5 pontos
+   📅 Ano: 2020
+   👤 Autor(es): Bourgoin, Clément
+   📖 Título: A framework for assessing the ecological vulnerability of forests along tropical deforestation fronts based on an assessment of forest degradation following a landscape approach: Case studies in brazil and vietnam; Un cadre d’évaluation de la vulnérabilité écologique des forêts dans les fronts de déforestation tropicaux à partir de l’évaluation de la dégradation des forêts dans une approche paysagère: études de cas au brésil et vietnam; Un escenario de evaluación de la vulnerabilidad ecológica de los bosques en los frentes de deforestación tropicales a partir de la degradación forestal con un enfoque paisajístico: Estudios de caso en brasil y vietnam
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+225. [Scopus] Blackman2019
+   📊 Score: 3.5 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Blackman, Allen and Villalobos, Laura
+   📖 Título: Clear, but don't invest: Protected areas discourage some land uses more than others
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+
+226. [Scopus] Fujiki2018
+   📊 Score: 3.5 pontos
+   📅 Ano: 2018
+   👤 Autor(es): Fujiki, Shogoro and Nishio, Shogo and Okada, Keiichi and Nais, Jamili and Repin, Rimi and Kitayama, ...
+   📖 Título: Estimation of the spatiotemporal patterns of vegetation and associated ecosystem services in a bornean montane zone using three shifting-cultivation scenarios
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+227. [Scopus] Bruggeman201649
+   📊 Score: 3.5 pontos
+   📅 Ano: 2016
+   👤 Autor(es): Bruggeman, Derek and Meyfroidt, Patrick and Lambin, Eric F.
+   📖 Título: Forest cover changes in Bhutan: Revisiting the forest transition
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+228. [Scopus] Luo2014233
+   📊 Score: 3.5 pontos
+   📅 Ano: 2014
+   👤 Autor(es): Luo, Guangjie and Wang, Shijie and Li, Yangbing and Bai, Xiaoyong
+   📖 Título: Spatio-temporal dynamics and ecological service function assessment of slope farmland in Karst areas of Guizhou province, China
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+
+229. [Scopus] Descloux2011723
+   📊 Score: 3.5 pontos
+   📅 Ano: 2011
+   👤 Autor(es): Descloux, Stéphane and Chanudet, Vincent and Poilvé, Hervé and Grégoire, Alain
+   📖 Título: Co-assessment of biomass and soil organic carbon stocks in a future reservoir area located in Southeast Asia
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+230. [WoS] WOS:000363601900004
+   📊 Score: 3.5 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Ciza, Salomon Katembera and Mikwa, Jean-Fiston and Malekezi, Augustin Cirhuza and Gond, Valery and B...
+   📖 Título: IDENTIFYING THE DRIVERS OF DEFORESTATION IN THE ISANGI REGION, DEMOCRATIC REPUBLIC OF CONGO
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+231. [WoS] WOS:000215960900006
+   📊 Score: 3.5 pontos
+   📅 Ano: 2013
+   👤 Autor(es): da Silva, Elaine Barbosa and Ferreira Junior, Laerte Guimaraes and dos Anjos, Antonio Fernandes and ...
+   📖 Título: The expansion of the agricultural frontier and land-cover and land-use changes in central-south portion of the state of Goias from 1975 to 2010
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): traditional agriculture
+      • 🟡 ADEQUADA: remote sensing
+
+232. [WoS] WOS:001419500700001
+   📊 Score: 3.5 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Trehard, Helene and Musset, Lise and Lazrek, Yassamine and Djossou, Felix and Roux, Emmanuel and Lan...
+   📖 Título: Understanding the impact of mobility on Plasmodium spp. carriage in an Amazon cross- border area with low transmission rate
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (abstract): slash-and-burn
+      • 🟡 ADEQUADA: remote sensing
+
+233. [WoS] WOS:000367727700006
+   📊 Score: 3.5 pontos
+   📅 Ano: 2015
+   👤 Autor(es): Turner, Sarah and Thi-Thanh-Hien Pham
+   📖 Título: ``Nothing Is Like It Was Before{''}: The Dynamics between Land-Use and Land-Cover, and Livelihood Strategies in the Northern Vietnam Borderlands
+   🔍 Termos encontrados (2):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+      • 🟡 ADEQUADA: remote sensing
+
+234. [Scopus] Mishra2021
+   📊 Score: 3.0 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Mishra, Prabuddh Kumar and Rai, Aman and Abdelrahman, K. Hassanein and Rai, Suresh Chand and Tiwari,...
+   📖 Título: Analysing challenges and strategies in land productivity in Sikkim Himalaya, India
+   🔍 Termos encontrados (4):
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+      • 🟡 ADEQUADA: geographic information system
+
+235. [WoS] WOS:000633833200001
+   📊 Score: 3.0 pontos
+   📅 Ano: 2021
+   👤 Autor(es): Castella, Jean-Christophe and Phaipasith, Sonnasack
+   📖 Título: Rural Roads Are Paving the Way for Land-Use Intensification in the Uplands of Laos
+   🔍 Termos encontrados (1):
+      • 🔴 PRIORITÁRIO (conteúdo): shifting cultivation
+
+236. [Scopus] Osei-Wusu Adjei2017609
+   📊 Score: 2.5 pontos
+   📅 Ano: 2017
+   👤 Autor(es): Osei-Wusu Adjei, Prince Osei Wusu and Buor, Daniel and Addrah, Pascal
+   📖 Título: Ecological health effects of rural livelihood and poverty reduction strategies in the Lake Bosomtwe basin of Ghana
+   🔍 Termos encontrados (3):
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+237. [Scopus] Orengo2014265
+   📊 Score: 2.5 pontos
+   📅 Ano: 2014
+   👤 Autor(es): Orengo, Hector A. and Ejarque, A. and Albiach, Rosa
+   📖 Título: Water management and land-use practices from the Iron-Age to the Roman period in Eastern Iberia
+   🔍 Termos encontrados (3):
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+      • 🟡 ADEQUADA: gis
+
+238. [Scopus] Prudnikova2024496
+   📊 Score: 2.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Prudnikova, T. N.
+   📖 Título: Ancient Agrolandscapes of the Darkhat Basin (Northern Mongolia)
+   🔍 Termos encontrados (2):
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+239. [Scopus] Li2024
+   📊 Score: 2.0 pontos
+   📅 Ano: 2024
+   👤 Autor(es): Li, Peng and Li, Wenyu and Shi, Dong and NATH, Arun Jyoti
+   📖 Título: Normalized Difference Red-NIR-SWIR: A new Sentinel-2 three-band spectral index for mapping freshly-opened swiddens in the tropics
+   🔍 Termos encontrados (2):
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+240. [Scopus] Lourenco2023
+   📊 Score: 2.0 pontos
+   📅 Ano: 2023
+   👤 Autor(es): Lourenco, Mauro and Woodborne, Stephan M. and Fitchett, Jennifer M.
+   📖 Título: Fire regime of peatlands in the Angolan Highlands
+   🔍 Termos encontrados (2):
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+241. [Scopus] Dorison2022131
+   📊 Score: 2.0 pontos
+   📅 Ano: 2022
+   👤 Autor(es): Dorison, Antoine
+   📖 Título: Ancient Agriculture on Lava Flows: Using LiDAR and Soil Science to Reassess Pre-Hispanic Farming on Malpaís Landforms in West Mexico
+   🔍 Termos encontrados (2):
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+242. [Scopus] Mat Amin2019836
+   📊 Score: 2.0 pontos
+   📅 Ano: 2019
+   👤 Autor(es): Mat Amin, Abd Rahman and Wan Kamarudin, Wan Farahiyah and Muhammud, Adida and Ahmad Sa’ad, Fathinul ...
+   📖 Título: Spatial and temporal CO concentration over Malaysia and Indonesia using 4 decade remote sensing dataset
+   🔍 Termos encontrados (2):
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+243. [Scopus] Tiwari2016428
+   📊 Score: 2.0 pontos
+   📅 Ano: 2016
+   👤 Autor(es): Tiwari, Laxmi Kant and Sinha, Satish Kumar and Saran, Sameer and Tolpekin, Valentyn A. and Raju, Pen...
+   📖 Título: Markov random field-based method for super-resolution mapping of forest encroachment from remotely sensed ASTER image
+   🔍 Termos encontrados (2):
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
+244. [Scopus] Almeyda Zambrano2010157
+   📊 Score: 2.0 pontos
+   📅 Ano: 2010
+   👤 Autor(es): Almeyda Zambrano, Angélica M. and Broadbent, Eben N. and Schmink, Marianne and Perz, Stephen George ...
+   📖 Título: Deforestation drivers in southwest Amazonia: Comparing smallholder farmers in iñapari, Peru, and Assis Brasil, Brazil
+   🔍 Termos encontrados (2):
+      • 🟠 ALTA: ann
+      • 🟡 ADEQUADA: remote sensing
+
