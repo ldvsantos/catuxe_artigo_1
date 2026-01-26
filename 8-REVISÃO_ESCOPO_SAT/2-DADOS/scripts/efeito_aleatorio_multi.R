@@ -9,9 +9,32 @@ library(mice)
 library(ggplot2)
 library(forcats)
 
-# 1. Carregar base
-dados <- read_excel("C:/Users/vidal/OneDrive/Documentos/ARTIGO_MA/3 - DADOS/bd.xlsx", sheet = "VARIAVEIS_FISICAS") %>%
-  
+# 1. Carregar base (portável)
+get_script_dir <- function() {
+  args <- commandArgs(trailingOnly = FALSE)
+  file_arg <- grep("^--file=", args, value = TRUE)
+  if (length(file_arg) > 0) {
+    return(dirname(normalizePath(sub("^--file=", "", file_arg[1]), winslash = "/")))
+  }
+  if (!is.null(sys.frames()[[1]]$ofile)) {
+    return(dirname(normalizePath(sys.frames()[[1]]$ofile, winslash = "/")))
+  }
+  getwd()
+}
+
+script_dir <- get_script_dir()
+projeto_root <- normalizePath(file.path(script_dir, "..", ".."), winslash = "/", mustWork = FALSE)
+
+bd_xlsx <- Sys.getenv("BD_XLSX", unset = file.path(projeto_root, "2-DADOS", "bd.xlsx"))
+if (!file.exists(bd_xlsx)) {
+  stop(paste0(
+    "Arquivo bd.xlsx não encontrado em ", bd_xlsx, ". ",
+    "Coloque o arquivo em 8-REVISÃO_ESCOPO_SAT/2-DADOS/bd.xlsx ou defina BD_XLSX."
+  ))
+}
+
+dados_brutos <- read_excel(bd_xlsx, sheet = "VARIAVEIS_FISICAS")
+
 # 2. Preparar dados
 dados <- dados_brutos %>%
   rename(

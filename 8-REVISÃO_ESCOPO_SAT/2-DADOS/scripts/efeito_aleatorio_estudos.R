@@ -4,8 +4,30 @@ library(dplyr)
 library(meta)
 library(tibble)
 
-Pasta1 <- read_excel("C:/Users/vidal/Downloads/Pasta1.xlsx")
-View(Pasta1)
+get_script_dir <- function() {
+  args <- commandArgs(trailingOnly = FALSE)
+  file_arg <- grep("^--file=", args, value = TRUE)
+  if (length(file_arg) > 0) {
+    return(dirname(normalizePath(sub("^--file=", "", file_arg[1]), winslash = "/")))
+  }
+  if (!is.null(sys.frames()[[1]]$ofile)) {
+    return(dirname(normalizePath(sys.frames()[[1]]$ofile, winslash = "/")))
+  }
+  getwd()
+}
+
+script_dir <- get_script_dir()
+projeto_root <- normalizePath(file.path(script_dir, "..", ".."), winslash = "/", mustWork = FALSE)
+
+pasta1_xlsx <- Sys.getenv("PASTA1_XLSX", unset = file.path(projeto_root, "2-DADOS", "Pasta1.xlsx"))
+if (!file.exists(pasta1_xlsx)) {
+  stop(paste0(
+    "Arquivo Pasta1.xlsx não encontrado em ", pasta1_xlsx, ". ",
+    "Coloque o arquivo em 8-REVISÃO_ESCOPO_SAT/2-DADOS/Pasta1.xlsx ou defina PASTA1_XLSX."
+  ))
+}
+
+Pasta1 <- read_excel(pasta1_xlsx)
 
 
 
@@ -58,11 +80,11 @@ forest(
 # 4. ANÁLISES DE VIÉS DE PUBLICAÇÃO (baseado na meta geral)
 
 # 4.1 Funnel plot
-funnel(meta_final, studlab = TRUE)
+funnel(meta_geral, studlab = TRUE)
 
 # 4.2 Testes de viés
-metabias(meta_final, method.bias = "Egger")
-metabias(meta_final, method.bias = "Begg")
+metabias(meta_geral, method.bias = "Egger")
+metabias(meta_geral, method.bias = "Begg")
 
 # 4.3 Trim-and-fill (preenchimento de estudos ausentes)
 meta_tf <- trimfill(meta_geral)
@@ -70,7 +92,7 @@ funnel(meta_tf, studlab = TRUE)
 
 # 5. ANÁLISE DE SENSIBILIDADE
 # 5.1 Baujat plot
-baujat(meta_final)
+baujat(meta_geral)
 
 # 5.2 Leave-one-out (exclui estudo específico)
 meta_leaveoneout <- update(meta_geral, subset = (Study != "Conraads"))

@@ -17,8 +17,31 @@ plan(multisession)
 
 rm(list = ls()); gc()
 
+get_script_dir <- function() {
+  args <- commandArgs(trailingOnly = FALSE)
+  file_arg <- grep("^--file=", args, value = TRUE)
+  if (length(file_arg) > 0) {
+    return(dirname(normalizePath(sub("^--file=", "", file_arg[1]), winslash = "/")))
+  }
+  if (!is.null(sys.frames()[[1]]$ofile)) {
+    return(dirname(normalizePath(sys.frames()[[1]]$ofile, winslash = "/")))
+  }
+  getwd()
+}
+
+script_dir <- get_script_dir()
+projeto_root <- normalizePath(file.path(script_dir, "..", ".."), winslash = "/", mustWork = FALSE)
+
+manejo_csv <- Sys.getenv("MANEJO_CSV", unset = file.path(projeto_root, "2-DADOS", "MANEJO.csv"))
+if (!file.exists(manejo_csv)) {
+  stop(paste0(
+    "Arquivo MANEJO.csv não encontrado em ", manejo_csv, ". ",
+    "Coloque o arquivo em 8-REVISÃO_ESCOPO_SAT/2-DADOS/MANEJO.csv ou defina MANEJO_CSV."
+  ))
+}
+
 # 2. Carregar e preparar os dados
-dados <- fread("C:/Users/vidal/OneDrive/Documentos/ARTIGO_MA/3 - DADOS/MANEJO.csv", encoding = "UTF-8") %>%
+dados <- fread(manejo_csv, encoding = "UTF-8") %>%
   mutate(
     across(
       c(m_e, sd_e, n_e, m_c, sd_c, n_c),

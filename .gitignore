@@ -1,0 +1,34 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex*
+*.toc
+*.lof
+*.lot
+
+# Generated PDFs (keep sources, rebuild as needed)
+*.pdf
+
+# Local caches
+8-REVISÃO_ESCOPO_SAT/latex/_fig_cache/
+
+# OS junk
+.DS_Store
+Thumbs.db
