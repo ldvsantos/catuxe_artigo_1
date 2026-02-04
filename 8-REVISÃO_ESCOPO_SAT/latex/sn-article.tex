@@ -207,7 +207,7 @@ Ao examinar as tendências tecnológicas de forma decomposta (Fig. \ref{fig:temp
 
 Esta transição é consistente com uma resposta adaptativa à complexidade crescente dos dados de observação da Terra, cenário no qual a saturação de desempenho dos métodos clássicos frente a séries temporais densas e imagens de altíssima resolução tem impulsionado a adoção de Redes Neurais Convolucionais (CNNs) e arquiteturas híbridas \citep{Weiss2020,Osco2021}. Tais modelos têm mostrado capacidade de capturar a heterogeneidade espacial e temporal inerente aos SAT, reduzindo limitações de engenharia de características manual dos modelos antecessores \citep{Osco2021}.
 
-Identificou-se na triagem um núcleo de estudos de "Alta aderência" (Score $\geq$ 15), que são consistentes com o estado da arte na integração entre inteligência computacional e sistemas tradicionais. Destaca-se o trabalho de \cite{Li2025}, que propõe sistemas unificados de AIoT para controle de pragas, e a pesquisa de \cite{Tripathi2025}, que desenvolve arquiteturas híbridas de Deep Learning para diagnóstico fitopatológico.
+Identificou-se na triagem um núcleo de estudos de Alta aderência (Score $\geq$ 15), que são consistentes com o estado da arte na integração entre inteligência computacional e sistemas tradicionais. Destaca-se o trabalho de \cite{Li2025}, que propõe sistemas unificados de AIoT para controle de pragas, e a pesquisa de \cite{Tripathi2025}, que desenvolve arquiteturas híbridas de Deep Learning para diagnóstico fitopatológico.
 
 O resumo dos principais estudos de alta relevância (Tabela \ref{tab:top7}) evidencia a diversidade de aplicações desde a Amazônia até o Sudeste Asiático.
 
@@ -240,7 +240,7 @@ Observa-se na topologia da rede de conhecimento (Figura \ref{fig:network_complet
 \label{fig:network_completa}
 \end{figure}
 
-Ao aprofundar a análise estrutural, a detecção de comunidades (Figura \ref{fig:network_communities}) sugere clusters temáticos bem definidos. A metrificação de centralidade aponta a proeminência do cluster "Americas", refletindo a intensa aplicação de geotecnologias em paisagens agrícolas neotropicais, fortemente acoplado a nós tecnológicos como "NeuralNetwork" e "DeepLearning". Esta configuração sugere uma transição metodológica onde, diferentemente da primeira década (2010--2020) focada na validação de sensores espectrais (NIR/FTIR), o período recente (2021--2025) é marcado por maior participação de arquiteturas de aprendizado profundo aplicadas à fusão de dados multi-sensores \citep{Liakos2018,Weiss2020,Osco2021}.
+Ao aprofundar a análise estrutural, a detecção de comunidades (Figura \ref{fig:network_communities}) sugere clusters temáticos bem definidos. A metrificação de centralidade aponta a proeminência do cluster \textit{Americas}, refletindo a intensa aplicação de geotecnologias em paisagens agrícolas neotropicais, fortemente acoplado a nós tecnológicos como \texttt{NeuralNetwork} e \texttt{DeepLearning}. Esta configuração sugere uma transição metodológica onde, diferentemente da primeira década (2010--2020) focada na validação de sensores espectrais (NIR/FTIR), o período recente (2021--2025) é marcado por maior participação de arquiteturas de aprendizado profundo aplicadas à fusão de dados multi-sensores \citep{Liakos2018,Weiss2020,Osco2021}.
 
 \begin{figure}[h]
 \centering
@@ -251,11 +251,11 @@ Ao aprofundar a análise estrutural, a detecção de comunidades (Figura \ref{fi
 \label{fig:network_communities}
 \end{figure}
 
-Essa transição é corroborada pela frequência de palavras-chave (Tabela \ref{tab:keywords}), onde "Remote Sensing" e "Deep Learning" emergem como termos dominantes, indicando a ferramenta preferencial e a abordagem analítica predominante, respectivamente.
+Essa transição é corroborada pela frequência de palavras-chave (Tabela \ref{tab:keywords}), onde \textit{Remote Sensing} e \textit{Deep Learning} emergem como termos dominantes, indicando a ferramenta preferencial e a abordagem analítica predominante, respectivamente.
 
 \begin{table}[h]
 \centering
-\caption{Principais palavras-chave associadas aos estudos de ML e SAT (Top 10)}
+\caption{Principais palavras-chave associadas aos estudos de ML e SAT (2010--2025)}
 \label{tab:keywords}
 \begin{tabular}{@{}lc@{}}
 \toprule
@@ -278,7 +278,7 @@ Artificial Intelligence & 13 \\
 
 \subsection[Análise de Correspondência Múltipla]{Análise de Correspondência Múltipla (MCA)}
 
-Para compreender as associações latentes entre as categorias metodológicas e geográficas, a Análise de Correspondência Múltipla (MCA) \citep{Greenacre2017,Abdi2014} projetou as variáveis no espaço fatorial, com destaque para a dimensão temporal da análise (Figura \ref{fig:mca_temporal}), que elucida a trajetória evolutiva do campo. O biplot revela a estrutura de variância conjunta, onde a proximidade entre pontos indica uma forte associação estatística \citep{Greenacre2017}. Observa-se um deslocamento claro do centroide "2010-2015", associado a técnicas convencionais e monitoramento local, em direção ao centroide "2020-2025", fortemente correlacionado com Big Data, Deep Learning e escalas globais de análise.
+Para compreender as associações latentes entre as categorias metodológicas e geográficas, a Análise de Correspondência Múltipla (MCA) \citep{Greenacre2017,Abdi2014} projetou as variáveis no espaço fatorial, com destaque para a dimensão temporal da análise (Figura \ref{fig:mca_temporal}), que elucida a trajetória evolutiva do campo. O biplot revela a estrutura de variância conjunta, onde a proximidade entre pontos indica uma forte associação estatística \citep{Greenacre2017}. Observa-se um deslocamento claro do centroide 2010--2015, associado a técnicas convencionais e monitoramento local, em direção ao centroide 2020--2025, fortemente correlacionado com Big Data, Deep Learning e escalas globais de análise.
 
 \begin{figure}[h]
 \centering
@@ -342,19 +342,19 @@ A dependência de caixas-pretas algorítmicas, embora eficiente em acurácia, co
 \end{figure}
 
 
-A validade ecológica dos modelos também enfrenta o desafio da "falácia da escala". A eficácia reportada por \cite{Li2024} na detecção de clareiras de agricultura itinerante com novos índices espectrais (Red-NIR-SWIR) é promissora, mas sua aplicação em biomas distintos, a exemplo das florestas de Miombo analisadas por \cite{Andrews2024} ou das estepes da Mongólia estudadas por \cite{Prudnikova2024496}, carece de testes de robustez. A degradação de desempenho observada em testes externos sugere que modelos treinados em nichos ecológicos específicos podem falhar ao tentar generalizar padrões para paisagens biogeograficamente distintas.
+A validade ecológica dos modelos também enfrenta o desafio da falácia da escala. A eficácia reportada por \cite{Li2024} na detecção de clareiras de agricultura itinerante com novos índices espectrais (Red-NIR-SWIR) é promissora, mas sua aplicação em biomas distintos, a exemplo das florestas de Miombo analisadas por \cite{Andrews2024} ou das estepes da Mongólia estudadas por \cite{Prudnikova2024496}, carece de testes de robustez. A degradação de desempenho observada em testes externos sugere que modelos treinados em nichos ecológicos específicos podem falhar ao tentar generalizar padrões para paisagens biogeograficamente distintas.
 
-Isso é consistente com a tese de \cite{Ghilardi2025} de que a auditoria de habitats críticos exige calibração local intensiva, questionando a ideia de "algoritmos universais" para monitoramento de biodiversidade.
+Isso é consistente com a tese de \cite{Ghilardi2025} de que a auditoria de habitats críticos exige calibração local intensiva, questionando a ideia de algoritmos universais para monitoramento de biodiversidade sem auditabilidade.
 
 \subsection[Limitações]{Limitações}
 
-Algumas limitações inerentes ao delineamento devem ser consideradas ao interpretar os achados. A cobertura das fontes de informação foi restrita a Scopus e Web of Science, o que pode subrepresentar literatura cinzenta, bases regionais e periódicos não indexados. A triagem automatizada, embora apresente precisão de 94,2\%, pode induzir exclusões por sensibilidade limitada em registros com resumos incompletos, terminologia não padronizada ou metadados escassos. Adicionalmente, a síntese quantitativa baseou-se em um subconjunto de 148 estudos com métricas de desempenho reportadas, o que introduz dependência de reporte e aumenta a suscetibilidade a viés de publicação e heterogeneidade entre delineamentos, ainda que tais efeitos tenham sido avaliados por estatísticas e testes apropriados na meta-análise.
+Algumas limitações inerentes ao delineamento devem ser consideradas ao interpretar os achados. A cobertura das fontes de informação foi restrita a Scopus e Web of Science, o que pode subrepresentar literatura cinzenta, bases regionais. A triagem automatizada, embora apresente precisão de 94,2\%, pode induzir exclusões por sensibilidade limitada em registros com resumos incompletos, terminologia não padronizada ou metadados escassos. Adicionalmente, a síntese quantitativa baseou-se em um subconjunto de 148 estudos com métricas de desempenho reportadas, o que introduz dependência de reporte e aumenta a suscetibilidade a viés de publicação e heterogeneidade entre delineamentos, ainda que tais efeitos tenham sido avaliados por estatísticas e testes apropriados na meta-análise.
 
 Também não se procedeu ao charting sistemático das fontes de financiamento reportadas nos estudos incluídos, de modo que a interpretação sobre drivers institucionais e econômicos da produção científica permanece fora do escopo desta síntese.
 
 \section[Conclusoes]{Conclusões}
 
-Esta pesquisa sistematiza a compreensão de Sistemas Agrícolas Tradicionais como sistemas socioecológicos acoplados, cuja tipicidade emerge de interações não lineares entre variáveis edafoclimáticas e práticas culturais. Os resultados são consistentes com a emergência de um paradigma de monitoramento digital em franca expansão no período analisado (2010--2025), ancorado na integração de sensores remotos e arquiteturas de aprendizado profundo (Deep Learning). A topologia da rede de conhecimento, com densidade de 0,3455 e forte centralidade no cluster "Americas", sugere um ecossistema de pesquisa coeso, porém regionalmente concentrado, indicando que a validação de algoritmos ainda depende fortemente de contextos neotropicais específicos.
+Esta pesquisa sistematiza a compreensão de Sistemas Agrícolas Tradicionais como sistemas socioecológicos acoplados, cuja tipicidade emerge de interações não lineares entre variáveis edafoclimáticas e práticas culturais. Os resultados são consistentes com a emergência de um paradigma de monitoramento digital em franca expansão no período analisado (2010--2025), ancorado na integração de sensores remotos e arquiteturas de aprendizado profundo (Deep Learning). A topologia da rede de conhecimento, com densidade de 0,3455 e forte centralidade no cluster \textit{Americas}, sugere um ecossistema de pesquisa coeso, porém regionalmente concentrado, indicando que a validação de algoritmos ainda depende fortemente de contextos neotropicais específicos.
 
 Diferentemente de revisões anteriores que apontavam fragmentação metodológica, os dados atuais indicam uma convergência tecnológica em torno de soluções híbridas e explicáveis. O exame dos 18 estudos de Alta aderência sugere que parte da fronteira do conhecimento tem avançado além da simples classificação de cobertura do solo, aproximando-se de gêmeos digitais com potencial de inferir fitopatologias, dinâmica de carbono e mobilidade humana em condições operacionais reportadas. Contudo, a transposição dessas evidências para decisões de salvaguarda enfrenta o desafio da robustez externa, pois modelos treinados em contextos de alta disponibilidade de dados, carecem de validação sistemática em paisagens de agricultura itinerante na Ásia ou África, limitando sua escalabilidade regulatória.
 
