@@ -1,0 +1,46 @@
+---
+title: "PRISMA-ScR Checklist"
+subtitle: "Aprendizado de Máquina para Auditoria de Conhecimentos e Sistemas Agrícolas Tradicionais, uma revisão de escopo sob PRISMA-ScR"
+output: word_document
+---
+
+# PRISMA-ScR Checklist
+
+| SECTION | ITEM | PRISMA-ScR CHECKLIST ITEM | REPORTED ON PAGE # |
+| :--- | :--- | :--- | :--- |
+| **TITLE** | | | |
+| Title | 1 | Identify the report as a scoping review. | **Título / Title Page** (O título identifica o estudo como revisão de escopo sob PRISMA-ScR) |
+| **ABSTRACT** | | | |
+| Structured summary | 2 | Provide a structured summary that includes (as applicable): background, objectives, eligibility criteria, sources of evidence, charting methods, results, and conclusions that relate to the review questions and objectives. | **Resumo / Abstract** (Contém os principais elementos exigidos, porém não está formatado como resumo estruturado por subtítulos) |
+| **INTRODUCTION** | | | |
+| Rationale | 3 | Describe the rationale for the review in the context of what is already known. Explain why the review questions/objectives lend themselves to a scoping review approach. | **Introdução** (Contextualiza SAT como sistemas socioecológicos acoplados, define a necessidade de auditabilidade computacional e explicita lacunas de robustez inferencial, explicabilidade e governança de dados) |
+| Objectives | 4 | Provide an explicit statement of the questions and objectives being addressed with reference to their key elements (e.g., population or participants, concepts, and context) or other relevant key elements used to conceptualize the review questions and/or objectives. | **Introdução** (Parágrafo final define o objetivo de avaliar se o aparato metodológico de ML sustenta um gêmeo digital inferencial aplicável a SAT) |
+| **METHODS** | | | |
+| Protocol and registration | 5 | Indicate whether a review protocol exists; state if and where it can be accessed (e.g., a Web address); and if available, provide registration information, including the registration number. | **Materiais e Métodos** (Subseção "Estratégia de busca, elegibilidade e extração de dados" informa ausência de registro prospectivo e disponibilização dos ativos no OSF) |
+| Eligibility criteria | 6 | Specify characteristics of the sources of evidence used as eligibility criteria (e.g., years considered, language, and publication status), and provide a rationale. | **Materiais e Métodos** (Subseção "Estratégia de busca, elegibilidade e extração de dados" explicita janela temporal, elegibilidade restrita a artigos em periódicos indexados, ausência de restrição explícita de idioma na busca, remoção de duplicatas e racionalidade associada a rastreabilidade e padronização de metadados) |
+| Information sources* | 7 | Describe all information sources in the search (e.g., databases with dates of coverage and contact with authors to identify additional sources), as well as the date the most recent search was executed. | **Materiais e Métodos** (Subseção "Estratégia de busca, elegibilidade e extração de dados" explicita Scopus e Web of Science, registra a execução mais recente em 24 de janeiro de 2026 e declara ausência de busca manual complementar e de contato com autores) |
+| Search | 8 | Present the full electronic search strategy for at least 1 database, including any limits used, such that it could be repeated. | **Materiais e Métodos** (Subseção "Estratégia de busca, elegibilidade e extração de dados" apresenta integralmente a string aplicada no Scopus) |
+| Selection of sources of evidence† | 9 | State the process for selecting sources of evidence (i.e., screening and eligibility) included in the scoping review. | **Materiais e Métodos** (Subseção "Fluxo de Seleção Bibliográfica (PRISMA)" descreve triagem automatizada, verificação manual, CCI e precisão, com fluxograma) |
+| Data charting process‡ | 10 | Describe the methods of charting data from the included sources of evidence (e.g., calibrated forms or forms that have been tested by the team before their use, and whether data charting was done independently or in duplicate) and any processes for obtaining and confirming data from investigators. | **Materiais e Métodos** (Subseção "Estratégia de busca, elegibilidade e extração de dados" descreve charting a partir de BibTeX e confirmação por avaliadores independentes) |
+| Data items | 11 | List and define all variables for which data were sought and any assumptions and simplifications made. | **Materiais e Métodos** (Subseção "Estratégia de busca, elegibilidade e extração de dados" explicita variáveis bibliométricas e variáveis metodológicas, desempenho, XAI e FAIR) |
+| Critical appraisal of individual sources of evidence§ | 12 | If done, provide a rationale for conducting a critical appraisal of included sources of evidence; describe the methods used and how this information was used in any data synthesis (if appropriate). | **Materiais e Métodos** (Não foi realizada avaliação crítica formal das fontes incluídas, e a triagem por pontuação é descrita como critério operacional de seleção, não como appraisal) |
+| Synthesis of results | 13 | Describe the methods of handling and summarizing the data that were charted. | **Materiais e Métodos** (Subseção "Análises estatísticas" descreve ARS, Louvain, MCA, inferências e meta-análise) |
+| **RESULTS** | | | |
+| Selection of sources of evidence | 14 | Give numbers of sources of evidence screened, assessed for eligibility, and included in the review, with reasons for exclusions at each stage, ideally using a flow diagram. | **Materiais e Métodos** (Fluxograma PRISMA e parágrafo com 449 registros e 244 elegíveis) |
+| Characteristics of sources of evidence | 15 | For each source of evidence, present characteristics for which data were charted and provide the citations. | **Resultados e discussão** (Tabelas e figuras com características bibliométricas e metodológicas e citações no corpo do texto, com apoio do dataset no OSF) |
+| Critical appraisal within sources of evidence | 16 | If done, present data on critical appraisal of included sources of evidence (see item 12). | **Não aplicável** (Não há apresentação de resultados de avaliação crítica formal, visto que não foi realizada appraisal estruturada de risco de viés) |
+| Results of individual sources of evidence | 17 | For each included source of evidence, present the relevant data that were charted that relate to the review questions and objectives. | **Resultados e discussão** (Exemplos de estudos de alta aderência e síntese por padrões, com tabela completa e corpus disponibilizados no OSF) |
+| Synthesis of results | 18 | Summarize and/or present the charting results as they relate to the review questions and objectives. | **Resultados e discussão** (Síntese integrada com evidências temporais, rede, MCA, inferências e FAIR) |
+| **DISCUSSION** | | | |
+| Summary of evidence | 19 | Summarize the main results (including an overview of concepts, themes, and types of evidence available), link to the review questions and objectives, and consider the relevance to key groups. | **Resultados e discussão** (Integração dos achados e implicações para governança e auditabilidade em SAT) e **Conclusões** (interpretação e próximos passos) |
+| Limitations | 20 | Discuss the limitations of the scoping review process. | **Resultados e discussão** (Subseção "Limitações") |
+| Conclusions | 21 | Provide a general interpretation of the results with respect to the review questions and objectives, as well as potential implications and/or next steps. | **Conclusões** (Interpretação geral e implicações para auditabilidade e governança de dados em SAT) |
+| **FUNDING** | | | |
+| Funding | 22 | Describe sources of funding for the included sources of evidence, as well as sources of funding for the scoping review. Describe the role of the funders of the scoping review. | **Financiamento** e **Agradecimentos** (Financiamento do estudo reportado, sem financiamento específico, e apoio institucional descrito, não houve extração sistemática de financiamento dos estudos incluídos) |
+
+---
+*JBI = Joanna Briggs Institute; PRISMA-ScR = Preferred Reporting Items for Systematic reviews and Meta-Analyses extension for Scoping Reviews.*
+* * Where sources of evidence (see second footnote) are compiled from, such as bibliographic databases, social media platforms, and Web sites.
+* † A more inclusive/heterogeneous term used to account for the different types of evidence or data sources (e.g., quantitative and/or qualitative research, expert opinion, and policy documents) that may be eligible in a scoping review as opposed to only studies. This is not to be confused with information sources (see first footnote).
+* ‡ The frameworks by Arksey and O'Malley (6) and Levac and colleagues (7) and the JBI guidance (4, 5) refer to the process of data extraction in a scoping review as data charting.
+* § The process of systematically examining research evidence to assess its validity, results, and relevance before using it to inform a decision. This term is used for items 12 and 19 instead of "risk of bias" (which is more applicable to systematic reviews of interventions) to include and acknowledge the various sources of evidence that may be used in a scoping review (e.g., quantitative and/or qualitative research, expert opinion, and policy documents).

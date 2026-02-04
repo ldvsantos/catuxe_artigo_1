@@ -39,6 +39,7 @@ python scripts/plot_network_sat_elsevier.py --input data/mca_dados_categorizados
 - Description: Consolidated corpus, standardized variables, queries, and scripts to reproduce the main figures and quantitative syntheses (network, MCA, clustering, meta-analysis, FAIR).
 - Access: Open
 - License: To be confirmed by authors (recommended: CC-BY-4.0)
+- DOI: https://doi.org/10.5281/zenodo.18381222
 
 ## How to publish in Zenodo
 1. Log in to https://zenodo.org with ORCID/GitHub.
