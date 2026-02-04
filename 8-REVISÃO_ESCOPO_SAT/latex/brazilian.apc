@@ -1,0 +1,22 @@
+%% Local apacite language shim for babel option "brazilian".
+%% This suppresses the warning "No suitable language definition file (brazilian.apc) found".
+%%
+%% Strategy:
+%% 1) Load the stock english strings.
+%% 2) Override a small set of user-visible strings to Brazilian Portuguese.
+%%
+\ProvidesFile{brazilian.apc}[2026/02/04 v0.1 apacite language file for Brazilian Portuguese]
+
+\input{english.apc}
+
+%% Minimal PT-BR overrides (keep the rest as in english.apc)
+\renewcommand{\refname}{Refer\^encias}
+\renewcommand{\bibname}{Refer\^encias}
+\renewcommand{\BAvailFrom}{Dispon\'ivel em\ }
+\renewcommand{\BRetrieved}[1]{Recuperado {#1}, de\ }
+\renewcommand{\BRetrievedFrom}{Recuperado de\ }
+\renewcommand{\BOWP}{Obra original publicada}
+\renewcommand{\BREPR}{Reimpresso de}
+\renewcommand{\BAuthor}{Autor}
+
+\endinput
