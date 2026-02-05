@@ -31,6 +31,9 @@ __pycache__/
 
 # Local caches
 8-REVISÃO_ESCOPO_SAT/latex/_fig_cache/
+8-REVISÃO_ESCOPO_SAT/latex/_build_logs/
+8-REVISÃO_ESCOPO_SAT/latex/_minted/
+8-REVISÃO_ESCOPO_SAT/latex/*.minted
 
 # OS junk
 .DS_Store

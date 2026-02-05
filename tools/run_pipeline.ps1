@@ -52,8 +52,24 @@ function Invoke-Checked {
   }
 }
 
-$latexDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$rootDir = Split-Path -Parent $latexDir
+$toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$rootDir = Split-Path -Parent $toolsDir
+
+function Find-LatexDir {
+  param(
+    [Parameter(Mandatory = $true)][string]$RootDir
+  )
+
+  $hit = Get-ChildItem -LiteralPath $RootDir -Recurse -File -Filter 'sn-article.tex' -ErrorAction SilentlyContinue |
+    Select-Object -First 1
+
+  if (-not $hit) {
+    throw "Nao encontrei sn-article.tex abaixo de: $RootDir"
+  }
+  return $hit.Directory.FullName
+}
+
+$latexDir = Find-LatexDir -RootDir $rootDir
 
 $buildLogDir = Join-Path $latexDir '_build_logs'
 New-Item -ItemType Directory -Force -Path $buildLogDir | Out-Null
@@ -109,14 +125,14 @@ Invoke-Checked -Label 'Preparando cache local de figuras (PNG)' -Command {
 Invoke-Checked -Label 'Checando figuras referenciadas no LaTeX' -Command {
   Set-Location $latexDir
   $outPath = Join-Path $buildLogDir 'check_figures.txt'
-  powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $latexDir 'check_figures.ps1') *> $outPath
+  powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $toolsDir 'check_figures.ps1') -LatexDir $latexDir -TexFile 'sn-article.tex' *> $outPath
 } -OutputPath (Join-Path $buildLogDir 'check_figures.txt')
 
 # 3) Compilar LaTeX (com jobname para evitar lock do PDF)
 Invoke-Checked -Label 'pdflatex (passo 1)' -Command {
   Set-Location $latexDir
   $outPath = Join-Path $buildLogDir 'pdflatex_pass1.txt'
-  pdflatex -interaction=batchmode -halt-on-error -file-line-error -jobname=sn-article_revised sn-article.tex *> $outPath
+  pdflatex -shell-escape -interaction=batchmode -halt-on-error -file-line-error -jobname=sn-article_revised sn-article.tex *> $outPath
 } -OutputPath (Join-Path $buildLogDir 'pdflatex_pass1.txt')
 
 Invoke-Checked -Label 'bibtex' -Command {
@@ -128,13 +144,13 @@ Invoke-Checked -Label 'bibtex' -Command {
 Invoke-Checked -Label 'pdflatex (passo 2)' -Command {
   Set-Location $latexDir
   $outPath = Join-Path $buildLogDir 'pdflatex_pass2.txt'
-  pdflatex -interaction=batchmode -halt-on-error -file-line-error -jobname=sn-article_revised sn-article.tex *> $outPath
+  pdflatex -shell-escape -interaction=batchmode -halt-on-error -file-line-error -jobname=sn-article_revised sn-article.tex *> $outPath
 } -OutputPath (Join-Path $buildLogDir 'pdflatex_pass2.txt')
 
 Invoke-Checked -Label 'pdflatex (passo 3)' -Command {
   Set-Location $latexDir
   $outPath = Join-Path $buildLogDir 'pdflatex_pass3.txt'
-  pdflatex -interaction=batchmode -halt-on-error -file-line-error -jobname=sn-article_revised sn-article.tex *> $outPath
+  pdflatex -shell-escape -interaction=batchmode -halt-on-error -file-line-error -jobname=sn-article_revised sn-article.tex *> $outPath
 } -OutputPath (Join-Path $buildLogDir 'pdflatex_pass3.txt')
 
 Invoke-Checked -Label 'Sincronizando auxiliares para VS Code (LaTeX Workshop)' -Command {

@@ -1,20 +1,41 @@
 param(
-  [string]$TexFile = "sn-article.tex"
+  [string]$TexFile = "sn-article.tex",
+  [string]$LatexDir = $null
 )
 
 $ErrorActionPreference = 'Stop'
 
-$latexDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-Set-Location $latexDir
+$toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$rootDir = Split-Path -Parent $toolsDir
 
-if (-not (Test-Path -LiteralPath $TexFile)) {
-  throw "Nao encontrei arquivo LaTeX: $TexFile"
+if (-not $LatexDir) {
+  $hit = Get-ChildItem -LiteralPath $rootDir -Recurse -File -Filter 'sn-article.tex' -ErrorAction SilentlyContinue |
+    Select-Object -First 1
+  if (-not $hit) {
+    throw "Nao encontrei sn-article.tex abaixo de: $rootDir"
+  }
+  $LatexDir = $hit.Directory.FullName
 }
 
-$tex = Get-Content -LiteralPath $TexFile -Raw
+if (-not (Test-Path -LiteralPath $LatexDir)) {
+  throw "Nao encontrei LatexDir: $LatexDir"
+}
+
+Set-Location $LatexDir
+
+$texPath = $TexFile
+if (-not [IO.Path]::IsPathRooted($texPath)) {
+  $texPath = Join-Path $LatexDir $TexFile
+}
+
+if (-not (Test-Path -LiteralPath $texPath)) {
+  throw "Nao encontrei arquivo LaTeX: $texPath"
+}
+
+$tex = Get-Content -LiteralPath $texPath -Raw
 
 # Remove comentarios (tudo apos % por linha)
-$lines = Get-Content -LiteralPath $TexFile
+$lines = Get-Content -LiteralPath $texPath
 $clean = ($lines | ForEach-Object { ($_ -replace '%.*$', '').TrimEnd() }) -join "`n"
 
 # Captura caminhos em \includegraphics[...]{...}
@@ -29,7 +50,7 @@ foreach ($m in $matches) {
   # Normaliza separadores
   $rel = $rel -replace '/', '\\'
 
-  $full = Join-Path $latexDir $rel
+  $full = Join-Path $LatexDir $rel
   if (-not (Test-Path -LiteralPath $full)) {
     $missing += $rel
   }

@@ -223,18 +223,21 @@ def draw_network(
     if g.number_of_nodes() == 0:
         raise RuntimeError("Graph has 0 nodes after filtering; lower min_edge_weight or verify input.")
 
-    # Layout on largest component for stability; then map back
+    # Use kamada-kawai layout for better balance (matching louvain_modules style)
     gc = largest_connected_subgraph(g)
-    pos_gc = nx.spring_layout(gc, seed=seed, k=None, weight="weight")
+    try:
+        pos_gc = nx.kamada_kawai_layout(gc, weight="weight")
+    except Exception:
+        pos_gc = nx.spring_layout(gc, seed=seed, k=None, weight="weight")
     pos = {n: pos_gc.get(n, (0.0, 0.0)) for n in g.nodes}
 
-    degrees = dict(g.degree())
-    weights = [g.edges[e].get("weight", 1) for e in g.edges]
-    max_w = max(weights) if weights else 1
+    degrees = dict(g.degree(weight="weight"))
+    weights = np.array([g.edges[e].get("weight", 1) for e in g.edges], dtype=float)
 
-    # Node sizes
+    # Node sizes (larger like louvain_modules)
     deg_vals = np.array([degrees.get(n, 0) for n in g.nodes], dtype=float)
-    node_sizes = 60 + 45 * np.sqrt(deg_vals)
+    max_deg = float(deg_vals.max()) if deg_vals.size and deg_vals.max() > 0 else 1.0
+    node_sizes = 220 + 780 * (deg_vals / max_deg)
 
     # Node colors
     if color_mode == "dimension":
@@ -264,10 +267,16 @@ def draw_network(
     ax = fig.add_subplot(111)
     fig.suptitle(title, fontsize=16, fontweight="bold", y=0.98)
     ax.axis("off")
+    ax.set_aspect("equal")  # Prevent distortion
 
-    # Edges
-    edge_alphas = [0.15 + 0.70 * (w / max_w) for w in weights]
-    edge_widths = [0.6 + 2.4 * (w / max_w) for w in weights]
+    # Edges (matching louvain_modules style)
+    if weights.size:
+        w_ptp = float(np.ptp(weights))
+        edge_widths = 0.8 + 2.7 * (weights - float(weights.min())) / (w_ptp if w_ptp else 1.0)
+        edge_alphas = 0.25 + 0.45 * (weights - float(weights.min())) / (w_ptp if w_ptp else 1.0)
+    else:
+        edge_widths = [1.0] * len(g.edges)
+        edge_alphas = [0.3] * len(g.edges)
 
     nx.draw_networkx_edges(
         g,
@@ -275,7 +284,7 @@ def draw_network(
         ax=ax,
         width=edge_widths,
         alpha=edge_alphas,
-        edge_color="#4D4D4D",
+        edge_color="#6B6B6B",
     )
 
     nx.draw_networkx_nodes(
@@ -284,13 +293,13 @@ def draw_network(
         ax=ax,
         node_size=node_sizes,
         node_color=node_colors,
-        linewidths=0.6,
+        linewidths=1.0,  # Thicker border like louvain_modules
         edgecolors="white",
         alpha=0.95,
     )
 
     # Labels: only top nodes by degree to reduce clutter
-    top_n = 18
+    top_n = 20
     top_nodes = [n for n, _ in sorted(degrees.items(), key=lambda kv: kv[1], reverse=True)[:top_n]]
     labels = {n: n.split(":", 1)[1].strip() if ":" in n else n for n in top_nodes}
 
@@ -304,18 +313,19 @@ def draw_network(
         ax=ax,
     )
 
-    # Legend explaining colors
+    # Legend explaining colors (horizontal at bottom, like louvain_modules)
     if color_mode == "dimension":
         assert dim_colors is not None
         present_dims = sorted({node_type(n) for n in g.nodes})
         preferred = ["Algoritmo", "Aplicacao", "Contexto", "Evidencia", "Regiao"]
         present_dims = sorted(present_dims, key=lambda d: preferred.index(d) if d in preferred else 999)
         handles = [Patch(facecolor=dim_colors.get(d, PASTEL["gray"]), edgecolor="none", label=d) for d in present_dims]
-        leg = ax.legend(
+        leg = fig.legend(
             handles=handles,
-            title="Cor do nó",
-            loc="lower left",
-            bbox_to_anchor=(0.01, 0.01),
+            title="Node dimension",
+            loc="lower center",
+            ncol=min(5, len(handles)) if handles else 1,
+            bbox_to_anchor=(0.5, 0.03),
             frameon=True,
             framealpha=0.92,
             fontsize=10,
@@ -337,13 +347,14 @@ def draw_network(
         comm_color = {cid: comm_palette[i % len(comm_palette)] for i, cid in enumerate(comm_ids)}
         handles = []
         for cid in comm_ids:
-            label = "Isolado/outros" if cid == 0 else f"Comunidade {cid}"
+            label = "Isolated/other" if cid == 0 else f"Community {cid}"
             handles.append(Patch(facecolor=comm_color.get(cid, PASTEL["gray"]), edgecolor="none", label=label))
-        leg = ax.legend(
+        leg = fig.legend(
             handles=handles,
-            title="Cor do nó",
-            loc="lower left",
-            bbox_to_anchor=(0.01, 0.01),
+            title="Node dimension",
+            loc="lower center",
+            ncol=min(5, len(handles)) if handles else 1,
+            bbox_to_anchor=(0.5, 0.03),
             frameon=True,
             framealpha=0.92,
             fontsize=10,
@@ -351,7 +362,7 @@ def draw_network(
         )
         leg.get_frame().set_edgecolor("#DDDDDD")
 
-    fig.tight_layout(rect=[0, 0, 1, 0.96])
+    fig.tight_layout(rect=[0.02, 0.08, 0.98, 0.93])
     fig.savefig(out_path, facecolor="white", bbox_inches="tight")
     plt.close(fig)
 
