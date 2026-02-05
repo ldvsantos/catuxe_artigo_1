@@ -116,7 +116,7 @@ Nesse enquadramento, o presente estudo analisa criticamente se o aparato metodol
 
 O processo de seleção seguiu as diretrizes PRISMA-ScR \citep{Tricco2018b}. A busca inicial recuperou 449 registros combinados das bases Scopus e Web of Science. Após a aplicação de critérios de pontuação automatizada e verificação manual, 244 estudos foram considerados elegíveis para a síntese qualitativa e quantitativa (Figura \ref{fig:prisma}).
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{../2-FIGURAS/2-EN/prisma_flowdiagram.png}
 \caption{Fluxograma PRISMA 2020 do processo de seleção de estudos.}
@@ -230,7 +230,7 @@ Ano & Ref & Contribuição \\
 
 Observa-se na topologia da rede de conhecimento (Figura \ref{fig:network_completa}), caracterizada por uma densidade de 0,345, um campo científico densamente conectado, onde nós centrais estruturam o fluxo de informação entre domínios distintos. A visualização global destaca a interconectividade entre métodos computacionais e objetos de estudo agrícolas.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/network_completa.png}
 \caption{Topologia da rede de conhecimento e coocorrência de termos.}
@@ -241,7 +241,7 @@ Ao aprofundar a análise estrutural, a detecção de comunidades (Figura \ref{fi
 
 Esta configuração sugere uma transição metodológica onde, diferentemente da primeira década (2010--2020) focada na validação de sensores espectrais (NIR/FTIR), o período recente (2021--2025) é marcado por maior participação de arquiteturas de aprendizado profundo aplicadas à fusão de dados multi-sensores \citep{Liakos2018,Weiss2020,Osco2021}.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
 \IfFileExists{../2-FIGURAS/2-EN/louvain_modules_detailed.png}{%
 \includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/louvain_modules_detailed.png}%
@@ -263,7 +263,7 @@ Essa transição é corroborada pela frequência de palavras-chave, onde \textit
 
 Para compreender as associações latentes entre as categorias metodológicas e geográficas, a Análise de Correspondência Múltipla (MCA) \citep{Greenacre2017,Abdi2014} projetou as variáveis no espaço fatorial, com destaque para a dimensão temporal da análise (Figura \ref{fig:mca_temporal}), que elucida a trajetória evolutiva do campo. O biplot revela a estrutura de variância conjunta, onde a proximidade entre pontos indica uma forte associação estatística \citep{Greenacre2017}. Observa-se um deslocamento claro do centroide 2010--2015, associado a técnicas convencionais e monitoramento local, em direção ao centroide 2020--2025, fortemente correlacionado com Big Data, Deep Learning e escalas globais de análise.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
 \includegraphics[width=0.85\textwidth]{../2-FIGURAS/2-EN/mca_biplot_temporal_completo.png}
 \caption{Biplot Temporal: Evolução das associações temáticas (2010--2025).}
@@ -282,9 +282,9 @@ A análise hierárquica de clusters identificou dois grupos funcionais coesos ($
 
 O dendrograma (painel esquerdo) evidencia a organização hierárquica das características, onde ramos agregando múltiplos estudos foram anotados com labels compactos indicando a dimensão dominante (e.g., \textit{Alg/Other}, \textit{Ctx/SATGen}). A estrutura sugere que a coocorrência de categorias não é aleatória, mas estruturada por afinidades tecnológicas (e.g., \textit{DeepLearning} em contextos SAT-General) e temáticas (\textit{LULC} em agricultura itinerante), sustentando a hipótese de módulos temáticos especializados no campo científico analisado.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=0.85\textwidth]{../2-FIGURAS/2-EN/cluster_heatmap_profiles_edit.png}
+\includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/cluster_heatmap_profiles_edit.png}
 \caption{Heatmap hierárquico de perfis de clusters funcionais. Linhas representam características categóricas (formato Dimensão=Valor); colunas representam os 2 clusters identificados; intensidade de cor indica frequência média (0=ausente, 1=presente em 100\% dos estudos do cluster). Dendrograma lateral (esquerdo) mostra hierarquia de Ward sobre distâncias euclidianas entre características. Anotações em ramos identificam dimensões dominantes (e.g., Alg=algoritmo, Ctx=contexto).}
 \label{fig:cluster_heatmap}
 \end{figure}
@@ -293,15 +293,15 @@ O dendrograma (painel esquerdo) evidencia a organização hierárquica das carac
 
 O estado da governança de dados, quantificado por conformidade FAIR, evidenciou um regime de baixa densidade informacional, no qual a pontuação média agregada permaneceu em 18,67/100, com assimetria marcada entre dimensões, concentrando aderência em \textit{Findable} (14,78/25, 59,14\%) e residualizando \textit{Accessible} (0,16/25, 0,65\%) e \textit{Interoperable} (0,05/25, 0,22\%), enquanto \textit{Reusable} permaneceu limitada (3,67/25, 14,67\%) (Figura \ref{fig:fair_radar}). Em nível de indicadores, observou-se elevada presença de metadados ricos (97,31\%), em contraste com a baixa explicitação de licença (6,45\%) e a quase ausência de artefatos críticos de auditabilidade, incluindo código disponível (1,08\%) e dados em repositório (1,08\%), resultando em uma fração minoritária de estudos que alcançou níveis considerados adequados de conformidade, atingida por apenas 12,8\% do conjunto avaliado.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
-\begin{minipage}[t]{0.49\textwidth}
+\begin{minipage}[t]{0.55\textwidth}
 \centering
 \includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/fair_radar_only.png}
 \par\small (a)
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.49\textwidth}
+\begin{minipage}[t]{0.55\textwidth}
 \centering
 \IfFileExists{../2-FIGURAS/2-EN/fair_indicadores.png}{%
 \includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/fair_indicadores.png}%
@@ -314,7 +314,7 @@ O estado da governança de dados, quantificado por conformidade FAIR, evidenciou
 
 Em contrapartida, a síntese meta-analítica sob efeitos aleatórios evidencia um patamar agregado de desempenho preservado acima de 90\% e torna explícita a heterogeneidade entre estudos no \textit{forest plot} (Figura \ref{fig:meta_algoritmo}a), no qual a estimativa combinada atingiu 90,66\% (IC 95\% 89,81 a 91,45\%), com heterogeneidade quantificada por $\tau^2=0,170$, $I\textsuperscript{2}=58,00\%$ e $H^2=2,38$, além de evidência de dispersão estatisticamente consistente com variância entre estudos pelo teste $Q=309,71$ (p=$4,36\times 10^{-17}$). A decomposição por família algorítmica sustenta a leitura de desempenho elevado, com estimativas combinadas de 91,33\% em \textit{Random Forest} (IC 95\% 89,68 a 92,75, $k=37$) e 90,33\% em SVM (IC 95\% 88,84 a 91,65, $k=47$), enquanto arquiteturas de \textit{Deep Learning} preservaram 90,51\% (IC 95\% 87,08 a 93,09, $k=15$). A meta-regressão formaliza a componente temporal do desempenho reportado ao longo do período de publicação (Figura \ref{fig:meta_algoritmo}b), com coeficiente positivo para o ano centrado (estimativa 0,021, SE 0,012, z=1,713, p=0,0866, IC 95\% -0,003 a 0,045), compatível com tendência de incremento no reporte, ainda que sem evidência conclusiva ao nível de 5\%.
 
-\begin{figure}[H]
+\begin{figure}[ht]
 \centering
 \begin{minipage}[t]{0.49\textwidth}
 \centering
