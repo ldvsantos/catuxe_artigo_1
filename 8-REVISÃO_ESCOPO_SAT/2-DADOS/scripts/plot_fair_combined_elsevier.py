@@ -8,6 +8,7 @@ Entradas:
 
 Saída:
 - fair_radar_2.png
+- fair_radar_only.png
 """
 
 import os
@@ -150,6 +151,28 @@ def plot_bars(ax, df):
     # ax.set_title("(b) Individual Indicators", loc="left", fontsize=11, fontweight="bold")
 
 
+def _save_radar_only(fig_dir_en, df_radar):
+    """Exporta uma versão standalone do radar FAIR (sem o painel de barras).
+
+    A ideia é reproduzir o radar a partir dos dados-fonte, com layout controlado
+    para evitar cortes de rótulos, sem depender de recorte manual de imagens.
+    """
+    fig = plt.figure(figsize=(6.5, 6.5), constrained_layout=True)
+    ax = fig.add_subplot(1, 1, 1, polar=True)
+    plot_radar(ax, df_radar)
+
+    out_png = os.path.join(fig_dir_en, "fair_radar_only.png")
+    fig.savefig(
+        out_png,
+        dpi=300,
+        bbox_inches="tight",
+        pad_inches=0.35,
+        facecolor="white",
+    )
+    plt.close(fig)
+    print(f"✓ Radar standalone salvo em: {out_png}")
+
+
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     sat_root = os.path.abspath(os.path.join(script_dir, "..", ".."))
@@ -204,6 +227,11 @@ def main():
 
     fig.savefig(out_png, dpi=300, bbox_inches="tight", pad_inches=0.2, facecolor="white")
     print(f"✓ Figura salva em: {out_png}")
+
+    # Export adicional: radar apenas (sem painel b)
+    _save_radar_only(fig_dir_en, df_radar)
+
+    plt.close(fig)
 
 if __name__ == "__main__":
     main()
