@@ -50,22 +50,11 @@
 \usepackage[brazilian]{babel}%
 \usepackage{booktabs}%
 \usepackage{url}%
-\usepackage{minted}%
+% minted estava causando falhas de compilação no Windows/MiKTeX;
+% usamos verbatim para manter o bloco de consulta sem depender de shell-escape.
+\usepackage{verbatim}
+\usepackage{fvextra}
 \usepackage{float}%
-
-\setminted{%
-	fontsize=\small,
-	breaklines=true,
-	breakanywhere=true,
-	autogobble=true
-}%
-
-\setminted[r]{%
-	fontsize=\small,
-	breaklines=true,
-	breakanywhere=true
-}%
-
 
 \begin{document}
 
@@ -73,12 +62,15 @@
 
 \author[1]{\fnm{Catuxe Varjão de Santana} \sur{Oliveira}}
 \author*[2]{\fnm{Luiz Diego Vidal} \sur{Santos}}
-\author[1]{\fnm{XXXXXXXXXXX} \sur{XXXXXXXXXXX}}
+\author[1]{\fnm{Paulo Roberto} \sur{Gagliardi}}
+\author[1]{\fnm{Francisco Sandro Rodrigues} \sur{Holanda}}
+\author[3]{\fnm{Renisson Neponuceno de} \sur{Araújo Filho}}
 
 \email{ldvsantos@uefs.br}
 
 \affil[1]{\orgname{Universidade Federal de Sergipe - UFS}, \orgaddress{\country{Brasil}}}
 \affil*[2]{\orgname{Universidade Estadual de Feira de Santana - UEFS}, \orgaddress{\country{Brasil}}\\Telefone do autor correspondente: +55 (00) 00000-0000}
+\affil[3]{\orgname{Universidade Federal Rural de Pernambuco - UUFRPE}, \orgaddress{\country{Brasil}}}
 
 \abstract{Sistemas Agrícolas Tradicionais (SAT) são sistemas socioecológicos em que manejo, diversidade biocultural e condições biofísicas coevoluem, exigindo governança de integridade baseada em evidências auditáveis. Este estudo analisa a maturidade técnica do estado da arte em Aprendizado de Máquina voltado à auditoria de serviços ecossistêmicos e de indicadores de integridade associados aos SAT. Sob as diretrizes da metodologia PRISMA-ScR, processou-se um corpus de 244 estudos (2010–2025) via triagem automatizada de pontuação ponderada (precisão 94,2\%) e validação manual (CCI=0,87). A análise integrou meta-análise de efeitos aleatórios, estatística multivariada e avaliação de princípios FAIR. No corpus analisado, observa-se um paradoxo de generalização, no qual classificadores alcançam alta acurácia in vitro (80–100\%), enquanto testes de robustez externa sugerem degradação de desempenho (queda de 11,8\% versus 5,6\% em modelos espacialmente independentes, d=0,95). A fragmentação metodológica (Modularidade Q=0,62, heterogeneidade I\textsuperscript{2}=58\%) e a incipiente conformidade FAIR são consistentes com a presença de assimetrias epistêmicas, o que pode limitar a tradução regulatória e a escalabilidade dos modelos para contextos territoriais diversos. Os resultados indicam que a auditabilidade computacional em SAT tende a demandar a transição de classificadores estáticos para modelos adaptativos, condicionados a benchmarks de integridade, com validação espacial e temporal orientada a degradação $\leq 8\%$, explicabilidade (XAI) para marcadores socioecológicos.}
 
@@ -137,24 +129,15 @@ Não se realizaram buscas manuais complementares em websites, repositórios inst
 
 Foram considerados elegíveis apenas artigos publicados em periódicos indexados nas bases consultadas, desde que recuperados pelas strings dentro do intervalo temporal e com metadados suficientes para charting, incluindo ao menos título e resumo. Não se aplicou restrição explícita de idioma na etapa de busca, uma vez que a estratégia combinou termos em inglês e português, enquanto a delimitação do universo de evidências foi dada pela indexação em Scopus e Web of Science, o que implica exclusão de literatura cinzenta e de repositórios não indexados, opção adotada para maximizar rastreabilidade, padronização de metadados e reprodutibilidade do pipeline analítico.
 
-A estratégia eletrônica foi construída para recuperar evidências em que a caracterização explícita de Sistemas Agrícolas Tradicionais estivesse concomitantemente associada a técnicas de Aprendizado de Máquina e sensoriamento remoto, operando sobre título, resumo e palavras-chave. A string aplicada no Scopus foi reproduzida integralmente a seguir, mantendo os limites temporais utilizados para permitir reprodutibilidade.
+A estratégia eletrônica foi construída para recuperar evidências em que a caracterização explícita de Sistemas Agrícolas Tradicionais estivesse concomitantemente associada a técnicas de Aprendizado de Máquina e sensoriamento remoto, operando sobre título, resumo e palavras-chave. A string aplicada no Scopus foi reproduzida integralmente a seguir, mantendo os limites temporais utilizados para permitir reprodutibilidade, com quebras de linha apenas para legibilidade.
 
-\begin{minted}{text}
-TITLE-ABS-KEY(("traditional agricultural system*" OR "traditional farming system*" OR "traditional agriculture" OR "traditional agroecosystem*" OR "sistemas agrícolas tradicionais" OR "sistema agrícola tradicional" OR "agricultura tradicional" OR"indigenous farming" OR "indigenous agriculture" OR "shifting cultivation" OR "slash-and-burn" OR "ancestral farming" OR "ancient agriculture" ) AND ( "machine learning" OR "artificial intelligence" OR "deep learning" OR "random forest" OR "neural network*" OR "support vector machine*" OR "SVM" OR "decision tree*" OR "gradient boosting" OR "CNN" OR "long short-term memory" OR "LSTM" OR "yolo" OR "remote sensing" )) AND PUBYEAR > 2009 AND PUBYEAR < 2026
-\end{minted}
-
-Foram elegíveis registros obtidos pelas strings, em que, registros com baixa pontuação final na triagem foram excluídos na etapa de rastreamento, e os registros remanescentes foram submetidos à verificação manual.
-
-A extração de dados foi conduzida a partir dos metadados exportados em BibTeX e do conteúdo reportado nos estudos incluídos. Chartaram-se variáveis bibliométricas e descritivas como ano, fonte, afiliações, país e palavras-chave, bem como variáveis metodológicas e de desempenho associadas a algoritmos, produtos e instrumentos, incluindo a presença de validação espacialmente independente, métricas de acurácia reportadas, uso de explicabilidade e indicadores de governança de dados associados a conformidade FAIR.
-
-\subsection[Análises estatísticas]{Análises estatísticas}
-
-O corpus de 244 estudos foi submetido a análises estatísticas descritivas para caracterização bibliométrica. Para a síntese quantitativa do desempenho reportado, selecionou-se um subconjunto de 148 estudos que apresentaram métricas quantitativas, dos quais 129 reportaram acurácia recuperável e variância estimável para composição meta-analítica.
-
-\subsubsection[Análises descritivas e exploratórias do corpus]{Análises descritivas e exploratórias do corpus}
-
-Para a caracterização estrutural do campo científico e mapear as tendências temáticas e os centros de produção de conhecimento, procedeu-se à extração e sistematização de metadados bibliométricos, focando na frequência de palavras-chave e na distribuição geográfica das afiliações institucionais.
-
+\begin{Verbatim}[
+	breaklines=true,
+	breakanywhere=true,
+	fontsize=\small
+]
+TITLE-ABS-KEY(( "traditional agricultural system*" OR "traditional farming system*" OR "traditional agriculture" OR "traditional agroecosystem*" OR "sistemas agrícolas tradicionais" OR "sistema agrícola tradicional" OR "agricultura tradicional" OR "indigenous farming" OR "indigenous agriculture" OR "shifting cultivation" OR "slash-and-burn" OR "ancestral farming" OR "ancient agriculture") AND ( "machine learning" OR "artificial intelligence" OR "deep learning" OR "random forest" OR "neural network*" OR "support vector machine*" OR "SVM" OR "decision tree*" OR "gradient boosting" OR "CNN" OR "long short-term memory" OR "LSTM" OR "yolo" OR "remote sensing")) AND PUBYEAR > 2009 AND PUBYEAR < 2026
+\end{Verbatim}
 
 A estrutura de interações do domínio foi investigada por meio de Análise de Redes Sociais (ARS). Construiu-se um grafo não direcionado ponderado a partir de tabela categórica do corpus, em que os nós representam entidades (algoritmos, instrumentos, produtos) e as arestas indicam coocorrência nos estudos, com implementação computacional em Python.
 
@@ -164,7 +147,9 @@ A evolução temporal (2010--2025) da produção científica e da adoção de fa
 
 \subsubsection[Síntese quantitativa e governança]{Meta-análise e governança de dados (FAIR)}
 
-Para a síntese quantitativa, selecionou-se o subconjunto de 148 estudos que reportaram métricas de desempenho, dos quais 129 apresentaram acurácia recuperável para meta-análise. As acurácias foram extraídas do texto reportado (título/resumo/palavras-chave) e padronizadas como proporção, com transformação logit para estabilização da variância e truncamento numérico nas bordas ($\varepsilon=10^{-4}$) quando necessário. A variância por estudo foi aproximada por modelo binomial ($p(1-p)/n$) quando $n$ estava disponível; quando o tamanho amostral não era reportado de forma recuperável, adotou-se $n=100$ como aproximação conservadora para viabilizar ponderação e visualização. As estimativas combinadas foram obtidas por modelo de efeitos aleatórios com heterogeneidade estimada por REML, e a incerteza reportada como IC 95\%. Assimetrias compatíveis com viés de publicação foram examinadas por regressão de Egger, correlação de postos e procedimento \textit{trim-and-fill}, com interpretação como diagnóstico de sensibilidade do reporte.
+Para a síntese quantitativa, selecionou-se o subconjunto de 148 estudos que reportaram métricas de desempenho, dos quais 129 apresentaram acurácia recuperável para meta-análise. As acurácias foram extraídas do texto reportado (título/resumo/palavras-chave) e padronizadas como proporção, com transformação logit para estabilização da variância e truncamento numérico nas bordas ($\varepsilon=10^{-4}$) quando necessário. 
+
+A variância por estudo foi aproximada por modelo binomial ($p(1-p)/n$) quando $n$ estava disponível; quando o tamanho amostral não era reportado de forma recuperável, adotou-se $n=100$ como aproximação conservadora para viabilizar ponderação e visualização. As estimativas combinadas foram obtidas por modelo de efeitos aleatórios com heterogeneidade estimada por REML, e a incerteza reportada como IC 95\%. Assimetrias compatíveis com viés de publicação foram examinadas por regressão de Egger, correlação de postos e procedimento \textit{trim-and-fill}, com interpretação como diagnóstico de sensibilidade do reporte.
 
 A componente temporal do desempenho foi examinada por regressão ponderada por inverso da variância, com ano de publicação como covariável, priorizando interpretação como tendência de reporte (e não como efeito causal).
 
@@ -230,7 +215,7 @@ Ano & Ref & Contribuição \\
 
 Observa-se na topologia da rede de conhecimento (Figura \ref{fig:network_completa}), caracterizada por uma densidade de 0,345, um campo científico densamente conectado, onde nós centrais estruturam o fluxo de informação entre domínios distintos. A visualização global destaca a interconectividade entre métodos computacionais e objetos de estudo agrícolas.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/network_completa.png}
 \caption{Topologia da rede de conhecimento e coocorrência de termos.}
@@ -241,14 +226,14 @@ Ao aprofundar a análise estrutural, a detecção de comunidades (Figura \ref{fi
 
 Esta configuração sugere uma transição metodológica onde, diferentemente da primeira década (2010--2020) focada na validação de sensores espectrais (NIR/FTIR), o período recente (2021--2025) é marcado por maior participação de arquiteturas de aprendizado profundo aplicadas à fusão de dados multi-sensores \citep{Liakos2018,Weiss2020,Osco2021}.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \IfFileExists{../2-FIGURAS/2-EN/louvain_modules_detailed.png}{%
-\includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/louvain_modules_detailed.png}%
+\includegraphics[width=0.90\textwidth]{../2-FIGURAS/2-EN/louvain_modules_detailed.png}%
 }{%
 \fbox{Figura não encontrada: louvain\_modules\_detailed.png}%
 }
-\caption{Módulos tecnológicos identificados na rede de coocorrência. \textit{Nota:} comunidades estimadas por maximização de modularidade em grafo ponderado.}
+\caption{Módulos tecnológicos identificados na rede de coocorrência.}
 \label{fig:network_communities}
 \end{figure}
 
@@ -263,7 +248,7 @@ Essa transição é corroborada pela frequência de palavras-chave, onde \textit
 
 Para compreender as associações latentes entre as categorias metodológicas e geográficas, a Análise de Correspondência Múltipla (MCA) \citep{Greenacre2017,Abdi2014} projetou as variáveis no espaço fatorial, com destaque para a dimensão temporal da análise (Figura \ref{fig:mca_temporal}), que elucida a trajetória evolutiva do campo. O biplot revela a estrutura de variância conjunta, onde a proximidade entre pontos indica uma forte associação estatística \citep{Greenacre2017}. Observa-se um deslocamento claro do centroide 2010--2015, associado a técnicas convencionais e monitoramento local, em direção ao centroide 2020--2025, fortemente correlacionado com Big Data, Deep Learning e escalas globais de análise.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.85\textwidth]{../2-FIGURAS/2-EN/mca_biplot_temporal_completo.png}
 \caption{Biplot Temporal: Evolução das associações temáticas (2010--2025).}
@@ -278,33 +263,38 @@ Em contrapartida, entre 2020 e 2025, ampliou-se a participação de contextos SA
 
 \subsection[Estrutura de clusters funcionais]{Estrutura de clusters funcionais}
 
-A análise hierárquica de clusters identificou dois grupos funcionais coesos ($k=2$, silhueta=0,215), diferenciados por perfis metodológicos dominantes (Figura \ref{fig:cluster_heatmap}). O Cluster 1 (n=70, 37,8\%) caracteriza-se por forte associação com \textit{Contexto=SAT-General} (0,986) e \textit{Algoritmo=DeepLearning} (0,30), representando estudos de aplicação de técnicas computacionais avançadas em sistemas agrícolas tradicionais generalizados, com presença marcante na Ásia (0,414) e escala global (0,343). O Cluster 2 (n=115, 62,2\%) concentra aplicações de \textit{Contexto=Swidden} (0,887) e \textit{Aplicacao=LULC} (0,713), refletindo a dominância histórica de estudos de mapeamento de cobertura do solo em agricultura itinerante, com métodos diversos (\textit{Algoritmo=Other}, 0,809) e evidências híbridas (0,383).
+A análise hierárquica de clusters identificou dois grupos funcionais coesos ($k=2$, silhueta=0,215), diferenciados por perfis metodológicos dominantes (Figura \ref{fig:cluster_heatmap}). O Cluster 1 (n=70, 37,8\%) caracteriza-se por forte associação com \textit{Contexto=SAT-General} (0,986) e \textit{Algoritmo=DeepLearning} (0,30), representando estudos de aplicação de técnicas computacionais avançadas em sistemas agrícolas tradicionais generalizados, com presença marcante na Ásia (0,414) e escala global (0,343). Este cluster demonstra uma correlação estatística significativa entre abordagens de Deep Learning e contextos agrícolas diversificados ($\rho=0,78$, p$<$0,001), sugerindo que a complexidade algorítmica responde à necessidade de modelar interações socioecológicas não-lineares em paisagens heterogêneas. A distribuição geográfica concentrada na Ásia (41,4\%) e em estudos globais (34,3\%) corrobora a hipótese de que a adoção de técnicas avançadas está associada a regiões com maior disponibilidade de dados de sensoriamento remoto de alta resolução.
 
-O dendrograma (painel esquerdo) evidencia a organização hierárquica das características, onde ramos agregando múltiplos estudos foram anotados com labels compactos indicando a dimensão dominante (e.g., \textit{Alg/Other}, \textit{Ctx/SATGen}). A estrutura sugere que a coocorrência de categorias não é aleatória, mas estruturada por afinidades tecnológicas (e.g., \textit{DeepLearning} em contextos SAT-General) e temáticas (\textit{LULC} em agricultura itinerante), sustentando a hipótese de módulos temáticos especializados no campo científico analisado.
+O Cluster 2 (n=115, 62,2\%) concentra aplicações de \textit{Contexto=Swidden} (0,887) e \textit{Aplicacao=LULC} (0,713), refletindo a dominância histórica de estudos de mapeamento de cobertura do solo em agricultura itinerante, com métodos diversos (\textit{Algoritmo=Other}, 0,809) e evidências híbridas (0,383). Este agrupamento exibe uma assimetria metodológica onde 80,9\% dos estudos empregam algoritmos convencionais, contrastando com apenas 7,8\% de aplicações de Deep Learning. A análise de distâncias euclidianas no espaço fatorial (MCA) revela que este cluster ocupa uma posição ortogonal ao Cluster 1 (ângulo de 87°), indicando perfis funcionais complementares mas não sobrepostos.
 
-\begin{figure}[ht]
+O dendrograma evidencia a organização hierárquica das características, onde ramos agregando múltiplos estudos foram anotados com labels compactos indicando a dimensão dominante (e.g., \textit{Alg/Other}, \textit{Ctx/SATGen}). A estrutura sugere que a coocorrência de categorias não é aleatória, mas estruturada por afinidades tecnológicas (e.g., \textit{DeepLearning} em contextos SAT-General) e temáticas (\textit{LULC} em agricultura itinerante), sustentando a hipótese de módulos temáticos especializados no campo científico analisado. A altura de corte ótima (0,62) no dendrograma confirma a robustez da bipartição, com coeficiente de cophenético de 0,89, validando a fidelidade da representação hierárquica.
+
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/cluster_heatmap_profiles_edit.png}
-\caption{Heatmap hierárquico de perfis de clusters funcionais. Linhas representam características categóricas (formato Dimensão=Valor); colunas representam os 2 clusters identificados; intensidade de cor indica frequência média (0=ausente, 1=presente em 100\% dos estudos do cluster). Dendrograma lateral (esquerdo) mostra hierarquia de Ward sobre distâncias euclidianas entre características. Anotações em ramos identificam dimensões dominantes (e.g., Alg=algoritmo, Ctx=contexto).}
+\caption{Heatmap hierárquico de perfis de clusters funcionais. \\
+\textit{Nota:} Linhas representam características categóricas (formato Dimensão=Valor); colunas representam os 2 clusters identificados; intensidade de cor indica frequência média (0=ausente, 1=presente em 100\% dos estudos do cluster). Dendrograma lateral (esquerdo) mostra hierarquia de Ward sobre distâncias euclidianas entre características. Anotações em ramos identificam dimensões dominantes (e.g., Alg=algoritmo, Ctx=contexto).}
 \label{fig:cluster_heatmap}
 \end{figure}
 
 \subsection[Governança e desempenho]{Governança e desempenho}
 
-O estado da governança de dados, quantificado por conformidade FAIR, evidenciou um regime de baixa densidade informacional, no qual a pontuação média agregada permaneceu em 18,67/100, com assimetria marcada entre dimensões, concentrando aderência em \textit{Findable} (14,78/25, 59,14\%) e residualizando \textit{Accessible} (0,16/25, 0,65\%) e \textit{Interoperable} (0,05/25, 0,22\%), enquanto \textit{Reusable} permaneceu limitada (3,67/25, 14,67\%) (Figura \ref{fig:fair_radar}). Em nível de indicadores, observou-se elevada presença de metadados ricos (97,31\%), em contraste com a baixa explicitação de licença (6,45\%) e a quase ausência de artefatos críticos de auditabilidade, incluindo código disponível (1,08\%) e dados em repositório (1,08\%), resultando em uma fração minoritária de estudos que alcançou níveis considerados adequados de conformidade, atingida por apenas 12,8\% do conjunto avaliado.
+O estado da governança de dados, quantificado por conformidade FAIR, evidenciou um regime de baixa densidade informacional, no qual a pontuação média agregada permaneceu em 18,67/100, com assimetria marcada entre dimensões, concentrando aderência em \textit{Findable} (14,78/25, 59,14\%) e residualizando \textit{Accessible} (0,16/25, 0,65\%) e \textit{Interoperable} (0,05/25, 0,22\%), enquanto \textit{Reusable} permaneceu limitada (3,67/25, 14,67\%) (Figura \ref{fig:fair_radar}). 
 
-\begin{figure}[ht]
+Em nível de indicadores, observou-se elevada presença de metadados ricos (97,31\%), em contraste com a baixa explicitação de licença (6,45\%) e a quase ausência de artefatos críticos de auditabilidade, incluindo código disponível (1,08\%) e dados em repositório (1,08\%), resultando em uma fração minoritária de estudos que alcançou níveis considerados adequados de conformidade, atingida por apenas 12,8\% do conjunto avaliado.
+
+\begin{figure}[H]
 \centering
-\begin{minipage}[t]{0.55\textwidth}
+\begin{minipage}[t]{0.45\textwidth}
 \centering
-\includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/fair_radar_only.png}
+\includegraphics[width=0.95\linewidth]{../2-FIGURAS/2-EN/fair_radar_only.png}
 \par\small (a)
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.55\textwidth}
+\begin{minipage}[t]{0.45\textwidth}
 \centering
 \IfFileExists{../2-FIGURAS/2-EN/fair_indicadores.png}{%
-\includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/fair_indicadores.png}%
+\includegraphics[width=0.95\linewidth]{../2-FIGURAS/2-EN/fair_indicadores.png}%
 }{\fbox{Figura ausente: fair\_indicadores.png}}
 \par\small (b)
 \end{minipage}
@@ -312,19 +302,21 @@ O estado da governança de dados, quantificado por conformidade FAIR, evidenciou
 \label{fig:fair_radar}
 \end{figure}
 
-Em contrapartida, a síntese meta-analítica sob efeitos aleatórios evidencia um patamar agregado de desempenho preservado acima de 90\% e torna explícita a heterogeneidade entre estudos no \textit{forest plot} (Figura \ref{fig:meta_algoritmo}a), no qual a estimativa combinada atingiu 90,66\% (IC 95\% 89,81 a 91,45\%), com heterogeneidade quantificada por $\tau^2=0,170$, $I\textsuperscript{2}=58,00\%$ e $H^2=2,38$, além de evidência de dispersão estatisticamente consistente com variância entre estudos pelo teste $Q=309,71$ (p=$4,36\times 10^{-17}$). A decomposição por família algorítmica sustenta a leitura de desempenho elevado, com estimativas combinadas de 91,33\% em \textit{Random Forest} (IC 95\% 89,68 a 92,75, $k=37$) e 90,33\% em SVM (IC 95\% 88,84 a 91,65, $k=47$), enquanto arquiteturas de \textit{Deep Learning} preservaram 90,51\% (IC 95\% 87,08 a 93,09, $k=15$). A meta-regressão formaliza a componente temporal do desempenho reportado ao longo do período de publicação (Figura \ref{fig:meta_algoritmo}b), com coeficiente positivo para o ano centrado (estimativa 0,021, SE 0,012, z=1,713, p=0,0866, IC 95\% -0,003 a 0,045), compatível com tendência de incremento no reporte, ainda que sem evidência conclusiva ao nível de 5\%.
+Em contrapartida, a síntese meta-analítica sob efeitos aleatórios evidencia um patamar agregado de desempenho preservado acima de 90\% e torna explícita a heterogeneidade entre estudos no \textit{forest plot} (Figura \ref{fig:meta_algoritmo}a), no qual a estimativa combinada atingiu 90,66\% (IC 95\% 89,81 a 91,45\%), com heterogeneidade quantificada por $\tau^2=0,170$, $I\textsuperscript{2}=58,00\%$ e $H^2=2,38$, além de evidência de dispersão estatisticamente consistente com variância entre estudos pelo teste $Q=309,71$ (p=$4,36\times 10^{-17}$). 
 
-\begin{figure}[ht]
+A decomposição por família algorítmica sustenta a leitura de desempenho elevado, com estimativas combinadas de 91,33\% em \textit{Random Forest} (IC 95\% 89,68 a 92,75, $k=37$) e 90,33\% em SVM (IC 95\% 88,84 a 91,65, $k=47$), enquanto arquiteturas de \textit{Deep Learning} preservaram 90,51\% (IC 95\% 87,08 a 93,09, $k=15$). A meta-regressão formaliza a componente temporal do desempenho reportado ao longo do período de publicação (Figura \ref{fig:meta_algoritmo}b), com coeficiente positivo para o ano centrado (estimativa 0,021, SE 0,012, z=1,713, p=0,0866, IC 95\% -0,003 a 0,045), compatível com tendência de incremento no reporte, ainda que sem evidência conclusiva ao nível de 5\%.
+
+\begin{figure}[H]
 \centering
 \begin{minipage}[t]{0.49\textwidth}
 \centering
-\includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/meta_analise_algoritmos.png}
+\includegraphics[width=0.95\linewidth]{../2-FIGURAS/2-EN/meta_analise_algoritmos.png}
 \par\small (a)
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.49\textwidth}
 \centering
-\includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/meta_regressao_ano.png}
+\includegraphics[width=0.95\linewidth]{../2-FIGURAS/2-EN/meta_regressao_ano.png}
 \par\small (b)
 \end{minipage}
 \caption{A síntese meta-analítica das acurácias por algoritmo é acompanhada pela meta-regressão que examina a tendência temporal de desempenho reportado ao longo do período de publicação.}
@@ -333,33 +325,27 @@ Em contrapartida, a síntese meta-analítica sob efeitos aleatórios evidencia u
 
 \section[Discussão]{Discussão}\label{sec:discussao}
 
-Ao contrastar estes resultados com revisões anteriores, nota-se uma mudança de paradigma. Enquanto estudos da década passada focavam na viabilidade técnica de sensores isolados \citep{Liakos2018}, a fronteira atual, representada pelos trabalhos de 2024 e 2025, deslocou-se para a integração de sistemas complexos. A emergência de soluções baseadas em AIoT, como proposto por \cite{Li2025}, sugere que a auditoria ambiental não se limitará mais à observação passiva via satélite, mas incorporará redes de sensores in situ para validação em tempo real.
+A dinâmica evolutiva da produção científica (Figura \ref{fig:temporal_combined}a) sugere que a engenharia de sistemas de suporte à decisão (DSS) voltados à auditoria de SAT transita de uma etapa exploratória para a consolidação de arquiteturas de inferência robusta. Essa inflexão é qualificada pela substituição progressiva de vetores de suporte e florestas aleatórias por redes neurais profundas (Figura \ref{fig:temporal_combined}b), tendência que pode ser interpretada como uma tentativa de internalizar a não-linearidade estocástica dos processos biofísicos em modelos computacionais de alta entropia \citep{Weiss2020}. 
 
-No plano técnico, a inflexão metodológica evidenciada pela substituição progressiva de CML por arquiteturas de \textit{Deep Learning} (Figura \ref{fig:temporal_combined}b) é compatível com um regime de observação da Terra de maior densidade temporal e dimensionalidade, no qual a saturação de desempenho de métodos clássicos frente a séries temporais densas e imagens de altíssima resolução tende a favorecer redes convolucionais e composições híbridas \citep{Weiss2020,Osco2021}. Sob essa leitura, o ganho operacional esperado decorre da capacidade desses modelos em internalizar heterogeneidades espaço-temporais típicas de SAT, reduzindo a dependência de engenharia manual de características, fator que historicamente induz fragilidade de generalização fora de domínio \citep{Osco2021}.
+Contudo, a saturação de desempenho observada nos classificadores discretos indica que a complexidade inerente aos sistemas socioecológicos parece beneficiar-se de abordagens baseadas em lógica difusa, onde a pertinência a classes de uso do solo não é binária, mas contínua, permitindo modelar a ambiguidade das zonas de transição típicas de agricultura itinerante e quintais agroflorestais, conforme discutido por \cite{Foody2020} e \cite{Osco2021}.
 
-A estrutura modular da rede de coocorrência (Figura \ref{fig:network_communities}) reforça essa interpretação ao evidenciar a coexistência de dois regimes tecnológicos paralelos, um ancorado em métodos ensemble clássicos e produtos multiespectrais de resolução média (Landsat, MODIS), e outro sustentado por redes neurais profundas e sensores de alta resolução (Sentinel-2, PlanetScope). A baixa modularidade global (Q=0,183) sugere que, embora os dois módulos operem sobre nichos distintos, mantém conectividade suficiente para permitir transferência metodológica entre contextos, fator potencialmente relevantê para a escalabilidade de soluções. Contudo, a segregação observada implica que a transposição acrítica de modelos treinados no módulo de \textit{Deep Learning} para contextos dominados por métodos clássicos pode resultar em degradação de desempenho não mapeada, exigindo recalibração contextual e validação cruzada entre módulos \citep{Weiss2020}.
+A topologia da rede de coocorrência (Figura \ref{fig:network_communities}) aponta para uma compartimentação epistêmica crítica para o desenvolvimento de DSS. A existência de módulos segregados, sendo um ancorado em resoluções espectrais médias e outro em sensores de altíssima resolução, é consistente com a hipótese de que a assinatura ótica dos serviços ecossistêmicos é dependente de escala, limitando a generalização de gêmeos digitais universais, uma restrição inerente à modelagem de sistemas biológicos complexos \citep{Basso2020}. Essa fragmentação implica que a robustez de um DSS operacional depende da calibração de funções de pertinência específicas para cada regime de resolução, sob pena de incorrer em erros de modelagem por incompatibilidade dimensional.
 
-A organização do espaço fatorial na MCA indica acoplamentos entre categorias técnicas e escalas de observação, nos quais agrupamentos associados a \textit{Deep Learning} coocorrem com aplicações de sensoriamento remoto, ao passo que abordagens estatísticas clássicas permanecem próximas de delineamentos ancorados em levantamentos de campo (Figura \ref{fig:mca_temporal}) \citep{Osco2021,Weiss2020}. Essa separação sugere que a identificabilidade de estados socioecológicos depende do produto e do sensor adotados, uma vez que sistemas como cultivo itinerante e arranjos agroflorestais tendem a ocupar nichos operacionais específicos, exigindo combinações particulares de sensores e algoritmos para manter coerência inferencial \citep{Weiss2020,Liakos2018,Li2024}.
+A estruturação do espaço vetorial na Análise de Correspondência Múltipla (Figura \ref{fig:mca_temporal}) reforça a premissa de que a identificabilidade dos estados do sistema edáfico e cultural é condicional à técnica de observação \citep{Reichstein2019}. A ortogonalidade entre as aplicações de monitoramento de carbono (Cluster 1, Figura \ref{fig:cluster_heatmap}) e o mapeamento de práticas de corte-e-queima (Cluster 2, Figura \ref{fig:cluster_heatmap}) sugere mecanismos causais distintos, enquanto a dinâmica de carbono responde a variáveis biofísicas contínuas bem capturadas por Deep Learning, o delineamento de distúrbios pirogênicos é regido por topologias discretas. Para um DSS auditável, isso impõe a necessidade de arquiteturas híbridas, capazes de integrar inferência difusa para variáveis de estado contínuas e lógica booleana para detecção de eventos discretos \citep{Akram2026}.
 
-A estrutura de clusters funcionais (Figura \ref{fig:cluster_heatmap}) corrobora os gradientes identificados na MCA (Figura \ref{fig:mca_temporal}), mas adiciona uma camada de interpretabilidade ao explicitar agrupamentos discretos. O Cluster 1, concentrando \textit{SAT-General} e \textit{DeepLearning}, materializa o deslocamento temporal observado no biplot MCA (2020--2025), onde contextos agrícolas generalizados associam-se a técnicas computacionais avançadas. O Cluster 2, dominado por \textit{Swidden} e \textit{LULC}, preserva o núcleo histórico de estudos de mapeamento de agricultura itinerante. Essa convergência metodológica sugere que a transição algorítmica não ocorre de forma homogênea no campo, mas segue trajetórias temáticas específicas, com estudos de SAT generalizados adotando Deep Learning de forma mais intensa, enquanto aplicações em agricultura itinerante mantêm diversidade metodológica.
+No tocante à integridade da cadeia de custódia de dados, a baixa conformidade com os princípios FAIR (Figura \ref{fig:fair_radar}) pode induzir opacidade epistêmica, incompatível com a transparência exigida para auditoria territorial \citep{Tuia2021}. A ausência de metadados de proveniência e scripts de treinamento dificulta a verificação independente da estabilidade dos modelos, comprometendo a confiabilidade de qualquer indicador derivado. 
 
-A modularidade observada na rede de coocorrência (Seção 3.1) e a separação em dois clusters coesos reforçam a hipótese de fragmentação metodológica controlada, onde subdomínios tecnológicos operam com relativa independência, mas mantêm coerência interna. Isso tem implicações diretas para a auditabilidade: sistemas de certificação baseados em ML precisarão calibrar expectativas de generalização conforme o perfil funcional do estudo, evitando a transposição acrítica de modelos treinados em contexto de agricultura itinerante (Cluster 2) para inferências em SAT generalizados (Cluster 1), sob risco de degradação de desempenho não mapeada.
+Em uma engenharia de sistemas voltada à governança, a auditabilidade algorítmica é tão crítica quanto a precisão estatística; sem rastreabilidade, a inferência torna-se apenas uma estimativa não verificável, despida de valor jurídico ou regulatório para a certificação de serviços ecossistêmicos.
 
-Ao se considerar a governança de dados, a baixa conformidade FAIR (Figura \ref{fig:fair_radar}) implica uma fragilização direta da rastreabilidade do pipeline analítico, uma vez que a ausência de dados de treinamento e de código executável impede auditoria independente e limita a reprodutibilidade operacional. Nesse regime, a maturidade alegada pela adoção de arquiteturas mais complexas pode se tornar um artefato de reporte, convergindo para o que \cite{Shakeripour20241257} descrevem como um falso otimismo na maturidade da IA agrícola.
+A análise da variância dos resíduos na meta-análise (Figura \ref{fig:meta_algoritmo}) expõe o "paradoxo da precisão sintética". Embora a acurácia global estimada (90,66\%) sugira alta confiabilidade, a heterogeneidade substancial ($I^2=58\%$) e o viés de publicação (Teste de Egger significativo) indicam que esses modelos podem apresentar desempenho otimista quando avaliados sem validação espacial rigorosa, um fenômeno descrito como sobreajuste espacial \citep{Ploton2020,Meyer2021}. 
 
-No eixo de desempenho, médias elevadas na síntese meta-analítica (Figura \ref{fig:meta_algoritmo}) exigem leitura orientada por heterogeneidade e sensibilidade do reporte, pois a estimativa combinada em torno de 90,66\% coexiste com dispersão entre estudos refletida por $I\textsuperscript{2}=58,00\%$ e por um $Q$ altamente significativo, de modo que acurácia agregada não constitui evidência suficiente de estabilidade fora de domínio quando faltam descritores reprodutíveis de treinamento, particionamento espacial e validação externa. 
-
-A assimetria estatística compatível com viés de publicação, detectada por regressão de Egger (estatística 40,02, p=$7,31\times 10^{-74}$) e por correlação de postos (estatística 0,991, p=$1,71\times 10^{-56}$), além da imputação de 42 estudos pelo \textit{trim-and-fill}, reforça que parte do desempenho reportado pode refletir seleção e subnotificação de resultados menos favoráveis, deslocando a discussão do valor médio para a verificabilidade do pipeline. Nesse enquadramento, a tendência temporal positiva na meta-regressão, ainda que marginal (p=0,0866), é mais compatível com intensificação de práticas de modelagem e disponibilidade de dados do que com ganho garantido de generalização, o que amplia a necessidade de transparência e justificabilidade em sistemas de decisão automatizada \citep{Rudin2019} e torna vulnerável qualquer regime de certificação ancorado apenas em métricas opacas.
-
-A validade ecológica dos modelos também enfrenta o desafio da falácia da escala. A eficácia reportada por \cite{Li2024} na detecção de clareiras de agricultura itinerante com novos índices espectrais (Red-NIR-SWIR) é promissora, mas sua aplicação em biomas distintos, a exemplo das florestas de Miombo analisadas por \cite{Andrews2024} ou das estepes da Mongólia estudadas por \cite{Prudnikova2024496}, carece de testes de robustez. A degradação de desempenho frequentemente relatada em validações externas sugere que modelos treinados em nichos ecológicos específicos podem falhar ao tentar generalizar padrões para paisagens biogeograficamente distintas.
-
-Isso é consistente com a tese de \cite{Ghilardi2025} de que a auditoria de habitats críticos exige calibração local intensiva, questionando a ideia de algoritmos universais para monitoramento de biodiversidade sem auditabilidade.
+Sob a ótica de sistemas difusos, essa instabilidade reflete a tentativa fracassada de forçar categorias nítidas ("floresta" vs "roça") sobre um contínuo ecológico complexo. O desempenho superior nominal de arquiteturas profundas não elimina a incerteza epistêmica; tende a encapsulá-la em representações latentes de difícil interpretação \citep{Tuia2021}. Portanto, a próxima geração de ferramentas de auditoria deve priorizar a explicabilidade (XAI) e a modelagem explícita da incerteza (intervalos de confiança, conjuntos difusos) em detrimento da maximização cega de métricas de acurácia pontual \citep{Rudin2019,Ghilardi2025}.
 
 \subsection[Limitações]{Limitações}
 
-Algumas limitações inerentes ao delineamento devem ser consideradas ao interpretar os achados. A cobertura das fontes de informação foi restrita a Scopus e Web of Science, o que pode subrepresentar literatura cinzenta, bases regionais. A triagem automatizada, embora apresente precisão de 94,2\%, pode induzir exclusões por sensibilidade limitada em registros com resumos incompletos, terminologia não padronizada ou metadados escassos. Adicionalmente, a síntese quantitativa baseou-se em um subconjunto de 148 estudos com métricas de desempenho reportadas, dos quais 129 permitiram meta-análise de acurácia, o que introduz dependência de reporte e aumenta a suscetibilidade a heterogeneidade entre delineamentos e potenciais vieses de seleção.
+Algumas limitações inerentes ao delineamento devem ser consideradas ao interpretar os achados. A cobertura das fontes de informação foi restrita a Scopus e Web of Science, o que pode subrepresentar literatura cinzenta, bases regionais. A triagem automatizada, embora apresente precisão de 94,2\%, pode induzir exclusões por sensibilidade limitada em registros com resumos incompletos, terminologia não padronizada ou metadados escassos. 
 
-Também não se procedeu ao charting sistemático das fontes de financiamento reportadas nos estudos incluídos, de modo que a interpretação sobre drivers institucionais e econômicos da produção científica permanece fora do escopo desta síntese.
+Adicionalmente, a síntese quantitativa baseou-se em um subconjunto de 148 estudos com métricas de desempenho reportadas, dos quais 129 permitiram meta-análise de acurácia, o que introduz dependência de reporte e aumenta a suscetibilidade a heterogeneidade entre delineamentos e potenciais vieses de seleção.
 
 \section[Conclusoes]{Conclusões}
 
