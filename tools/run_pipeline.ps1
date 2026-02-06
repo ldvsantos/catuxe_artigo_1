@@ -172,7 +172,17 @@ Invoke-Checked -Label 'Sincronizando auxiliares para VS Code (LaTeX Workshop)' -
   }
 }
 
-Write-Host "\nOK: pipeline concluido. PDF gerado: $latexDir\sn-article_revised.pdf" -ForegroundColor Green
+Invoke-Checked -Label 'Sincronizando PDF principal (sn-article.pdf)' -Command {
+  Set-Location $latexDir
+  $from = Join-Path $latexDir 'sn-article_revised.pdf'
+  $to = Join-Path $latexDir 'sn-article.pdf'
+  if (-not (Test-Path -LiteralPath $from)) {
+    throw "Nao encontrei o PDF gerado: $from"
+  }
+  Copy-Item -LiteralPath $from -Destination $to -Force
+}
+
+Write-Host "\nOK: pipeline concluido. PDFs gerados: $latexDir\sn-article.pdf (principal) e $latexDir\sn-article_revised.pdf" -ForegroundColor Green
 
 if ($oldCodePage) {
   try { chcp $oldCodePage | Out-Null } catch { }
