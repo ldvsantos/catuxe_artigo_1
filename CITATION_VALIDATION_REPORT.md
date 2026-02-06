@@ -6,11 +6,11 @@
 
 ## Summary Statistics
 
-- **Total Unique Citations Found:** 37
-- **Total Citation Instances:** 41
-- **Citations Found in Bibliography:** 37 (100.0%)
+- **Total Unique Citations Found:** 43
+- **Total Citation Instances:** 47
+- **Citations Found in Bibliography:** 43 (100.0%)
 - **Citations Missing from Bibliography:** 0 (0.0%)
-- **Citations with Valid DOI:** 27
+- **Citations with Valid DOI:** 43
 - **Encoding Issues Detected:** 0
 
 ---
@@ -24,13 +24,17 @@
 | Basso2020 | citep | ✓ FOUND | 2020 | 10.1038/s41893-020-0510-0 | ✓ | ✓ | None |
 | Belgiu2016 | citep | ✓ FOUND | 2016 | 10.1016/j.isprsjprs.2016.01.011 | ✓ | ✓ | None |
 | Berkes2003 | citep | ✓ FOUND | 2003 | 10.1017/CBO9780511541957 | ✓ | ✓ | None |
+| Fisher2010 | citep | ✓ FOUND | 2010 | 10.1016/j.rse.2009.09.004 | ✓ | ✓ | None |
 | Foody2020 | cite | ✓ FOUND | 2020 | 10.1016/j.rse.2020.111815 | ✓ | ✓ | None |
 | Gale2023 | citep | ✓ FOUND | 2023 | 10.1177/10860266231168905 | ✓ | ✓ | None |
-| Ghilardi2025 | cite,citep | ✓ FOUND | 2025 | N/A | ✓ | ✗ | No DOI |
-| Greenacre2017 | citep | ✓ FOUND | 2017 | N/A | ✓ | ✗ | No DOI |
+| Ghilardi2025 | cite,citep | ✓ FOUND | 2025 | 10.1016/j.scitotenv.2025.179243 | ✓ | ✓ | None |
+| Greenacre2017 | citep | ✓ FOUND | 2017 | 10.1201/9781315369983 | ✓ | ✓ | None |
+| Hullermeier2021 | citep | ✓ FOUND | 2021 | 10.1007/s10994-021-05946-3 | ✓ | ✓ | None |
+| Ivie2018 | citep | ✓ FOUND | 2018 | 10.1145/3186266 | ✓ | ✓ | None |
+| Jones2020DigitalTwin | citep | ✓ FOUND | 2020 | 10.1016/j.cirpj.2020.02.002 | ✓ | ✓ | None |
 | Kshetri2014 | citep | ✓ FOUND | 2014 | 10.1016/j.telpol.2014.10.002 | ✓ | ✓ | None |
 | Kshetri2014DigitalDivide | citep | ✓ FOUND | 2014 | 10.1016/j.telpol.2014.10.002 | ✓ | ✓ | None |
-| Kuhn2013 | citep | ✓ FOUND | 2013 | N/A | ✓ | ✗ | No DOI |
+| Kuhn2013 | citep | ✓ FOUND | 2013 | 10.1007/978-1-4614-6849-3 | ✓ | ✓ | None |
 | LeFloc2016S | citep | ✓ FOUND | 2016 | 10.5751/ES-08834-210442 | ✓ | ✓ | None |
 | Levin1998ComplexAdaptiveSystems | citep | ✓ FOUND | 1998 | 10.1007/s100219900037 | ✓ | ✓ | None |
 | Li2022KGML_ag | citep | ✓ FOUND | 2022 | 10.5194/gmd-15-2839-2022 | ✓ | ✓ | None |
@@ -38,22 +42,24 @@
 | Li2025 | cite | ✓ FOUND | 2025 | 10.1016%2Fj.foodres.2025.117418&partnerID=40&md5=6565e01d0fb1bb6b1bcb9b61480e0b11 | ✓ | ✓ | None |
 | Liakos2018 | citep | ✓ FOUND | 2018 | 10.3390/s18082674 | ✓ | ✓ | None |
 | Liao2023 | citep | ✓ FOUND | 2023 | 10.1371/journal.pone.0279904 | ✓ | ✓ | None |
-| Meyer2021 | citep | ✓ FOUND | 2021 | N/A | ✓ | ✗ | No DOI |
+| Meyer2021 | citep | ✓ FOUND | 2021 | 10.1111/2041-210X.13650 | ✓ | ✓ | None |
 | Mountrakis2011 | citep | ✓ FOUND | 2011 | 10.1016/j.isprsjprs.2010.11.001 | ✓ | ✓ | None |
 | Osco2021 | cite,citep | ✓ FOUND | 2021 | 10.1016/j.jag.2021.102456 | ✓ | ✓ | None |
-| Persson2025 | cite | ✓ FOUND | 2025 | N/A | ✓ | ✗ | No DOI |
+| Persson2025 | cite | ✓ FOUND | 2025 | 10.1016/j.tfp.2025.100799 | ✓ | ✓ | None |
 | Ploton2020 | citep | ✓ FOUND | 2020 | 10.1038/s41467-020-18321-y | ✓ | ✓ | None |
 | Reichstein2019 | citep | ✓ FOUND | 2019 | 10.1038/s41586-019-0912-1 | ✓ | ✓ | None |
 | Rudin2019 | citep | ✓ FOUND | 2019 | 10.1145/3306618.3314279 | ✓ | ✓ | None |
-| Santos2007Epistemologies | citep | ✓ FOUND | 2007 | N/A | ✓ | ✗ | No DOI |
-| Spyrou2025 | cite,citep | ✓ FOUND | 2025 | N/A | ✓ | ✗ | No DOI |
-| Trehard2024 | cite | ✓ FOUND | 2024 | N/A | ✓ | ✗ | No DOI |
+| Samuel2021 | citep | ✓ FOUND | 2021 | 10.1007/978-3-030-80960-7_17 | ✓ | ✓ | None |
+| Santos2007Epistemologies | citep | ✓ FOUND | 2007 | 10.4000/rccs.753 | ✓ | ✓ | None |
+| Spyrou2025 | cite,citep | ✓ FOUND | 2025 | 10.3390/asi8020038 | ✓ | ✓ | None |
+| Trehard2024 | cite | ✓ FOUND | 2024 | 10.1371/journal.pgph.0004941 | ✓ | ✓ | None |
 | Tricco2018b | citep | ✓ FOUND | 2018 | 10.7326/M18-0850 | ✓ | ✓ | None |
-| Tripathi2025 | cite | ✓ FOUND | 2025 | N/A | ✓ | ✗ | No DOI |
+| Tripathi2025 | cite | ✓ FOUND | 2025 | 10.1016/j.compeleceng.2025.110576 | ✓ | ✓ | None |
 | Tuia2021 | citep | ✓ FOUND | 2021 | 10.1038/s42256-021-00358-1 | ✓ | ✓ | None |
+| VanDerHorn2021DigitalTwin | citep | ✓ FOUND | 2021 | 10.1016/j.dss.2021.113524 | ✓ | ✓ | None |
 | Weiss2020 | citep | ✓ FOUND | 2020 | 10.1016/j.rse.2019.111533 | ✓ | ✓ | None |
 | Wilkinson2016 | citep | ✓ FOUND | 2016 | 10.1038/sdata.2016.18 | ✓ | ✓ | None |
-| Wilkinson2021 | citep | ✓ FOUND | 2021 | N/A | ✓ | ✗ | No DOI |
+| Zheng2024 | citep | ✓ FOUND | 2024 | 10.1145/3641525.3663630 | ✓ | ✓ | None |
 | lauradelvalle2026 | citep | ✓ FOUND | 2026 | 10.1108/JCHMSD-05-2022-0088 | ✓ | ✓ | None |
 | saul2022 | citep | ✓ FOUND | 2022 | 10.1080/10286632.2021.1941914 | ✓ | ✓ | None |
 

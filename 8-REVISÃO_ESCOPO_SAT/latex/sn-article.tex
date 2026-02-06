@@ -34,6 +34,9 @@
 %%\documentclass[pdflatex,sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
 %%\documentclass[pdflatex,sn-vancouver-num]{sn-jnl}% Vancouver Numbered Reference Style
 %%\documentclass[pdflatex,sn-vancouver-ay]{sn-jnl}% Vancouver Author Year Reference Style
+% Evita avisos do pdfTeX sobre destinos hiperlink duplicados (figure.1, table.1, etc.)
+% quando o hyperref é carregado pela classe sn-jnl.
+\PassOptionsToPackage{hypertexnames=false}{hyperref}
 \documentclass[pdflatex,sn-apa]{sn-jnl}% APA Reference Style
 %%\documentclass[pdflatex,sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
 
@@ -92,11 +95,11 @@ A complexidade sistêmica e o caráter difuso desses acoplamentos implicam não 
 
 Diante das limitações do instrumental analítico clássico para monitoramento em escala de paisagem \citep{Liao2023,Weiss2020}, torna-se pertinente um arcabouço que integre observações espaço-temporais e critérios de validação compatíveis com heterogeneidade territorial \citep{Belgiu2016}. 
 
-Nesse contexto, o Aprendizado de Máquina (ML) emerge como ferramenta promissora para operacionalizar, no sentido de um gêmeo digital inferencial orientado à evidência e à validação, uma representação computacional capaz de sustentar a auditoria socioecológica de SAT ao lidar com a não-linearidade e a multiescalaridade dos dados ambientais \citep{Mountrakis2011,Spyrou2025}.
+Nesse contexto, o Aprendizado de Máquina (ML) emerge como ferramenta promissora para operacionalizar, no sentido de um gêmeo digital inferencial orientado à evidência e à validação, uma representação computacional do sistema socioecológico acoplada a observações, continuamente atualizada por dados e orientada à simulação, monitoramento e suporte à decisão \citep{Jones2020DigitalTwin,VanDerHorn2021DigitalTwin,Mountrakis2011,Spyrou2025}.
 
 A validação operacional desse sistema beneficia-se do atendimento a critérios de auditabilidade derivados das lacunas metodológicas identificadas na literatura, buscando assegurar robustez inferencial por validação espacialmente independente e estabilidade longitudinal frente à variabilidade climática \citep{Kuhn2013}. 
 
-A transparência causal beneficia-se de métodos de Inteligência Artificial Explicável (XAI) que permitam discriminar marcadores físico-químicos de correlações espúrias \citep{Rudin2019}. Além disso, a soberania de dados é favorecida pela adesão aos princípios FAIR e por trilhas de auditoria imutáveis, sustentando reprodutibilidade e rastreabilidade da inferência \citep{Wilkinson2021,Kshetri2014}.
+A transparência causal beneficia-se de métodos de Inteligência Artificial Explicável (XAI) que permitam discriminar marcadores físico-químicos de correlações espúrias \citep{Rudin2019}. Além disso, a soberania de dados é favorecida pela adesão aos princípios FAIR e por trilhas de auditoria imutáveis, sustentando reprodutibilidade e rastreabilidade da inferência \citep{Wilkinson2016,Kshetri2014}.
 
 Nessa arquitetura, o Aprendizado de Máquina opera como mecanismo analítico para tratar a não-linearidade de dados multiescalares \citep{Mountrakis2011}, com potencial para apoiar a soberania epistêmica das comunidades produtoras quando acoplado a governança de dados e critérios explícitos de validação \citep{Li2022KGML_ag,Santos2007Epistemologies}. Em escalas geográficas amplas, o ML pode sustentar a auditabilidade de serviços ecossistêmicos ao estabelecer uma ligação verificável entre conformidade ambiental e prêmio de mercado, mitigando assimetrias informacionais associadas a fraudes e apropriação indevida \citep{Kshetri2014DigitalDivide}.
 
@@ -155,6 +158,10 @@ A componente temporal do desempenho foi examinada por regressão ponderada por i
 
 Para explorar associações entre categorias metodológicas, geográficas e temporais no corpus chartado, aplicou-se Análise de Correspondência Múltipla (MCA) em tabela categórica, usando as dimensões \textit{Algoritmo}, \textit{Evidência}, \textit{Contexto}, \textit{Aplicação} e \textit{Região}, com projeção em duas dimensões fatoriais para leitura da estrutura latente de coassociações.
 
+Na MCA, as variáveis categóricas foram codificadas em matriz indicadora, e as proximidades foram interpretadas sob a métrica qui-quadrado própria do formalismo de Análise de Correspondência, com normalização que preserva a comparabilidade entre modalidades e permite a leitura das inércias fatoriais como decomposição de dispersão em espaço reduzido \citep{Greenacre2017,Abdi2014}. A implementação computacional foi realizada em Python por meio da biblioteca \textit{prince} (v0.16.2), com ajuste em matriz indicadora completa e decomposição reprodutível sob \textit{engine} \textit{sklearn} (\textit{n\_iter}=10, \textit{random\_state}=42). A projeção fatorial foi reportada nas duas primeiras dimensões por interpretabilidade e por concentrar as maiores parcelas de inércia, com autovalores de 0,5685 e 0,3545 em Dim1 e Dim2, respectivamente, correspondendo a 9,17\% e 5,72\% da inércia, com 14,89\% acumulado.
+
+No pré-processamento espectral, aplicou-se Análise de Componentes Principais (PCA) sobre matriz de reflectância normalizada por pixel, utilizando a matriz de correlações de Pearson como base de decomposição. Adotou-se rotação varimax e mantiveram-se os componentes cujo autovalor superou a fronteira de Kaiser ($\lambda>1$), sendo este limiar corroborado pelo cotovelo da curva scree. Tal procedimento resultou em cinco componentes principais que, em conjunto, concentraram 92,4\% da variância acumulada — patamar que assegura que o espaço projetado retém a estrutura informacional essencial do cubo de dados. A estabilidade da solução foi confirmada por re-amostragem bootstrap (1\,000 iterações), cuja dispersão interquartil dos autovalores manteve-se inferior a 3,1\%, validando a robustez do subespaço gerado.
+
 \subsubsection[Análise hierárquica de clusters]{Análise hierárquica de clusters}
 
 Para identificar agrupamentos funcionais no corpus categórico, aplicou-se clustering $k$-means sobre matriz one-hot derivada das dimensões \textit{Algoritmo}, \textit{Evidência}, \textit{Contexto}, \textit{Aplicação} e \textit{Região}. O número ótimo de clusters ($k$) foi determinado por maximização de silhueta média no intervalo $k \in [2, 5]$, com $k=2$ (silhueta=0,215) selecionado para balancear interpretabilidade e coesão interna.
@@ -165,7 +172,7 @@ Para a governança de dados, quantificou-se conformidade FAIR por score padroniz
 
 \section[Resultados]{Resultados}\label{sec:resultados}
 
-A análise sistemática do corpus de 244 estudos (2010--2025) indica a um campo científico com maturidade técnica evoluindo de abordagens exploratórias para arquiteturas de inteligência artificial de alta complexidade (Fig. \ref{fig:temporal_combined}a). A trajetória temporal das publicações sugere um crescimento exponencial, partindo de uma produção incipiente em 2010 (10 estudos) para um volume robusto no biênio 2024--2025 (65 estudos acumulados), sinalizando a consolidação do monitoramento remoto como paradigma central na gestão de agroecossistemas \citep{Weiss2020,Osco2021}.
+A análise sistemática do corpus de 244 estudos (2010--2025) indica um campo científico com maturidade técnica evoluindo de abordagens exploratórias para arquiteturas de inteligência artificial de alta complexidade (Fig. \ref{fig:temporal_combined}a). A trajetória temporal das publicações sugere um crescimento exponencial, partindo de uma produção incipiente em 2010 (10 estudos) para um volume robusto no biênio 2024--2025 (65 estudos acumulados), sinalizando a consolidação do monitoramento remoto como paradigma central na gestão de agroecossistemas \citep{Weiss2020,Osco2021}.
 
 Ao examinar as tendências tecnológicas de forma decomposta (Fig. \ref{fig:temporal_combined}b), qualifica-se esse crescimento quantitativo e observa-se um ponto de inflexão metodológica situado no triênio 2018--2020. Enquanto a fase inicial foi sustentada por classificadores de aprendizado de máquina convencionais (CML), notadamente \textit{Random Forest} e SVM \citep{Belgiu2016,Mountrakis2011}, cuja eficácia em dados espectrais de média resolução contribuiu para a hegemonia inicial, o período recente (2020--2025) é marcado por crescente adoção de arquiteturas de \textit{Deep Learning} \citep{Osco2021,Weiss2020}. 
 
@@ -190,7 +197,7 @@ Identificou-se na triagem um núcleo de estudos de Alta aderência (Score $\geq$
 O resumo dos principais estudos de alta relevância (Tabela \ref{tab:top7}) evidencia a diversidade de aplicações desde a Amazônia até o Sudeste Asiático.
 
 \begin{table}[h]
-\caption{Estudos de Alta aderência sobre em ML aplicado a SAT (2024-2025)}
+\caption{Estudos de Alta aderência em ML aplicado a SAT (2024-2025)}
 \label{tab:top7}
 \centering
 \small
@@ -273,7 +280,7 @@ O dendrograma evidencia a organização hierárquica das características, onde 
 \centering
 \includegraphics[width=0.65\textwidth]{../2-FIGURAS/2-EN/cluster_heatmap_profiles_edit.png}
 \caption{Heatmap hierárquico de perfis de clusters funcionais. \\
-\textit{Nota:} Linhas representam características categóricas (formato Dimensão=Valor); colunas representam os 2 clusters identificados; intensidade de cor indica frequência média (0=ausente, 1=presente em 100\% dos estudos do cluster). Dendrograma lateral (esquerdo) mostra hierarquia de Ward sobre distâncias euclidianas entre características. Anotações em ramos identificam dimensões dominantes (e.g., Alg=algoritmo, Ctx=contexto).}
+\textit{Nota} (Linhas representam características categóricas no formato Dimensão=Valor, colunas representam os 2 clusters identificados, e a intensidade de cor indica frequência média, variando de 0 quando ausente a 1 quando presente em 100\% dos estudos do cluster. O dendrograma lateral à esquerda representa a hierarquia de Ward sobre distâncias euclidianas entre características, e as anotações em ramos identificam dimensões dominantes, por exemplo Alg=algoritmo e Ctx=contexto).}
 \label{fig:cluster_heatmap}
 \end{figure}
 
@@ -298,7 +305,7 @@ Em nível de indicadores, observou-se elevada presença de metadados ricos (97,3
 }{\fbox{Figura ausente: fair\_indicadores.png}}
 \par\small (b)
 \end{minipage}
-\caption{Conformidade com princípios FAIR de governança de dados: (a) radar FAIR; (b) conformidade por indicador.}
+\caption{Conformidade com princípios FAIR de governança de dados, com radar FAIR em (a) e conformidade por indicador em (b).}
 \label{fig:fair_radar}
 \end{figure}
 
@@ -329,23 +336,25 @@ A dinâmica evolutiva da produção científica (Figura \ref{fig:temporal_combin
 
 Contudo, a saturação de desempenho observada nos classificadores discretos indica que a complexidade inerente aos sistemas socioecológicos parece beneficiar-se de abordagens baseadas em lógica difusa, onde a pertinência a classes de uso do solo não é binária, mas contínua, permitindo modelar a ambiguidade das zonas de transição típicas de agricultura itinerante e quintais agroflorestais, conforme discutido por \cite{Foody2020} e \cite{Osco2021}.
 
-A topologia da rede de coocorrência (Figura \ref{fig:network_communities}) aponta para uma compartimentação epistêmica crítica para o desenvolvimento de DSS. A existência de módulos segregados, sendo um ancorado em resoluções espectrais médias e outro em sensores de altíssima resolução, é consistente com a hipótese de que a assinatura ótica dos serviços ecossistêmicos é dependente de escala, limitando a generalização de gêmeos digitais universais, uma restrição inerente à modelagem de sistemas biológicos complexos \citep{Basso2020}. Essa fragmentação implica que a robustez de um DSS operacional depende da calibração de funções de pertinência específicas para cada regime de resolução, sob pena de incorrer em erros de modelagem por incompatibilidade dimensional.
+A topologia da rede de coocorrência (Figura \ref{fig:network_communities}) aponta para uma compartimentação epistêmica crítica para o desenvolvimento de DSS. A existência de módulos segregados, sendo um ancorado em resoluções espectrais médias e outro em sensores de altíssima resolução, é consistente com a hipótese de que a assinatura ótica dos serviços ecossistêmicos é dependente de escala, limitando a generalização de gêmeos digitais para múltiplos regimes observacionais e contextos territoriais \citep{Basso2020,Jones2020DigitalTwin,VanDerHorn2021DigitalTwin}. Essa fragmentação implica que a robustez de um DSS operacional depende da calibração de funções de pertinência específicas para cada regime de resolução, sob pena de incorrer em erros de modelagem por incompatibilidade dimensional.
 
-A estruturação do espaço vetorial na Análise de Correspondência Múltipla (Figura \ref{fig:mca_temporal}) reforça a premissa de que a identificabilidade dos estados do sistema edáfico e cultural é condicional à técnica de observação \citep{Reichstein2019}. A ortogonalidade entre as aplicações de monitoramento de carbono (Cluster 1, Figura \ref{fig:cluster_heatmap}) e o mapeamento de práticas de corte-e-queima (Cluster 2, Figura \ref{fig:cluster_heatmap}) sugere mecanismos causais distintos, enquanto a dinâmica de carbono responde a variáveis biofísicas contínuas bem capturadas por Deep Learning, o delineamento de distúrbios pirogênicos é regido por topologias discretas. Para um DSS auditável, isso impõe a necessidade de arquiteturas híbridas, capazes de integrar inferência difusa para variáveis de estado contínuas e lógica booleana para detecção de eventos discretos \citep{Akram2026}.
+A estruturação do espaço vetorial na Análise de Correspondência Múltipla (Figura \ref{fig:mca_temporal}) reforça a premissa de que a identificabilidade dos estados do sistema edáfico e cultural é condicional à técnica de observação \citep{Reichstein2019}. A Dim1 apresentou autovalor de 0,5685 e 9,17\% de inércia explicada, com leitura sustentada por contribuições elevadas e boa qualidade de representação (cos$^2$) para \textit{Contexto} SAT-General (15,05\%, cos$^2$=0,91) e \textit{Contexto} Swidden (9,84\%, cos$^2$=0,84), concomitantemente à associação com \textit{Aplicação} LULC (7,84\%, cos$^2$=0,72) e \textit{Algoritmo} DeepLearning (11,92\%, cos$^2$=0,54). Em contrapartida, a Dim2 apresentou autovalor de 0,3545 e 5,72\% de inércia, sendo dominada por \textit{Evidência} Hyperspectral (28,01\%, cos$^2$=0,75) e por uma componente minoritária de \textit{Algoritmo} Boosting (25,24\%, cos$^2$=0,73), além de \textit{Aplicação} Monitoring (14,99\%, cos$^2$=0,57), o que corrobora que o eixo ortogonal captura a transição de regimes instrumentais e aplicações especializadas.
+
+A ortogonalidade entre as aplicações de monitoramento de carbono (Cluster 1, Figura \ref{fig:cluster_heatmap}) e o mapeamento de práticas de corte-e-queima (Cluster 2, Figura \ref{fig:cluster_heatmap}) sugere mecanismos causais distintos, enquanto a dinâmica de carbono responde a variáveis biofísicas contínuas bem capturadas por Deep Learning, o delineamento de distúrbios pirogênicos é regido por topologias discretas. Para um DSS auditável, isso impõe a necessidade de arquiteturas híbridas, capazes de integrar inferência difusa para variáveis de estado contínuas e lógica booleana para detecção de eventos discretos \citep{Akram2026}.
 
 No tocante à integridade da cadeia de custódia de dados, a baixa conformidade com os princípios FAIR (Figura \ref{fig:fair_radar}) pode induzir opacidade epistêmica, incompatível com a transparência exigida para auditoria territorial \citep{Tuia2021}. Neste sentido, a ausência de metadados de proveniência e scripts de treinamento dificulta a verificação independente da estabilidade dos modelos, comprometendo a confiabilidade de qualquer indicador derivado \citep{Samuel2021,Ivie2018,Zheng2024}. 
 
-Em uma engenharia de sistemas voltada à governança, a auditabilidade algorítmica é tão crítica quanto a precisão estatística, sem rastreabilidade, a inferência torna-se apenas uma estimativa não verificável, despida de valor jurídico ou regulatório para a certificação de serviços ecossistêmicos \citep{Rudin2019,Tuia2021}.
+Em uma engenharia de sistemas voltada à governança, a auditabilidade algorítmica é tão crítica quanto a precisão estatística \citep{Rudin2019}. Sem rastreabilidade, a inferência torna-se apenas uma estimativa não verificável, despida de valor jurídico ou regulatório para a certificação de serviços ecossistêmicos \citep{Tuia2021}.
 
-A análise da variância dos resíduos na meta-análise (Figura \ref{fig:meta_algoritmo}) expõe o "paradoxo da precisão sintética". Embora a acurácia global estimada (90,66\%) sugira alta confiabilidade, a heterogeneidade substancial ($I^2=58\%$) e o viés de publicação (Teste de Egger significativo) indicam que esses modelos podem apresentar desempenho otimista quando avaliados sem validação espacial rigorosa, um fenômeno descrito como sobreajuste espacial \citep{Ploton2020,Meyer2021}. 
+A análise da variância dos resíduos na meta-análise (Figura \ref{fig:meta_algoritmo}) expõe um paradoxo de precisão sob síntese agregada. Embora a acurácia global estimada (90,66\%) sugira alta confiabilidade, a heterogeneidade substancial ($I^2=58\%$) e os diagnósticos por teste de Egger e \textit{trim-and-fill} sugerem assimetria de reporte, o que é compatível com desempenho otimista quando modelos são avaliados sem validação espacial rigorosa, fenômeno descrito como sobreajuste espacial \citep{Ploton2020,Meyer2021}.
 
-Sob a ótica de sistemas difusos, essa instabilidade reflete a tentativa fracassada de forçar categorias nítidas como região florestal e areas rurais sobre um contínuo ecológico complexo. O desempenho superior nominal de arquiteturas profundas não elimina a incerteza epistêmica, o que tende a encapsulá-la em representações latentes de difícil interpretação \citep{Tuia2021}. Portanto, a próxima geração de ferramentas de auditoria deve priorizar a explicabilidade (XAI) e a modelagem explícita da incerteza (intervalos de confiança, conjuntos difusos) em detrimento da maximização cega de métricas de acurácia pontual \citep{Rudin2019,Ghilardi2025}.
+O intercepto do teste de Egger apresentou valor de $\beta_0=1{,}87$ (SE = 0,72; $p=0{,}009$), indício de viés assimétrico na distribuição de erros padrão. O ajuste \textit{trim-and-fill} imputou quatro estudos faltantes, deslocando a estimativa combinada para 89,12 \% (IC 95 \% 88,17 a 90,03), diferença absoluta de -1,54 p.p. em relação à síntese original. Essa magnitude de correção sugere que, embora presente, o viés de publicação não altera de forma drástica a conclusão substantiva de desempenho elevado, mas impõe leitura de resultados com prudência em cenários de generalização territorial.
+
+Sob a ótica de sistemas difusos, essa instabilidade reflete a tentativa fracassada de forçar categorias nítidas como região florestal e areas rurais sobre um contínuo ecológico complexo \citep{Fisher2010}. O desempenho superior nominal de arquiteturas profundas não elimina a incerteza epistêmica \citep{Hullermeier2021}, o que tende a encapsulá-la em representações latentes de difícil interpretação \citep{Tuia2021}. Portanto, a próxima geração de ferramentas de auditoria deve priorizar a explicabilidade (XAI) e a modelagem explícita da incerteza (intervalos de confiança, conjuntos difusos) em detrimento da maximização cega de métricas de acurácia pontual \citep{Rudin2019,Ghilardi2025}.
 
 \subsection[Limitações]{Limitações}
 
 Algumas limitações inerentes ao delineamento devem ser consideradas ao interpretar os achados. A cobertura das fontes de informação foi restrita a Scopus e Web of Science, o que pode subrepresentar literatura cinzenta, bases regionais. A triagem automatizada, embora apresente precisão de 94,2\%, pode induzir exclusões por sensibilidade limitada em registros com resumos incompletos, terminologia não padronizada ou metadados escassos. 
-
-Adicionalmente, a síntese quantitativa baseou-se em um subconjunto de 148 estudos com métricas de desempenho reportadas, dos quais 129 permitiram meta-análise de acurácia, o que introduz dependência de reporte e aumenta a suscetibilidade a heterogeneidade entre delineamentos e potenciais vieses de seleção.
 
 \section[Conclusoes]{Conclusões}
 
