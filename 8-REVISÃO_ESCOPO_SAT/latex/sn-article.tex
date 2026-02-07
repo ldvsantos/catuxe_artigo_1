@@ -41,8 +41,6 @@
 %%\documentclass[pdflatex,sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
 
 %%%% Standard Packages
-%%<additional latex packages if required can be included here>
-
 \usepackage{graphicx}%
 \usepackage{multirow}%
 \usepackage{amsmath,amssymb,amsfonts}%
@@ -53,8 +51,6 @@
 \usepackage[brazilian]{babel}%
 \usepackage{booktabs}%
 \usepackage{url}%
-% minted estava causando falhas de compilação no Windows/MiKTeX;
-% usamos verbatim para manter o bloco de consulta sem depender de shell-escape.
 \usepackage{verbatim}
 \usepackage{fvextra}
 \usepackage{float}%
@@ -68,20 +64,16 @@
 \author[1]{\fnm{Paulo Roberto} \sur{Gagliardi}}
 \author[1]{\fnm{Francisco Sandro Rodrigues} \sur{Holanda}}
 \author[3]{\fnm{Renisson Neponuceno de} \sur{Araújo Filho}}
+\author[2]{\fnm{Tânia Cristina} \sur{Azevedo}}
+\author[1]{\fnm{Gustavo da Silva} \sur{Quirino}}
 
 \email{ldvsantos@uefs.br}
 
 \affil[1]{\orgname{Universidade Federal de Sergipe - UFS}, \orgaddress{\country{Brasil}}}
-\affil*[2]{\orgname{Universidade Estadual de Feira de Santana - UEFS}, \orgaddress{\country{Brasil}}\\Telefone do autor correspondente: +55 (00) 00000-0000}
-\affil[3]{\orgname{Universidade Federal Rural de Pernambuco - UUFRPE}, \orgaddress{\country{Brasil}}}
+\affil*[2]{\orgname{Universidade Estadual de Feira de Santana - UEFS}, \orgaddress{\country{Brasil}}}
+\affil[3]{\orgname{Universidade Federal Rural de Pernambuco - UFRPE}, \orgaddress{\country{Brasil}}}
 
-\abstract{\textbf{Contexto:} Sistemas Agrícolas Tradicionais (SAT) demandam monitoramento baseado em evidências para governança de integridade socioecológica. O Aprendizado de Máquina (ML) oferece potencial para monitoramento escalável, mas enfrenta questões sobre robustez e auditabilidade operacional.
-
-\textbf{Métodos:} Seguindo diretrizes PRISMA-ScR, analisamos 244 estudos (2010–2025) recuperados de Scopus e Web of Science, aplicando pontuação automatizada de relevância (precisão 94,2\%) e validação manual (CCI=0,87). Conduzimos meta-análise de efeitos aleatórios, análise de redes (modularidade Q=0,62) e avaliação de conformidade FAIR.
-
-\textbf{Resultados:} A acurácia combinada atingiu 90,7\% (IC 95\% 89,8–91,5\%) com heterogeneidade substancial (I²=58\%). A adoção de Deep Learning aumentou de 4,8\% (2015–2019) para 21,1\% (2020–2025). Entretanto, a conformidade FAIR permaneceu criticamente baixa (escore médio 18,7/100), com apenas 1,1\% dos estudos compartilhando código/dados. Análise de viés de publicação (Egger p=0,009) sugere superestimação de desempenho em aproximadamente 1,5 pontos percentuais.
-
-\textbf{Conclusões:} Embora ML alcance alta acurácia reportada, lacunas críticas em protocolos de validação espacial, explicabilidade (XAI) e infraestrutura de governança de dados limitam a prontidão operacional para aplicações regulatórias em contextos de SAT.}
+\abstract{Sistemas Agrícolas Tradicionais (SAT) demandam monitoramento baseado em evidências para governança de integridade socioecológica, porém a prontidão operacional do Aprendizado de Máquina (ML) para essa finalidade permanece incerta. Seguindo diretrizes PRISMA-ScR, esta revisão de escopo analisou 244 estudos (2010--2025) recuperados de Scopus e Web of Science, aplicando pontuação automatizada de relevância (precisão 94,2\%) e validação manual (CCI=0,87), juntamente com meta-análise de efeitos aleatórios, análise de redes (modularidade Q=0,62) e avaliação de conformidade FAIR. A acurácia combinada atingiu 90,7\% (IC 95\% 89,8--91,5\%) com heterogeneidade substancial (I\textsuperscript{2}=58\%), enquanto a adoção de Deep Learning aumentou de 4,8\% (2015--2019) para 21,1\% (2020--2025). Entretanto, a conformidade FAIR permaneceu criticamente baixa (escore médio 18,7/100), com apenas 1,1\% dos estudos compartilhando código ou dados, e a análise de viés de publicação (Egger p=0,009) sugere superestimação de desempenho em aproximadamente 1,5 pontos percentuais. Embora ML alcance alta acurácia reportada, lacunas críticas em protocolos de validação espacial, explicabilidade (XAI) e infraestrutura de governança de dados limitam a prontidão operacional para aplicações regulatórias em contextos de SAT.}
 
 \keywords{Sistemas agrícolas tradicionais, Aprendizado de máquina, Sensoriamento remoto, Meta-análise, Governança de dados, FAIR}
 
@@ -99,16 +91,7 @@ Diante das limitações do instrumental analítico clássico para monitoramento 
 
 Nesse contexto, o Aprendizado de Máquina (ML) emerge como ferramenta promissora para operacionalizar sistemas de monitoramento e suporte à decisão baseados em evidências, integrando dados de sensoriamento remoto, variáveis edafoclimáticas e indicadores socioecológicos \citep{Mountrakis2011,Spyrou2025}. A robustez operacional desses sistemas beneficia-se de validação espacialmente independente e estabilidade longitudinal frente à variabilidade climática \citep{Kuhn2013}, além de métodos de Inteligência Artificial Explicável (XAI) que possibilitem interpretar marcadores biofísicos relevantes \citep{Rudin2019}. A adesão aos princípios FAIR sustenta a reprodutibilidade e rastreabilidade das análises \citep{Wilkinson2016}.
 
-\subsection{Objetivos e Questões de Pesquisa}
-
-Esta revisão de escopo avalia a maturidade técnica do Aprendizado de Máquina aplicado a Sistemas Agrícolas Tradicionais, abordando quatro questões específicas:
-
-\begin{enumerate}
-\item[\textbf{Q1:}] Qual o desempenho reportado (acurácia, F1-score) de modelos de ML aplicados a SAT considerando diferentes algoritmos e aplicações (cobertura do solo, propriedades edáficas, produção)?
-\item[\textbf{Q2:}] Em que medida os estudos implementam estratégias de validação espacial para avaliar generalizabilidade?
-\item[\textbf{Q3:}] Qual o nível de conformidade com princípios FAIR no compartilhamento de dados e código?
-\item[\textbf{Q4:}] Quais clusters temáticos e trajetórias tecnológicas caracterizam a evolução do campo (2010–2025)?
-\end{enumerate}
+Nesse sentido, esta revisão de escopo avalia a maturidade técnica do Aprendizado de Máquina aplicado a Sistemas Agrícolas Tradicionais por meio de quatro questões de pesquisa: (Q1) qual o desempenho reportado (acurácia, F1-score) de modelos de ML aplicados a SAT considerando diferentes algoritmos e aplicações (cobertura do solo, propriedades edáficas, produção); (Q2) em que medida os estudos implementam estratégias de validação espacial para avaliar generalizabilidade; (Q3) qual o nível de conformidade com princípios FAIR no compartilhamento de dados e código; e (Q4) quais clusters temáticos e trajetórias tecnológicas caracterizam a evolução do campo entre 2010 e 2025.
 
 \section[Materiais e Métodos]{Materiais e Métodos}
 
@@ -369,21 +352,7 @@ Sob a ótica de sistemas difusos, essa instabilidade reflete a tentativa fracass
 
 \subsection[Limitações]{Limitações}
 
-Esta revisão apresenta restrições metodológicas que devem orientar a interpretação dos achados:
-
-\textbf{1. Viés de publicação:} O teste de Egger (p=0,009) e a correção \textit{trim-and-fill} (-1,54 pontos percentuais) indicam reporte assimétrico favorecendo resultados positivos. A acurácia combinada estimada deve ser interpretada como limite superior do desempenho reportado, não como expectativa operacional em contextos regulatórios.
-
-\textbf{2. Imputação de tamanho amostral:} A estimação de variância baseou-se em n=100 imputado para 37,2\% dos estudos sem tamanhos amostrais explícitos. Embora análise de sensibilidade (excluindo casos imputados) tenha confirmado estabilidade da estimativa (89,8\% vs 90,7\%), esta permanece como fonte de incerteza na ponderação por inverso de variância.
-
-\textbf{3. Ausência de avaliação formal de risco de viés:} Não foram aplicadas ferramentas estruturadas de avaliação de viés (e.g., PROBAST para modelos preditivos, QUADAS-2 para acurácia diagnóstica), limitando a capacidade de estratificar achados por qualidade metodológica ou contabilizar viés em nível de estudo nas estimativas de efeito.
-
-\textbf{4. Restrições de idioma e bases de dados:} A limitação a Scopus/Web of Science e termos de busca em inglês/português exclui literatura cinzenta (relatórios técnicos, teses), repositórios de conhecimento indígena e estudos em outros idiomas, potencialmente sub-representando iniciativas de monitoramento lideradas por comunidades.
-
-\textbf{5. Codificação sistemática de validação espacial ausente:} Embora identificadas preocupações conceituais sobre generalização, não extraímos sistematicamente estratégias de validação (divisão aleatória, validação cruzada espacial por blocos, teste geográfico independente) de cada estudo, impedindo quantificação empírica da degradação de desempenho em validade externa.
-
-\textbf{6. Escopo temporal:} A janela 2010–2025 exclui trabalhos fundamentais pré-2010 e técnicas emergentes pós-data de corte (e.g., modelos fundamentais, transformers multimodais ainda não publicados).
-
-Essas restrições sugerem que os achados representam uma síntese de desempenho \textit{reportado} sob rigor de validação \textit{variável}, não benchmarks operacionais validados para implantação regulatória. 
+Esta revisão apresenta restrições metodológicas que devem orientar a interpretação dos achados. Em primeiro lugar, o teste de Egger (p=0,009) e a correção \textit{trim-and-fill} ($-$1,54 pontos percentuais) indicam reporte assimétrico favorecendo resultados positivos, de modo que a acurácia combinada estimada deve ser interpretada como limite superior do desempenho reportado, e não como expectativa operacional em contextos regulatórios. Em segundo lugar, a estimação de variância baseou-se em n=100 imputado para 37,2\% dos estudos sem tamanhos amostrais explícitos; embora análise de sensibilidade excluindo casos imputados tenha confirmado estabilidade da estimativa (89,8\% vs. 90,7\%), esta permanece como fonte de incerteza na ponderação por inverso de variância. Em terceiro lugar, não foram aplicadas ferramentas estruturadas de avaliação de viés (e.g., PROBAST para modelos preditivos, QUADAS-2 para acurácia diagnóstica), limitando a capacidade de estratificar achados por qualidade metodológica ou contabilizar viés em nível de estudo nas estimativas de efeito. Em quarto lugar, a limitação a Scopus e Web of Science com termos de busca em inglês e português exclui literatura cinzenta, repositórios de conhecimento indígena e estudos em outros idiomas, potencialmente sub-representando iniciativas de monitoramento lideradas por comunidades. Em quinto lugar, embora identificadas preocupações conceituais sobre generalização, estratégias de validação (divisão aleatória, validação cruzada espacial por blocos, teste geográfico independente) não foram sistematicamente extraídas de cada estudo, impedindo quantificação empírica da degradação de desempenho em validade externa. Por fim, a janela temporal 2010--2025 exclui trabalhos fundamentais pré-2010 e técnicas emergentes pós-data de corte, como modelos fundamentais e transformers multimodais. Em conjunto, essas restrições sugerem que os achados representam uma síntese de desempenho \textit{reportado} sob rigor de validação \textit{variável}, não benchmarks operacionais validados para implantação regulatória. 
 
 \section[Conclusoes]{Conclusões}
 
