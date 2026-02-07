@@ -58,11 +58,22 @@ def one_hot_from_categories(df: pd.DataFrame, dims: list[str]) -> tuple[pd.DataF
     return X, list(X.columns)
 
 
+# PT→EN dimension label mapping
+DIM_EN = {
+    "Algoritmo": "Algorithm",
+    "Evidencia": "Evidence",
+    "Contexto": "Context",
+    "Aplicacao": "Application",
+    "Regiao": "Region",
+}
+
+
 def pretty_feature(name: str) -> str:
-    # "Dim_Value" -> "Dim=Value" for readability
+    # "Dim_Value" -> "Dim=Value" for readability, with EN dimension names
     if "_" in name:
         d, v = name.split("_", 1)
-        return f"{d}={v}"
+        d_en = DIM_EN.get(d, d)
+        return f"{d_en}={v}"
     return name
 
 

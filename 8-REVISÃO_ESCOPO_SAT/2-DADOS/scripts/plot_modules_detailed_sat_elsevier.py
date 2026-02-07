@@ -37,6 +37,15 @@ PASTEL = {
     "gray": "#9AA0A6",
 }
 
+# PT→EN dimension label mapping
+DIM_EN = {
+    "Algoritmo": "Algorithm",
+    "Evidencia": "Evidence",
+    "Contexto": "Context",
+    "Aplicacao": "Application",
+    "Regiao": "Region",
+}
+
 
 def _node_dim(node: str) -> str:
     return node.split(":", 1)[0].strip() if ":" in node else ""
@@ -329,7 +338,7 @@ def main() -> None:
     present_dims = sorted({_node_dim(n) for n in g_full.nodes if _node_dim(n)})
     preferred_order = ["Algoritmo", "Evidencia", "Aplicacao", "Contexto", "Regiao"]
     present_dims = sorted(present_dims, key=lambda d: preferred_order.index(d) if d in preferred_order else 999)
-    handles = [Patch(facecolor=dim_colors.get(d, PASTEL["gray"]), edgecolor="none", label=d) for d in present_dims]
+    handles = [Patch(facecolor=dim_colors.get(d, PASTEL["gray"]), edgecolor="none", label=DIM_EN.get(d, d)) for d in present_dims]
     leg = fig.legend(
         handles=handles,
         title="Node dimension",

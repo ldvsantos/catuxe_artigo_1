@@ -199,7 +199,7 @@ def main() -> None:
     # Eixo X com ticks em logit mas rótulos em proporção
     ax.set_xticks(at_logit)
     ax.set_xticklabels([f"{t:.2f}" for t in x_ticks_p])
-    ax.set_xlabel("Acurácia consolidada (proporção)")
+    ax.set_xlabel("Pooled accuracy (proportion)")
     ax.tick_params(axis="x", labelsize=9, pad=8)
 
     # Sem y-axis (tabela é manual)
@@ -241,12 +241,12 @@ def main() -> None:
     y_rule_bottom = y_header - 0.24
     ax.hlines([y_rule_top, y_rule_bottom], xlim_logit[0], xlim_logit[1], colors="black", linewidth=1.0)
 
-    ax.text(x_estudo, y_header, "Estudo", ha="left", va="center", fontweight="bold", fontsize=10)
+    ax.text(x_estudo, y_header, "Study", ha="left", va="center", fontweight="bold", fontsize=10)
     ax.text(x_n, y_header, "n", ha="right", va="center", fontweight="bold", fontsize=9)
-    ax.text(x_acc, y_header, "% acurácia", ha="right", va="center", fontweight="bold", fontsize=9)
-    ax.text(x_ic, y_header, "IC 95%", ha="right", va="center", fontweight="bold", fontsize=9)
-    ax.text(x_peso, y_header, "Peso (%)", ha="right", va="center", fontweight="bold", fontsize=9)
-    ax.text(x_est_txt, y_header, "Estimativa [IC 95%]", ha="left", va="center", fontweight="bold", fontsize=10)
+    ax.text(x_acc, y_header, "% accuracy", ha="right", va="center", fontweight="bold", fontsize=9)
+    ax.text(x_ic, y_header, "95% CI", ha="right", va="center", fontweight="bold", fontsize=9)
+    ax.text(x_peso, y_header, "Weight (%)", ha="right", va="center", fontweight="bold", fontsize=9)
+    ax.text(x_est_txt, y_header, "Estimate [95% CI]", ha="left", va="center", fontweight="bold", fontsize=10)
 
     # Linhas da tabela (manual)
     for i in range(k):
@@ -276,7 +276,7 @@ def main() -> None:
     # Separador + modelo
     y_sep_model = (float(np.min(rows_studies)) + float(row_model)) / 2.0
     ax.hlines(y_sep_model, xlim_logit[0], xlim_logit[1], colors="0.75", linewidth=1.0)
-    ax.text(x_estudo, row_model, "Modelo de efeitos aleatórios (REML)", ha="left", va="center", fontsize=10)
+    ax.text(x_estudo, row_model, "Random-effects model (REML)", ha="left", va="center", fontsize=10)
 
     # Diamond do modelo
     diamond_y = float(row_model)

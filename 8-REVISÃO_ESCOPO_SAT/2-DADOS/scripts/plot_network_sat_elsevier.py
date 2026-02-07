@@ -42,6 +42,15 @@ PASTEL = {
     "gray": "#9AA0A6",
 }
 
+# PT→EN dimension label mapping (CSV columns → display labels)
+DIM_EN = {
+    "Algoritmo": "Algorithm",
+    "Evidencia": "Evidence",
+    "Contexto": "Context",
+    "Aplicacao": "Application",
+    "Regiao": "Region",
+}
+
 
 @dataclass(frozen=True)
 class Paths:
@@ -319,7 +328,7 @@ def draw_network(
         present_dims = sorted({node_type(n) for n in g.nodes})
         preferred = ["Algoritmo", "Aplicacao", "Contexto", "Evidencia", "Regiao"]
         present_dims = sorted(present_dims, key=lambda d: preferred.index(d) if d in preferred else 999)
-        handles = [Patch(facecolor=dim_colors.get(d, PASTEL["gray"]), edgecolor="none", label=d) for d in present_dims]
+        handles = [Patch(facecolor=dim_colors.get(d, PASTEL["gray"]), edgecolor="none", label=DIM_EN.get(d, d)) for d in present_dims]
         leg = fig.legend(
             handles=handles,
             title="Node dimension",
@@ -367,7 +376,7 @@ def draw_network(
     plt.close(fig)
 
 
-def plot_centrality_metrics(g: nx.Graph, out_path: Path, title: str = "Métricas de centralidade (principais nós)") -> None:
+def plot_centrality_metrics(g: nx.Graph, out_path: Path, title: str = "Centrality Metrics (Top Nodes)") -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     if g.number_of_nodes() == 0:
@@ -453,7 +462,7 @@ def main() -> None:
     draw_network(
         g_full,
         paths.out_network_full,
-        title="Rede de coocorrência SAT (valores categóricos)",
+        title="SAT Co-occurrence Network (Categorical Values)",
         color_mode="dimension",
         dim_colors=dim_colors,
     )
@@ -462,7 +471,7 @@ def main() -> None:
     draw_network(
         g_full,
         paths.out_network_communities,
-        title="Comunidades na rede SAT (modularidade)",
+        title="SAT Network Communities (Modularity)",
         color_mode="community",
         node_to_comm=node_to_comm,
     )
@@ -472,7 +481,7 @@ def main() -> None:
     draw_network(
         g_bi,
         paths.out_network_algo_prod,
-        title="Rede Algoritmo × Aplicação (SAT)",
+        title="Algorithm × Application Network (SAT)",
         color_mode="dimension",
         dim_colors=dim_color_map(["Algoritmo", "Aplicacao"]),
         seed=11,

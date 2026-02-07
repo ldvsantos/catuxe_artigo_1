@@ -310,7 +310,7 @@ def main():
     ax.set_xlabel(label_x, fontsize=12)
     ax.set_ylabel(label_y, fontsize=12)
     ax.set_title(
-        "Biplot da MCA (SAT): Evolução Temporal (X ±4 | Y -4..4)",
+        "MCA Biplot (SAT): Temporal Evolution",
         fontsize=14,
         fontweight='bold',
         pad=14,
@@ -342,7 +342,7 @@ def main():
         [by_label[k] for k in ordered],
         ordered,
         loc="upper left",
-        title="Tipo / Período",
+        title="Type / Period",
         fontsize=10,
         title_fontsize=11,
     )
