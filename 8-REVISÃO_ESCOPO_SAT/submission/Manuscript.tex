@@ -1,97 +1,73 @@
-﻿%Version 3.1 December 2024
-% See section 11 of the User Manual for version history
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                                                 %%
-%% Please do not use \input{...} to include other tex files.       %%
-%% Submit your LaTeX manuscript as one .tex document.              %%
-%%                                                                 %%
-%% All additional figures and files should be attached             %%
-%% separately and not embedded in the \TeX\ document itself.       %%
-%%                                                                 %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
-
-%%=======================================================%%
-%% to print line numbers in the margin use lineno option %%
-%%=======================================================%%
-
-%%\documentclass[lineno,pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
-
-%%=========================================================================================%%
-%% the documentclass is set to pdflatex as default. You can delete it if not appropriate.  %%
-%%=========================================================================================%%
-
-%%\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
-
-%%Note: the following reference styles support Namedate and Numbered referencing. By default the style follows the most common style. To switch between the options you can add or remove Numbered in the optional parenthesis. 
-%%The option is available for: sn-basic.bst, sn-chicago.bst%  
- 
-%%\documentclass[pdflatex,sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
-%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
-%%\documentclass[pdflatex,sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
-%%\documentclass[pdflatex,sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
-%%\documentclass[pdflatex,sn-vancouver-num]{sn-jnl}% Vancouver Numbered Reference Style
-%%\documentclass[pdflatex,sn-vancouver-ay]{sn-jnl}% Vancouver Author Year Reference Style
-% Prevents pdfTeX warnings about duplicate hyperlink destinations (figure.1, table.1, etc.)
-% when hyperref is loaded by the sn-jnl class.
-\PassOptionsToPackage{hypertexnames=false}{hyperref}
-\documentclass[lineno,pdflatex,sn-apa]{sn-jnl}% APA Reference Style
-%%\documentclass[pdflatex,sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+%%
+%% Manuscript for Journal of Agriculture and Food Research (Elsevier)
+%% Migrated from Springer Nature sn-jnl to elsarticle format
+%%
+\documentclass[review,number]{elsarticle}
 
 %%%% Standard Packages
-\usepackage{graphicx}%
-\usepackage{multirow}%
-\usepackage{amsmath,amssymb,amsfonts}%
-\usepackage{amsthm}%
-\usepackage{mathrsfs}%
-\usepackage[T1]{fontenc}%
-\usepackage[utf8]{inputenc}%
-\usepackage[american]{babel}%
-\usepackage{booktabs}%
-\usepackage{url}%
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[american]{babel}
+\usepackage{booktabs}
 \usepackage{verbatim}
-\usepackage{float}%
+\usepackage{float}
+\usepackage{lineno}
+\usepackage{hyperref}
+
+\journal{Journal of Agriculture and Food Research}
 
 \begin{document}
 
-\title{\textbf{Machine Learning Readiness to Support Agroecological Transitions in Traditional Agricultural Systems, a Meta-Analysis}}
+\begin{frontmatter}
 
-\author[1]{\fnm{Catuxe Varjão de Santana} \sur{Oliveira}}
-\author*[2]{\fnm{Luiz Diego Vidal} \sur{Santos}}
-\author[1]{\fnm{Paulo Roberto} \sur{Gagliardi}}
-\author[3]{\fnm{Renisson Neponuceno de} \sur{Araújo Filho}}
-\author[2]{\fnm{Tânia Cristina} \sur{Azevedo}}
-\author[1]{\fnm{Gustavo da Silva} \sur{Quirino}}
-\author[1]{\fnm{Francisco Sandro Rodrigues} \sur{Holanda}}
+\title{Machine Learning Readiness to Support Agroecological Transitions in Traditional Agricultural Systems: A Meta-Analysis}
 
-\email{ldvsantos@uefs.br}
+\author[1]{Catuxe Varjão de Santana Oliveira}
+\author[2]{Luiz Diego Vidal Santos\corref{cor1}}
+\cortext[cor1]{Corresponding author}
+\ead{ldvsantos@uefs.br}
+\author[1]{Paulo Roberto Gagliardi}
+\author[3]{Renisson Neponuceno de Araújo Filho}
+\author[2]{Tânia Cristina Azevedo}
+\author[1]{Gustavo da Silva Quirino}
+\author[1]{Francisco Sandro Rodrigues Holanda}
 
-\affil[1]{\orgname{Universidade Federal de Sergipe (UFS)}, \orgaddress{\country{Brazil}}}
-\affil*[2]{\orgname{Universidade Estadual de Feira de Santana (UEFS)}, \orgaddress{\country{Brazil}}}
-\affil[3]{\orgname{Universidade Federal Rural de Pernambuco (UFRPE)}, \orgaddress{\country{Brazil}}}
+\address[1]{Universidade Federal de Sergipe (UFS), Av. Marechal Rondon, s/n, Jardim Rosa Elze, São Cristóvão, SE 49100-000, Brazil}
+\address[2]{Universidade Estadual de Feira de Santana (UEFS), Av. Transnordestina, s/n, Novo Horizonte, Feira de Santana, BA 44036-900, Brazil}
+\address[3]{Universidade Federal Rural de Pernambuco (UFRPE), Rua Dom Manuel de Medeiros, s/n, Dois Irmãos, Recife, PE 52171-900, Brazil}
 
-\abstract{Traditional Agricultural Systems are coupled social-ecological systems whose integrity requires evidence-based monitoring, yet the operational readiness of machine learning for this purpose remains uncertain. This meta-analysis assesses the extent to which deficiencies in data governance and spatial validation constrain the regulatory applicability of machine learning models in these systems despite their reported high accuracy. We examined 244 studies (2010--2025) retrieved from Scopus and Web of Science following standardized scoping review guidelines, using automated relevance scoring (precision 94.2\%) with manual validation (intraclass correlation coefficient = 0.87), random-effects modeling, network analysis (modularity $Q = 0.62$), and compliance assessment against the Findable, Accessible, Interoperable, and Reusable (FAIR) data principles. Pooled accuracy reached 90.7\% (95\% confidence interval 89.8 to 91.5\%) with substantial heterogeneity ($I^{2} = 58\%$), while deep learning adoption increased from 4.8\% (2015--2019) to 21.1\% (2020--2025). However, FAIR compliance remained critically low (mean score 18.7/100), with only 1.1\% of studies sharing code or data, and publication-bias analysis (Egger's test, $p = 0.009$) suggests performance overestimation by approximately 1.5 percentage points. Critical gaps in spatial validation protocols, algorithmic explainability, and data-governance infrastructure limit operational readiness for regulatory applications in Traditional Agricultural Systems, with direct implications for monitoring heritage sites under the Globally Important Agricultural Heritage Systems program and Sustainable Development Goal targets 2.4 and 15.4. These findings underscore the need for inter-regional validation and transparent algorithmic governance to support evidence-based agrobiodiversity management.}
+\begin{highlights}
+\item ML pooled accuracy 90.7\% but FAIR compliance only 18.7/100
+\item Deep learning adoption rose from 4.8\% to 21.1\% (2015--2025)
+\item Only 1.1\% of 244 studies shared code or data openly
+\item Publication bias overestimates accuracy by 1.5 percentage points
+\item Spatial validation gaps limit regulatory applicability
+\end{highlights}
 
-\keywords{deep learning, machine learning, meta-analysis, data governance, FAIR}
+\begin{abstract}
+Traditional Agricultural Systems are coupled social-ecological systems whose integrity requires evidence-based monitoring, yet the operational readiness of machine learning for this purpose remains uncertain. This meta-analysis assesses the extent to which deficiencies in data governance and spatial validation constrain the regulatory applicability of machine learning models in these systems despite their reported high accuracy. We examined 244 studies (2010--2025) retrieved from Scopus and Web of Science following standardized scoping review guidelines, using automated relevance scoring (precision 94.2\%) with manual validation (intraclass correlation coefficient = 0.87), random-effects modeling, network analysis (modularity $Q = 0.62$), and compliance assessment against the Findable, Accessible, Interoperable, and Reusable (FAIR) data principles. Pooled accuracy reached 90.7\% (95\% confidence interval 89.8 to 91.5\%) with substantial heterogeneity ($I^{2} = 58\%$), while deep learning adoption increased from 4.8\% (2015--2019) to 21.1\% (2020--2025). However, FAIR compliance remained critically low (mean score 18.7/100), with only 1.1\% of studies sharing code or data, and publication-bias analysis (Egger's test, $p = 0.009$) suggests performance overestimation by approximately 1.5 percentage points. Critical gaps in spatial validation protocols, algorithmic explainability, and data-governance infrastructure limit operational readiness for regulatory applications in Traditional Agricultural Systems, with direct implications for monitoring heritage sites under the Globally Important Agricultural Heritage Systems program and Sustainable Development Goal targets 2.4 and 15.4. These findings underscore the need for inter-regional validation and transparent algorithmic governance to support evidence-based agrobiodiversity management.
+\end{abstract}
 
-\maketitle
+\begin{keyword}
+deep learning \sep machine learning \sep meta-analysis \sep data governance \sep FAIR
+\end{keyword}
 
-\section[Introduction]{Introduction}
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introduction}
 
 Traditional Agricultural Systems are social-ecological systems in which management practices, biocultural diversity, and biophysical conditions co-evolve over long temporal horizons, sustaining cultural landscapes and ecosystem services under increasing Anthropocene pressures \citep{Berkes2003}. At the global scale, these systems are recognized by institutional frameworks such as the Globally Important Agricultural Heritage Systems (GIAHS) program of the Food and Agriculture Organization of the United Nations, which has designated over 80 sites in 24 countries \citep{Koohafkan2011}, and by the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES), which identifies indigenous and local knowledge as indispensable for biodiversity assessment \citep{IPBES2019}.
 
 These systems directly underpin multiple Sustainable Development Goals (SDGs), notably Goal~2 (Zero Hunger), target~2.4 on sustainable food production systems, Goal~13 (Climate Action), and Goal~15 (Life on Land) \citep{UN2015}. Despite this policy relevance, evidence-based landscape monitoring of traditional system integrity remains fragmented across regions and disciplines. Territorial heterogeneity, systemic complexity, and diffuse ecosystem service provision create measurement and monitoring challenges that can be partially mitigated by machine learning integrated with remote sensing data \citep{Weiss2020,Osco2021}.
 
-However, the operational readiness of these technologies to support agroecological transitions in traditional contexts remains uncertain, particularly given data governance and spatial validation gaps that may compromise regulatory applicability and evidence-based accountability. This complexity appears across diverse Traditional Agricultural System typologies, from irrigated terraces and stratified agroforestry systems to agroecological homegardens (Figure \ref{fig:photo_intro}) and communal rangeland systems (\textit{fundo de pasto}) \citep{Koohafkan2011,Altieri2004}, where overlapping tree canopy strata, food crops, livestock, and remnant native vegetation configure land-use mosaics whose social-ecological coupling challenges conventional monitoring.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.85\textwidth]{sat.jpg}
-\caption{Agroecological homegardens in a Traditional Agricultural System (Photo credit by Catuxe Oliveira).}
-\label{fig:photo_intro}
-\end{figure}
+However, the operational readiness of these technologies to support agroecological transitions in traditional contexts remains uncertain, particularly given data governance and spatial validation gaps that may compromise regulatory applicability and evidence-based accountability. This complexity appears across diverse Traditional Agricultural System typologies, from irrigated terraces and stratified agroforestry systems to agroecological homegardens and communal rangeland systems (\textit{fundo de pasto}) \citep{Koohafkan2011,Altieri2004}, where overlapping tree canopy strata, food crops, livestock, and remnant native vegetation configure land-use mosaics whose social-ecological coupling challenges conventional monitoring.
 
 As intrinsically coupled social-ecological territories in which soil, climate, biota, culture, and institutions interact through nonlinear dynamics and spatiotemporal heterogeneity, these systems simultaneously produce food, ecosystem services, and biocultural values whose measurement depends on methodological choices, data quality, and coherence among indicators \citep{LeFloc2016S}.
 
@@ -103,13 +79,13 @@ Machine learning emerges as a promising tool to implement evidence-based monitor
 
 Against this background, this scoping review assesses the technical maturity of machine learning applied to Traditional Agricultural Systems, examining reported predictive performance across algorithmic families and application domains (land cover, soil properties, crop yield), the extent of spatial validation strategies that sustain inter-regional generalizability, compliance with FAIR principles in data and code sharing, and the thematic clusters and technological trajectories structuring field evolution between 2010 and 2025.
 
-\section[Materials and Methods]{Materials and Methods}
+\section{Materials and Methods}
 
-\subsection[Protocol and Registration]{Protocol and Registration}
+\subsection{Protocol and Registration}
 
 The protocol and reproducibility artifacts, including search strings, the bibliographic corpus exported in BibTeX format, screening scripts, and analytical routines, were publicly deposited on the Open Science Framework (OSF) under DOI \url{https://doi.org/10.17605/OSF.IO/J7STC}. The selection process followed PRISMA-ScR guidelines \citep{Tricco2018b}.
 
-\subsection[Information Sources and Search Strategy]{Information Sources and Search Strategy}
+\subsection{Information Sources and Search Strategy}
 
 Information sources comprised the Scopus and Web of Science databases. The most recent search and export execution occurred on January 24, 2026, as recorded in the BibTeX export metadata files. Corpus coverage was restricted to 2010--2025. No supplementary manual searches were conducted on websites, in institutional repositories, or in reference lists, and no authors were contacted for additional evidence.
 
@@ -132,17 +108,17 @@ OR "traditional agroecosystem*" OR "indigenous farming" OR
 \end{verbatim}
 }
 
-\subsection[Eligibility Criteria]{Eligibility Criteria}
+\subsection{Eligibility Criteria}
 
 Eligible studies were journal articles indexed in the consulted databases, retrieved by the search strings within the temporal interval, and containing sufficient metadata for charting, including at least a title and abstract. No explicit language restriction was applied at the search stage, but the strategy used only English-language terms, the dominant indexing language in Scopus and Web of Science, ensuring comparability with international systematic reviews and reducing coverage ambiguity associated with multilingual descriptors. Restricting the evidence universe to these two databases excludes gray literature and non-indexed repositories, a decision adopted to maximize traceability, metadata standardization, and analytical reproducibility.
 
-\subsection[Selection Process and Data Extraction]{Selection Process and Data Extraction}
+\subsection{Selection Process and Data Extraction}
 
 The initial search retrieved 449 combined records from the Scopus and Web of Science databases. After applying automated scoring criteria and manual verification, 244 studies were deemed eligible for qualitative and quantitative synthesis (Figure \ref{fig:prisma}).
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.8\textwidth]{prisma_flowdiagram.png}
+\includegraphics[width=0.8\textwidth]{Fig1.png}
 \caption{PRISMA 2020 flow diagram of the study selection process.}
 \label{fig:prisma}
 \end{figure}
@@ -151,15 +127,15 @@ Initial corpus screening applied an automated weighted scoring function to retri
 
 Although $Q_{met}$ is an operational screening criterion for minimum methodological consistency and reporting completeness, it is not a formal critical appraisal of included sources and was not used to weight estimates, adjust variances, or grade risk of bias in the synthesis.
 
-\subsection[Synthesis Methods]{Synthesis Methods}
+\subsection{Synthesis Methods}
 
-\subsubsection[Bibliometric Analysis]{Bibliometric Analysis}
+\subsubsection{Bibliometric Analysis}
 
 The domain interaction structure was investigated through Social Network Analysis (SNA). An undirected weighted graph was constructed from a categorical corpus dataset, where nodes represent entities (algorithms, instruments, products) and edges indicate co-occurrence across studies, with implementation in Python.
 
 Centrality metrics (degree and betweenness) were calculated to identify the relative importance of network elements. Thematic community detection used modularity maximization on the weighted graph, enabling identification of technological modules and functional specialization patterns. The temporal evolution (2010--2025) of scientific output and algorithmic family adoption was analyzed through time series and descriptive statistics, characterizing trends and inflection points.
 
-\subsubsection[Quantitative Synthesis (Meta-Analysis)]{Quantitative Synthesis (Meta-Analysis)}
+\subsubsection{Quantitative Synthesis (Meta-Analysis)}
 
 For the quantitative synthesis, a subset of 148 studies reporting performance metrics was selected, of which 129 presented recoverable accuracy for meta-analysis. Accuracies were extracted from the reported text (title/abstract/keywords) and standardized as proportions, with logit transformation for variance stabilization and numerical truncation at the boundaries ($\varepsilon=10^{-4}$) when necessary.
 
@@ -171,7 +147,7 @@ where $w_i = 1/(\sigma_i^2 + \tau^2)$ and $\tau^2$ represents the between-study 
 
 The temporal component of performance was examined through inverse-variance weighted regression with publication year as a covariate, prioritizing interpretation as a reporting trend (rather than a causal effect).
 
-\subsubsection[Multivariate Analysis (MCA and Clustering)]{Multivariate Analysis (MCA and Clustering)}
+\subsubsection{Multivariate Analysis (MCA and Clustering)}
 
 The associations among methodological, geographic, and temporal categories in the charted corpus were explored through Multiple Correspondence Analysis (MCA) on a categorical table, using the dimensions \textit{Algorithm}, \textit{Evidence}, \textit{Context}, \textit{Application}, and \textit{Region}, with projection onto two factorial dimensions for reading the latent structure of co-associations.
 
@@ -181,11 +157,11 @@ Functional groupings in the categorical corpus were identified by $k$-means clus
 
 Each cluster profile was summarized by mean occurrence of the 18 most frequent features (selected by global corpus frequency). The hierarchy was estimated by Ward's linkage on a Euclidean distance matrix among features and visualized as a heatmap with a lateral dendrogram, with color intensity from 0 (absent) to 1 (present in 100\% of studies in the cluster) on a blue-purple pastel scale consistent with the manuscript palette.
 
-\subsubsection[FAIR Compliance Assessment]{FAIR Compliance Assessment}
+\subsubsection{FAIR Compliance Assessment}
 
 In the data governance axis, FAIR compliance was quantified by a standardized score (0 to 100 points) based on 12 binary indicators \citep{Wilkinson2016}. Indicators were coded from textual signals in metadata and reporting (e.g., DOI, repository presence, code availability, explicit license, documentation), with uniform contribution ($100/12 \approx 8.33$ points per indicator) and aggregation across the four FAIR dimensions by arithmetic mean.
 
-\section[Results]{Results}\label{sec:resultados}
+\section{Results}\label{sec:resultados}
 
 Systematic analysis of the 244-study corpus (2010--2025) indicates a field whose technical maturity is evolving from exploratory approaches toward high-complexity artificial intelligence architectures (Fig. \ref{fig:temporal_combined}a). Publication trajectories suggest exponential growth, rising from incipient output in 2010 (10 studies) to robust output in the 2024--2025 biennium (65 cumulative studies), signaling consolidation of remote monitoring as a central paradigm in agroecosystem management \citep{Weiss2020,Osco2021}.
 
@@ -195,19 +171,19 @@ Disaggregated technology trends (Fig. \ref{fig:temporal_combined}b) identify a m
 \centering
 \begin{minipage}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth]{temporal_publicacoes.png}
+\includegraphics[width=\linewidth]{Fig2a.png}
 \textbf{(a)}
 \end{minipage}\hfill
 \begin{minipage}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth]{temporal_algoritmos.png}
+\includegraphics[width=\linewidth]{Fig2b.png}
 \textbf{(b)}
 \end{minipage}
 \caption{Temporal dynamics of the research field (2010--2025). (a) Exponential growth in publication volume. (b) Technological substitution trajectory.}
 \label{fig:temporal_combined}
 \end{figure}
 
-A core group of high-adherence studies (Score $\geq$ 12) was identified during screening, comprising 18 studies distributed between 2010 and 2025 and predominantly indexed in Scopus (17/18), consistent with the recent frontier of integration between computational intelligence and traditional systems. Notably, \cite{Li2025} proposes unified AIoT systems for autonomous pest control, and \cite{Tripathi2025} develops hybrid deep learning architectures for phytopathological diagnosis.
+A core group of high-adherence studies (Score $\geq$ 12) was identified during screening, comprising 18 studies distributed between 2010 and 2025 and predominantly indexed in Scopus (17/18), consistent with the recent frontier of integration between computational intelligence and traditional systems. Notably, \citet{Li2025} proposes unified AIoT systems for autonomous pest control, and \citet{Tripathi2025} develops hybrid deep learning architectures for phytopathological diagnosis.
 
 The top high-relevance studies (Table \ref{tab:top7}) illustrate geographic and thematic diversity across tropical, subtropical, and dryland contexts on multiple continents.
 
@@ -233,13 +209,13 @@ Year & Ref & Contribution \\
 \end{tabular}
 \end{table}
 
-\subsection[Overview of machine learning applications]{Overview of machine learning applications in agricultural systems}
+\subsection{Overview of machine learning applications in agricultural systems}
 
 The knowledge-network topology (Figure \ref{fig:network_completa}), characterized by a density of 0.345, reveals a densely connected field in which central nodes structure information flow between domains. The global visualization highlights interconnectivity between computational methods and agricultural study objects.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.65\textwidth]{network_completa.png}
+\includegraphics[width=0.65\textwidth]{Fig3.png}
 \caption{Knowledge network topology and term co-occurrence.}
 \label{fig:network_completa}
 \end{figure}
@@ -250,10 +226,10 @@ This configuration suggests a methodological transition in which the first decad
 
 \begin{figure}[H]
 \centering
-\IfFileExists{louvain_modules_detailed.png}{%
-\includegraphics[width=0.90\textwidth]{louvain_modules_detailed.png}%
+\IfFileExists{Fig4.png}{%
+\includegraphics[width=0.90\textwidth]{Fig4.png}%
 }{%
-\fbox{Figure not found, louvain\_modules\_detailed.png}%
+\fbox{Figure not found: Fig4.png}%
 }
 \caption{Technological modules identified in the co-occurrence network.}
 \label{fig:network_communities}
@@ -265,13 +241,13 @@ Within this cluster, strong co-occurrence between \textit{DeepLearning}, \textit
 
 This transition is corroborated by keyword frequency, where \textit{Remote Sensing = 98} and \textit{Shifting Cultivation = 49} emerge as dominant terms, indicating the preferred tool and the predominant analytical approach, respectively.
 
-\subsection[Multiple Correspondence Analysis]{Multiple Correspondence Analysis (MCA)}
+\subsection{Multiple Correspondence Analysis (MCA)}
 
 To elucidate latent associations among methodological and geographic categories, Multiple Correspondence Analysis (MCA) \citep{Greenacre2017,Abdi2014} projected variables into factorial space, emphasizing the temporal dimension (Figure \ref{fig:mca_temporal}) that captures field evolution. The biplot reveals joint variance structure, where proximity between points indicates strong statistical association \citep{Greenacre2017}. A clear displacement is observed from the 2010--2015 centroid, associated with conventional techniques and local monitoring, toward the 2020--2025 centroid, strongly correlated with Big Data, deep learning, and global-scale analyses.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{mca_biplot_temporal_completo.png}
+\includegraphics[width=0.85\textwidth]{Fig5.png}
 \caption{Temporal biplot showing the evolution of thematic associations (2010--2025).}
 \label{fig:mca_temporal}
 \end{figure}
@@ -282,7 +258,7 @@ The multivariate MCA structure reveals thematic and geographic reorganization of
 
 In contrast, between 2020 and 2025, the participation of SAT-General contexts expanded (63/114, 55.3\%) together with application diversification, with land use and land cover reduced to 35/114 (30.7\%) and increases in soil (16/114, 14\%), monitoring (10/114, 8.8\%), and yield (9/114, 7.9\%) applications. In parallel, the \textit{DeepLearning} category rose from 2/42 (4.8\%) in 2015--2019 to 24/114 (21.1\%) in 2020--2025, with regional distribution more explicitly mapped to Asia (35/114) and a Global block (50/114), sustaining the operational-readiness interpretation along two complementary dimensions, data governance and reported performance.
 
-\subsection[Functional cluster structure]{Functional cluster structure}
+\subsection{Functional cluster structure}
 
 Two cohesive functional groups ($k = 2$, silhouette = 0.215), differentiated by dominant methodological profiles, emerged from hierarchical cluster analysis (Figure \ref{fig:cluster_heatmap}). Cluster 1 (n=70, 37.8\%) is characterized by strong association with \textit{Context=SAT-General} (0.986) and \textit{Algorithm=DeepLearning} (0.30), representing studies that apply advanced computational techniques to generalized traditional agricultural systems, with marked presence in Asia (0.414) and at the global scale (0.343). This cluster demonstrates a statistically significant correlation between deep learning and diversified agricultural contexts ($\rho=0.78$, p$<$0.001), suggesting that algorithmic complexity responds to the need to model nonlinear social-ecological interactions in heterogeneous landscapes. Geographic concentration in Asia (41.4\%) and global studies (34.3\%) corroborates the hypothesis that advanced-technique adoption is associated with greater availability of high-resolution remote sensing data.
 
@@ -292,13 +268,13 @@ The dendrogram reveals hierarchical organization of features, where branches agg
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.65\textwidth]{cluster_heatmap_profiles_edit.png}
+\includegraphics[width=0.65\textwidth]{Fig6.png}
 \caption{Hierarchical heatmap of functional cluster profiles. \\
 \textit{Note} (Rows represent categorical features in the Dimension=Value format, columns represent the 2 identified clusters, and color intensity indicates mean frequency, ranging from 0 when absent to 1 when present in 100\% of the cluster's studies. The lateral dendrogram on the left represents Ward's hierarchy over Euclidean distances among features, and branch annotations identify dominant dimensions, e.g., Alg=algorithm and Ctx=context).}
 \label{fig:cluster_heatmap}
 \end{figure}
 
-\subsection[Governance and performance]{Governance and performance}
+\subsection{Governance and performance}
 
 Data governance state, quantified by FAIR compliance, revealed a low-information-density regime in which the mean aggregate score remained at 18.67/100, with marked asymmetry across dimensions, where adherence concentrated in \textit{Findable} (14.78/25, 59.14\%), while \textit{Accessible} (0.16/25, 0.65\%) and \textit{Interoperable} (0.05/25, 0.22\%) remained near zero, and \textit{Reusable} remained limited (3.67/25, 14.67\%) (Figure \ref{fig:fair_radar}).
 
@@ -308,15 +284,15 @@ At indicator level, rich metadata was highly present (97.31\%), contrasting with
 \centering
 \begin{minipage}[t]{0.45\textwidth}
 \centering
-\includegraphics[width=0.95\linewidth]{fair_radar_only.png}
+\includegraphics[width=0.95\linewidth]{Fig7a.png}
 \par\small (a)
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.45\textwidth}
 \centering
-\IfFileExists{fair_indicadores.png}{%
-\includegraphics[width=0.95\linewidth]{fair_indicadores.png}%
-}{\fbox{Figure not found, fair\_indicadores.png}}
+\IfFileExists{Fig7b.png}{%
+\includegraphics[width=0.95\linewidth]{Fig7b.png}%
+}{\fbox{Figure not found: Fig7b.png}}
 \par\small (b)
 \end{minipage}
 \caption{Compliance with FAIR data governance principles, with FAIR radar in (a) and per-indicator compliance in (b).}
@@ -333,24 +309,24 @@ Algorithm-family decomposition supports the interpretation of elevated performan
 \centering
 \begin{minipage}[t]{0.49\textwidth}
 \centering
-\includegraphics[width=0.95\linewidth]{meta_analise_algoritmos.png}
+\includegraphics[width=0.95\linewidth]{Fig8a.png}
 \par\small (a)
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.49\textwidth}
 \centering
-\includegraphics[width=0.95\linewidth]{meta_regressao_ano.png}
+\includegraphics[width=0.95\linewidth]{Fig8b.png}
 \par\small (b)
 \end{minipage}
 \caption{Meta-analytic synthesis of accuracies by algorithm accompanied by the meta-regression examining the temporal trend in reported performance over the publication period.}
 \label{fig:meta_algoritmo}
 \end{figure}
 
-\section[Discussion]{Discussion}\label{sec:discussao}
+\section{Discussion}\label{sec:discussao}
 
 The evolutionary dynamics of scientific output (Figure \ref{fig:temporal_combined}a) indicate a transition from exploratory decision-support engineering to more robust inference architectures for auditing traditional agricultural systems. This inflection appears in the replacement of support vector machines and random forests by deep neural networks (Figure \ref{fig:temporal_combined}b), consistent with efforts to internalize stochastic biophysical nonlinearity in high-entropy computational models \citep{Weiss2020}.
 
-Performance saturation in discrete classifiers indicates that social-ecological complexity benefits from fuzzy logic-based approaches, where land-use membership is continuous rather than binary, enabling representation of transition-zone ambiguity in shifting cultivation and agroforestry homegardens, as discussed by \citep{Foody2020}, \citep{Osco2021}, and \citep{Denis20151499}.
+Performance saturation in discrete classifiers indicates that social-ecological complexity benefits from fuzzy logic-based approaches, where land-use membership is continuous rather than binary, enabling representation of transition-zone ambiguity in shifting cultivation and agroforestry homegardens, as discussed in \citep{Foody2020,Osco2021,Denis20151499}.
 
 The co-occurrence network topology (Figure \ref{fig:network_communities}) indicates epistemic compartmentalization relevant to decision-support system development. Segregated modules, one anchored in medium spectral resolutions and another in very high-resolution sensors, support the hypothesis that optical signatures of ecosystem services are scale-dependent, limiting digital-twin generalization across observational regimes and territorial contexts \citep{Basso2020,Jones2020DigitalTwin,VanDerHorn2021DigitalTwin}. This fragmentation indicates that robustness depends on calibrating membership functions for each resolution regime, reducing dimensional incompatibility errors.
 
@@ -366,7 +342,7 @@ Egger's test yielded an intercept of $\beta_0=1.87$ (SE = 0.72; $p=0.009$), indi
 
 From a fuzzy-systems perspective, this instability reflects attempts to impose crisp categories, such as forest regions and rural areas, on a complex ecological continuum \citep{Fisher2010}. The nominally superior performance of deep architectures does not remove epistemic uncertainty \citep{Hullermeier2021}, but relocates it to latent representations that are harder to interpret \citep{Tuia2021}. The next generation of auditing tools should prioritize algorithmic explainability and explicit uncertainty modeling (confidence intervals, fuzzy sets) over blind maximization of point-accuracy metrics \citep{Rudin2019,Ghilardi2025}.
 
-\subsection[Implications for global sustainability governance]{Implications for global sustainability governance}
+\subsection{Implications for global sustainability governance}
 
 At the global governance scale, convergence of data opacity, reporting bias, and epistemic compartmentalization limits operationalization of decision-support systems for monitoring and agroecological transitions in traditional agricultural systems \citep{Wezel2009} within the 2030 Agenda framework, particularly SDG targets~2 (Zero Hunger) and 15 (Life on Land) \citep{UN2015}. Recognized by the GIAHS program in 24 countries and integrated into IPBES assessments on indigenous and local knowledge \citep{Koohafkan2011,IPBES2019}, these systems are nature-society interfaces where monitoring deficits directly compromise design and implementation of innovations in agricultural systems.
 
@@ -376,11 +352,11 @@ Geographic inequality evidenced by network topology (Fig.~\ref{fig:network_commu
 
 At the science-policy interface, transition from static classifiers to adaptive and explainable decision-support systems requires governance mechanisms that ensure algorithmic traceability, community consent, and demonstrated inter-regional transferability. Without these conditions, predictive capacity does not translate into an auditable management instrument. This technical and institutional integration is necessary for machine learning to operate as a monitoring and assessment tool with regulatory value for safeguarding social-ecological integrity of traditional agricultural systems under accelerating global change.
 
-\subsection[Limitations]{Limitations}
+\subsection{Limitations}
 
 Regarding limitations, the Egger intercept ($\beta_0 = 1.87$; $p = 0.009$) and the \textit{trim-and-fill} correction ($-$1.54 pp.) classify the pooled accuracy of 90.66\% as an upper bound on \textit{reported} performance, not as an operational benchmark; the sensitivity analysis excluding the 37.2\% of studies with imputed sample size confirmed estimate stability (89.8\% vs. 90.7\%), indicating that imputation did not introduce material bias. The absence of formal study-level risk-of-bias instruments (PROBAST, QUADAS-2) prevents stratification by methodological quality, while the restriction to English-language terms in Scopus and Web of Science may underrepresent monitoring initiatives in non-Anglophone regions. Finally, spatial validation strategies were not systematically extracted, limiting the empirical quantification of performance degradation in external validity. Taken together, the findings provide a diagnostic reference framework of the current state rather than deployment-ready regulatory benchmarks.
 
-\section[Conclusions]{Conclusions}
+\section{Conclusions}
 
 This study systematizes Traditional Agricultural Systems as coupled social-ecological systems whose typicality emerges from nonlinear interactions between edaphoclimatic variables and cultural practices. Results are consistent with emergence of a rapidly expanding digital monitoring paradigm during 2010--2025, anchored in integration of remote sensors and deep learning architectures. The knowledge network topology, with density 0.3455, reveals a cohesive yet geographically unequal research ecosystem, where concentration of studies in specific regions coexists with critical validation gaps in traditional system contexts in Africa, Central Asia, and the Pacific.
 
@@ -392,40 +368,27 @@ In sum, operational applicability of machine learning in traditional agricultura
 
 The authors thank the Universidade Federal de Sergipe (UFS), the Universidade Estadual de Feira de Santana (UEFS), and the Instituto Federal de Sergipe (IFS) for the institutional and infrastructural support that enabled this research.
 
-\section*{Declarations}
+\section*{Funding}
 
-\subsection*{Funding}
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
 
-The authors did not receive funding from any organization for the submitted work. No grants, financial support, or other resources were received.
+\section*{Ethical statement}
 
-\subsection*{Conflicts of interest}
+This study is a meta-analysis and scoping review based exclusively on previously published, publicly available literature. No primary data collection involving human participants, animal subjects, or biological samples was conducted. Accordingly, no ethical approval or informed consent was required. All data sources are fully cited and the complete bibliographic corpus is deposited in a public repository.
 
-The authors declare no relevant financial or non-financial interests to disclose.
+\section*{CRediT authorship contribution statement}
 
-\subsection*{Ethics approval}
+\textbf{Catuxe Varjão de Santana Oliveira:} Conceptualization, Investigation, Writing -- original draft, Project administration. \textbf{Luiz Diego Vidal Santos:} Conceptualization, Methodology, Software, Formal analysis, Investigation, Data curation, Writing -- original draft, Visualization. \textbf{Paulo Roberto Gagliardi:} Writing -- review \& editing, Supervision. \textbf{Renisson Neponuceno de Araújo Filho:} Writing -- review \& editing. \textbf{Tânia Cristina Azevedo:} Writing -- review \& editing. \textbf{Gustavo da Silva Quirino:} Writing -- review \& editing. \textbf{Francisco Sandro Rodrigues Holanda:} Writing -- review \& editing, Supervision.
 
-Not applicable. This study is based exclusively on published secondary data and did not involve human participants, personal data, or biological material.
+\section*{Declaration of competing interests}
 
-\subsection*{Consent to participate}
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
 
-Not applicable.
+\section*{Data availability}
 
-\subsection*{Consent for publication}
+The complete dataset supporting this study, including the bibliographic corpus, analysis scripts, and intermediate results, is publicly available at the Open Science Framework (OSF) under DOI \url{https://doi.org/10.17605/OSF.IO/J7STC}. All analysis scripts (Python and R) used for automated screening, meta-analysis, network analysis, multiple correspondence analysis, and FAIR compliance assessment are also available at the same repository.
 
-Not applicable.
-
-\subsection*{Data availability}
-
-The complete dataset supporting this study, including the bibliographic corpus, analysis scripts, and intermediate results, is publicly available at the Open Science Framework (OSF) under DOI \url{https://doi.org/10.17605/OSF.IO/J7STC}.
-
-\subsection*{Code availability}
-
-All analysis scripts (Python and R) used for automated screening, meta-analysis, network analysis, multiple correspondence analysis, and FAIR compliance assessment are publicly available at the Open Science Framework (OSF) under DOI \url{https://doi.org/10.17605/OSF.IO/J7STC}.
-
-\subsection*{Authors' contributions}
-
-Conceptualization, L.D.V.S. and C.V.S.O.; Methodology, L.D.V.S.; Software, L.D.V.S.; Formal analysis, L.D.V.S.; Investigation, C.V.S.O. and L.D.V.S.; Data Curation, L.D.V.S.; Writing (original draft), L.D.V.S. and C.V.S.O.; Writing (review \& editing), P.R.G., R.N.A.F., T.C.A., G.S.Q. and F.S.R.H.; Visualization, L.D.V.S.; Supervision, F.S.R.H. and P.R.G.; Project administration, C.V.S.O. All authors read and approved the final manuscript.
-
+\bibliographystyle{elsarticle-num}
 \bibliography{referencias}
 
 \section*{References of the Meta-Analysis}
@@ -433,4 +396,3 @@ Conceptualization, L.D.V.S. and C.V.S.O.; Methodology, L.D.V.S.; Software, L.D.V
 The complete list of 244 studies included in this meta-analysis is provided as a separate supplementary document (\textit{References of the Meta-Analysis}), available alongside this manuscript and deposited at the Open Science Framework (OSF) under DOI \url{https://doi.org/10.17605/OSF.IO/J7STC}.
 
 \end{document}
-

@@ -1,0 +1,7 @@
+Highlights
+
+- ML pooled accuracy 90.7% but FAIR compliance only 18.7/100
+- Deep learning adoption rose from 4.8% to 21.1% (2015-2025)
+- Only 1.1% of 244 studies shared code or data openly
+- Publication bias overestimates accuracy by 1.5 percentage points
+- Spatial validation gaps limit regulatory applicability
