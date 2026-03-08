@@ -1,65 +1,45 @@
 %%
-%% Manuscript for Agricultural Systems (Elsevier)
-%% Migrated from Springer Nature sn-jnl to elsarticle format
+%% Manuscript for Journal of Agricultural, Biological and Environmental Statistics (Springer)
 %%
-\documentclass[review,number]{elsarticle}
+\PassOptionsToPackage{hypertexnames=false}{hyperref}
+\documentclass[lineno,pdflatex,sn-apa]{sn-jnl}
 
 %%%% Standard Packages
-\usepackage{graphicx}
-\usepackage{multirow}
-\usepackage{amsmath,amssymb,amsfonts}
-\usepackage{amsthm}
-\usepackage{mathrsfs}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[american]{babel}
-\usepackage{booktabs}
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage[american]{babel}%
+\usepackage{booktabs}%
 \usepackage{verbatim}
-\usepackage{float}
-\usepackage{lineno}
-\usepackage{hyperref}
-
-\journal{Agricultural Systems}
+\usepackage{float}%
 
 \begin{document}
 
-\begin{frontmatter}
+\title[Machine Learning Readiness for Traditional Agricultural Systems]{Machine Learning Readiness to Support Agroecological Transitions in Traditional Agricultural Systems}
 
-\title{Machine Learning Readiness to Support Agroecological Transitions in Traditional Agricultural Systems}
+\author[1]{\fnm{Catuxe Varjão de Santana} \sur{Oliveira}}
+\author*[2]{\fnm{Luiz Diego Vidal} \sur{Santos}}
+\author[1]{\fnm{Paulo Roberto} \sur{Gagliardi}}
+\author[3]{\fnm{Renisson Neponuceno de} \sur{Araújo Filho}}
+\author[2]{\fnm{Tânia Cristina} \sur{Azevedo}}
+\author[1]{\fnm{Gustavo da Silva} \sur{Quirino}}
+\author[1]{\fnm{Francisco Sandro Rodrigues} \sur{Holanda}}
 
-\author[1]{Catuxe Varjão de Santana Oliveira}
-\author[2]{Luiz Diego Vidal Santos\corref{cor1}}
-\cortext[cor1]{Corresponding author}
-\ead{ldvsantos@uefs.br}
-\author[1]{Paulo Roberto Gagliardi}
-\author[3]{Renisson Neponuceno de Araújo Filho}
-\author[2]{Tânia Cristina Azevedo}
-\author[1]{Gustavo da Silva Quirino}
-\author[1]{Francisco Sandro Rodrigues Holanda}
+\email{ldvsantos@uefs.br}
 
-\address[1]{Universidade Federal de Sergipe (UFS), Av. Marechal Rondon, s/n, Jardim Rosa Elze, São Cristóvão, SE 49100-000, Brazil}
-\address[2]{Universidade Estadual de Feira de Santana (UEFS), Av. Transnordestina, s/n, Novo Horizonte, Feira de Santana, BA 44036-900, Brazil}
-\address[3]{Universidade Federal Rural de Pernambuco (UFRPE), Rua Dom Manuel de Medeiros, s/n, Dois Irmãos, Recife, PE 52171-900, Brazil}
+\affil[1]{\orgname{Universidade Federal de Sergipe (UFS)}, \orgaddress{\street{Av. Marechal Rondon, s/n, Jardim Rosa Elze}, \city{São Cristóvão}, \state{SE}, \postcode{49100-000}, \country{Brazil}}}
+\affil*[2]{\orgname{Universidade Estadual de Feira de Santana (UEFS)}, \orgaddress{\street{Av. Transnordestina, s/n, Novo Horizonte}, \city{Feira de Santana}, \state{BA}, \postcode{44036-900}, \country{Brazil}}}
+\affil[3]{\orgname{Universidade Federal Rural de Pernambuco (UFRPE)}, \orgaddress{\street{Rua Dom Manuel de Medeiros, s/n, Dois Irmãos}, \city{Recife}, \state{PE}, \postcode{52171-900}, \country{Brazil}}}
 
-\begin{highlights}
-\item ML pooled accuracy 90.7\% but FAIR compliance only 18.7/100
-\item Deep learning adoption rose from 4.8\% to 21.1\% (2015--2025)
-\item Only 1.1\% of 244 studies shared code or data openly
-\item Publication bias overestimates accuracy by 1.5 percentage points
-\item Spatial validation gaps limit regulatory applicability
-\end{highlights}
+\abstract{Traditional Agricultural Systems are coupled social-ecological systems whose integrity requires evidence-based monitoring, yet the operational readiness of machine learning for this purpose remains uncertain. This meta-analysis assesses the extent to which deficiencies in data governance and spatial validation constrain the regulatory applicability of machine learning models in these systems despite their reported high accuracy. We examined 244 studies (2010--2025) retrieved from Scopus and Web of Science following standardized scoping review guidelines, using automated relevance scoring (precision 94.2\%) with manual validation (intraclass correlation coefficient = 0.87), random-effects modeling, network analysis (modularity $Q = 0.62$), and compliance assessment against the Findable, Accessible, Interoperable, and Reusable (FAIR) data principles. Pooled accuracy reached 90.7\% (95\% confidence interval 89.8 to 91.5\%) with substantial heterogeneity ($I^{2} = 58\%$), while deep learning adoption increased from 4.8\% (2015--2019) to 21.1\% (2020--2025). However, FAIR compliance remained critically low (mean score 18.7/100), with only 1.1\% of studies sharing code or data, and publication-bias analysis (Egger's test, $p = 0.009$) suggests performance overestimation by approximately 1.5 percentage points. Critical gaps in spatial validation protocols, algorithmic explainability, and data-governance infrastructure limit operational readiness for regulatory applications in Traditional Agricultural Systems, with direct implications for monitoring heritage sites under the Globally Important Agricultural Heritage Systems program and Sustainable Development Goal targets 2.4 and 15.4. These findings highlight the need for inter-regional validation and transparent algorithmic governance to support evidence-based agrobiodiversity management.}
 
-\begin{abstract}
-Traditional Agricultural Systems are coupled social-ecological systems whose integrity requires evidence-based monitoring, yet the operational readiness of machine learning for this purpose remains uncertain. This meta-analysis assesses the extent to which deficiencies in data governance and spatial validation constrain the regulatory applicability of machine learning models in these systems despite their reported high accuracy. We examined 244 studies (2010--2025) retrieved from Scopus and Web of Science following standardized scoping review guidelines, using automated relevance scoring (precision 94.2\%) with manual validation (intraclass correlation coefficient = 0.87), random-effects modeling, network analysis (modularity $Q = 0.62$), and compliance assessment against the Findable, Accessible, Interoperable, and Reusable (FAIR) data principles. Pooled accuracy reached 90.7\% (95\% confidence interval 89.8 to 91.5\%) with substantial heterogeneity ($I^{2} = 58\%$), while deep learning adoption increased from 4.8\% (2015--2019) to 21.1\% (2020--2025). However, FAIR compliance remained critically low (mean score 18.7/100), with only 1.1\% of studies sharing code or data, and publication-bias analysis (Egger's test, $p = 0.009$) suggests performance overestimation by approximately 1.5 percentage points. Critical gaps in spatial validation protocols, algorithmic explainability, and data-governance infrastructure limit operational readiness for regulatory applications in Traditional Agricultural Systems, with direct implications for monitoring heritage sites under the Globally Important Agricultural Heritage Systems program and Sustainable Development Goal targets 2.4 and 15.4. These findings highlight the need for inter-regional validation and transparent algorithmic governance to support evidence-based agrobiodiversity management.
-\end{abstract}
+\keywords{deep learning, machine learning, meta-analysis, data governance, FAIR}
 
-\begin{keyword}
-deep learning \sep machine learning \sep meta-analysis \sep data governance \sep FAIR
-\end{keyword}
-
-\end{frontmatter}
-
-\linenumbers
+\maketitle
 
 \section{Introduction}
 
@@ -388,7 +368,6 @@ The authors declare that they have no known competing financial interests or per
 
 The complete dataset supporting this study, including the bibliographic corpus, analysis scripts, and intermediate results, is publicly available at the Open Science Framework (OSF) under DOI \url{https://doi.org/10.17605/OSF.IO/J7STC}. All analysis scripts (Python and R) used for automated screening, meta-analysis, network analysis, multiple correspondence analysis, and FAIR compliance assessment are also available at the same repository.
 
-\bibliographystyle{elsarticle-num}
 \bibliography{referencias}
 
 \section*{References of the Meta-Analysis}
